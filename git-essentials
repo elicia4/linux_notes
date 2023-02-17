@@ -1,7 +1,7 @@
 ### These are notes on the "Git Essentials" video by Learn Linux TV ###
-### Here is the link to it: https://youtu.be/u1Zvkqjx0Ik	###
-Git is a version control utility
-It helps to keep track of files and changes to files
+### 	Here is the link to it: https://youtu.be/u1Zvkqjx0Ik	    ###
+Git is a version control utility.
+It helps to keep track of files and changes to them.
 
 #######################################################################
 1. To create a repository with git, type:
@@ -38,20 +38,20 @@ you're working on. Commit is more like a packaging
 of changes. To commit, type:
 	git commit -m "add message here"
 #######################################################################
-8. If you make changes to the file, its status
-will be changed to modified. Try git status, then
-add a couple lines to it and then run git status
+8. If you make changes to a file, its status
+will be changed to 'modified'. Try 'git status', then
+add a couple lines to a file and then run 'git status'
 again.
 #######################################################################
 9. To check what changed in a file since the last
 commit, use:
 	git diff file-name
 The ability to track changes, for example, to config
-files, is very important and useful. Instead of
+files, is extremely useful. Instead of
 reading through the entire file and FIGURING OUT
 what changed, you can simply use 'git diff' and
 SEE EXACTLY what changed. This is particularly
-useful for system administators
+useful for system administators.
 #######################################################################
 10. If you run git commit without the '-m' option,
 a text editor will be opened and you can type your
