@@ -1,5 +1,5 @@
 1. Bash is a shell.
-Any time you enter the terminal and you enter commands, you interact with the shell. 
+Any time you enter the terminal and enter commands, you interact with the shell. 
 It allows you to enter commands and presents to you results of those commands. The shell allows you to work with the systems via commands.
 2. to find out what shell you're using, type
 	echo $SHELL
