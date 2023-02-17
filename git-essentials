@@ -17,7 +17,7 @@ It helps to keep track of files and changes to files
 3. Don't delete the .git repository, it contains
 all git-related information inside
 #####################################################################
-4. Get status of your repository:
+4. Output current status of your repository:
 	git status
 #####################################################################
 5. Add file to version control:
