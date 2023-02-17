@@ -1,13 +1,12 @@
 1. Variable structure:
-		myname="John"
+	myname="John"
+	
 	name -> = -> content
 	No spaces!
 2. You can declare variables right on the command line, there isn't much difference between entering commands on the
 command line and adding commands to a script.
 3. Use $ before variable name to echo it, e.g.:
-
 	echo $myname
-
    Bash treats names written after $ as variables.
 4. When you declare a variable in bash, it's tied to the session it was declared in. If you terminate the session, the
 variable will be gone.  
@@ -15,7 +14,8 @@ variable will be gone.
 printed.
 6. You can store output of commands in variables, e.g.:
 	files=$(ls)
-$() is called a subshell
+	
+	$() is called a subshell
 7. Within your environment, there are already variables that are declared, 
 $USER is one of those, it contains the name of the user you're currently logged
 in as. Variables like $USER are called system variables or environment variables
