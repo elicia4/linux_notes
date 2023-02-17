@@ -3,8 +3,7 @@
 	name -> = -> content
 	No spaces!
 2. You can declare variables right on the command line, there isn't much difference between entering commands on the
-command line
-and adding commands to a script.
+command line and adding commands to a script.
 3. Use $ before variable name to echo it, e.g.:
 
 	echo $myname
