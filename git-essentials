@@ -9,12 +9,12 @@ It helps to keep track of files and changes to files
 	(you can use 'git init' from inside of a folder to 
 	initialize it)
 #######################################################################
-2. There is a feature called "branch" in git It allows a user to take
+2. There is a feature called "branch" in git. It allows a user to take
 a project to a different direction without creating it on the 'main'
 branch (that is, the main part of the project) and test it.
 #######################################################################
-3. Don't delete the .git repository, it contains
-all git-related information inside
+3. Don't delete the .git repository, it contains all git-related
+information inside
 #######################################################################
 4. Output current status of your repository:
 	git status
@@ -55,9 +55,9 @@ useful for system administators
 #######################################################################
 10. If you run git commit without the '-m' option,
 a text editor will be opened and you can type your
-commit message there. This can be useful if your commit message consists of 
-multiple lines, you want to think about it, you like working in text from a
-text editor and so on.
+commit message there. This can be useful if your commit message consists
+of multiple lines, you want to think about it, you like working in text 
+from a text editor and so on.
 #######################################################################
 11. To revert things back to a previous commit,
 follow this process:
@@ -79,8 +79,8 @@ follow this process:
 	1) Go to that repository's page
 	2) Click on green 'Code' button
 	3) Copy the 'https' link
-	4) In terminal, navigate to the folder you'd like to copy the repository
-	to
+	4) In terminal, navigate to the folder you'd like to copy the 
+	repository to
 	5) Use command:
 		git clone COPIED-LINK-HERE
 #######################################################################
