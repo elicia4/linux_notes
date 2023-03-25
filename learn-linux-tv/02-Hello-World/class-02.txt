@@ -1,16 +1,25 @@
 1. Bash is a shell.
-Any time you enter the terminal and enter commands, you interact with the shell. 
-It allows you to enter commands and presents to you results of those commands. The shell allows you to work with the systems via commands.
-2. to find out what shell you're using, type
+
+Any time you enter the terminal and enter commands, you interact with the 
+shell. It allows you to enter commands and presents to you results of those 
+commands. The shell allows you to work with the system via commands.
+
+2. to find out what shell you're using, type:
 	echo $SHELL
-   to search for the bash environmentvariable and display its location, type
+
+   to search for the bash environment variable and display its location, type:
 	which bash
+
    to run a shell, input its absolute path into the terminal, for example:
 	/usr/bin/bash
+
 3. Make a file executable:
 	chmox +x file_name
-4. You dont have use an extension after the name, for example 123.sh - sh isn't necessary.
-You can name your scripts anything.
-5. Use shebang at the beginning of your scripts
+
+4. You don't have to use an extension after the name, for example 123.sh - "sh" 
+isn't necessary. You can name your scripts anything.
+
+5. Use shebang at the beginning of your scripts:
 	#!/bin/bash
-It tells your script what interpreter it should use to run your script
+
+It tells your script what interpreter it should use to run your script.
