@@ -1,6 +1,6 @@
 Show docker images that have been downloaded and are locally available:
 	docker images
-Look for a docker image:
+Look for a docker image, for example the ubuntu image:
 	docker search ubuntu
 Download docker image:
 	docker pull ubuntu
@@ -19,15 +19,16 @@ List all containers:
 	docker ps -a
 Run bash inside ubuntu container:
 	docker run -it ubuntu /bin/bash
+You are now 'inside' the container! Do whatever you want!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Containers don't save changes by default.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Update the system:
 	apt update
 Install vim:
 	apt install vim
 You can install anything you want!
 You can even install a GUI app from containers.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Containers don't save changes by default.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 You should practice settings up containers :)
 For instance, you could practice using various package managers on popular
 distributions
