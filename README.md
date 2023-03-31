@@ -1,4 +1,4 @@
-# notes-on-bash-scripting
+# notes-on-bash
 I sum up guides on bash here :)
 
 Noted are being taken on:
