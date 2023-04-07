@@ -27,7 +27,7 @@ the condition is false:
 
 	>The variable does not equal 200.
 #################################################
-4. Use '!' to reverse the check
+4. Use '!' to reverse the condition.
 #################################################
 5. To compare integers, follow the following 
    format:
