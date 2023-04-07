@@ -56,14 +56,17 @@ exists:
 8. '&&' allows to chain commands together;
 1 && 2 - if command '1' is successful, run '2'
 #################################################
-9. Use '-y' to use 'yes' as the prompt answer
+9. Use '-y' to use 'yes' as the prompt answer:
+	sudo apt install -y app-name
 #################################################
 10. You only need square brackets if you're
-running text commands.
+running 'test' commands. When using sq. brackets,
+bash is assuming that you're using the test 
+command.
 #################################################
-11. The command 'command -v' checks for the 
-existance of a command. If it does, it outputs the
-path to the command.
+11. The command 'command -v name' checks for the 
+existance of the 'name' command. If it does, it
+outputs the path to the command.
 #################################################
 12. To find out more about 'test' commands, view
 its manpage:
