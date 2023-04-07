@@ -1,5 +1,5 @@
 # notes-on-bash
-I sum up guides on bash here :)
+A collection of notes on various bash guides.
 
 Noted are being taken on:
 1. "Bash Scripting on Linux" video series by "Learn Linux TV", the notes are
