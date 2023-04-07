@@ -2,25 +2,25 @@ Notes on the video by Luke Smith: https://youtu.be/p0KKBmfiVl0
 Never say "If" writing a Bash script! (Exit codes & logical operators)
 
 #== && ==#
-"and and" only runs the second command if the first command succeeded.
+Runs the second command only if the first command succeeded.
 
 This will run only the first command:
-	cat .file-that-doesnt-exist && echo "both commands ran successfully"
+	cat .file-that-doesnt-exist && echo "this won't run"
 This will run both commands (if you have the '.bashrc' file of course):
-	cat .bashrc && echo -e "\nboth commands ran successfully"
+	cat .bashrc && echo "both commands ran successfully"
 
 #== || ==#
-Runs the seconds command only if the first command didn't succeed.
+Runs the seconds command only if the first command DIDN'T succeed.
 
 This will run both commands (first fails, will run the second after):
-	cat .file-that-doesnt-exist || echo "both commands ran successfully"
+	cat .file-that-doesnt-exist || echo "first failed, second command ran"
 This will run the first command only:
-	cat .bashrc || echo "both commands ran successfully"
+	cat .bashrc || echo "this won't run"
 
 #== ;  ==#
 semicolon means: run a command, semicolon, run a command.
 	echo "Hello there." ; echo "General Kenobi!"
-semicolor is basically the same thing as having a new line.
+semicolon is basically the same thing as having a new line.
 
 #== &  ==#
 starts both commands at the same time.
