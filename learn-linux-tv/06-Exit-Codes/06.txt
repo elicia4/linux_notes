@@ -1,6 +1,5 @@
 ###############################################################################
-1. Exit codes allow us to determine whether a command was successful or was not
-successful
+1. Exit codes allow us to determine whether a command was successful or not
 ###############################################################################
 2. To determine last command's exit code, use $?
 ###############################################################################
