@@ -1,7 +1,7 @@
 #################################################
 1. If you want to set conditions in your scripts,
 you will need to use if statements. For instance,
-with if statement you can figure out what the
+with if statements you can figure out what the
 current condition of something is: whether a
 number equals another number, whether an app is
 running or not etc.
@@ -16,7 +16,7 @@ running or not etc.
 the condition is false:
 	For example:
 
-	mynum=300
+    mynum=300
     
     if [ $mynum -eq 200 ]
     then
@@ -29,9 +29,20 @@ the condition is false:
 #################################################
 4. Use '!' to reverse the check
 #################################################
-5. -eq stands for equal;
+5. To compare integers, follow the following 
+   format:
+
+   INTEGER1 *parameter* INTEGER2
+
+   Parameters:
+   -eq stands for equal;
    -ne stands for not equal;
    -gt - greater than;
+   -ge - greater than or equal;
+   -lt - less than;
+   -le - less than or equal;
+   -nt - newer than (modification time);
+   -ot - older than;
 #################################################
 6. Check for presence of files on the filesystem:
 	use '-f' to check whether a file exists
@@ -54,7 +65,7 @@ running text commands.
 existance of a command. If it does, it outputs the
 path to the command.
 #################################################
-12. To find out more about test commands, view
+12. To find out more about 'test' commands, view
 its manpage:
 	man test
 	
