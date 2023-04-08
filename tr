@@ -48,6 +48,5 @@ to delete duplicate characters. Let's delete duplicate t's:
 	
 **Side note: wondering what [:upper:], [:lower:], [:alpha:] are? These are
 predefined characters classes, you can read more about them here:
-	https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
-**
 
+https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
