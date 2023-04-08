@@ -18,5 +18,6 @@
 	sudo usermod -aG docker $(whoami)
 	## whoami will output currently logged in user
 6. Log out and in / Restart your pc
-7. Try running the testing command without sudo:
+7. Try running the testing command without sudo,
+   it should work:
 	docker run hello-world
