@@ -11,7 +11,7 @@
    Start it:
 	systemctl start docker
    OR: systemctl enable --now docker
-   This will both enable and start the service 
+   ^This will both enable and start the service 
 4. Test docker!
 	sudo docker run hello-world
 5. Add current user to the docker group:
