@@ -1,2 +1,2 @@
 # notes-on-docker
-I sum up various guides on docker and docker-related stuff here
+These are notes on docker guides and docker-related stuff
