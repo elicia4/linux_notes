@@ -38,7 +38,7 @@ The script above will run until 'myvar' is 10.
     while [ -f ~/testfile ]
     do
         echo "As of $(date), the test file exists."
-		sleep 5
+	sleep 5
     done
    
     echo "As of $(date), the file no longer exists. Exiting."
