@@ -10,7 +10,7 @@ then
 	sudo pacman -Syyu 
 fi
 
-# Check if it contains ubuntu OR debian
+# Check if it contains ubuntu OR debian.
 if grep -q "ubuntu" $release_file || grep -q "debian" $release_file
 then
 	sudo apt update
