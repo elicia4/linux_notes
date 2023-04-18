@@ -1,4 +1,7 @@
 # notes-on-bash
+
+![Bash Logo](img/gnu-bash.png)
+
 A collection of notes on various bash guides.
 
 Noted are being taken on:
