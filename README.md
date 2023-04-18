@@ -1,4 +1,4 @@
-# notes-on-bash
+# Notes on Bash
 
 ![Bash Logo](img/gnu-bash.png)
 
