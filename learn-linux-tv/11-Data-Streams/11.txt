@@ -1,0 +1,8 @@
+Data Streams:
+	- Standard Input
+	- Standard Output
+	- Standard Error
+
+Data streams allow us to control where normal output goes as well as where 
+errors are printed. They allow us to accept input from a user as well. This
+concept is very important Linux-wide.
