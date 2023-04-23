@@ -48,3 +48,11 @@ This will yield the same result. 1 = SO, 2 = SE. To send both to a file:
 You can send SO to one file and SE to another file:
 
     find /etc -type f 1> output.txt 2> error.txt
+
+Let's add stuff to the update.sh script.
+
+The following command shows the files updating in (almost) real time:
+
+	tail -f <filename>
+
+Take a look at another script myscript.sh.
