@@ -13,5 +13,5 @@ Personal suggestions:
 
     https://github.com/koalaman/shellcheck
 
-Note that not MANY things were not covered in these notes, only the stuff for 
+Note that MANY things were not covered in these notes, only the stuff for 
 beginners.
