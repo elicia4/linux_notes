@@ -1,0 +1,16 @@
+OpenSSH and SSH are interchangable terms.
+
+OpenSSH is available on most platforms.
+
+SSH client allows you to connect to other machines, but doesn't allow them to
+connect to you. To see if you have it installed:
+    which ssh
+
+SSH client package is usually installed by default. On debian-based systems you
+can search for it with:
+    apt search openssh-client
+
+In the square brackets on the right, it will tell you if it's installed or not.
+(Square brackets won't be there if it's not)
+
+
