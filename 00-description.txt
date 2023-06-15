@@ -1,0 +1,3 @@
+These are notes on the series of vim guides by Mental Outlaw:
+
+https://youtu.be/jyhYW0qZ6oA
