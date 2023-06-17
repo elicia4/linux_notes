@@ -44,7 +44,7 @@ To get an ASCII value for a symbol use 'ga' (Hex and Octal values too!):
 	!@#$%^&*()_+-=
 
 If you have a string of text that is a path to a file, you can open up that
-file in vim with gf:
+file in vim with 'gf':
 
 	~/.vimrc
 
@@ -58,7 +58,7 @@ You can subtitute words globally with:
 
 	:s/word/changeto/g -- this will change to the first instance
 
-Then use g& to apply it to all lines in the file
+Then use 'g&' to apply it to all lines in the file
 
 You can also subtitue text with 'cgn':
 
