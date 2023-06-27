@@ -1,0 +1,72 @@
+###############################################################################
+systemd deep-dive
+Notes takes on this video by
+LearnLinuxTV:
+https://youtu.be/Kzpm-rGAXos
+###############################################################################
+There are many tools included in systemd. It allows you manage resources, it is
+the most common init system. 
+
+An init system is the most important process, it is the first process that 
+starts on your system, its job is to schedule all other processes. 
+
+Topics discussed:
+
+	Basic commands:
+		such as starting, stopping, restarting services, etc.
+	More complext aspects of systemd, such as:
+		service files
+		directory priority
+		...
+
+What is "Systemd"?
+
+	- It's an "init system", it's a type of process (any task that runs in the
+	  background) 
+	- It's the most important process running on your system, it's the first
+	  process that runs when you start your Linux instance. For that reason
+	  init systems are referred to as PID1 (proccess ID #1). 
+	- Its job is to manage all other processes, or services that run in the
+	  background. When you start a process, the request to do it is sent to the
+	  init system, which then starts it up. It works similiarly when you stop,
+	  reload, and restart a process.
+
+Working with Units:
+	
+	- Units in Systemd refer to resources it's able to manage for you
+	- These include services, timers, mounts, automounts, and so on
+	- We will focus on services, but it's a good idea to keep in mind that
+	  there are other types of units
+
+	In summary, units are what systemd can manage for you and a service is a
+	type of unit.
+
+You can use any package that contains a service file as an example but to
+save time let's install Apache:
+
+	sudo apt install apache2
+	pacman -S apache
+	...
+
+To access apache, type 'localhost' in your browser's address bar. 
+It's likely that nothing appeared. That's because the service itself is not
+running. To check the status of it:
+
+	systemctl status httpd
+
+To start it:
+
+	systemctl start httpd
+
+See if the page gets loaded again (drop the 's' from 'https'). It should
+work now.
+
+To stop it:
+
+	systemctl stop httpd
+
+If you change the configuration of a service in some way and want them to
+take effect, restart your service:
+
+	systemctl restart <service>
+	 
