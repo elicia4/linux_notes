@@ -14,7 +14,7 @@ Topics discussed:
 
 	Basic commands:
 		such as starting, stopping, restarting services, etc.
-	More complext aspects of systemd, such as:
+	More complex aspects of systemd, such as:
 		service files
 		directory priority
 		...
@@ -40,4 +40,3 @@ Working with Units:
 
 	In summary, units are what systemd can manage for you and a service is a
 	type of unit.
-
