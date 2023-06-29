@@ -1,0 +1,36 @@
+Let's take a look at how systemd is structured, more specifically let's take a
+look at directories where unit files are stored.
+
+systemd uses unit files. A unit files pertains to anything that systemd can
+manage. systemd looks at files to figure out how it needs to interact with
+processes. 
+
+Service files are just text files that contain instructions that tell systemd
+how to run those services.
+
+Directories that are most common for service files are:
+
+    /etc/systemd/system - the most common directory
+    /run/systemd/system/ 
+    /lib/systemd/system/ 
+
+Take a look at the contents of this directory /lib/systemd/system/. There are
+many different types of unit files in there, such as .target, .socket, .service,
+.timer. Keep in mind that there are different types of unit files, not just
+services.
+
+Each one of the directories listed above has a specific purpose. You don't have
+to create your own unit files since they mostly come preinstalled, they are 
+located inside /lib/systemd/system/. Runtime systemd units are located inside 
+/run/systemd/system/, you won't visit this directory often. The
+/etc/systemd/system/ is the directory you will most commonly work with.
+
+Priority of directories: /etc/systemd/system/ -> /run/systemd/system/ ->
+/lib/systemd/system/. Higher priority unit files take priority over lower
+priority unit files. If you put anything inside /etc... it will have utmost 
+priority. You should put your own service files inside /etc/... to make sure the
+service file is taken into account. Make sure to keep your service files in
+/etc because if a package gets updated it can overwrite the unit files inside
+the /lib/ folder.
+
+Let's take a closer look at systemd unit files.
