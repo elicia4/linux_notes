@@ -40,6 +40,6 @@ To make a service NOT run on system startup:
 When you enable a service, a symlink will be created, don't be alarmed :)
 
 There is additional information at the bottom of the 'status' message, take a
-look at if you're experience problems with your services.
+look at if you experience problems with your services.
 
 These commands are the bare minimum you need to know.
