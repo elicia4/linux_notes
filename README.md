@@ -1,5 +1,5 @@
 # Git Notes 
 
-![Git Logo](img/git.svg)
+![Git Logo](img/git.png)
 
-I sum up various guides on git and git-related stuff here
+1. [Git Essentials](git-essentials.md)
