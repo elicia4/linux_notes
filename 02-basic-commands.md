@@ -2,7 +2,7 @@
 
 [***go back to README***](README.md)
 
-Let's take a look at some basic commands
+Let's take a look at some basic commands.
 
 You can use any package that contains a service file as an example but to
 save time let's install Apache:
