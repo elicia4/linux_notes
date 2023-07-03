@@ -1,14 +1,14 @@
-# The 'scp' command
+# The "scp" command
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
+Notes taken on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
 
 [***go back to README***](README.md)  
 
 You can transfer files between servers with the `scp` command. It stands for
 "secure copy". 
 
-The 'rsync' command does essentially the same thing, if you intend to transfer
-a large number of files use 'rsync', if you only want to send one use `scp`. To see if `scp` is available on your system:
+The `rsync` command does essentially the same thing, if you intend to transfer
+a large number of files use `rsync`, if you only want to send one use `scp`. To see if `scp` is available on your system:
 
 	command -v scp
 
@@ -75,4 +75,4 @@ the default SSH port:
 
 	scp -P 2222 file dev:
 
-Do not use `2222`, it's too widely used already. (:
+Do not use `2222`, it`s too widely used already. (:
