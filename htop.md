@@ -2,19 +2,20 @@
 
 Notes takes on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
 
-[***go back to README***](README.md)
+[***go back to README***](README.md)  
 
-htop is a system utility used for system resource monitoring. It's critical to
+`htop` is a system utility used for system resource monitoring. It's critical to
 take care of your system's CPU and RAM usage.
 
-'top' is a predecessor of htop. htop looks a lot better, is organized better 
-and is available on most Linux systems. Note that top is still widely used.
+`top` is a predecessor of `htop`. `htop` looks a lot better, is organized
+better and is available on most Linux systems. Note that top is still widely
+used.
 
-htop outputs many important metrics, such as CPU usage, Memory usage, Swap 
+`htop` outputs many important metrics, such as CPU usage, Memory usage, Swap 
 usage, a list of processes running on the server and more.
 
-You can customize the layout of htop as well. You can install 'htop' with your
-package manager in case it's not installed, in case of Debian/Ubuntu:
+You can customize the layout of `htop` as well. You can install 'htop' with
+your package manager in case it's not installed, in case of Debian/Ubuntu:
 
 	which htop # to see if it's installed 
 OR
@@ -30,7 +31,7 @@ To run it:
 
 	htop
 
-You can use your MOUSE inside htop, try sorting something by clicking on a
+You can use your MOUSE inside `htop`, try sorting something by clicking on a
 column. By sorting `MEM%` or `CPU%` you can narrow down which processes are
 using most of the memory or CPU resources. 
 
@@ -49,11 +50,11 @@ server, be especially careful with this.
 To sort by CPU usage, press **Shift + p**. 
 To sort by Memory usage, press **Shift + m**. 
 
-You can customize htop by pressing **F2** (take a look at the bottom bar, it
+You can customize `htop` by pressing **F2** (take a look at the bottom bar, it
 shows you what all the 'F' keys do). Take a look at Categories on the left, the
 customization interface is pretty intuitive and self-explanatory. You can
-customize the top section of htop in the meters section. Use the arrow keys to
-navigate. Don't forget about the line at the bottom.
+customize the top section of `htop` in the meters section. Use the arrow keys
+to navigate. Don't forget about the line at the bottom.
 
 To look for specific processes:
 
