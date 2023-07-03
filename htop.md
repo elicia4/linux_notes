@@ -8,7 +8,7 @@ Notes takes on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
 take care of your system's CPU and RAM usage.
 
 `top` is a predecessor of `htop`. `htop` looks a lot better, is organized
-better and is available on most Linux systems. Note that top is still widely
+better and is available on most Linux systems. Note that `top` is still widely
 used.
 
 `htop` outputs many important metrics, such as CPU usage, Memory usage, Swap 
