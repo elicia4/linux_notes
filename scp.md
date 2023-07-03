@@ -1,20 +1,20 @@
-###############################################################################
-The 'scp' command
-Notes takes on this video by
-LearnLinuxTV:
-https://youtu.be/Aa7tKMmeFZI
-###############################################################################
-You can transfer files between servers with the 'scp' command. It stands for
+# The 'scp' command
+
+Notes takes on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
+
+[***go back to README***](README.md)  
+
+You can transfer files between servers with the `scp` command. It stands for
 "secure copy". 
 
 The 'rsync' command does essentially the same thing, if you intend to transfer
-a large number of files use 'rsync', if you only want to send one use 'scp'. To see if 'scp' is available on your system:
+a large number of files use 'rsync', if you only want to send one use `scp`. To see if `scp` is available on your system:
 
 	command -v scp
 
-The first thing to know about 'scp' is that it uses 'ssh', the delivery
+The first thing to know about `scp` is that it uses `ssh`, the delivery
 mechanism through which files are transferred. That means that having another
-server is a prerequisite to 'scp'. Make sure you can 'ssh' into that server.
+server is a prerequisite to `scp`. Make sure you can `ssh` into that server.
 
 To copy a file from a local location to a remote server:
 
@@ -24,14 +24,14 @@ For example:
 
 	scp sshd_config_custom dev:/home/user/
 
-To check the file on the server, ssh into it and 'ls' the target directory.
+To check the file on the server, ssh into it and `ls` the target directory.
 
 The command works in reverse as well, so you can copy a file from a remote
 location to a local one:
 
 	scp dev:/home/user/sshd_config_custom /home/user/
 
-To check, use 'ls'. 
+To check, use `ls`. 
 
 Quick SSH tip: if you want to run a single command on a server, use this:
 
@@ -41,7 +41,8 @@ For example:
 
 	ssh dev ls
 
-You can also simplify the scp command, imagine you have the following command:
+You can also simplify the `scp` command, imagine you have the following
+command:
 
 	scp file dev:/home/user/
 
@@ -63,17 +64,15 @@ To copy a directory:
 
 	scp -r dir-name dev:
 
-The '-p' option will retain the modification date of the files you copy over:
+The `-p` option will retain the modification date of the files you copy over:
 
 	scp -pr dir-name dev:
 
-'-p' stands for 'preserve'.
+`-p` stands for "preserve".
 
-You can also specify a port with the '-P' option. By default it will use 22,
+You can also specify a port with the `-P` option. By default it will use 22,
 the default SSH port:
 
 	scp -P 2222 file dev:
 
-Btw, don't use '2222', it's too widely used already.
-
-That's it :)
+Do not use `2222`, it's too widely used already. (:
