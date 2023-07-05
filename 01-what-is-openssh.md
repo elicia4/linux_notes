@@ -1,3 +1,8 @@
+# OpenSSH Notes
+
+These are notes on the OpenSSH guide by LearnLinuxTV:
+https://youtu.be/YS5Zh7KExvE
+
 ### What is OpenSSH?
 
 OpenSSH is a remote management tool, that gives you access to run commands on

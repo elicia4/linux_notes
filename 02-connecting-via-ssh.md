@@ -37,8 +37,8 @@ it:
 Reconnect to the server. Notice that you weren't asked whether you wanted to
 connect this time. That's because your fingerprint is now stored in the 
 `known_hosts` file. If you remove the file, you will be asked again. You local
-SSH client keeps track of the connected servers with the known_hosts file. Why
-is this important? It helps to avoid the man-in-the-middle attack. If a
+SSH client keeps track of the connected servers with the `known_hosts` file.
+Why is this important? It helps to avoid the man-in-the-middle attack. If a
 malicious server is set up, you will be warned that the fingerprint was
 changed.
 
