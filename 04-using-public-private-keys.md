@@ -62,3 +62,4 @@ The easy way to add a key to the remote server:
 The `-i` parameter is for input file. The command will create both the `.ssh`
 directory and the `authorized_keys` file, as well as populate the file with the
 key.
+[***Go to Next Note***](05-managing-ssh-keys.md)

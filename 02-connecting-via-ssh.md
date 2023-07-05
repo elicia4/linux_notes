@@ -54,3 +54,5 @@ Then connect to the server with a device. The log file is going to say that it:
 
 and that the `session opened for user <username> ...`.  If a user can't connect
 with SSH, you will know the exact reason why they can't.
+
+[***Go to Next Note***](03-configuring-the-openssh-client.md)

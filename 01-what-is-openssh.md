@@ -19,3 +19,4 @@ SSH uses port 22.
 There are going to be several hops between your PC and whatever device you have
 to configure. All of them have to allow SSH connections.
 
+[***Go to Next Note***](02-connecting-via-ssh.md)

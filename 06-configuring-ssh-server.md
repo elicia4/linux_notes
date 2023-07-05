@@ -61,3 +61,4 @@ Changing your port number to something other than 22 makes your server more
 secure. There are bots that look for open 22 ports, when they find one they try
 to get in. Your server will be spared :) Since `PasswordAuthentication` is 
 disabled, password attacks are out of the question as well.
+[***Go to Next Note***](07-troubleshooting-ssh.md)

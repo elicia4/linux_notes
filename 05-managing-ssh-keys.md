@@ -57,3 +57,4 @@ add the key to the `ssh-agent`:
     ssh-add ~/.ssh/acme_id_ed25519
 
 Next time you log in, you won't need to enter the passphrase!
+[***Go to Next Note***](06-configuring-ssh-server.md)
