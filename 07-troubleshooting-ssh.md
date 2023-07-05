@@ -23,13 +23,14 @@ and executable by YOU and no one else. The public keys inside should be
 readable by everybody, the private keys only by YOU. If you set permissions to
 something else, SSH will not work. If you cannot connect, check your
 permissions! You may or may not get an error that permissions are the problem. 
-
-When it comes to the remote end, you want to make sure the same thing.
+When it comes to the remote end, you want to make sure to check the same thing.
 
 2) Take a look at the log file:
 
-    cd /var/log 
-    tail -f auth.log 
+```
+cd /var/log 
+tail -f auth.log 
+```
 
 You can have a user try to connect and look at the logs to find the issue.
 Tailing is actually the old way of doing things, try using `journalctl`
