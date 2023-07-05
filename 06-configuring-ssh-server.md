@@ -15,9 +15,9 @@ status of it with:
     systemctl status sshd
 
 You can use all `systemctl` commands to manage the service. `restart`, `stop`,
-do whatever you want. When you stop the sshd service it's not going to
+do whatever you want. When you stop the `sshd` service it's not going to
 terminate any connections that are existing. But if you disconnect, you won't
-be able to reconnect since the sshd service has to be running in order to
+be able to reconnect since the `sshd` service has to be running in order to
 establish new connections. Ubuntu and Debian call the binary `ssh`, not `sshd`.
 To `start` and `enable` the service at the same time.
 
