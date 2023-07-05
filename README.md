@@ -2,8 +2,9 @@
 
 ![OpenSSH Logo](img/openssh.png)
 
-These are notes on OpenSSH, a free and open source tool for remotely and safely
-connecting to systems, transferring files between them and many more things.
+These are notes on OpenSSH, a free and open source tool used for remotely and
+safely connecting to systems, transferring files between them and many more
+things.
 
 1. [What is OpenSSH](01-what-is-openssh.md)
 1. [Connecting via SSH](02-connecting-via-ssh.md)
