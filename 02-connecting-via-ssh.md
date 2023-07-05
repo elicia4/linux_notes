@@ -52,6 +52,5 @@ Then connect to the server with a device. The log file is going to say that it:
 
 > Accepted password for \<username> from \<IP> port \<port-number>
 
-and it's going to tell you that the `session opened for user <username> ...`.
-If a user can't connect with SSH, you will know the exact reason why they
-can't.
+and that the `session opened for user <username> ...`.  If a user can't connect
+with SSH, you will know the exact reason why they can't.
