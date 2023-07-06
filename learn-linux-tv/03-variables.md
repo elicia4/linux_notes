@@ -6,7 +6,8 @@
 	myname="John"
     ```
 	
-	`<name>` -> `=` -> `content`  
+	`name` -> `=` -> `content`  
+
 	No spaces!
 	
 2. You can declare variables right on the command line, there isn't much
