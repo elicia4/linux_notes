@@ -7,7 +7,8 @@ changes with:
     ```
     git add -u
     ```
-Note that this removes as well as modifies index entries to match the working
+
+    Note that this removes as well as modifies index entries to match the working
 tree, but adds no new files.  
 
 2. To add all new files:
