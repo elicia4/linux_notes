@@ -6,7 +6,7 @@ https://www.youtube.com/@LearnLinuxTV
 
 **Table of Contents**  
 
-1. [Introduction](01-introduction.md)
+1. Introduction (you are here)
 1. [Hello World](02-hello-world.md)
 1. [Variables](03-variables.md)
 1. [Basic Math](04-basic-math.md)
