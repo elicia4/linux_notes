@@ -25,7 +25,7 @@ fi
 current_date=$(date +%Y-%m-%d)
 
 # -a is archive mode it tries to retain all the metadata like permissions, 
-# -v is verbose, -b means that you would rather not have files replaces on the
+# -v is verbose, -b means that you would rather not have files replaced on the
 # target. What rsync does is sync one directory to another. If you get update a
 # file, the previous version will not be deleted in the destination folder.
 # --backup-dir makes it so a backup file is copied somewhere else, in this case
