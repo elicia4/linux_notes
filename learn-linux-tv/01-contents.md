@@ -24,3 +24,5 @@ https://www.youtube.com/@LearnLinuxTV
 1. [Arguments](16-arguments.md)
 1. [Backup Script](17-backup.md)
 1. [Closing](18-closing.md)
+
+The scripts are stored in the [`scripts`](scripts) directory.
