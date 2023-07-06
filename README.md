@@ -1,10 +1,10 @@
-# Notes on Bash
+# Bash Notes
 
 ![Bash Logo](img/gnu-bash.png)
 
 A collection of notes on various bash guides.
 
-Notes are being taken on:
-1. "Bash Scripting on Linux" video series by "Learn Linux TV", the notes are
-located in the "learn-linux-tv" folder.
+1. Bash Scripting Series
+1. [Never say "If" writing a Bash script! (Exit codes & logical
+   operators)](misc/fewer-ifs.md) 
 
