@@ -8,23 +8,24 @@ Notes takes on this video by LearnLinuxTV: https://youtu.be/4qP5xA_epXo
 
 The `tr` command is mostly used with other commands. For example:
 
-    ```
-	echo "Hello World" | tr [a-z] [A-Z]
-    # >HELLO WORLD
-    # The first set [a-z] is being replaced by the second set [A-Z].
-    # That's why all lowercase characters got replaced by UPPERCASE characters.
-    ```
+```
+echo "Hello World" | tr [a-z] [A-Z]
+# The first set [a-z] is being replaced by the second set [A-Z].
+# That's why all lowercase characters got replaced by UPPERCASE characters.
+```
+
+>HELLO WORLD
 
 Create a simple text file and echo anything you want inside it, we will do 
 some work with it. I suggest doing it in a new folder so as to not mess
 anything up.
 
-    ```
-	mkdir new_folder && cd new_folder
-	touch message.txt
-    echo "Anything I want inside it. I love numbers, such as 7123897123894! \
-    WOAW!" >> message.txt
-    ```
+```
+mkdir new_folder && cd new_folder
+touch message.txt
+echo "Anything I want inside it. I love numbers, such as 7123897123894! \
+WOAW!" >> message.txt
+```
 
 There are multiple ways to input contents of a file to the tr command. The
 first one is the obvious one - with pipe:
@@ -37,18 +38,19 @@ Another way to do it is:
 
 You can delete characters with the `-d` option:
 
-    ```
-	echo "Hello World" | tr -d [a-z]
-    # >H W
-    ```
+```
+echo "Hello World" | tr -d [a-z]
+```
+
+>H W
 
 Create a file with a list of users:
 
-    ```
-	touch usernames.txt
-	echo -e "name@localhostt\nsam@localhostt\nliz@localhostt\njay@localhostt" \
-	> usernames.txt
-    ```
+```
+touch usernames.txt
+echo -e "name@localhostt\nsam@localhostt\nliz@localhostt\njay@localhostt" \
+> usernames.txt
+```
 	
 There are multiple mistakes: each localhost has an extra `t` at the end.
 You can fix it with the `-s` parameter (s stands for squeeze). It is used
@@ -62,22 +64,22 @@ You can rewrite `[a-z]` as `[:lower:]`, `[A-Z]` as `[:upper:]`:
 
 You can delete all alpha characters with the `[:alpha:]`:
 
-    ```
-	cat message.txt | tr -d [:alpha:]
-	>    .   ,   7123897123894! !
-    ```
+```
+cat message.txt | tr -d [:alpha:]
+>    .   ,   7123897123894! !
+```
 
 Let's change `!` for `.`:
 
-    ```
-	tr '!' '.' < message.txt
-    ```
+```
+tr '!' '.' < message.txt
+```
 
 Check out the manpage for the `tr` command to learn more!
 
-    ```
-	man tr
-    ```
+```
+man tr
+```
 	
 P.S.: wondering what `[:upper:]`, `[:lower:]`, `[:alpha:]` are? These
 are predefined characters classes, you can read more about them here:
