@@ -48,8 +48,7 @@ Create a file with a list of users:
 
 ```
 touch usernames.txt
-echo -e "name@localhostt\nsam@localhostt\nliz@localhostt\njay@localhostt" \
-> usernames.txt
+echo -e "name@localhostt\nsam@localhostt\nliz@localhostt\njay@localhostt" > usernames.txt
 ```
 	
 There are multiple mistakes: each localhost has an extra `t` at the end.
@@ -66,8 +65,9 @@ You can delete all alpha characters with the `[:alpha:]`:
 
 ```
 cat message.txt | tr -d [:alpha:]
->    .   ,   7123897123894! !
 ```
+
+>    .   ,   7123897123894! !
 
 Let's change `!` for `.`:
 
