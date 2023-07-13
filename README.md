@@ -9,3 +9,4 @@ things I personally find useful and try to use more.
 - [htop](htop.md)
 - [nmap](nmap.md)
 - [tr](tr.md)
+- [rsync](rsync.md)
