@@ -10,3 +10,4 @@ things I personally find useful and try to use more.
 - [nmap](nmap.md)
 - [tr](tr.md)
 - [rsync](rsync.md)
+- [find](find.md)
