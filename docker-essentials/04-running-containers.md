@@ -56,3 +56,5 @@ You should practice settings up containers :)
 
 For instance, you could practice using various package managers on popular
 distributions.
+
+[go to next note](05-making-containers-persist.md)

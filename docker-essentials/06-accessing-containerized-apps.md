@@ -48,3 +48,5 @@ the:
 
 command and then restart the docker daemon, the container with `unless-stopped`
 policy won't be restarted.
+
+[go to next note](07-creating-images.md)

@@ -14,3 +14,5 @@
 1. Not all apps are supported when run in containers.
 1. Although Docker is aweseme, it's one tool among many.
 1. Performance can sometimes be inconsistent.
+
+[go to next note](03-installing-docker.md)
