@@ -1,3 +1,5 @@
+# Arguments
+
 You can supply arguments to a script on the command line. Try the following
 script:
 
@@ -11,8 +13,8 @@ The script will output the first word (or argument) you wrote after the script:
 	
 	>You entered the argument: Hello!
 
-You can have more than one argument. $1 is the first argument, $2 is the 
-second, $3 is the third and so on:
+You can have more than one argument. `$1` is the first argument, `$2` is the 
+second, `$3` is the third and so on:
 
 	#!/bin/bash
 
@@ -22,7 +24,7 @@ Let's take a look at another script:
 
 	ls -lh $1
 
-Run it like this to list the contents of the /etc directory:
+Run it like this to list the contents of the `/etc` directory:
 
 	./myscript.sh /etc
 
@@ -35,12 +37,12 @@ You can use arguments in many places throughout your scripts:
 
     echo "You have $(($lines-1)) objects in the $1 directory."
 
-"wc -l" counts the number of lines. You substruct one from the number of 
-objects because the output of "ls -lh" includes a line at the top of its output
+`wc -l` counts the number of lines. You substruct one from the number of 
+objects because the output of `ls -lh` includes a line at the top of its output
 that is not (obviously) an object itself. 
 
 The script above allows you to run it with no arguments. You should limit that.
-The $# represents the number of arguments you passed to the script:
+The `$#` represents the number of arguments you passed to the script:
 
 	#!/bin/bash
 
