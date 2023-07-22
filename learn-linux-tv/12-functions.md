@@ -18,3 +18,5 @@ function_name() {
 
 A function allows us to execute repeating sets of commands by only defining
 them once.
+
+[***Go to Next Note***](13-case.md)

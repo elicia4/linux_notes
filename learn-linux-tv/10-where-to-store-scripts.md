@@ -65,3 +65,5 @@ To add another directory to path run:
 For example:
 
 	export PATH=/usr/local/bin:$PATH
+
+[***Go to Next Note***](11-data-streams.md)

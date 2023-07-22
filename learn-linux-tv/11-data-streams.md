@@ -58,3 +58,5 @@ The following command shows the files updating in (almost) real time:
 	tail -f <filename>
 
 Take a look at another script `myscript.sh`.
+
+[***Go to Next Note***](12-functions.md)
