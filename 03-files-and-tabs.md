@@ -1,3 +1,7 @@
+# Files and Tabs
+
+[***go back to README***](README.md)
+
 To open a new tab:
 
 	:tabnew
@@ -33,7 +37,8 @@ To move your tabs around:
 
 	:tabmove <index> OR tabm <index>
 
-Indices start with 0, so if you wanted to move current tab to the first place:
+Indices start with `0`, so if you wanted to move current tab to the first
+place:
 
 	:tabmove 0
 
@@ -49,5 +54,5 @@ To save & quit:
 
 	:wq OR :x
 
-The difference between :x and :wq is that :x will only write if changes have
-been made, thus not updating the modification time as opposed to :wq
+The difference between `:x` and `:wq` is that `:x` will only write if changes
+have been made, thus not updating the modification time as opposed to `:wq`.

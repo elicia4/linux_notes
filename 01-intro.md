@@ -1,5 +1,7 @@
 # Vim Notes
 
+[***go back to README***](README.md)
+
 These are notes on the series of vim guides by Mental Outlaw:
 https://youtube.com/playlist?list=PL3cu45aM3C2DJVGfCjSBB1yD9YkC7q27-
 
@@ -8,7 +10,7 @@ comment sections of the videos.
 
 Note that not all videos are covered, 7-9 from the playlist are not.
 
-# Why use `vim`?
+## Why use `vim`?
 
 Most common editor, most available editor.  
 Most powerful editor.  
@@ -29,7 +31,7 @@ Visual mode - copying/deleting text
 `C` - delete from cursor to the end of the line and enter insert  
 
 `Esc` - enter normal mode  
-`ctrl + [` - enter normal mode, lets you stay on home row  
+`Ctrl + [` - enter normal mode, lets you stay on home row  
 
 Moving around:
 
