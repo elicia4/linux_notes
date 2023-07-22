@@ -1,9 +1,11 @@
-Let's take a look at scheduling jobs with 'at'. It might not be installed:
+# Scheduling with `at`
+
+Let's take a look at scheduling jobs with `at`. It might not be installed:
 
 	which at
 
 If it isn't, install it with your package manager. Create a simple script, we
-will run with 'at'. Check out the myscript.sh script, we will run that one.
+will run with `at`. Check out the `myscript.sh` script, we will run that one.
 Run it and check out the logfile:
 
 	./myscript.sh
@@ -33,8 +35,8 @@ To remove a job:
 
 	atrm <job-id>
 
-Job ID is the number at the beginning of each scheduled task in the atq output.
-You can also add a date to the at command:
+Job ID is the number at the beginning of each scheduled task in the `atq`
+output. You can also add a date to the at command:
 
 	at <time> <date> <file-type> <file-name>
 
