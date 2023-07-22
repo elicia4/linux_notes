@@ -60,4 +60,4 @@ pwd
 Lines started with the `#` symbol are ignored, you can write anything on these
 lines, they will be ignored by the interpreter. 
 
-[***Go to Next Note***](02-hello-world.md)
+[***Go to Next Note***](03-variables.md)
