@@ -1,5 +1,7 @@
 ## Hello World
 
+[***go back to contents***](01-contents.md)
+
 1. Bash is a shell.
 
     Any time you enter the terminal and enter commands, you interact with the 
@@ -57,3 +59,5 @@ pwd
 
 Lines started with the `#` symbol are ignored, you can write anything on these
 lines, they will be ignored by the interpreter. 
+
+[***Go to Next Note***](02-hello-world.md)
