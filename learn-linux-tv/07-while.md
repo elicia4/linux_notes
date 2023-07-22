@@ -1,23 +1,29 @@
-###############################################################################
-WHILE LOOPS
-###############################################################################
+# While Loops 
+
 1. While loops allows us to continuously do something until a certain condition
-is met. For example:
-	#!/bin/bash
-	# declare variable as 1
-	myvar=1
-	# while myvar is less than or equal 10, do the things in the body
-	while [ $myvar -le 10 ]
-	# this is the body
-	do
-		# output current value of myvar, increment(increase by 1) myvar,
-		# sleep for half a second
-		echo $myvar
-		myvar=$(( $myvar + 1 ))
-		sleep 0.5
-	done
-The script above will run until 'myvar' is 10.
-2. This will run for as long as 'testfile' exists:
+   is met. For example:
+
+   ```
+   #!/bin/bash
+   # declare variable as 1
+   myvar=1
+   # while myvar is less than or equal 10, do the things in the body
+   while [ $myvar -le 10 ]
+   # this is the body
+   do
+      # output current value of myvar, increment(increase by 1) myvar,
+      # sleep for half a second
+      echo $myvar
+      myvar=$(( $myvar + 1 ))
+      sleep 0.5
+   done
+   ```
+
+   The script above will run until `myvar` is 10.
+
+2. This will run for as long as `testfile` exists:
+
+    ```
     #!/bin/bash
     
     myvar=1
@@ -29,8 +35,12 @@ The script above will run until 'myvar' is 10.
     done
    
     echo "The file no longer exists. Exiting."
-**It makes sense to run 'sleep 3' after the 'echo "The test file exists"'.
+    ```
+    It makes sense to run `sleep 3` after the `echo "The test file exists"`.
+
 3.  Let's make the script a bit more useful:
+
+    ```
     #!/bin/bash
 
     myvar=1
@@ -42,5 +52,6 @@ The script above will run until 'myvar' is 10.
     done
    
     echo "As of $(date), the file no longer exists. Exiting."
-4. $(<command>) is called a subshell.
+    ```
 
+4. `$(<command>)` is called a subshell.
