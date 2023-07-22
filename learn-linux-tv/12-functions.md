@@ -1,3 +1,5 @@
+# Functions
+
 A function allows you to define a set of tasks and call those tasks at once by
 calling the function.
 
@@ -6,9 +8,11 @@ occurs.
 
 To define a function:
 
-	function_name() {
-		*anything*
-	} 
+```
+function_name() {
+    *anything*
+} 
+```
 
 A function allows us to execute repeating sets of commands by only defining
 them once.
