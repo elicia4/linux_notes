@@ -13,14 +13,14 @@
    store the needed command's exit code somewhere. For instance, imagine you're
    running the following script:
 
-```
-if [ -d /non-existant-folder ]
-then
-    echo "the dir. exists"
-fi
+   ```
+   if [ -d /non-existant-folder ]
+   then
+        echo "the dir. exists"
+   fi
 
-echo "The exit code for this script is $?."
-```
+   echo "The exit code for this script is $?."
+   ```
 
    What exit code do you think will be displayed at the end? If you guessed
    that it's `0`, you're correct. Despite the fact that the directory doesn't
@@ -31,10 +31,10 @@ echo "The exit code for this script is $?."
 5. You can manipulate exit codes with the `exit <number>` command. Run the
 following script:
 
-```
-echo "Hello World!"
-exit 1
-```
+   ```
+   echo "Hello World!"
+   exit 1
+   ```
 	
    If you type `echo $?` after executing the script, the output will be `1`,
    even thought the command succeeeded. You can do the opposite too, running a
