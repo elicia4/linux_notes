@@ -4,9 +4,17 @@ appended text will appear on all lines as soon as you press Esc.
 
 So this is a possible solution:
 
+```
 vip<C-V>$A,<Esc>
+```
 
 That is, in Normal mode, Visual select a paragraph vip, switch to Visual block
 mode CTRLV, append to all lines $A a comma ,, then press Esc to confirm.
 
 !!!You can save a keystroke by using <C-V>ip in place of vip<C-V>.!!!
+
+1. You can quit vim with `ZZ` (same as `:x`, save and quit), or `ZQ` (same as
+   `:q!`)
+2. To quit all tabs:
+
+    `:qa`
