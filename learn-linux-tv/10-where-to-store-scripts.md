@@ -1,5 +1,7 @@
 # Where to Store Scripts
 
+[***go back to contents***](01-contents.md)
+
 Where exactly should you store all your scripts?
 
 Storing your scripts in your home directory is not a good idea if you need

@@ -1,5 +1,7 @@
 # Universal Update Script
 
+[***go back to contents***](01-contents.md)
+
 1. There will redundancy in this script, it will be improved over the course
 of the next guides.
 2. There are script files in this repository, they are heavily commented, check

@@ -1,5 +1,7 @@
 # Arguments
 
+[***go back to contents***](01-contents.md)
+
 You can supply arguments to a script on the command line. Try the following
 script:
 

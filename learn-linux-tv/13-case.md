@@ -1,5 +1,7 @@
 # Case Statements
 
+[***go back to contents***](01-contents.md)
+
 Case statements allow us to do something depending on the value of a variable.
 The format is as follows:
 

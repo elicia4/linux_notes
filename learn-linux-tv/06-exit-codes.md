@@ -1,5 +1,7 @@
 # Exit Codes
 
+[***go back to contents***](01-contents.md)
+
 1. Exit codes allow us to determine whether a command was successful or not.
 
 2. To determine last command's exit code, use `$?`

@@ -1,5 +1,7 @@
 # Functions
 
+[***go back to contents***](01-contents.md)
+
 A function allows you to define a set of tasks and call those tasks at once by
 calling the function.
 
