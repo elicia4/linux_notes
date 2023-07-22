@@ -49,7 +49,10 @@ Install `vim`:
 	apt install vim
 
 You can install anything you want!  
+
 You can even install a GUI app from containers.  
+
 You should practice settings up containers :)  
+
 For instance, you could practice using various package managers on popular
 distributions.
