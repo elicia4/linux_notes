@@ -45,3 +45,5 @@ following script:
 
 6. By setting your own exit codes you can manipulate your scripts in different
    ways.
+
+[***Go to Next Note***](07-while.md)

@@ -8,3 +8,5 @@ of the next guides.
 it out.
 3. The newer the version of the script, the better the script.
 4. You can find it in the [scripts directory](scripts/).
+
+[***Go to Next Note***](09-for.md)

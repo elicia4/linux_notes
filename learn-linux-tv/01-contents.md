@@ -26,3 +26,5 @@ https://www.youtube.com/@LearnLinuxTV
 1. [Closing](18-closing.md)
 
 The scripts are stored in the [`scripts`](scripts) directory.
+
+[***Go to Next Note***](02-hello-world.md)

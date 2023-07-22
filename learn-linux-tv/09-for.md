@@ -66,3 +66,4 @@
    original files to save up disk space (or any files that take up a lot of
    space).
 
+   [***Go to Next Note***](10-where-to-store-scripts.md)
