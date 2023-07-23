@@ -1,4 +1,4 @@
-# Vim Notes
+# 01. Introduction
 
 [***go back to README***](README.md)
 

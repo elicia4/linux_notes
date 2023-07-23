@@ -1,7 +1,9 @@
+# 07. Marks
+
 You can set marks in specific parts of files to quickly navigate to them.
 
 Imagine marks as bookmarks. Marks are invisible. You can set a mark with the
-'m' key + any letter from a to z, both lowercase and uppercase work, though
+`m` key + any letter from `a to z`, both lowercase and uppercase work, though
 there is a difference. You can then jump to the mark with:
 
 	`<key>  -- this will get you to the exact place where you placed your mark

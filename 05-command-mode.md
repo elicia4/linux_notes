@@ -1,4 +1,4 @@
-# Command Mode
+# 05. Command Mode
 
 [***go back to README***](README.md)
 

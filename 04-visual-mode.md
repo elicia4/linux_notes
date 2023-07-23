@@ -1,4 +1,4 @@
-# Visual Mode
+# 04. Visual Mode
 
 [***go back to README***](README.md)
 
