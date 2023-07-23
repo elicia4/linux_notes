@@ -2,7 +2,7 @@
 
 [***go back to README***](README.md)
 
-These are notes on the series of vim guides by Mental Outlaw:
+These are notes on the series of vim guides by Mental Outlaw:  
 https://youtube.com/playlist?list=PL3cu45aM3C2DJVGfCjSBB1yD9YkC7q27-
 
 These notes also include my own additions, as well as those suggested in the
