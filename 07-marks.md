@@ -31,3 +31,5 @@ You can delete marks:
 
 Uppercase marks are unique across all files, lowercase marks are unique for
 each file.
+
+[***Go to Next Note***](08-g-key.md)

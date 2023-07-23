@@ -63,3 +63,5 @@ to be repeated:
 ```
 [n]<command>
 ```
+
+[***Go to Next Note***](02-searching.md)

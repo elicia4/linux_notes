@@ -45,3 +45,4 @@ Different file explorer modes:
 - `:Vexplore` = opens a file explorer in a vertical window
 - `:Texplore` = opens a file explorer in a new tab
 
+[***Go to Next Note***](06-macros.md)

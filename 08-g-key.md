@@ -85,3 +85,5 @@ You can jump to previous line (to the exact place as well) you were editing
 with `gi`.
 
 The same applies to visual mode, use `gv`.
+
+[***Go to Next Note***](09-vim-tips.md)

@@ -45,3 +45,5 @@ Try editing the following lines, remove all hyphons from all of them and add
 ```
 
 **HINT**: use visual block, `x` OR `d`, and `I`.
+
+[***Go to Next Note***](05-command-mode.md)

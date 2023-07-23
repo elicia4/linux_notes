@@ -19,3 +19,5 @@ free to run it more times that it needs to (be careful though).
 Try using a macro on the following sentence:
 
 >I want each word of this sentence to be on a new line
+
+[***Go to Next Note***](07-marks.md)

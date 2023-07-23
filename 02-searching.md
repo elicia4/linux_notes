@@ -29,3 +29,5 @@ Whenever you're prompted, `Y` will apply to all and not a single instance.
 >its wrong to eat cookies after midnight  
 >windows is the wrong OS to use for programming  
 >liking a perfect circle more than Tool is just WRONG
+
+[***Go to Next Note***](03-files-and-tabs.md)

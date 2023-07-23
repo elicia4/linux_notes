@@ -56,3 +56,5 @@ To save & quit:
 
 The difference between `:x` and `:wq` is that `:x` will only write if changes
 have been made, thus not updating the modification time as opposed to `:wq`.
+
+[***Go to Next Note***](04-visual-mode.md)
