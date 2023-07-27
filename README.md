@@ -11,3 +11,5 @@ things I personally find useful and try to use more.
 - [tr](tr.md)
 - [rsync](rsync.md)
 - [find](find.md)
+- [awk](awk.md)
+- [sed](sed.md)
