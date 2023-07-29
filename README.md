@@ -2,8 +2,8 @@
 
 ![Linux Penguin Logo](img/penguin.png)
 
-A collection of notes on various practical Linux things that I think are worth
-remembering. 
+A collection of notes on various practical Linux things (mostly commands) that
+I think are worth remembering. 
 
 I take notes on videos, books, forum posts and so on.
 
