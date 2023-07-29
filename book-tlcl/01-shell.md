@@ -17,7 +17,7 @@ accept input. It looks something like this:
 It will typically include your `username@machinename`, followed by the current
 working directory (more about that in a little bit) and a dollar sign.
 
-If the last character of the prompt is a pound sign (`#`) rather than a dollar,
+If the last character of the prompt is a pound sign (`#`) rather than a dollar
 sign, the terminal session has superuser privileges.
 
 If we press the up-arrow key, we will see that the previous command reappears
