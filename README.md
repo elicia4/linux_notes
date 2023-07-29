@@ -3,7 +3,9 @@
 ![Linux Penguin Logo](img/penguin.png)
 
 A collection of notes on various practical Linux things that I think are worth
-remembering. I take notes on videos, books, forum posts and so on.
+remembering. 
+
+I take notes on videos, books, forum posts and so on.
 
 - [scp](commands/scp.md)
 - [htop](commands/htop.md)
