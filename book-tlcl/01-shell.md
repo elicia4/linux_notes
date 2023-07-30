@@ -24,4 +24,13 @@ If we press the up-arrow key, we will see that the previous command reappears
 after the prompt. This is called command history. Most Linux distributions
 remember the last **1000** commands by default.
 
+Mouse tips: 
+1. Use "focus follows mouse" in your GUI settings. That the window you hover
+   over will have focus and not the one you manually focused.
+2. You can copy and paste text from inside the terminal by double clicking it
+   and then pasting it with the middle mouse button.
 
+- `date` command displays the current time and date.
+- `cal` command displays a calendar of the current month.
+- `df` allows you to see the current amount of free space on our disk drives.
+- `free` allows you to see the amount of free memory.
