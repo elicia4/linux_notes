@@ -1,4 +1,4 @@
-# Notes on Linux
+# Linux Notes 
 
 ![Linux Penguin Logo](img/penguin.png)
 
