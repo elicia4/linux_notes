@@ -8,3 +8,4 @@ I already knew or didn't personally find useful.
 
 TO-DO:
 1. Add links to contents at the beginning of each file.
+2. Add links to finished chapters.
