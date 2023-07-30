@@ -7,6 +7,8 @@ I think are worth remembering.
 
 I take notes on videos, books, forum posts and so on.
 
+Commands:
+
 - [scp](commands/scp.md)
 - [htop](commands/htop.md)
 - [nmap](commands/nmap.md)
@@ -15,3 +17,7 @@ I take notes on videos, books, forum posts and so on.
 - [find](commands/find.md)
 - [awk](commands/awk.md)
 - [sed](commands/sed.md)
+
+Books:
+
+- [The Linux Command Line](book-tlcl/00-intro.md)
