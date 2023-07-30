@@ -1,4 +1,4 @@
-# Notes on docker
+# Docker Notes
 
 ![Docker Logo](img/docker-icon-256x256.png)
 
