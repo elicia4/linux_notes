@@ -68,12 +68,16 @@ mkdir dir1 dir2 dir3
 The reason why one should (or not) use the `-r` option while copying
 directories:
 
-``` cp dir1/* dir2 ```
+``` 
+cp dir1/* dir2 
+```
 
 Using a wildcard, copy all the files in `dir1` into `dir2`. The directory
 `dir2` must already exist.
 
-``` cp -r dir1 dir2```
+``` 
+cp -r dir1 dir2
+```
 
 Copy the contents of directory `dir1` to directory `dir2`. If directory `dir2`
 **does not** exist, it is created and, after the copy, will contain the same
