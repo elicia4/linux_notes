@@ -41,3 +41,57 @@ will not produce the expected results unless properly configured. For now, you
 should avoid using them and use character classes instead. 
 
 **TIP**: wildcards work in the GUI too.
+
+**A note on notation**: When three periods follow an argument in the
+description of a command (as above), it means that the argument can be repeated:
+
+```
+mkdir dir1 dir2 dir3
+```
+
+`cp` options:
+
+- `-a` `--archive` - copy the files and directories and all of their attributes,
+  including ownerships and permissions. Normally, copies take on the default
+  attributes of the user performing the copy. 
+- `-i` `--interactive` - before overwriting an existing file, prompt the user
+  for confirmation. If this option is not specified, `cp` will **silently,**
+  **without warning** overwrite files.
+- `-r` `--recursive` recursively copy directories and their contents. This
+  option (or the `-a` option) is required when copying directories.
+- `-u` `--update` when copying files from one directory to another, only copy
+  files that either don't exist or are newer than the existing corresponding
+  files, in the destination directory. This is useful when copying large
+  numbers of files as it skips files that don't need to be copied.
+- `-v` `--verbose` - display informative messages as the copy is performed.
+
+The reason why one should (or not) use the `-r` option while copying
+directories:
+
+``` cp dir1/* dir2 ```
+
+Using a wildcard, copy all the files in `dir1` into `dir2`. The directory
+`dir2` must already exist.
+
+``` cp -r dir1 dir2```
+
+Copy the contents of directory `dir1` to directory `dir2`. If directory `dir2`
+**does not** exist, it is created and, after the copy, will contain the same
+contents as directory `dir1`. If directory `dir2` **does** exist, then directory
+`dir1` (and its contents) will be copied into `dir2`.
+
+The `mv` and `rm` commands have similiar options.
+
+An important `rm -f` example:
+
+- `rm -r file1 dir1` - delete `file1` and `dir1` and its contents.
+- `rm -rf file1 dir1` - same as the previous command, except that if either
+`file1` or `dir1` do not exist, `rm` will continue silently.
+
+***BE CAREFUL WITH `rm`!!!***
+
+Here is a useful tip: whenever you use wildcards with `rm` (besides carefully
+checking your typing!), test the wildcard first with `ls`. This will let you see
+the files that will be deleted. Then press the `up arrow key` to recall the
+command and replace `ls` with `rm`.
+
