@@ -8,7 +8,8 @@ You can transfer files between servers with the `scp` command. It stands for
 "secure copy". 
 
 The `rsync` command does essentially the same thing, if you intend to transfer
-a large number of files use `rsync`, if you only want to send one use `scp`. To see if `scp` is available on your system:
+a large number of files use `rsync`, if you only want to send one use `scp`. To
+see if `scp` is available on your system:
 
 	command -v scp
 
