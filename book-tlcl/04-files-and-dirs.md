@@ -10,7 +10,9 @@ Copy all the HTML files from one directory to another but *only* copy files
 that do not exist in the destination directory or are newer than the versions
 in the destination directory:
 
-``` cp -u *.html destination ```
+``` 
+cp -u *.html destination 
+```
 
 Since the shell uses filenames so much, it provides special characters to help
 us rapidly specify groups of filenames. These special characters are called
@@ -44,7 +46,9 @@ should avoid using them and use character classes instead.
 description of a command (as above), it means that the argument can be
 repeated:
 
-``` mkdir dir1 dir2 dir3 ```
+``` 
+mkdir dir1 dir2 dir3 
+```
 
 `cp` options:
 
@@ -65,12 +69,16 @@ of files as it skips files that don't need to be copied.
 The reason why one should (or not) use the `-r` option while copying
 directories:
 
-``` cp dir1/* dir2 ```
+``` 
+cp dir1/* dir2 
+```
 
 Using a wildcard, copy all the files in `dir1` into `dir2`. The directory
 `dir2` must already exist.
 
-``` cp -r dir1 dir2 ```
+``` 
+cp -r dir1 dir2
+```
 
 Copy the contents of directory `dir1` to directory `dir2`. If directory `dir2`
 **does not** exist, it is created and, after the copy, will contain the same
@@ -99,11 +107,15 @@ one of two ways.
 
 The following creates a hard link:
 
-``` ln file link ```
+``` 
+ln file link 
+```
 
 The following creates a symbolic link:
 
-``` ln -s item link ```
+``` 
+ln -s item link 
+```
 
 `item` is either a file or a directory.
 
@@ -129,6 +141,7 @@ deallocated) until all links to the file are deleted.
 Symbolic links work by creating a special type of file that contains a text
 pointer to the referenced file or directory. In this regard, they operate in
 much the same way as a Windows shortcut, though of course they predate the
+
 Windows feature by many years.
 
 A file pointed to by a symbolic link, and the symbolic link itself are largely
