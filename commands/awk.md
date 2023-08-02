@@ -18,7 +18,7 @@ echo "leonardo blue leader\nraphael red hothead\nmichelangelo orange \
 party-animal\ndonatello purple geek" > tmnt.txt
 ```
 
-In the files `tmnt.txt` you have information on each ninja turtle.
+In the file `tmnt.txt` you have information on each ninja turtle.
 
 The `awk` command sees spaces as delimiters for fields, so in your file you
 have three fields in each line: name, bandana color, and personality trait.
@@ -66,7 +66,7 @@ awk '{print $NF}' tmnt.txt
 ```
 
 `$NF` stands for "number of fields". Whatever the last field happens to be, is
-what's going to be printed, the last field will be printed.
+what's going to be printed.
 
 There are cases where the fields are not separated by spaces but with some
 other symbol, for instance the `/etc/passwd` file has its fields separated by
@@ -78,4 +78,4 @@ awk -F':' '{print $1,$7}' /etc/passwd
 
 You should get a list of names and shell paths.
 
-That's the basics of the `awk` command :)
+These are the basics of the `awk` command :)
