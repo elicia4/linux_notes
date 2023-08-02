@@ -9,11 +9,10 @@ save time let's install Apache:
 
 	sudo apt install apache2
 	pacman -S apache
-	...
 
-To access apache, type `localhost` in your browser's address bar. 
-It's likely that nothing appeared. That's because the service itself is not
-running. To check the status of it:
+To access `apache`, type `localhost` in your browser's address bar. It's likely
+that nothing appeared. That's because the service itself is not running. To
+check the status of it:
 
 	systemctl status httpd
 
@@ -21,15 +20,15 @@ To start it:
 
 	systemctl start httpd
 
-See if the page gets loaded again (drop the `s` from `https`). It should
-work now.
+See if the page gets loaded again (drop the `s` from `https`). It should work
+now.
 
 To stop it:
 
 	systemctl stop httpd
 
-If you change the configuration of a service in some way and want them to
-take effect, restart your service:
+If you change the configuration of a service in some way and want them to take
+effect, restart your service:
 
 	systemctl restart <service>
 
