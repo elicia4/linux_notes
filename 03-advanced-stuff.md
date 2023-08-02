@@ -19,9 +19,9 @@ Directories that are most common for service files are:
     /lib/systemd/system/ 
 
 Take a look at the contents of this directory `/lib/systemd/system/`. There are
-many different types of unit files in there, such as .target, .socket, .service,
-.timer. Keep in mind that there are different types of unit files, not just
-services.
+many different types of unit files in there, such as `.target`, `.socket`,
+`.service`, `.timer`. Keep in mind that there are different types of unit files,
+not just services.
 
 Each one of the directories listed above has a specific purpose. You don't have
 to create your own unit files since they mostly come preinstalled, they are 
@@ -31,16 +31,15 @@ located inside `/lib/systemd/system/`. Runtime systemd units are located inside
 
 Priority of directories: `/etc/systemd/system/` -> `/run/systemd/system/` ->
 `/lib/systemd/system/`. Higher priority unit files take priority over lower
-
 priority unit files. If you put anything inside `/etc/...` it will have utmost 
-priority. You should put your own service files inside `/etc/...` to make sure
-the service file is taken into account. Make sure to keep your service files in
-`/etc/...` because if a package gets updated it can overwrite the unit files
-inside the `/lib/...` folder.
+priority, so you should put your own service files inside `/etc/...` to make
+sure the service file is taken into account. Make sure to keep your service
+files in `/etc/...` because if a package gets updated it can overwrite the unit
+files inside the `/lib/...` folder.
 
 Let's take a closer look at systemd unit files, specifically a service.
 
-	vim /lib/systemd/system
+	vim /lib/systemd/system/httpd.service
 
 The fact that the file is only readable is intentional. There are three 
 sections: `[Unit]`, `[Service]`, `[Install]`. Each section is designated by
@@ -51,14 +50,14 @@ Underneath each section, you have the configurations for that section. Some of
 the fields are required, some are optional.
 
 The `[Unit]` section contains general information about the unit, for example a
-Description which describes what the unit is for, next is Wants which indicates
-what prerequisite units that must be started first, for example
+"Description" which describes what the unit is for, next is "Wants" which
+indicates what prerequisite units that must be started first, for example
 'httpd-init.service'. Prerequisites should happen before that unit file has to
 start up. It's common to have `network.target`, since many services want the
 network to be available before the process starts. You can have many units
 separated by spaces, in case you have more than one requirement, and the order
 also matters, since the services will launch in order one after the other.
-`After` inidicates what services will run after your service started. The
+`After` indicates what services will run after your service started. The
 `Documentation` field indicates the documentation source for the unit.
 
 The `[Service]` section has configuration options that are specific to service
@@ -79,7 +78,7 @@ Instead of restart, you can use reload:
 	systemctl reload <service>
 
 Reload is similiar to restart, but it's not a full restart of a service. Reload
-will cause the process to reload its config files which enables a settings to
+will cause the process to reload its config files which enables settings to
 take effect without users getting disconnected. In the case of Apache this is
 preferred, since you don't want your users to disconnect. Not every service
 supports reload.
@@ -100,7 +99,7 @@ To edit an existing service file:
 	sudo systemctl edit httpd.service
 
 You will be shown a file that's created as a part of the systemd edit command.
-As you can see it's located at the /etc/... directory, that has to do with 
+As you can see it's located at the `/etc/...` directory, that has to do with 
 priority, YOUR config will have priority. The commented info is there to help
 you. Try adding some info to the "Unit" section's Description parameter by
 uncommenting it, make it look like so:
