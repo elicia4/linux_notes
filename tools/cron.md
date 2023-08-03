@@ -96,3 +96,33 @@ Let's redirect current time to a file every minute:
 
     * * * * * date >> /root/date.txt
     
+Now install Apache:
+
+    apt install apache2
+
+You should now have a user called `www-data`:
+
+    cat /etc/passwd | grep www
+
+Maybe you have some tasks that the web server has to run at some time
+intervals.
+
+Let's add a cron job to a `www-data` user. Switch to the account first:
+
+    sudo su - www-data
+
+That won't work. That's because the shell for that user is set to `nologin`. To
+fix the issue:
+
+    sudo crontab -u www-data -e
+
+Add the following line to it:
+ 
+    0 3 * * * /usr/local/bin/website_backup.sh
+
+Useful websites that can help with crontab:
+
+    https://crontab-generator.org/
+    https://crontab.guru/
+
+That's it :)
