@@ -68,3 +68,15 @@ You can also run it hourly/daily:
 Run it at reboot:
 
     @reboot command
+
+It's not recommended to run cron jobs as your user. If you don't specify,
+`crontab` commands will default to your user. 
+
+It's better to segregate commands to a specific account or an account that
+matches your purpose. For instance, if you have a webserver you're going to have
+a user specific to it, so you should probably run commands from it. To edit a
+crontab for a specific user:
+
+    sudo crontab -u <username> -e 
+
+Let's run an `apt` command for instance.
