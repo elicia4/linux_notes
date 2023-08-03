@@ -79,4 +79,20 @@ crontab for a specific user:
 
     sudo crontab -u <username> -e 
 
-Let's run an `apt` command for instance.
+Let's run an `apt` command for instance:
+
+    sudo crontab -ue root
+    * * * * * apt install -y tmux
+
+To see the logs of your system:
+
+    sudo cat /var/log/syslog
+
+To see `cron` logs:
+
+    sudo cat /var/log/syslog | grep CRON
+
+Let's redirect current time to a file every minute:
+
+    * * * * * date >> /root/date.txt
+    
