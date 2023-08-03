@@ -1,5 +1,10 @@
-# Apache Basics
-Info taken primarily from this video: https://youtu.be/1CDxpAzvLKY
+# The Apache Web Server
+
+Notes takes on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
+
+[***go back to README***](README.md)  
+
+## Basics of Apache
 
 1. Connect to a remote server:
 
