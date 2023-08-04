@@ -1,6 +1,5 @@
 # What Is the Shell?
 
----
 ***[Contents](00-intro.md)***
 ---
 

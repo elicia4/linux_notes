@@ -1,6 +1,5 @@
 # Exploring the System
 
----
 ***[Contents](00-intro.md)***
 ---
 

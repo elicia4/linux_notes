@@ -1,6 +1,5 @@
 # Manipulating Files and Directories
 
----
 ***[Contents](00-intro.md)***
 ---
 
