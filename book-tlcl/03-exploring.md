@@ -1,5 +1,9 @@
 # Exploring the System
 
+---
+***[Contents](00-intro.md)***
+---
+
 - `file` – determine file type
 - `less` – view file contents
 

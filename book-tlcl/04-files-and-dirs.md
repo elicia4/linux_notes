@@ -1,5 +1,9 @@
 # Manipulating Files and Directories
 
+---
+***[Contents](00-intro.md)***
+---
+
 - `cp` – Copy files and directories
 - `mv` – Move/rename files and directories
 - `mkdir` – Create directories

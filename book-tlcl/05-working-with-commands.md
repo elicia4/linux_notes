@@ -1,5 +1,9 @@
 # Working with Commands
 
+---
+***[Contents](00-intro.md)***
+---
+
 - `type` – Indicate how a command name is interpreted
 - `which` – Display which executable program will be executed
 - `help` – Get help for shell builtins
