@@ -22,6 +22,6 @@ Commands:
 
 Book notes:
 
-- [The Linux Command Line](book-tlcl/00-intro.md) *by William Shotts*
-  The book is available for *free* 
+- [The Linux Command Line](book-tlcl/00-intro.md) *by William Shotts*  
+  The book is available in PDF format for **free**
   [here](https://www.linuxcommand.org/tlcl.php).
