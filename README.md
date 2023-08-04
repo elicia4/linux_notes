@@ -20,6 +20,8 @@ Commands:
 - [apache](tools/apache.md)
 - [cron](tools/cron.md)
 
-Books:
+Book notes:
 
 - [The Linux Command Line](book-tlcl/00-intro.md)
+  The book is available for *free* 
+  [here](https://www.linuxcommand.org/tlcl.php).
