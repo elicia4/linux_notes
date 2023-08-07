@@ -1,6 +1,6 @@
 ## Advanced Stuff
 
-[***go back to README***](README.md)
+[***go back to contents***](01-intro.md)
 
 Let's take a look at how systemd is structured, more specifically let's take a
 look at directories where unit files are stored.

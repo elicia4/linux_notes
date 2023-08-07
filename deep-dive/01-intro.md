@@ -2,7 +2,12 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/Kzpm-rGAXos
 
-[***go back to README***](README.md)
+[***go back to README***](../README.md)
+
+- Intro
+- [Basic Commands](02-basic-commands.md)
+- [Advanced Stuff](03-advanced-stuff.md)
+
 ## Introduction
 
 There are many tools included in `systemd`. It allows you to manage resources, it

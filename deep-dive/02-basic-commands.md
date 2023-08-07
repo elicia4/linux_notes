@@ -1,6 +1,6 @@
 ## Basic Commands
 
-[***go back to README***](README.md)
+[***go back to contents***](01-intro.md)
 
 Let's take a look at some basic commands.
 
