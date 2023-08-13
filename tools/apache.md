@@ -1,6 +1,6 @@
 # The Apache Web Server
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
+Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 
 [***go back to README***](README.md)  
 

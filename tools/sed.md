@@ -1,6 +1,6 @@
 # The "sed" stream editor
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/nXLnx8ncZyE
+Notes taken on this video by LearnLinuxTV: https://youtu.be/nXLnx8ncZyE
 
 [***go back to README***](README.md)  
 

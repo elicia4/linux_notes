@@ -1,6 +1,6 @@
 # The "find" file-searching tool
 
-Notes takes on this video by LearnLinuxTV: 
+Notes taken on this video by LearnLinuxTV: 
 https://youtu.be/skTiK_6DdqU
 
 [***go back to README***](README.md)  

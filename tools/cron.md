@@ -1,6 +1,6 @@
 # The "cron" scheduling tool 
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/7cbP7fzn0D8 
+Notes taken on this video by LearnLinuxTV: https://youtu.be/7cbP7fzn0D8 
 
 [***go back to README***](README.md)  
 

@@ -1,6 +1,6 @@
 # The "tr" command
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/4qP5xA_epXo
+Notes taken on this video by LearnLinuxTV: https://youtu.be/4qP5xA_epXo
 
 [***go back to README***](README.md)  
 

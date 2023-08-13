@@ -1,6 +1,6 @@
 # The "htop" monitoring tool
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
+Notes taken on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
 
 [***go back to README***](README.md)  
 

@@ -1,6 +1,6 @@
-# The "awk" command
+ The "awk" command
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
+Notes taken on this video by LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
 
 [***go back to README***](README.md)  
 

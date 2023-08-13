@@ -1,6 +1,6 @@
 # Commands to Shutdown and Reboot on Linux
 
-Notes takes on this video by DistroTube: https://youtu.be/BdRIhFcf4Do
+Notes taken on this video by DistroTube: https://youtu.be/BdRIhFcf4Do
 
 [***go back to README***](README.md)
 

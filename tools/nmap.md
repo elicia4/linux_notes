@@ -1,6 +1,6 @@
 # The "nmap" Network Exploration Tool 
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/5tzp9QzwnUQ
+Notes taken on this video by LearnLinuxTV: https://youtu.be/5tzp9QzwnUQ
 
 [***go back to README***](README.md)  
 

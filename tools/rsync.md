@@ -1,6 +1,6 @@
 # The "rsync" file-copying tool
 
-Notes takes on this video by LearnLinuxTV: https://youtu.be/KG78O53u8rY
+Notes take on this video by LearnLinuxTV: https://youtu.be/KG78O53u8rY
 
 [***go back to README***](README.md)  
 

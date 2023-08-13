@@ -1,6 +1,6 @@
 # The "scp" command
 
-Notes taken on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
+Notes take on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
 
 [***go back to README***](README.md)  
 
