@@ -8,7 +8,9 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 
 1. Connect to a remote server:
 
+    ```
     ssh <user>@<remote>
+    ```
 
 2. Update your system to make sure everything is up-to-date:
 
@@ -16,21 +18,26 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
     apt update
     apt dist-upgrade
     ```
-3. Update the hostname to make it more descriptive:
 
+3. Update the hostname to make it more descriptive:
+    
+    ```
     vim /etc/hostname
+    ```
 
    You can set the domain name or a function of the server as the hostname. 
 
 4. If this is the only thing you do, you will get an error after executing some
    commands:
 
-    unable to resolve host new-hostname
+    >unable to resolve host new-hostname
 
    To fix the issue, you have to edit the `etc/hosts` file, add a line after
    the first one:
 
+    ```
     vim /etc/hosts
+    ```
 
    Make it look like so:
 
@@ -41,23 +48,31 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 
 5. To check the uptime of the server:
     
+    ```
     uptime 
+    ```
 
 6. Now install **Apache**:
 
+    ```
     apt install apache2 apache2-doc apache2-utils
+    ```
 
    Accept all the defaults.
 
 7. Check the status of `apache2`:
 
+    ```
     systemctl status apache2
+    ```
 
    If you see that it's `active (running)`, you did everything right :)
 
 1. In for some reason it's disabled, you should enable it:
 
+    ```
     systemctl enable --now apache2
+    ```
 
 1. Let's get to configuring it now. There are modules that can be installed to 
    extend Apache's functionality. The modules themselves depend on what exactly
@@ -67,41 +82,55 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
    refer to their documentation, you can find what modules you need there. To
    see the modules that are available:
 
+    ```
     apt search libapache2-mod
+    ```
 
    Some will pop up that are not related, but the ones that start with
    `libapache2-mod-` obviously are. If for instance you wanted to add `python`
    support:
 
+    ```
     apt install libapache2-mod-python
+    ```
 
    Another popular example is:
 
+    ```
     apt install libapache2-mod-perl2
+    ```
 
 1. When it comes to Ubuntu, there's a very specific way you can disable or
    enable modules. Ubuntu tries to enable all modules by default, but in case
    you need to do it manually:
 
+    ```
     a2enmod
+    ```
 
    And then follow the instructions in the prompt:
 
-    Your choices are: <all-modules>
-    Which module(s) do you want to enable (wildcards ok)? 
+    >Your choices are: <all-modules>
+    >Which module(s) do you want to enable (wildcards ok)? 
 
 1. To disable a module:
     
+    ```
     a2dismod
+    ```
 
    And then follow the instructions in the prompt:
 
+    ```
     Your choices are: <enabled-modules>
     Which module(s) do you want to disable (wildcards ok)? 
+    ```
 
    Note that after disabling, you need to restart `apache2`:
 
+    ```
     systemctl restart apache2
+    ```
 
    A `reload` won't do, it's a lot more graceful than `restart`.
 
@@ -109,17 +138,23 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
    do that, there's a feature called "name-based virtual host". Ubuntu has two
    commands that allow us to do stuff:
 
+    ```
     a2ensite
     a2dissite
+    ```
 
    To see what sites you can enable or disable:
 
+    ```
     ls /etc/apache2/sites-available/
+    ```
 
    You can see all the config files that are available right there. Let's
    disable the default site:
 
+    ```
     a2dissite 000-default
+    ```
 
    Note that you have to `reload`:
 
@@ -130,7 +165,9 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 
 1. Let's create a custom site now :)
 
+    ```
     vim /etc/apache2/sites-available/example.net.conf
+    ```
 
    The example config is:
 
@@ -163,14 +200,18 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 1. The directory that the `DocumentRoot` references doesn't exist for either of
    those virtuals hosts. We will need to create that:
 
+    ```
     mkdir -p /srv/www/example.net/public_html
     mkdir -p /srv/www/example.org/public_html
+    ```
 
    The `-p` option will create parent directories if they don't already exist.
    You also have to create the "log" files:
 
+    ```
     mkdir -p /srv/www/example.net/public_html
     mkdir -p /srv/www/example.org/public_html
+    ```
 
 1. Now enable the websites:
 
