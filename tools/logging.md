@@ -27,3 +27,26 @@ is happening.
 Another log file that is specific to Fedora is the `dnf.log` file. It allows us
 to look at the history of the packages that were recently installed on the 
 server.
+
+Let's now take a look at the `wtmp` file. You won't be able to see it's
+contents with the `cat wtmp` command, it will just show you funny characters.
+`wtmp` is what is known as a binary log. If you can't see it, it generally
+means that there is some other command that allows you to view it. In this
+case, the command is:
+
+    ```
+    last
+    ```
+This file gives you details of all the login/logout events, so if you wanted to
+audit the users that are logging into your server you're in the right place.
+
+The same thing is true of the `btmp` file as well. To view it, use:
+
+    ```
+    sudo lastb
+    ```
+
+The *b* in `lastb` stands for "bad", so if you only wanted to view bad login
+attempts, use `lastb`. If somebody is trying to break into your server, you
+probably don't care about the successful login attempts, that's when the `btmp`
+file is useful.
