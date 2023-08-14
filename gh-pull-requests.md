@@ -39,9 +39,9 @@ original, by first adding the remote link to the upstream repo. When things
 change in that repo, you can fetch to download the changes, and then rebase to
 add them on top of your existing work:  
 
-    ```
-    git remote add upstream git://github.com/some-url  
-    git fetch upstream  
-    git rebase upstream/master
-    ```
+```
+git remote add upstream git://github.com/some-url
+git fetch upstream
+git rebase upstream/master
+```
 
