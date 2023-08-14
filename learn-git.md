@@ -99,3 +99,44 @@ https://youtu.be/aH5NM5B0S24
     
    This will show the branches that you have, the asterisk `*` indicates what
    branch you're currently active on.
+
+1. To switch to the 'development' branch:
+    ```
+    git checkout development
+    ```
+
+1. To push a branch to a remote repository:
+    ```
+    git push origin development
+    ```
+
+1. Make some changes to the file in the 'development' branch. You generally
+   create branches when you want to deviate in terms of development, and then
+   usually merge your changes to the master branch.  Generally, your master
+   branch is for all your stable releases, and your development branch is for
+   new features.
+
+1. Now let's merge our branches. Switch to the master branch:
+    ```
+    git checkout master
+    ```
+
+   Merge the development branch:
+    ```
+    git merge development
+    ```
+   Now the contents of your file should be the same as their contents in the 
+   development branch. Finally, push:
+    ```
+    git push
+    ```
+
+1. To delete a branch use the `-d` flag:
+    ```
+    git branch -d development
+    ```
+   On Github, this is not enough. Delete them manually by listing all your
+   branches with `View all branches`, you can find the button by clicking on
+   your current branch button on the Github page.
+
+   This is it :)
