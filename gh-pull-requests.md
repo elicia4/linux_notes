@@ -5,7 +5,7 @@ Notes on this video by Fireship: https://youtu.be/8lGpZkjnkt4
 [***go back to README***](README.md)
 
 A pull request is a way for you to submit a contribution to another developer's
-repository at GitHub.
+repository on GitHub.
 
 1. Find a GitHub repo you want to contribute to.
 1. Fork the repo.
