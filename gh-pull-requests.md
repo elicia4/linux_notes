@@ -1,4 +1,4 @@
-# Git Essentials
+# GitHub Pull Requests
 
 Notes on this video by Fireship: https://youtu.be/8lGpZkjnkt4
 
