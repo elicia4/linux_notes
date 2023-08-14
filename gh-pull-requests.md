@@ -37,7 +37,7 @@ repository on GitHub.
 TIP: When working with the fork locally, you can keep it in sync with the
 original, by first adding the remote link to the upstream repo. When things 
 change in that repo, you can fetch to download the changes, and then rebase to
-add them on top of your existing work:
+add them on top of your existing work:  
     ```
     git remote add upstream git://github.com/some-url
     git fetch upstream
