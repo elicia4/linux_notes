@@ -1,17 +1,18 @@
 # Git Tips
 
-1. Imagine you have a lot of changes done to many files and you want to add 
-them all to staging without doing a lot of work. You can update all your
-changes with:
+Notes taken from info from many places, mainly from this video by Fireship:  
+https://youtu.be/ecK3EnyGD8o
+
+[***go back to README***](README.md)
+
+1. Stage all (new, modified, deleted) files:
     
+    ```
+    git add -A
+    ```
+
+2. Stage modified and deleted files only:
     ```
     git add -u
     ```
 
-    Note that this removes as well as modifies index entries to match the working
-tree, but adds no new files.  
-
-2. To add all new files:
-    ```
-    git add -A
-    ```
