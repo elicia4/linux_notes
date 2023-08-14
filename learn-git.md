@@ -8,7 +8,7 @@ These are notes on a video by HackerSplout: https://youtu.be/aH5NM5B0S24
 - Git and Github are not the same thing. 
 - You need to learn `git` to be effective.
 - A useful book for studying `git`: https://git-scm.com/book/en/v2
-- With forking, you can customize an existing repository, possible collaborate
+- With forking, you can customize an existing repository, possibly collaborate
   with the creator of the repo, and also attribute the author.
 
 1. Start with creating a test repository.
@@ -83,4 +83,16 @@ These are notes on a video by HackerSplout: https://youtu.be/aH5NM5B0S24
     git push 
     ```
 
-1. Now let's discuss branches.
+1. Now let's discuss branches and merging. Branches allow you to create a
+   separate route based on the original branch, where you can create changes and
+   then merge them with the original branch. Let's create a "development"
+   branch:
+    ```
+    git branch development
+    ```
+
+1. To list the branches:
+    ```
+    git branch
+    ```
+
