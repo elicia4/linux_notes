@@ -1,6 +1,6 @@
 # Git Tips
 
-Notes taken from info from many places, mainly from this video by Fireship:  
+Notes taken on info from many places, mainly from this video by Fireship:  
 https://youtu.be/ecK3EnyGD8o
 
 [***go back to README***](README.md)
