@@ -96,4 +96,6 @@ https://youtu.be/aH5NM5B0S24
     ```
     git branch
     ```
-
+    
+   This will show the branches that you have, the asterisk `*` indicates what
+   branch you're currently active on.
