@@ -1,6 +1,7 @@
 # Learn Git 
 
-These are notes on a video by HackerSplout: https://youtu.be/aH5NM5B0S24
+These are notes on a video by HackerSploit:  
+https://youtu.be/aH5NM5B0S24
 
 [***go back to README***](README.md)
 
