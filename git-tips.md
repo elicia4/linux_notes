@@ -115,3 +115,74 @@ https://youtu.be/ecK3EnyGD8o
    bisect good`, if it's bad, type `git bisect bad`. Eventually you will find
    the bad one and find out which code needs to be fixed.
 
+1. Imagine you're working on a `feature` branch that has many different commits,
+   and you're ready to merge it with the `main` branch. But all these commit
+   messages are kind of pointless and it would be better if there was just one
+   commit message. You can do it with:
+
+    ```sh
+    git rebase --interactive
+    ```
+   That will pull up a file with commits and commands before them, such as
+   `pick`. If you want to use that commit, you keep `pick`. If you want to
+   change a message, use `reword`. You can combine everything into that
+   original commit with `squash`. Once you save it, another file will pop up
+   prompting you to update that commit message. It will be a combination of all
+   the commit messages that you squashed. You can also use `fixup` instead of
+   `squash`. The difference between them is that during the rebase, the `squash`
+   operation will prompt you to combine the messages of the original and the
+   `squash` commit, whereas the `fixup` operation will keep the original message
+   and discard the message from the `fixup` commits.
+
+   To be even more productive with your `squash`es and `fixup`s, you can use
+   them as flags when making commits on your branch:
+
+    ```sh
+    git commit --fixup <commit-id>
+    git commit --squash <commit-id>
+    ```
+   
+   So that when you do a `rebase` after:
+
+    ```sh
+    git commit -i -autosquash
+    ```
+   
+   It can handle all the squashing automatically.
+
+1. Another useful tool is `git hooks`. Whenever you perform an operation with
+   `git`, like a `commit`, it creates an event, and hooks allow you to run some
+   code either before or after that event happens. If you look into the hidden
+   `.git` directory, inside of there you'll see many different scripts that can
+   be configured to run when different events in `git` happen. For instnace,
+   you can run tests before a commit happens.
+
+1. Let's imagine you have a remote repository on GitHub and a local version
+   that you've been making changes to, but things haven't been going too well,
+   and you just want to go back to the original state in the remote repo. First,
+   do `fetch` from a remote repo:
+
+    ```sh
+    git fetch origin
+    ```
+
+   Then to overwrite your local code with the remote code (your local changes
+   will be lost **FOREVER**):
+
+    ```sh
+    git reset --hard origin/master
+    ```
+
+   If you're still left with some random untracked files or build artifacts
+   here and there, use the `clean` command to remove those files as well:
+
+    ```sh
+    git clean -df
+    ```
+
+1. If you recently switched out of a branch and forgot its name, you can switch
+   back to your previous branch with:
+
+    ```sh
+    git checkout -
+    ```
