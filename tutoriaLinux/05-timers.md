@@ -1,3 +1,3 @@
 # 
 
-[***go back to README***](./01-intro.md)
+[***go back to intro***](./01-intro.md)

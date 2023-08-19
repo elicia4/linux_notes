@@ -1,6 +1,6 @@
 # Targets
 
-[***go back to README***](./01-intro.md)
+[***go back to intro***](./01-intro.md)
 
 Targets are a way of managing relationships between all the units you have.
 Targets are a way of having managable system phases during boot that you can
