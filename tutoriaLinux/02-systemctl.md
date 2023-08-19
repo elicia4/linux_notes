@@ -1,6 +1,6 @@
 # `systemctl` commands
 
-[***go back to README***](../README.md)
+[***go back to README***](./01-intro.md)
 
 `systemctl` and `journalctl` (to interact with logs) are the two commands you
 will use the most to interact with systemd.

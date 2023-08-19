@@ -4,6 +4,7 @@ Notes on videos by tutorialLinux: https://youtu.be/N1vgvhiyq0E
 
 [***go back to README***](../README.md)
 
+**Table of contents**
 - Intro
 - [`systemctl` commands](./02-systemctl.md)
 - [Targets](./03-targets.md)
