@@ -19,31 +19,31 @@ Dependencies are NOT explicit ordering.
 
 Weakest dependency: "Please activate together, but no big deal if you don't."
 
-/lib/systemd/system/friendly-recovery.target  
+**/lib/systemd/system/friendly-recovery.target**  
 `Wants=friendly-recovery.service`
 
-/lib/systemd/system/motd-news.timer  
+**/lib/systemd/system/motd-news.timer**  
 `WantedBy=timers.target`
 
 ### Requires, RequiredBy
 
 Strong Dependency: "You MUST activate these units together."
 
-/lib/systemd/system/multi-user.target  
+**/lib/systemd/system/multi-user.target**  
 `Requires=basic.target`
 
-/lib/systemd/system/systemd-boot-check-no-failures.service  
+**/lib/systemd/system/systemd-boot-check-no-failures.service**  
 `RequiredBy=boot-complete.target`
 
 ## Explicit Ordering (Execution Order -- what you probably want)
 
 This is what people usually mean when they configure "Require*". 
 
-/lib/systemd/system/console-getty.service  
+**/lib/systemd/system/console-getty.service**  
 `Before=getty.target`
 
 `network-online.target` has to be up BEFORE `motd-news.service`.  
-/lib/systemd/system/motd-news.service  
+**/lib/systemd/system/motd-news.service**  
 `After=network-online.target`
 
 Dependencies leave a lot of leeway for the order `systemd` picks. 
