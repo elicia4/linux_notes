@@ -4,7 +4,7 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/p8QOnty6rSU
 
 [***go back to README***](README.md)  
 
-The command is used to modify users. E.g.
+The command is used to modify users:
 
     # add a user to a group
     sudo usermod -aG group user
@@ -19,7 +19,7 @@ You can add a user to multiple groups at the same time:
 
     sudo usermod -aG admins,sudo user
 
-You have to relog for the new groups' changes to take effect.
+You have to relog for the new group changes to take effect.
 
 To change a user's home directory:
 
