@@ -2,23 +2,26 @@
 
 ![Linux Penguin Logo](img/penguin.png)
 
-A collection of notes on various Linux tools that I think are worth
-remembering. 
+A collection of notes on various Linux tools that I think are worth remembering. 
 
 I take notes on videos, books, forum posts and so on.
 
-Commands:
+Tools:
 
-- [scp](tools/scp.md)
-- [htop](tools/htop.md)
-- [nmap](tools/nmap.md)
-- [tr](tools/tr.md)
-- [rsync](tools/rsync.md)
-- [find](tools/find.md)
-- [awk](tools/awk.md)
-- [sed](tools/sed.md)
 - [apache](tools/apache.md)
+- [awk](tools/awk.md)
 - [cron](tools/cron.md)
+- [find](tools/find.md)
+- [htop](tools/htop.md)
+- [logging](tools/logging.md)
+- [nmap](tools/nmap.md)
+- [rsync](tools/rsync.md)
+- [scp](tools/scp.md)
+- [sed](tools/sed.md)
+- [shutdown](tools/shutdown.md)
+- [sudo](tools/sudo.md)
+- [tr](tools/tr.md)
+- [usermod](tools/usermod.md)
 
 Book notes:
 
