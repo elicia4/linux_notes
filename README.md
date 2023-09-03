@@ -38,3 +38,8 @@ Book notes:
 - [The Linux Command Line](book-tlcl/00-intro.md) *by William Shotts*  
   The book is available in PDF format for **free**
   [here](https://www.linuxcommand.org/tlcl.php).
+
+### TO-DO
+
+- Add links from all distros to TOC (this file)
+- Restructure contents from a list format to a table format
