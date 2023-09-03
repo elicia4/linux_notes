@@ -3,7 +3,7 @@
 Notes taken on info from many places, mainly from this video by Fireship:  
 https://youtu.be/ecK3EnyGD8o
 
-[***go back to README***](README.md)
+[***Contents***](README.md)
 
 1. Stage all (new, modified, deleted) files:
     
@@ -100,6 +100,7 @@ https://youtu.be/ecK3EnyGD8o
      ```
 
 1. A better way to display Git logs:
+
     ```sh
     git log --graph --oneline --decorate
     ```
@@ -107,9 +108,11 @@ https://youtu.be/ecK3EnyGD8o
 1. Imagine there'a commit that's breaking your app, but it worked fine a couple
    hours ago. That's when you use `git bisect`. Point bisect to the last working
    commit:
+
     ```sh
     git bisect start
     ```
+
    Then it performs a binary search to walk you through commits in between. If 
    the commit is good, that is, everything is working properly, type `git
    bisect good`, if it's bad, type `git bisect bad`. Eventually you will find
@@ -123,16 +126,19 @@ https://youtu.be/ecK3EnyGD8o
     ```sh
     git rebase --interactive
     ```
+
    That will pull up a file with commits and commands before them, such as
    `pick`. If you want to use that commit, you keep `pick`. If you want to
    change a message, use `reword`. You can combine everything into that
    original commit with `squash`. Once you save it, another file will pop up
    prompting you to update that commit message. It will be a combination of all
-   the commit messages that you squashed. You can also use `fixup` instead of
-   `squash`. The difference between them is that during the rebase, the `squash`
-   operation will prompt you to combine the messages of the original and the
-   `squash` commit, whereas the `fixup` operation will keep the original message
-   and discard the message from the `fixup` commits.
+   the commit messages that you squashed. 
+
+   You can also use `fixup` instead of `squash`. The difference between them is
+   that during the rebase, the `squash` operation will prompt you to combine
+   the messages of the original and the `squash` commit, whereas the `fixup`
+   operation will keep the original message and discard the message from the
+   `fixup` commits.
 
    To be even more productive with your `squash`es and `fixup`s, you can use
    them as flags when making commits on your branch:

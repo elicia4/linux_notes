@@ -2,15 +2,17 @@
 
 These are notes on a video by Learn Linux TV: https://youtu.be/u1Zvkqjx0Ik	    
 
-[***go back to README***](README.md)
+[***Contents***](README.md)
 
 Git is a version control utility.
 It helps to keep track of files and changes to them.
 
 1. To create a repository with git, type:
+
 	```
     git init <name-of-repo>
     ```
+
 	(you can use 'git init' from inside of a folder to 
 	initialize it)
 
@@ -22,11 +24,13 @@ It helps to keep track of files and changes to them.
    inside.
 
 4. Output current status of your repository:
+
 	```
     git status
     ```
 
 5. Add file to version control:
+
     ```
 	git add <name-of-file> ...
     ```
@@ -74,7 +78,7 @@ is particularly useful for system administators.
 
 11. To revert things back to a previous commit, follow this process:
 
-	1. List commits one line at a time:
+    1. List commits one line at a time:
 
     ```
 	git log --oneline
@@ -127,6 +131,7 @@ is particularly useful for system administators.
 	>...
 
 14. Push an existing repository to github:
+
 	1) Log in to github
 	2) Click on the plus sign `+` in the top right, click on 'New repository'
 	3) Fill in the form
@@ -137,4 +142,3 @@ is particularly useful for system administators.
 	git branch -M master
 	git push -u origin master
     ```
-
