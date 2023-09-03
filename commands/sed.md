@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/nXLnx8ncZyE
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 `sed` can be used to filter and modify text. It's often used with text files to
 change things inside text files, but it can also be used for many other

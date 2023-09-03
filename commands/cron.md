@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/7cbP7fzn0D8 
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 `cron` allows us to schedule tasks in advance.  
 

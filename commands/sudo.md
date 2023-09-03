@@ -2,6 +2,8 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/07JOqKOBRnU
 
+[***go back to README***](/README.md)  
+
 There are many commands that you can only use with root priveleges. `sudo` is
 something you can use instead of root. If, for instance, you were logged in as a
 local user and wanted to update your system with `apt update`, you wouldn't be

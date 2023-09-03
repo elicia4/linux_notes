@@ -1,8 +1,8 @@
- The "awk" command
+# The "awk" command
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 `awk` is more of a scripting language than a command. You can use it to
 manipulate text and do all kinds of things. 

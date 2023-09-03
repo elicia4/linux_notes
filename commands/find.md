@@ -3,7 +3,7 @@
 Notes taken on this video by LearnLinuxTV: 
 https://youtu.be/skTiK_6DdqU
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 The `find` command has many options you can use that are not included in these
 notes. A simple example of the `find` command:

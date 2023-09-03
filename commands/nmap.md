@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/5tzp9QzwnUQ
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 `nmap` allows you to do network auditing, find out which hosts are up, which
 ports are open, and so on. 

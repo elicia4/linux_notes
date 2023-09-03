@@ -2,7 +2,7 @@
 
 Notes taken on this video by DistroTube: https://youtu.be/BdRIhFcf4Do
 
-[***go back to README***](README.md)
+[***go back to README***](/README.md)
 
 The majority of distributions use `systemd`. You can reboot a machine using
 `systemd`:

@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/4qP5xA_epXo
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 `tr` - translate or delete characters.
 
