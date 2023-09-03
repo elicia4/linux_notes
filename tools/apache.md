@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)
 
 ## Basics of Apache
 
