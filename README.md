@@ -9,6 +9,7 @@ Tools:
 - [git](tools/git/README.md)
 - [openssh](tools/openssh/README.md)
 - [apache](tools/apache.md)
+- [bash](tools/bash/README.md)
 
 Commands:
 
