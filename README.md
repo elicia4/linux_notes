@@ -41,5 +41,5 @@ Book notes:
 
 ### TO-DO
 
-- Add links from all distros to TOC (this file)
+- Add links from all repos to TOC (this file)
 - Restructure contents from a list format to a table format
