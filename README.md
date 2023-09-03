@@ -15,4 +15,4 @@ YouTube channel: https://www.youtube.com/@LearnLinuxTV
 1. [Accessing Containerized Applications](06-accessing-containerized-apps.md)
 1. [Creating Images](07-creating-images.md)
 
-[go to next note](02-what-is-docker.md)
+[go to next note](docker-essentials/02-what-is-docker.md)
