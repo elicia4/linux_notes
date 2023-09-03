@@ -4,6 +4,8 @@ These are notes on a video by Learn Linux TV: https://youtu.be/u1Zvkqjx0Ik
 
 [***Contents***](README.md)
 
+---
+
 Git is a version control utility.
 It helps to keep track of files and changes to them.
 

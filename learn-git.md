@@ -5,6 +5,8 @@ https://youtu.be/aH5NM5B0S24
 
 [***Contents***](README.md)
 
+---
+
 - Git is an extremely useful tool for working with others. 
 - Git and Github are not the same thing. 
 - You need to learn `git` to be effective.

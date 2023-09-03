@@ -4,6 +4,8 @@ Notes on this video by Fireship: https://youtu.be/8lGpZkjnkt4
 
 [***Contents***](README.md)
 
+---
+
 A pull request is a way for you to submit a contribution to another developer's
 repository on GitHub.
 

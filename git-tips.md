@@ -5,6 +5,8 @@ https://youtu.be/ecK3EnyGD8o
 
 [***Contents***](README.md)
 
+---
+
 1. Stage all (new, modified, deleted) files:
     
     ```sh
