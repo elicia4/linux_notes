@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/6uP_f_z3CbM
 
-[***go back to README***](README.md)  
+[***go back to README***](/README.md)  
 
 When you manage Linux servers, you want to know what's going on at any given
 time: what's happening, what's connected to your servers, who's using your
