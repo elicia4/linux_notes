@@ -6,7 +6,11 @@ A collection of notes on various Linux tools that I think are worth remembering.
 
 I take notes on videos, books, forum posts and so on.
 
-Tools:
+Tools that required a lot of note-taking:
+
+- [git](git/README.md)
+
+Tools that required little note-taking:
 
 - [apache](tools/apache.md)
 - [awk](tools/awk.md)
