@@ -9,6 +9,7 @@ I take notes on videos, books, forum posts and so on.
 Tools that required a lot of note-taking:
 
 - [git](git/README.md)
+- [openssh](openssh/README.md)
 
 Tools that required little note-taking:
 
