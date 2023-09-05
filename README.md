@@ -1,7 +1,7 @@
 # Linux Notes 
 
 <div style="text-align: center;">
-![Linux Penguin Logo](img/penguin.png)
+<img src="https://github.com/elicia4/linux-notes/blob/main/img/penguin.png?raw=true" alt="Linux Penguin Logo"/>
 </div>
 
 A collection of notes on Linux tools I think are worth remembering. 
