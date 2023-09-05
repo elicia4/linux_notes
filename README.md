@@ -6,14 +6,11 @@ A collection of notes on various Linux tools that I think are worth remembering.
 
 Tools:
 
-- [git](tools/git/README.md)
-- [openssh](tools/openssh/README.md)
-- [apache](tools/apache.md)
-- [bash](tools/bash/README.md)
-- [systemd](tools/systemd/README.md)
-- [docker](tools/docker/README.md)
-- [vim](tools/vim/README.md)
-- [nano](tools/nano.md)
+| | | |
+| :-------: | :-------: | :-------: |
+| [git](tools/git/README.md) | [openssh](tools/openssh/README.md) | [apache](tools/apache.md) |
+| [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
+| [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
 
 Commands:
 
