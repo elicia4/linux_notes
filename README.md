@@ -17,6 +17,7 @@ Tools:
 
 Commands:
 
+| | | |
 | :-------: | :-------: | :-------: |
 | [awk](commands/awk.md) | [cron](commands/cron.md) | [find](commands/find.md) |
 | [htop](commands/htop.md) | [nmap](commands/nmap.md) | [rsync](commands/rsync.md) |
