@@ -1,8 +1,6 @@
 # Linux Notes 
 
-<p align="center" width="100%">
-    <img width="15%" src="https://github.com/elicia4/linux-notes/blob/main/img/penguin.png?raw=true" alt="Linux Penguin Logo"/>
-</p>
+![Linux Penguin Logo](img/penguin.png)
 
 A collection of notes on Linux tools I think are worth remembering. 
 
