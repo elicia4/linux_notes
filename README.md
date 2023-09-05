@@ -13,6 +13,7 @@ Tools:
 - [systemd](tools/systemd/README.md)
 - [docker](tools/docker/README.md)
 - [vim](tools/vim/README.md)
+- [nano](tools/nano.md)
 
 Commands:
 
@@ -31,7 +32,8 @@ Commands:
 
 Misc:
 
-- [logging](tools/logging.md)
+- [logging](misc/logging.md)
+- [data streams](misc/data-streams.md)
 
 Book notes:
 
