@@ -98,3 +98,7 @@ system-wide, add them to your `.bashrc`(or whatever other config file for your
 shell).
 
     vim ~/.bashrc
+
+Pro tip: to temporarily bypass an alias, use `\`:
+
+    \df
