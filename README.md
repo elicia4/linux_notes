@@ -25,7 +25,8 @@ Misc:
 
 | | | |
 | :-------: | :-------: | :-------: |
-| [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc/pass expiration](misc/user_acc_and_pass_exp.md) |
+| [logging](misc/logging.md) | [data streams](misc/data-streams.md) |
+[account/password expiration](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | |
 
 Book notes:
