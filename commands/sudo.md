@@ -63,7 +63,7 @@ the root user and various `sudo` groups. You can create a new group that has
 access to sudo by copying the `%sudo ...` line and changing the name from `sudo`
 to something else.
 
-What to the `ALL`'s mean? The first `ALL` refers to the host/server that you are
+What do the `ALL`'s mean? The first `ALL` refers to the host/server that you are
 allowed to execute the commands on. The `ALL`'s in parentheses pertain to the
 users that have access to execute commands, by default `sudo` impersonates
 `root`. The first `ALL` refers to the user you're allowed to impersonate, the 
