@@ -18,7 +18,7 @@ A collection of notes on Linux tools I think are worth remembering.
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
 | [watch](commands/watch.md)  | | |
 
-| ========= | Misc | ========= |
+| ========= | Miscellaneous | ========= |
 | :-------: | :-------: | :-------: |
 | [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc&pass mods](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | [manage users](misc/user_mgmt.md)|
