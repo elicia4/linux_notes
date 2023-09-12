@@ -20,10 +20,10 @@ A collection of notes on Linux tools I think are worth remembering.
 
 | ========= | Misc | ========= |
 | :-------: | :-------: | :-------: |
-| [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc**&**pass mods](misc/user_acc_and_pass_exp.md) |
+| [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc&pass mods](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | [manage users](misc/user_mgmt.md)|
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
-| | | [format & mount](misc/volume_mgmt.md) |
+| | | [format&mount](misc/volume_mgmt.md) |
 
 Book notes:
 
