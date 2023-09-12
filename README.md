@@ -4,17 +4,13 @@
 
 A collection of notes on Linux tools I think are worth remembering. 
 
-Tools:
-
-| | | |
+| | Tools | |
 | :-------: | :-------: | :-------: |
 | [git](tools/git/README.md) | [openssh](tools/openssh/README.md) | [apache](tools/apache.md) |
 | [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
 | [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
 
-Commands:
-
-| | | |
+| | Commands | |
 | :-------: | :-------: | :-------: |
 | [awk](commands/awk.md) | [cron](commands/cron.md) | [find](commands/find.md) |
 | [htop](commands/htop.md) | [nmap](commands/nmap.md) | [rsync](commands/rsync.md) |
@@ -22,9 +18,7 @@ Commands:
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
 | [watch](commands/watch.md)  | | |
 
-Misc:
-
-| | | |
+| | Misc | |
 | :-------: | :-------: | :-------: |
 | [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [account/password expiration](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | [user management](misc/user_mgmt.md)|
