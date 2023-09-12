@@ -10,7 +10,9 @@ Tools:
 | :-------: | :-------: | :-------: |
 | [git](tools/git/README.md) | [openssh](tools/openssh/README.md) | [apache](tools/apache.md) |
 | [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
-| [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
+| [vim](tools/vim/README.md) | [nano](tools/nano.md) | [fstab][tools/fstab.md] |
+| | | |
+
 
 Commands:
 
