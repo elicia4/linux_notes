@@ -28,7 +28,8 @@ Misc:
 | :-------: | :-------: | :-------: |
 | [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [account/password expiration](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | [user management](misc/user_mgmt.md)|
-| [hardware](misc/hw.md) | [group management](misc/group_mgmt.md) | [fstab](tools/fstab.md) |
+| [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [group management](misc/group_mgmt.md) |
+| | | [formatting & mounting](misc/volume_mgmt.md) |
 
 Book notes:
 
