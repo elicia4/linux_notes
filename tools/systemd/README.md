@@ -4,3 +4,4 @@
 
 - [Deep Dive](deep-dive/01-intro.md)
 - [systemd on Linux](tutoriaLinux/01-intro.md)
+- [systemctl](systemctl.md)
