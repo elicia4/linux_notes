@@ -2,7 +2,7 @@
 
 ![Linux Penguin Logo](img/penguin.png)
 
-A collection of notes on Linux tools I think are worth remembering. 
+A collection of notes on everything Linux 🐧🐧🐧
 
 | ========= | Tools | ========= |
 | :-------: | :-------: | :-------: |
