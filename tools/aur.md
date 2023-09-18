@@ -34,10 +34,10 @@ good idea to look at the `PKGBUILD` file and see what it's doing:
 
     vim PKGBUILD
 
-If you see something terrible inside the file (like `rm -rf /`) inside your
-package build, you should not install it. It is probably never the case, but
-it's a good idea to get into a mindset of always reading a script before
-executing it (or at least skimming through it).
+If you see something terrible(like `rm -rf /`) inside your package build, you
+should not install it. It is probably never the case, but it's a good idea to
+get into the mindset of always reading a script before executing it (or at
+least skimming through it).
 
 To build you might want to install a few dependancies first:
 
