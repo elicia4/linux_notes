@@ -5,6 +5,9 @@ by LearnLinuxTV
 
 [***go back to README***](/README.md)
 
+Take a look at the 2 tips of the bottom, the simplify the process quite a bit
+(thanks @SkySumisu).
+
 If you're looking for a package and it's not available in the main
 repositories, AUR will help you.
 
@@ -72,6 +75,11 @@ You can update your entire system and all the AUR packages you have:
 
     yay -Syu
 
-To build AND install at the same time:
+TIP: To build AND install at the same time:
 
     makepkg -si
+
+TIP: You can click on the link next to the `Git Clone URL:` to copy it and then use
+`git clone` to download it. You don't have to use `wget`:
+
+    git clone https://aur.archlinux.org/google-chrome.git
