@@ -1,4 +1,4 @@
-# The `pacman` package manager
+# The `pacman` command
 
 Notes taken on the "Linux Crash Course - The Pacman Command" video by
 LearnLinuxTV: https://youtu.be/oPEnvuj9QrI

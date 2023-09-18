@@ -16,7 +16,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [htop](commands/htop.md) | [nmap](commands/nmap.md) | [rsync](commands/rsync.md) |
 | [scp](commands/scp.md) | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
-| [watch](commands/watch.md) | [pacman](commands/pacman.md) | |
+| [watch](commands/watch.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
