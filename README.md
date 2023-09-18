@@ -24,7 +24,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [bg and fg](misc/bg_fg.md) | [bash aliases](misc/bash_aliases.md) | [manage users](misc/user_mgmt.md)|
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
-| [permissions](misc/permissions.md) | | |
+| [permissions](misc/permissions.md) | [navigation](misc/navigation.md) | |
 
 Book notes:
 
