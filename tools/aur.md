@@ -71,3 +71,7 @@ Build it:
 You can update your entire system and all the AUR packages you have:
 
     yay -Syu
+
+To build AND install at the same time:
+
+    makepkg -si
