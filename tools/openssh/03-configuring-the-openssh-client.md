@@ -52,5 +52,5 @@ There are other things you can include in the `config` file, check out the
 [documentation](https://www.man7.org/linux/man-pages/man5/ssh_config.5.html) OR
 do it with `man`:
 
-    man 5 openssh_config
+    man 5 ssh_config
 [***Go to Next Note***](04-using-public-private-keys.md)
