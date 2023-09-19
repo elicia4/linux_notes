@@ -1,7 +1,7 @@
 # Installing Updates
 
 Notes taken on the "Linux Crash Course - Installing Updates" video by
-LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
+LearnLinuxTV.
 
 [***go back to README***](/README.md)  
 
