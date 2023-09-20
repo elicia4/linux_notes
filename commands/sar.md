@@ -5,6 +5,9 @@ LearnLinuxTV.
 
 [***go back to README***](/README.md)  
 
+NOTICE: The instuctions might not work on your system, you might get only
+`LINUX RESTART (X CPU)`. In this case, refer to the **FIX NOTE** at the end.
+
 `sar` is "system activity reporter". It's useful for looking at historical 
 performance values of your server. 
 
@@ -68,3 +71,27 @@ If your servers runs slow and you don't know why, see information about I/O:
 
 The `sar` command runs in the background and gathers useful data about your
 server performance. It's useful for optimization and resource management.
+
+### FIX NOTE: 
+Check this out (thanks, Yvan):
+https://serverfault.com/questions/1094466/sar-service-has-stopped-collecting-data
+
+> So, if you're using systemd, you should reconfigure sysstat that will run
+> through systemd and not through crontab:
+
+    dpkg-reconfigure sysstat
+
+> Select "Yes".
+
+> Editing /etc/default/sysstat directly (as I did until now) is a mistake: it
+> doesn't update systemd files.
+
+> Note that you'll see /etc/default/sysstat updated to ENABLED="true", but the
+> cron won't run anymore (systemd will trigger it as expected).
+
+> You can check everything is fine using:
+
+    systemctl status sysstat-collect.timer
+    systemctl status sysstat-summary.timer
+
+> which should reply with «Active: active (waiting)»
