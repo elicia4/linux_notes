@@ -6,7 +6,7 @@ LearnLinuxTV.
 [***go back to README***](/README.md)  
 
 `sar` is "system activity reporter". It's useful for looking at historical 
-performance values for your server. 
+performance values of your server. 
 
 Install it first:
 
