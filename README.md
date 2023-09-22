@@ -18,6 +18,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
 | [watch](commands/watch.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 | [sar](commands/sar.md) | [grep](commands/grep.md) | [echo](commands/echo.md) |
+| [dnf](commands/dnf.md) | | |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
