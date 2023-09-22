@@ -38,6 +38,8 @@ To view devices connected to your PCI bus:
 
 The search engine tip makes sense here too.
 
+# Detailed Hardware Information with `lshw`
+
 To get more information about your hardware:
 
     sudo lshw
