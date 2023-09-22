@@ -13,7 +13,7 @@ The basic usage of ping is:
     # ping <IP-address/domain-name>
     ping 8.8.8.8 # google DNS
 
-The ping is endless by default, cancel it with <CTRL-c> whenever you feel like
+The ping is endless by default, cancel it with \<CTRL-c> whenever you feel like
 it. To ping a domain:
 
     ping learnlinux.tv
