@@ -27,7 +27,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
 | [permissions](misc/permissions.md) | [navigation](misc/navigation.md) | [hostname](misc/hostname.md) |
-| [updating](misc/updating.md) | [bash history](misc/bash_history.md) | |
+| [updating](misc/updating.md) | [bash history](misc/bash_history.md) | [mem & swap](misc/mem_swap.md) |
 
 Book notes:
 
