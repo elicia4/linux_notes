@@ -1,7 +1,7 @@
 # The `apt` command
 
 Notes taken on the "Linux Crash Course - The apt Command" video by
-LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
+LearnLinuxTV.
 
 [***go back to README***](/README.md)  
 
