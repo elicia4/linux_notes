@@ -19,6 +19,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [sar](commands/sar.md) | [grep](commands/grep.md) | [echo](commands/echo.md) |
 | [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 | [watch](commands/watch.md) | [ping](commands/ping.md) | [wget](commands/wget.md) |
+| [df and du](commands/df_du.md) | | |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
