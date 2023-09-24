@@ -17,6 +17,8 @@ Change ownership of the directory if it's not right:
 
     sudo chown user:user -R etc-copy 
 
+### `tar`
+
 The `tar` command allows us to combine multiple files into one archive file.
 It's similiar to a `.zip` file, the difference being that a `.tar` file isn't
 compressed, the files will be the same size when they're archived.
@@ -67,4 +69,35 @@ Make it verbose to make it clear:
 
     tar -xvf etc_backup.tar
 
-Now the output is there.
+Now the output is there. 
+
+### `gzip`
+
+Compression is useful for saving space, `gzip` is a great way to do that.
+
+Let's say you copy the contents of an SD card from your camera, they usually
+take up a ton of space. To compress a file:
+
+    gzip filename
+
+To uncompress a compressed `.gz` file:
+
+    gunzip filename.gz # g-unzip
+
+### Archive + compress
+
+You should combine `tar` with `gzip`:
+
+    tar -czvf etc-copy.tar.gz etc-copy # .tar.gz isn't mandatory, but
+    # recommended since it makes it clear what the file is
+
+- `z` compresses the tarball. This is it. This is the dedicated option that
+  redirects to the `gzip` command.
+
+You can view the contents of a `gzip`ped `tar` file:
+
+    tar -tvf etc-copy.tar.gz 
+
+To extract a `gzip`ped `tar` file:
+
+    tar -xvf etc-copy.tar.gz 
