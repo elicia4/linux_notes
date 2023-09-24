@@ -27,6 +27,12 @@ run `htop`, if it's not there run:
 
     cat /proc/cpuinfo
 
+A simpler way is to run:
+
+    nproc
+
+It prints the number of processing units available.
+
 If you have 2 CPU's, 2 means that the server is 100% busy, if you have 4, 4
 means that the server is 100% busy and so on. The load average number can be
 bigger than the maximum number of cores, that means that your server is
