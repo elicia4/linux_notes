@@ -34,10 +34,13 @@ files:
 ### `diff` Output
 
 An example of an output:
-> 15c15
-> \< Port 2222
-> ---
-> \> #Port 22
+
+    ```
+    15c15  
+    < Port 2222
+    ---
+    > #Port 22
+    ```
 
 - `<` relates to the the first file, `>` to the second;
 - `15c15`
