@@ -20,7 +20,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 | [watch](commands/watch.md) | [ping](commands/ping.md) | [wget](commands/wget.md) |
 | [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [cat](commands/cat.md) |
-| [diff](commands/diff.md) | [sshfs](commands/sshfs.md) | |
+| [diff](commands/diff.md) | [sshfs](commands/sshfs.md) | [ls](commands/ls.md) |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
