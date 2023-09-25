@@ -30,7 +30,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
 | [permissions](misc/permissions.md) | [navigation](misc/navigation.md) | [hostname](misc/hostname.md) |
 | [updating](misc/updating.md) | [bash history](misc/bash_history.md) | [memory & swap](misc/mem_swap.md) |
-| [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [`$PATH`](misc/path.md) |
+| [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
 
 Book notes:
 
