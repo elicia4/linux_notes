@@ -9,16 +9,16 @@ Hostnames and domain names will be discussed in general terms.
 
 Whenever you set up a server or a workstation, you will be prompted for what to
 name the server. Don't settle for the default name, come up with a good name or
-even for a naming scheme in case you have many server. If you have many servers
-named the same way, it will be hard to differentiate between them. For example,
-you might have the following servers:
+even for a naming scheme in case you have many servers. If you have many
+servers named the same way, it will be hard to differentiate between them. For
+example, you might have the following servers:
 
 - gitlab
 - nextcloud
 - db-server
 - webserver
 
-The names are self-explanatory and good.
+These names are self-explanatory and good.
 
 All Linux servers have a hostname. To see it:
 
@@ -39,11 +39,11 @@ All Linux servers have a hostname. To see it:
 
 ### Name Surname analogy
 
-This of hostnames as first names and domain names as surnames. A Linux server's
-name could be `webserver.learnlinux.tv` or `db.learnlinux.tv`. The hostnames
-are `webserver` and `db`, the domain name is `learnlinux.tv`. The full name is
-called a fully qualified domain name, typically written as
-`hostname.domain.tld`. 
+Think of hostnames as first names and domain names as surnames. A Linux
+server's name could be `webserver.learnlinux.tv` or `db.learnlinux.tv`. The
+hostnames are `webserver` and `db`, the domain name is `learnlinux.tv`. The
+full name (hostname + domain name) is called a fully qualified domain name,
+typically written as `hostname.domain.tld`. 
 
 ### DNS
 
@@ -81,10 +81,10 @@ whose servers have the same hostname.
 ...but if it's not required, why do people use it so often? A domain controller
 is a server that manages a domain and controls how it's used, it controls how a
 domain is used and how resources within that domain are assigned. The most
-common domain controller there is is Microsoft Active Directory(AD). It can
-simplify how your domain is managed and give you additional functionality, but
-it's just that, added functionality. Depending on how many servers you have
-within your network implementing a domain controller might work against you, it
-might represent an additional administrative burden that can create unnecessary
-work. If you have only 5 or 6 servers, you probably shouldn't set up a domain
+common domain controller is Microsoft Active Directory(AD). It can simplify how
+your domain is managed and give you additional functionality, but it's just
+that, added functionality. Depending on how many servers you have within your
+network, implementing a domain controller might work against you, it might
+represent an additional administrative burden that can create unnecessary work.
+If you have only 5 or 6 servers, you probably shouldn't set up a domain
 controller.
