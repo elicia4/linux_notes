@@ -17,10 +17,11 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [scp](commands/scp.md) | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
 | [sar](commands/sar.md) | [grep](commands/grep.md) | [echo](commands/echo.md) |
-| [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 | [watch](commands/watch.md) | [ping](commands/ping.md) | [wget](commands/wget.md) |
 | [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [cat](commands/cat.md) |
 | [diff](commands/diff.md) | [sshfs](commands/sshfs.md) | [ls](commands/ls.md) |
+| [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
+| [zypper](commands/zypper.md) | | |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
