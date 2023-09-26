@@ -21,7 +21,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [cat](commands/cat.md) |
 | [diff](commands/diff.md) | [sshfs](commands/sshfs.md) | [ls](commands/ls.md) |
 | [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
-| [zypper](commands/zypper.md) | | |
+| [zypper](commands/zypper.md) | [man](commands/man.md) | |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
