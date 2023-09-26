@@ -10,9 +10,9 @@ video by LearnLinuxTV.
 - Linux is a kernel, not an OS
 - A kernel is the brain of an OS, it handles I/O, interfaces, hardware etc.
   It's the most important part of an OS
-- Regardless of an OS you're using, there's a kernel.
-- A "distribution" of Linux is a combination of the Linux kernel, and
-  additional software
+- Regardless of an OS you're using, there's a kernel
+- A "distribution" of Linux is a combination of the Linux kernel and additional
+  software
 - Desktop environments provide "desktop-like" features
 - Not all distributions are meant for desktop and laptops
 - "Server" distributions often don't feature a GUI by default
