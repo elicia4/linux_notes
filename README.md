@@ -34,7 +34,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [updating](misc/updating.md) | [bash history](misc/bash_history.md) | [memory & swap](misc/mem_swap.md) |
 | [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
 | [server naming](misc/srv_naming.md) | [distributions](misc/distro.md) | [DE's](misc/de.md) |
-| [connect via SSH](misc/connect_via_ssh.md) | | |
+| [connect via SSH](misc/connect_via_ssh.md) | [snap](misc/snap.md) | |
 
 Book notes:
 
