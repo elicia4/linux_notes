@@ -64,7 +64,7 @@ of a process to alter its scheduling priority on the CPU. You might be running
 something on your machine that is super important and you want to make sure
 that the CPU is paying special attention to that process, in that case you
 might want to configure the niceness value of that process to increase its
-priority. In regards to `top`, the field shows the percentage of time the CPU 
+priority. In regards to `top`, the field shows the percentage of time the CPU
 has spent running processes that were configured with a custom niceness value.
 
 `id` is for "idle". It shows how much time the CPU has been idle for, the
@@ -81,13 +81,13 @@ a big issue these days.
 `st` refers to how much time the virtual CPU has been waiting for the physical
 CPU.
 
-The fourth line contains memory information, it's pretty straightforward. The 
+The fourth line contains memory information, it's pretty straightforward. The
 final field shows how much memory the cache is using, this is information that
 exists on the storage medium that is loaded into memory or is in the process of
 being written to the disk. Linux tries to be as efficient as possible with
 this. Normally, you won't have to intervene when it comes to the cache. You
 should keep in mind that when your system starts to run low on memory, the
-memory from the cache will be made available to processes as needed, it's not 
+memory from the cache will be made available to processes as needed, it's not
 locked. Unused memory is wasted memory.
 
 The last line is all about swap. It's memory that is located on your hard
@@ -95,7 +95,39 @@ drive, it's a lot slower when compared to RAM. The less swap used, the better.
 
 ### The Process Table
 
+You can see the process ID (`PID`), the user that's running the process
+(`USER`), the niceness value or the priorty of the task (`NI`), the total
+amount of virtual memory being used (`VIRT`) by that task, how much physical
+memory is used (`RES`), `SHR` refers to the amount of shared memory that is 
+begin used by a task. Then we have percentages for both memory and CPU (`%CPU`
+and `%MEM`). The `TIME+` field tells us how much time the CPU has spent on that
+particular task. At last, we have the command itself (`COMMAND`).
 
+You will pay much attention to the CPU and memory usage. To sort the processes
+by CPU usage press, `P`. To sort by memory usage, press `M`. What do you do if
+a process is taking up too many resources or is frozen? Press `k` on your
+keyboard, that will bring up the `PID to signal/kill` and enter the PID of the
+process that's causing you trouble (press `Esc` to get out of the prompt). You
+should always try to kill a process normally without resorting to that, but if
+you can't this is a solution. To change the update frequency of `top`, press
+`d`. You get `Change delay from 3.0 to`, enter your desired delay. 
+
+### Most important things
+
+Focus on these fields, they are important.
+
+- Uptime
+- Load average
+- The idle field `id`, and underused/overused server can be a problem, the
+  server exists to do work
+- Swap shouldn't be overly utilized, if it is, something is saturating the
+  memory
+- Memory
+
+### Misc
+
+`htop` is also a great monitoring solution, but it's not as widely available by
+default as `top`.
 
 `top` is also customizable, see the man pages:
 
