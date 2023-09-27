@@ -22,7 +22,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [diff](commands/diff.md) | [sshfs](commands/sshfs.md) | [ls](commands/ls.md) |
 | [dnf](commands/dnf.md) | [pacman](commands/pacman.md) | [apt](commands/apt.md) |
 | [zypper](commands/zypper.md) | [man](commands/man.md) | [cut](commands/cut.md) |
-| [lsof](commands/lsof.md) | [top](commands/top.md) | |
+| [lsof](commands/lsof.md) | [top](commands/top.md) | [passwd](commands/passwd.md) |
 
 | ========= | General | ========= |
 | :-------: | :-------: | :-------: |
