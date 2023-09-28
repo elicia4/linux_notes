@@ -37,22 +37,21 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [awk](commands/awk.md) | [cron](commands/cron.md) | [find](commands/find.md) |
 | [htop](commands/htop.md) | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
-| [sar](commands/sar.md) | [grep](commands/grep.md) | |
-| [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | |
-| [diff](commands/diff.md) | [watch](commands/watch.md) | |
-| | | [cut](commands/cut.md) |
+| [sar](commands/sar.md) | [grep](commands/grep.md) | [cut](commands/cut.md) |
+| [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [diff](commands/diff.md) |
 | [lsof](commands/lsof.md) | [top](commands/top.md) | [passwd](commands/passwd.md) |
+| [watch](commands/watch.md) | | |
 
 #### General
 | | | |
 | :-------: | :-------: | :-------: |
 | [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc & pass mods](misc/acc_pass_exp.md) |
-| [bg and fg](misc/bg_fg.md) | | [manage users](misc/user_mgmt.md)|
+| [bg and fg](misc/bg_fg.md) | [memory & swap](misc/mem_swap.md) | [manage users](misc/user_mgmt.md)|
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
 | [permissions](misc/permissions.md) | [connect via SSH](misc/connect_via_ssh.md) | [hostname](misc/hostname.md) |
 | [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
-| [server naming](misc/srv_naming.md) | | [memory & swap](misc/mem_swap.md) |
+| [server naming](misc/srv_naming.md) | | |
 
 Book notes:
 
