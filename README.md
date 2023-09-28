@@ -8,8 +8,8 @@ A collection of notes on everything Linux 🐧🐧🐧
 | | | |
 | :-------: | :-------: | :-------: |
 | [navigation](basics/navigation.md) | [ls](basics/ls.md) | [cat](basics/cat.md) |
-| [echo](basics/echo.md) | [history](basics/history.md)  | [man](basics/man.md) |
-| [DE's](basics/de.md) | [distributions](basics/distro.md) | |
+| [distributions](basics/distro.md) | [DE's](basics/de.md) | [updating](basics/updating.md) |
+| [history](basics/history.md) | [echo](basics/echo.md) | [man](basics/man.md) |
 
 
 #### Package Management 
