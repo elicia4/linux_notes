@@ -2,6 +2,10 @@
 
 ![tmux Logo](img/tmux.png)
 
+Notes taken on the "Learn tmux" playlist by LearnLinuxTV.
+
+[***go back to README***](/README.md)
+
 These are notes on `tmux`, a terminal multiplexer.
 
 1. Introduction(you are here).
