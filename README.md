@@ -46,15 +46,13 @@ A collection of notes on everything Linux 🐧🐧🐧
 #### General
 | | | |
 | :-------: | :-------: | :-------: |
-| [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc & pass mods](misc/user_acc_and_pass_exp.md) |
+| [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc & pass mods](misc/acc_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | | [manage users](misc/user_mgmt.md)|
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
-| [permissions](misc/permissions.md) | | [hostname](misc/hostname.md) |
-| [updating](misc/updating.md) |  | [memory & swap](misc/mem_swap.md) |
+| [permissions](misc/permissions.md) | [connect via SSH](misc/connect_via_ssh.md) | [hostname](misc/hostname.md) |
 | [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
-| [server naming](misc/srv_naming.md) | | |
-| [connect via SSH](misc/connect_via_ssh.md) | | |
+| [server naming](misc/srv_naming.md) | | [memory & swap](misc/mem_swap.md) |
 
 Book notes:
 
