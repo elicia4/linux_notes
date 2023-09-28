@@ -5,36 +5,39 @@
 A collection of notes on everything Linux 🐧🐧🐧
 
 
-| ========= | Package Management | ========= |
+#### Package Management 
+| | | |
 | :-------: | :-------: | :-------: |
 | [apt](pkg_mgmt/apt.md) | [pacman](pkg_mgmt/pacman.md) | [dnf](pkg_mgmt/dnf.md) |
 | [zypper](pkg_mgmt/zypper.md) | [snap](pkg_mgmt/snap.md) | [AUR](pkg_mgmt/aur.md) |
 
-| ========= | Networking | ========= |
+#### Networking 
+| | | |
 | :-------: | :-------: | :-------: |
 | [ping](networking/ping.md) | [scp](networking/scp.md) | [rsync](networking/rsync.md) |
 | [wget](networking/wget.md) | [nmap](networking/nmap.md) | [sshfs](networking/sshfs.md) |
 
-| ========= | Tools | ========= |
+#### Tools 
+| | | |
 | :-------: | :-------: | :-------: |
 | [git](tools/git/README.md) | [openssh](tools/openssh/README.md) | [apache](tools/apache.md) |
 | [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
 | [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
 
-| ========= | Commands | ========= |
+#### Commands 
+| | | |
 | :-------: | :-------: | :-------: |
 | [awk](commands/awk.md) | [cron](commands/cron.md) | [find](commands/find.md) |
-| [htop](commands/htop.md) | | |
-| | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
+| [htop](commands/htop.md) | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
 | [sar](commands/sar.md) | [grep](commands/grep.md) | [echo](commands/echo.md) |
-| [watch](commands/watch.md) | | |
 | [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [cat](commands/cat.md) |
-| [diff](commands/diff.md) | | [ls](commands/ls.md) |
+| [diff](commands/diff.md) | [watch](commands/watch.md) | [ls](commands/ls.md) |
 | [history](misc/history.md) | [man](commands/man.md) | [cut](commands/cut.md) |
 | [lsof](commands/lsof.md) | [top](commands/top.md) | [passwd](commands/passwd.md) |
 
-| ========= | General | ========= |
+#### General
+| | | |
 | :-------: | :-------: | :-------: |
 | [logging](misc/logging.md) | [data streams](misc/data-streams.md) | [acc & pass mods](misc/user_acc_and_pass_exp.md) |
 | [bg and fg](misc/bg_fg.md) | | [manage users](misc/user_mgmt.md)|
