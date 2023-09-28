@@ -4,6 +4,13 @@
 
 A collection of notes on everything Linux 🐧🐧🐧
 
+#### Basics
+| | | |
+| :-------: | :-------: | :-------: |
+| [navigation](basics/navigation.md) | [ls](basics/ls.md) | [cat](basics/cat.md) |
+| [echo](basics/echo.md) | [history](basics/history.md)  | [man](basics/man.md) |
+| [DE's](basics/de.md) | [distributions](basics/distro.md) | |
+
 
 #### Package Management 
 | | | |
@@ -20,7 +27,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 #### Tools 
 | | | |
 | :-------: | :-------: | :-------: |
-| [git](tools/git/README.md) | [openssh](tools/openssh/README.md) | [apache](tools/apache.md) |
+| [git](tools/git/README.md) | [ssh](tools/ssh/README.md) | [apache](tools/apache.md) |
 | [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
 | [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
 
@@ -30,10 +37,10 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [awk](commands/awk.md) | [cron](commands/cron.md) | [find](commands/find.md) |
 | [htop](commands/htop.md) | [sed](commands/sed.md) | [shutdown](commands/shutdown.md) |
 | [sudo](commands/sudo.md) | [tr](commands/tr.md) | [usermod](commands/usermod.md) |
-| [sar](commands/sar.md) | [grep](commands/grep.md) | [echo](commands/echo.md) |
-| [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [cat](commands/cat.md) |
-| [diff](commands/diff.md) | [watch](commands/watch.md) | [ls](commands/ls.md) |
-| [history](misc/history.md) | [man](commands/man.md) | [cut](commands/cut.md) |
+| [sar](commands/sar.md) | [grep](commands/grep.md) | |
+| [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | |
+| [diff](commands/diff.md) | [watch](commands/watch.md) | |
+| | | [cut](commands/cut.md) |
 | [lsof](commands/lsof.md) | [top](commands/top.md) | [passwd](commands/passwd.md) |
 
 #### General
@@ -43,10 +50,10 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [bg and fg](misc/bg_fg.md) | | [manage users](misc/user_mgmt.md)|
 | [hardware](misc/hw.md) | [fstab](misc/fstab.md) | [manage groups](misc/group_mgmt.md) |
 | [public key auth](misc/pub_key.md) | [symbolic links](misc/sym_links.md) | [format & mount](misc/volume_mgmt.md) |
-| [permissions](misc/permissions.md) | [navigation](misc/navigation.md) | [hostname](misc/hostname.md) |
+| [permissions](misc/permissions.md) | | [hostname](misc/hostname.md) |
 | [updating](misc/updating.md) |  | [memory & swap](misc/mem_swap.md) |
 | [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
-| [server naming](misc/srv_naming.md) | [distributions](misc/distro.md) | [DE's](misc/de.md) |
+| [server naming](misc/srv_naming.md) | | |
 | [connect via SSH](misc/connect_via_ssh.md) | | |
 
 Book notes:
