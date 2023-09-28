@@ -29,7 +29,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | :-------: | :-------: | :-------: |
 | [git](tools/git/README.md) | [ssh](tools/ssh/README.md) | [apache](tools/apache.md) |
 | [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
-| [vim](tools/vim/README.md) | [nano](tools/nano.md) | |
+| [vim](tools/vim/README.md) | [nano](tools/nano.md) | [tmux](tools/tmux/01-intro.md) |
 
 #### Commands 
 | | | |
