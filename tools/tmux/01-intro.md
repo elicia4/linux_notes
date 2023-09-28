@@ -5,7 +5,10 @@
 These are notes on `tmux`, a terminal multiplexer.
 
 1. Introduction(you are here).
-1. []()
+1. [Splits and Panes](02-splits-panes.md)
+1. [Window Management](03-wm.md)
+1. [Sessions](04-sessions.md)
+1. [Customization](05-customization.md)
 
 ### What is `tmux`?
 
