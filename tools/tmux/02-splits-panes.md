@@ -1,5 +1,7 @@
 # Splits and Panes
 
+[**Contents**](01-intro.md)
+
 You can carve up your windows into sections. You can split your screen
 vertically and horizontally.
 
