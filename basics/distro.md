@@ -1,7 +1,7 @@
 # What is a Linux Distribution?
 
 Notes taken on the "Linux Crash Course - What is a "Distribution" of Linux?"
-video by LearnLinuxTV.
+video by Learn Linux TV.
 
 [***go back to README***](/README.md)
 
@@ -33,7 +33,7 @@ distros. A DE is a waste of resources when it comes to servers.
 - [Distrowatch](https://distrowatch.com/) is a website that lists quite a few
   of the distributions that are available
 - Although it's a useful site, it's NOT an accurate portrayal of actual
-  popularity of marketshare. It's still a good way to see what distributions
+  popularity of market share. It's still a good way to see what distributions
   are available
 - The number of distributions can be overwhelming
 
@@ -57,18 +57,18 @@ default apps it includes:
 - Cheese - Webcam app
 - ...and so on
 
-The "Additoinal Drivers" app is great for driver installation. Drivers get
+The "Additional Drivers" app is great for driver installation. Drivers get
 updated regularly, in case you get the newest hardware at some point, the
 drivers for it will likely be available. 
 
-There are other version of Ubuntu that provide a different DE, like Xubuntu,
+There are other versions of Ubuntu that provide a different DE, like Xubuntu,
 Kubuntu etc. 
 
-LTS (long-term support) releases are supported(receive security updates) up to
+LTS (long-term support) releases are supported (receive security updates) up to
 five years.  
 Interim releases only have 9 months of support.
 
-Ubuntu is based on Debian. It a great beginner distro.
+Ubuntu is based on Debian. It is a great beginner distro.
 
 ### Fedora
 
@@ -127,9 +127,9 @@ considered to be default.
 - KMail - Email
 
 YaST is a control center on steroids. There's a command line version of YaST as
-well. It gives you a lot of power. It has build-in "Windows Domain Membership",
-if you're working in an enterprise environment this might come in handy for
-you in case you're required to join everything to a domain.
+well. It gives you a lot of power. It has built-in "Windows Domain Membership",
+if you're working in an enterprise environment, this might come in handy for
+you, in case you're required to join everything to a domain.
 
 At its core, openSUSE is an enterprise Linux distribution. There's also SUSE 
 enterprise Linux, a distribution for companies. Both of these distros share the
@@ -148,3 +148,4 @@ bottom panel or by pressing the Super key.
 
 Pop!\_OS is a great distro, it's based on Ubuntu. It's great for gaming, for
 drivers, for upgrading and recovery. It has a dedicated NVIDIA distro.
+
