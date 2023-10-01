@@ -1,12 +1,12 @@
 # Bash History
 
-Notes on the video "Linux Crash Course - Bash History" by LearnLinuxTV.
+Notes on the video "Linux Crash Course - Bash History" by Learn Linux TV.
 
 [***go back to README***](/README.md)  
 
 Bash history gives you a list of command that have been run on your machine.
 Note that history is per user as well as per terminal instance, so if you have
-two terminals open and both logged into the same user you would get different
+two terminals open and both logged into the same user, you would get different
 `history` output from each of those terminals.
 
 For example, you can find out what people before you did to fix a particular 
@@ -27,7 +27,7 @@ command with `!<comm_num>`, so to run command #255:
 Say you ran a command that needed superuser privileges but forgot to use
 `sudo`, you can fix it like so:
 
-    sudo !! # !! will be substitued with the previous command
+    sudo !! # !! will be substituted with the previous command
 
 To add date and time to history output, add the following line to your
 `.bashrc` file:
@@ -58,3 +58,4 @@ to move backward through matched commands, `<CTRL+s>` to move forward through
 matched results (might suspend your terminal in some cases, press `<CTRL+q>` to
 resume). You can also do `<CTRL+p>` to go backward through your command history
 and  `<CTRL+n>` to go forward through your command history.
+
