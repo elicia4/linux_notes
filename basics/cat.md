@@ -1,12 +1,12 @@
 # The `cat` command
 
 Notes taken on the "The cat Command in Linux (Featuring Real Cats) - Linux
-Crash Course Series" video by LearnLinuxTV.
+Crash Course Series" video by Learn Linux TV.
 
 [***go back to README***](/README.md)
 
-It stands for "concatenate", you can use it to link files together or just show
-the contents of a text file. 
+It stands for "concatenate", you can use it to link files together or show the
+contents of a text file. 
 
 To show the contents of a file:
 
@@ -14,14 +14,14 @@ To show the contents of a file:
 
 To concatenate files together:
 
-    cat file1 file2
+    cat file1 file2 ...
 
-The contents of both of those files will be combined into one output. You can
-redirect the output to a new file:
+The contents of those files will be combined into one output. You can redirect
+the output to a new file:
 
     cat file1 file2 > combined.txt
 
-To show line number add `-n`:
+To show line numbers, add `-n`:
 
     cat -n file
 
