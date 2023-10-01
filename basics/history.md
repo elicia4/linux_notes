@@ -58,4 +58,3 @@ to move backward through matched commands, `<CTRL+s>` to move forward through
 matched results (might suspend your terminal in some cases, press `<CTRL+q>` to
 resume). You can also do `<CTRL+p>` to go backward through your command history
 and  `<CTRL+n>` to go forward through your command history.
-

@@ -1,19 +1,19 @@
 # Navigating the Filesystem
 
 Notes on the video "Linux Crash Course: Navigating the Linux Filesystem" by
-LearnLinuxTV.
+Learn Linux TV.
 
 [***go back to README***](/README.md)  
 
-This video is extremely intoductory, you probably know all this by now.
+This video is extremely introductory, you probably know all this by now.
 
-There are two meanings of the term "filesystem":
+There are two meanings of the term "file system":
 1. A system on your hard disk that defines how data is written to and
-   retrieved. On Windows, popular filesystems are: FAT, NTFS and so on. On
+   retrieved. On Windows, popular file systems are: FAT, NTFS and so on. On
    Linux we have ext4 among others.
 1. The layout of your directories on your system. We are going to discuss this.
 
-In Linux, you don't have to have file extensions. 
+On Linux, you don't have to have file extensions. 
 
 What is your default current directory? It's `/home/your_username`, its
 shorthand for `~`.

@@ -148,4 +148,3 @@ bottom panel or by pressing the Super key.
 
 Pop!\_OS is a great distro, it's based on Ubuntu. It's great for gaming, for
 drivers, for upgrading and recovery. It has a dedicated NVIDIA distro.
-

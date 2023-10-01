@@ -107,4 +107,3 @@ buttons` in `Type of display`. Now disable the edit mode.
 Cinnamon has a great deal of customization in System Settings, open up the app
 launcher and click on the settings button on the left. Go to Themes and
 customize the DE to your liking.
-

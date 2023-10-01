@@ -1,7 +1,7 @@
 # Installing Updates
 
 Notes taken on the "Linux Crash Course - Installing Updates" video by
-LearnLinuxTV.
+Learn Linux TV.
 
 [***go back to README***](/README.md)  
 
@@ -10,7 +10,7 @@ most) distributions based off of them have the same process. Even though they
 all use different commands to install updates, they have the same design to how
 the process works. 
 
-There is an index on you machine that you want to synchronize with the remote
+There is an index on your machine that you want to synchronize with the remote
 server. When you use a package manager on Linux, you call software from a
 remote server, but you first have to update the index so that the packages you
 have listed locally as being available are actually available on the remote
@@ -30,7 +30,7 @@ To upgrade the packages:
     sudo apt dist-upgrade
 
 After installing all the updates (especially if you updated the kernel or some
-other fundumental software), it's recommended that you reboot:
+other fundamental software), it's recommended that you reboot:
 
     sudo reboot
 

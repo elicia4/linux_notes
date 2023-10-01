@@ -1,7 +1,7 @@
 # The `man` command
 
 Notes taken on the "Linux Crash Course - Learn The `man` Command" video by
-LearnLinuxTV.
+Learn Linux TV.
 
 [***go back to README***](/README.md)
 
@@ -19,7 +19,7 @@ To see the manual page for `ls`:
 To scroll down and up, use the `Up` and `Down` arrows. `PgUp` and `PgDn`
 buttons are supported as well. The man pages are quite extensive.
 
-People don't usually memorize all of the options of the commands they use, they
+People don't usually memorize all the options of the commands they use, they
 use man pages and the Internet. When you can't remember some command option,
 use `man`. Press `q` to quit.
 
@@ -27,9 +27,10 @@ The `rsync` utility has a lot of options:
 
     man rsync
 
-It's a big man page. Press `h` for help. To search for information, use
-`/pattern`. To go to the beginning of a man page, use `g` (or `gg`). To go to
-the end, use `G`.
+It's a big man page. Press `h` for help. 
+- to search for information, use `/pattern`
+- to go to the beginning of a man page, use `g` (or `gg`)
+- to go to the end, use `G`
 
 There are multiple sections within the `man` pages. Each section goes over very
 specific category of information.
@@ -68,7 +69,7 @@ There are built-in commands, they don't have their own man pages. For example,
 
     man cd
 
-There is a workaround though:
+There is a workaround, though:
 
     man builtins
 
