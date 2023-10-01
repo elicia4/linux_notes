@@ -1,7 +1,7 @@
 # The `echo` command
 
 Notes taken on the "Linux Crash Course - The echo Command" video by
-LearnLinuxTV.
+Learn Linux TV.
 
 [***go back to README***](/README.md)  
 
