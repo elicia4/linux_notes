@@ -62,7 +62,8 @@ dedicate the amount of space to LVM, so choose `Custom storage layout`.
 1. Select `Add GPT Partition`.
 1. Create one 1G, ext4 `/boot` partition.
 1. Add a new GPT partition, set its `Format:` to `Leave unformatted`.
-1. `Create volume group (LVM)`, name it `vg-ubuntu`, select the volume.
+1. `Create volume group (LVM)`, name it `vg-ubuntu`, select the volume(s) you
+   want to add to the group.
 1. Select your volume group, select `Create Logical Volume`. Create a logical
    volume for root, name it `lv-root`, leave some place on the disk.
 
@@ -102,8 +103,8 @@ What if you don't have any space left? Install another hard drive. To confirm:
 
     lsblk
 
-To turn a second hard drive into a physical volume, **be very careful here**,
-if you attach the wrong hard drive here, you are wiping out your entire
+Turn a second hard drive into a physical volume, **be very careful here**, if
+you attach the wrong hard drive here, you are wiping out your entire
 filesystem:
 
     sudo pvcreate /dev/<hard-drive>
@@ -301,5 +302,6 @@ Now everything should be flushed. Re-mount it:
     df -h;
     ls -l /mnt/extra/web
 
-The `important_file.txt` should be there. Play around with in on a test system
-before you put it in production.
+The `important_file.txt` should be there.
+
+Play around with LVM on a test system before you put it in production.
