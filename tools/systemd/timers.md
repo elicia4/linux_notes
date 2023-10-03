@@ -129,3 +129,45 @@ prove that it works:
 
 It should have given you the weather report. Now you know that the service file
 works.
+
+Take another look at the timer file. There's no command listed there, the
+service file has the command that you're going to use. The service file is not
+mentioned either because of the reason mentioned above.
+
+Install the service file:
+
+    sudo mv weather-report.timer /etc/systemd/system/
+
+You should now have both:
+
+    ls -l /etc/systemd/system/weather-report.*
+
+You should a `daemon-reload` again:
+
+    sudo systemctl daemon-reload 
+
+Check the `status`:
+
+    systemctl status weather-report.timer 
+
+Enable the timer:
+
+    sudo systemctl enable weather-report.timer;
+    systemctl status weather-report.timer 
+
+Now it's enabled. Now start the `timer`:
+
+    sudo systemctl start weather-report.timer;
+    systemctl status weather-report.timer 
+
+Under `Trigger` it's going to tell you when it will trigger next time.
+
+You want to both `enable` and `start` the timer. You don't have to do anything
+with the `service` file, not even enable it. If you enable it, it will run at
+boot time. The presence of a timer doesn't change how the service behaves.
+
+So far everything you've done with systemd timers can be done with cron jobs.
+
+### Additional Options
+
+
