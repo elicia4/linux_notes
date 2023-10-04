@@ -1,6 +1,6 @@
 # Learn Ansible
 
-![]()
+![Ansible Logo](img/ansible.png)
 
 Notes taken on the "Getting started with Ansible" playlist by LearnLinuxTV.
 
