@@ -7,7 +7,7 @@ Notes taken on the "Getting started with Ansible" playlist by LearnLinuxTV.
 [***go back to README***](/README.md)
 
 1. Introduction(you are here).
-1. [Overview & Setup]()
+1. [SSH Overview & Setup](02-ssh.md)
 1. [Running ad-hoc Commands]()
 1. [Running elevated ad-hoc Commands]()
 1. [Writing our first Playbook]()
