@@ -41,7 +41,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [sar](commands/sar.md) | [grep](commands/grep.md) | [cut](commands/cut.md) |
 | [df & du](commands/df_du.md) | [head & tail](commands/head_tail.md) | [diff](commands/diff.md) |
 | [lsof](commands/lsof.md) | [top](commands/top.md) | [passwd](commands/passwd.md) |
-| [watch](commands/watch.md) | | |
+| [watch](commands/watch.md) | [curl](commands/curl.md) | |
 
 #### General
 | | | |
