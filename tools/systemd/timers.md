@@ -170,4 +170,45 @@ So far everything you've done with systemd timers can be done with cron jobs.
 
 ### Additional Options
 
+Let's add additional options to the timer file.
 
+    [Unit]
+    Description=Weather Report Service
+    
+    [Timer]
+    # You don't have to use seconds. This ensures that the server has to run at
+    # least 15 minutes before the timer will trigger. It ensures that the timer
+    # doesn't get in the way of other services.
+    OnBootSec=15m
+    OnCalendar=Mon..Fri 12:51
+    # If you restart your server and the weather-report triggers at that time,
+    # it will still run at the next available opportunity, in this case, when
+    # the server starts up the next time.
+    # If a job is missed, it will run at the next available opportunity.
+    Persistent=true
+    
+    [Install]
+    WantedBy=timers.target
+
+Let's examine the `OnCalendar` option. How does one come up with a time frame
+that `systemd` will understand? Type a simple timestamp:
+
+    Monday 2032-08-16 00:32:40
+
+This is a format that systemd understands. This time will execute at that
+single day at that exact time and never again. You can substitute these entries
+with `*`, asterisk means "any":
+
+    # the timer will trigger at this date and time regardless of the day of the
+    # week.
+    * 2032-08-16 00:32:40
+    # the timer will trigger at this date and time regardless of the day of the
+    # week and the year.
+    * *-08-16 00:32:40
+    # the timer will trigger at this date and time regardless of the day of the
+    # week, the year, and the month.
+    * *-*-16 00:32:40
+    # the timer will trigger every day at that exact time regardless of the day
+    # of the week, the year, the month, and the day.
+    * *-*-* 00:32:40
+    # ...and so on and so on.
