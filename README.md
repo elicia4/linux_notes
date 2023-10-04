@@ -30,7 +30,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [git](tools/git/README.md) | [SSH](tools/ssh/README.md) | [Apache](tools/apache.md) |
 | [Bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [Docker](tools/docker/README.md) |
 | [vim](tools/vim/README.md) | [nano](tools/nano.md) | [tmux](tools/tmux/01-intro.md) |
-| [LVM](tools/lvm.md) | | |
+| [LVM](tools/lvm.md) | [Ansible](tools/ansible/01-intro.md) | |
 
 #### Commands 
 | | | |
