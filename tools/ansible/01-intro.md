@@ -37,5 +37,5 @@ You server/laptop/workstation contains the scripts(playbooks) that are used to
 run Ansible against the servers. In the real world, you could have a git
 repository with all of you Ansible playbooks. 
 
-**(!!!)**You should create a couple of VM's to simulate the process of
+**(!!!)** You should create a couple of VM's to simulate the process of
 configuring servers.
