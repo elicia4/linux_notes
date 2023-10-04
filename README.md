@@ -27,10 +27,10 @@ A collection of notes on everything Linux 🐧🐧🐧
 #### Tools 
 | | | |
 | :-------: | :-------: | :-------: |
-| [git](tools/git/README.md) | [ssh](tools/ssh/README.md) | [apache](tools/apache.md) |
-| [bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [docker](tools/docker/README.md) |
+| [git](tools/git/README.md) | [SSH](tools/ssh/README.md) | [Apache](tools/apache.md) |
+| [Bash](tools/bash/README.md) | [systemd](tools/systemd/README.md) | [Docker](tools/docker/README.md) |
 | [vim](tools/vim/README.md) | [nano](tools/nano.md) | [tmux](tools/tmux/01-intro.md) |
-| [lvm](tools/lvm.md) | | |
+| [LVM](tools/lvm.md) | | |
 
 #### Commands 
 | | | |
