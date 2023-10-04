@@ -1,8 +1,8 @@
 # The `curl` command
 
 Notes taken on the "Supercharge Your Workflow with cURL | Understanding The
-cURL Command-Line Tool" video by LearnLinuxTV and "Linux Essentials: Curl
-Fundamentals" by HackerSploit.
+cURL Command-Line Tool" video by LearnLinuxTV, "Linux Essentials: Curl
+Fundamentals" by HackerSploit, and the `curl` man page.
 
 [***go back to README***](/README.md)
 
