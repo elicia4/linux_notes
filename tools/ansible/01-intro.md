@@ -10,7 +10,7 @@ Notes taken on the "Getting started with Ansible" playlist by LearnLinuxTV.
 1. [SSH Overview & Setup](02-ssh.md)
 1. [Setting up the Git Repository](03-git.md)
 1. [Running ad-hoc Commands](04-ad-hoc.md)
-1. [Running elevated ad-hoc Commands]()
+1. [Running elevated ad-hoc Commands](05-el_ad-hoc.md)
 1. [Writing our first Playbook]()
 1. [The 'when' Conditional]()
 1. [Improving your Playbook]()
