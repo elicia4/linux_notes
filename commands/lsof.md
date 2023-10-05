@@ -1,7 +1,7 @@
 # The `lsof` command
 
 Notes taken on the "Linux Crash Course - The `lsof` Command" video by
-LearnLinuxTV.
+Learn Linux TV.
 
 [***go back to README***](/README.md)
 
@@ -26,8 +26,9 @@ open file.
   open file. 
 - The next is `PID`, that pertains to the process that has that file open.
 - `TID` is "thread identifier"
-- `TASKCMD` is "task command". It's the same as the command itself. It's often
-  the same as the command
+- `TASKCMD` is "task command". Generally this will be the same as the process
+  named in the COMMAND  column, but some task implementations (e.g., Linux)
+  permit a task to change its command name.
 - `USER` lets you know which user created the process. Use `grep` to narrow the
   output down
 - `TYPE` contains what kind of object the item happens to be: a directory, a
@@ -46,7 +47,7 @@ them, try:
 
     sudo lsof | wc -l
 
-Some of the lines are invalid, but most of them are. You only get access to
+Some of the lines are invalid, but most of them aren't. You only get access to
 listings you have access to view.
 
 Use the `USER` column to narrow down the output:
@@ -78,11 +79,11 @@ You can narrow down the output by PID:
 
     sudo lsof -p 12278 # -p is the process ID option
 
-A real-world example, you examine open files in a directory:
+Here's a real-world example, you examine open files in a directory:
 
     sudo lsof /mnt/wp-content
 
-You can use `-u` as an exeption filter by using `^`, to view open files not
+You can use `-u` as an exception filter by using `^`, to view open files not
 owned by `root`:
 
     sudo lsof -u ^root
