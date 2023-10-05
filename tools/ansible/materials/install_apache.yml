@@ -1,0 +1,19 @@
+---
+
+- hosts: all # run it on all hosts
+  become: true # sudo privileges
+  tasks: # list of plays to do 
+
+  - name: update repository index
+    apt:
+      update_cache: yes # this updates the repo index
+
+  - name: install apache2 package # the title that will be shown in the output
+    apt: # the module you want to use
+      name: apache2 # name of the package you want to install
+      state: latest
+
+  - name: add php support for apache
+    apt:
+      name: libapache2-mod-php
+      state: latest
