@@ -8,20 +8,26 @@ To set up:
 
 1. Install neovim:
 
-    pacman -S neovim
+```
+pacman -S neovim
+```
 
 1. Change the default aliases to nvim:
 
-    echo "alias vi=nvim;" >> .zshrc
-    echo "alias vim=nvim;" >> .zshrc
+```
+echo "alias vi=nvim;" >> .zshrc
+echo "alias vim=nvim;" >> .zshrc
+```
 
 1. Install Nerd Font (JetBrainsMono Nerd Font)
 1. Install git
 1. Install NVChad, backup and delete cache first:
 
-    mv ~/.config/nvim ~/.config/nvim.backup # backup
-    rm -rf ~/.local/share/nvim
-    git clone https://github.com/NVChad/NVChad ~/.config/vim --depth 1
+```
+mv ~/.config/nvim ~/.config/nvim.backup # backup
+rm -rf ~/.local/share/nvim
+git clone https://github.com/NVChad/NVChad ~/.config/vim --depth 1
+```
 
 1. Open up `vim`.
 1. Do not install the example config.
@@ -31,13 +37,18 @@ To set up:
 1. To change theme: ' ' + `t` + `h` (`ctrl+p`/`ctrl+n` to navigate)
 1. To install syntax highlighting:
     
-    TSInstall elixir
+```
+:TSInstall elixir
+```
 
    To check which ones you have installed:
 
-    TSInstallInfo
+```
+:TSInstallInfo
+```
 
 1. To open the file tree: `space + e`
+
    - You can mark a file by pressing `m`
    - You can create a file with `a`
    - You can copy with `c`, paste with `p`, rename using `r`, delete with `d`
@@ -82,7 +93,9 @@ To set up:
 
 1. Let's add syntax highlighting for crystal:
 
-    vim ~/.config/nvim/lua/custom/chadrc.lua
+```
+vim ~/.config/nvim/lua/custom/chadrc.lua
+```
 
    It's recommended to group all plugins in their own config file called
    `plugins.lua`:
@@ -137,7 +150,9 @@ of the box.
 Let's add an LSP config for Rust analyzer. We have to add an override for our
 LSP config package configuration:
 
-    vim ~/.config/nvim/lua/custom/plugins.lua
+```
+vim ~/.config/nvim/lua/custom/plugins.lua
+```
 
 Add a new entry for `neovim/nvim-lspconfig`:
 
@@ -156,8 +171,10 @@ Add a new entry for `neovim/nvim-lspconfig`:
 
 Create the files:
 
-    mkdir ~/.config/nvim/lua/custom/configs/
-    touch ~/.config/nvim/lua/custom/configs/lspconfig.lua
+```
+mkdir ~/.config/nvim/lua/custom/configs/
+touch ~/.config/nvim/lua/custom/configs/lspconfig.lua
+```
 
 Add the following lines to it:
 
@@ -181,7 +198,9 @@ lspconfig-all`.
 
 Make sure you have Rust analyzer installed on your system:
 
-    rustup component add rust-analyzer
+```
+rustup component add rust-analyzer
+```
 
 Or you can use the Mason plugin provided by NVChad to manage LSP binaries for
 you. 
