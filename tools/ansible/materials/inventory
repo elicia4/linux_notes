@@ -1,3 +1,9 @@
-# IP address #1 / hostname #1
-# IP address #2 / hostname #2
-# ...
+# [web_servers]
+# <host>
+# <host>
+
+# [db_servers]
+# <host>
+
+# [file_servers]
+# <host>
