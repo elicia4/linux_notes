@@ -11,3 +11,4 @@
 1. [Marks](07-marks.md)
 1. [G Key](08-g-key.md)
 1. [Vim Tips](09-vim-tips.md)
+1. [NVChad Hotkeys](10-nvchad.md)
