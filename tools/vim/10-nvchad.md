@@ -1,6 +1,8 @@
-# 10. NVChad Hotkeys
+# 10. NVChad Setup, Hotkeys, and Configurations
 
 [***go back to README***](README.md)
+
+These are notes on [this video](https://youtu.be/Mtgo-nP_r8Y)
 
 To set up:
 
@@ -77,3 +79,130 @@ To set up:
      (plugins/nvchad options)
    - `init.lua` is used for overwriting neovim options and commands (neovim/vim
      configurations)
+
+1. Let's add syntax highlighting for crystal:
+
+    vim ~/.config/nvim/lua/custom/chadrc.lua
+
+   It's recommended to group all plugins in their own config file called
+   `plugins.lua`:
+    
+```lua
+...
+M.plugins = 'custom.plugins'
+return M
+```
+
+   Add the following text inside:
+
+```lua
+local plugins = {
+  {
+      "vim-crystal/vim-crystal"
+      ft = "crystal"
+      lazy = false
+  }
+}
+return plugins
+```
+
+   We also specified the file type we want the plugin to load for, that's
+   because NVChad uses the lazy plugin manager. You can also disable lazy
+   loading for a plugin by setting the `lazy` key to `false`. To install a
+   plugin: `:Lazy sync`. After that, reopen `vim`.
+
+   You can add any plugin configurations to `plugins.lua`. You can add
+   autoformatting of crystal code to your plugin:
+
+```lua
+...
+ft = "crystal",
+config = function(_)
+  vim.g.crystal_auto_format = 1
+end
+```
+
+    You can set standard vim configurations in `init.lua`:
+
+```lua
+vim.opt.colorcolumn = "80"
+```
+
+### LSP
+
+LSP means "language server protocol". It enables editors to receive code
+completion and other tooling using language servers. Neovim comes with this out
+of the box. 
+
+Let's add an LSP config for Rust analyzer. We have to add an override for our
+LSP config package configuration:
+
+    vim ~/.config/nvim/lua/custom/plugins.lua
+
+Add a new entry for `neovim/nvim-lspconfig`:
+
+```lua
+...
+  end
+},
+{
+    "neovim/nvim-lspconfig",
+    config = function()
+      require = "plugins.configs.lspconfig"
+      require = "custom.configs.lspconfig"
+    end,
+}
+```
+
+Create the files:
+
+    mkdir ~/.config/nvim/lua/custom/configs/
+    touch ~/.config/nvim/lua/custom/configs/lspconfig.lua
+
+Add the following lines to it:
+
+```lua
+local on_attach = require("plugins.configs.lspconfig").on_attach
+local capabilities = require("plugins.configs.lspconfig").capabilities
+
+local lspconfig = require "lspconfig"
+
+lspconfig.rust_analyzer.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"rust"},
+  root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+})
+```
+
+If you want to add in other LSP server configurations, you can reference the
+neovim LSP config server configurations guide on GitHub. Or you can use: `:help
+lspconfig-all`.
+
+Make sure you have Rust analyzer installed on your system:
+
+    rustup component add rust-analyzer
+
+Or you can use the Mason plugin provided by NVChad to manage LSP binaries for
+you. 
+
+To use mason is as simple as adding an entry to our custom config to override
+the default config:
+
+```lua
+...
+  end,
+},
+{
+  "williamboman/mason.nvim",
+  opts = {
+    ensure_installed = {
+      "rust-analyzer",
+    }
+  }
+}
+...
+```
+
+Then use the command `:MasonInstallAll` to download and install the language
+server.
