@@ -2,32 +2,32 @@
 
 [***go back to README***](README.md)
 
-These are notes on [this video](https://youtu.be/Mtgo-nP_r8Y)
+These are notes on [this video](https://youtu.be/Mtgo-nP_r8Y).
 
 To set up:
 
 1. Install neovim:
 
-```
-pacman -S neovim
-```
+   ```
+   pacman -S neovim
+   ```
 
 1. Change the default aliases to nvim:
 
-```
-echo "alias vi=nvim;" >> .zshrc
-echo "alias vim=nvim;" >> .zshrc
-```
+   ```
+   echo "alias vi=nvim;" >> .zshrc
+   echo "alias vim=nvim;" >> .zshrc
+   ```
 
 1. Install Nerd Font (JetBrainsMono Nerd Font)
 1. Install git
 1. Install NVChad, backup and delete cache first:
 
-```
-mv ~/.config/nvim ~/.config/nvim.backup # backup
-rm -rf ~/.local/share/nvim
-git clone https://github.com/NVChad/NVChad ~/.config/vim --depth 1
-```
+   ```
+   mv ~/.config/nvim ~/.config/nvim.backup # backup
+   rm -rf ~/.local/share/nvim
+   git clone https://github.com/NVChad/NVChad ~/.config/vim --depth 1
+   ```
 
 1. Open up `vim`.
 1. Do not install the example config.
