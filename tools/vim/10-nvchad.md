@@ -34,18 +34,18 @@ To set up:
 
 ### Hotkeys
 
-1. To change theme: ' ' + `t` + `h` (`ctrl+p`/`ctrl+n` to navigate)
+1. To change theme: `space` + `t` + `h` (`ctrl+p`/`ctrl+n` to navigate)
 1. To install syntax highlighting:
     
-```
-:TSInstall elixir
-```
+   ```
+   :TSInstall elixir
+   ```
 
    To check which ones you have installed:
 
-```
-:TSInstallInfo
-```
+   ```
+   :TSInstallInfo
+   ```
 
 1. To open the file tree: `space + e`
 
@@ -83,59 +83,58 @@ To set up:
 
 ### Customization
 
-1. You can customize NVChad in `~/.config/nvim/lua/custom` directory, there
-   are:
+You can customize NVChad in `~/.config/nvim/lua/custom` directory, there are:
 
-   - `chadrc.lua` is used for overwriting the default config lua table
-     (plugins/nvchad options)
-   - `init.lua` is used for overwriting neovim options and commands (neovim/vim
-     configurations)
+- `chadrc.lua` is used for overwriting the default config lua table
+  (plugins/nvchad options)
+- `init.lua` is used for overwriting neovim options and commands (neovim/vim
+  configurations)
 
-1. Let's add syntax highlighting for crystal:
+Let's add syntax highlighting for crystal:
 
 ```
 vim ~/.config/nvim/lua/custom/chadrc.lua
 ```
 
-   It's recommended to group all plugins in their own config file called
-   `plugins.lua`:
-    
+It's recommended to group all plugins in their own config file called
+`plugins.lua`:
+
 ```lua
 ...
 M.plugins = 'custom.plugins'
 return M
 ```
 
-   Add the following text inside:
+Add the following text inside:
 
 ```lua
 local plugins = {
-  {
-      "vim-crystal/vim-crystal"
-      ft = "crystal"
-      lazy = false
-  }
+ {
+     "vim-crystal/vim-crystal"
+     ft = "crystal"
+     lazy = false
+ }
 }
 return plugins
 ```
 
-   We also specified the file type we want the plugin to load for, that's
-   because NVChad uses the lazy plugin manager. You can also disable lazy
-   loading for a plugin by setting the `lazy` key to `false`. To install a
-   plugin: `:Lazy sync`. After that, reopen `vim`.
+We also specified the file type we want the plugin to load for, that's because
+NVChad uses the lazy plugin manager. You can also disable lazy loading for a
+plugin by setting the `lazy` key to `false`. To install a plugin: `:Lazy sync`.
+After that, reopen `vim`.
 
-   You can add any plugin configurations to `plugins.lua`. You can add
-   autoformatting of crystal code to your plugin:
+You can add any plugin configurations to `plugins.lua`. You can add
+autoformatting of crystal code to your plugin:
 
 ```lua
 ...
 ft = "crystal",
 config = function(_)
-  vim.g.crystal_auto_format = 1
+ vim.g.crystal_auto_format = 1
 end
 ```
 
-    You can set standard vim configurations in `init.lua`:
+You can set standard vim configurations in `init.lua`:
 
 ```lua
 vim.opt.colorcolumn = "80"
