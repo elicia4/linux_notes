@@ -10,12 +10,12 @@ installing packages, you can consolidate them into one.
 
 ```yaml
 - name: install apache2 & php support 
-apt: 
-  name: # add a list of packages
-    - apache2 
-    - libapache2-mod-php
-  state: latest
-when: ansible_distribution == "Ubuntu"
+  apt: 
+    name: # add a list of packages
+      - apache2 
+      - libapache2-mod-php
+    state: latest
+  when: ansible_distribution == "Ubuntu"
 ```
 
 Do the same thing with CentOS plays. Your playbooks is more efficient and
@@ -26,13 +26,13 @@ the package installation play:
 
 ```yaml
 - name: install apache2 & php support
-apt: 
-  name: 
-    - apache2 
-    - libapache2-mod-php
-  state: latest
-  update_cache: yes # add it here 
-when: ansible_distribution == "Ubuntu"
+  apt: 
+    name: 
+      - apache2 
+      - libapache2-mod-php
+    state: latest
+    update_cache: yes # add it here 
+  when: ansible_distribution == "Ubuntu"
 ```
 
 Yet again, you can do the same thing to the CentOS plays. The developers of
