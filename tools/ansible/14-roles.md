@@ -194,13 +194,13 @@ Add tasks to the files.
 These are not really playbooks, these are taskbooks. Now you have most of the
 roles set up.
 
-In the `roles/web_servers`, you need to create a `files` directory:
+In the `web_servers` folder, you need to create a `files` directory:
 
-    mkdir roles/web_servers/files
+    mkdir web_servers/files
 
 Copy the default site file there:
 
-    cd roles/web_servers/files;
+    cd web_servers/files;
     cp ../../files/default_site.yml .
 
 You need it since you have a task that copies HTML file for a site.
