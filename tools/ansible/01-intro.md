@@ -23,8 +23,6 @@ Notes taken on the "Getting started with Ansible" playlist by LearnLinuxTV.
 1. [Host Variables and Handlers](./15-vars_handlers.md)
 1. [Templates](./16-templates.md)
 
-- [Guide Files](./materials/)
-
 ### Introduction
 
 The purpose of Ansible is to provision servers, you don't want to do manual
