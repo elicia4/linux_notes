@@ -1,8 +1,10 @@
 # The "cron" scheduling tool 
 
-Notes taken on this video by LearnLinuxTV: https://youtu.be/7cbP7fzn0D8 
+Notes taken on [this video](https://youtu.be/7cbP7fzn0D8) by Learn Linux TV.
 
-[***go back to README***](/README.md)  
+[Navigation](README.md)  
+
+---
 
 `cron` allows us to schedule tasks in advance.  
 
@@ -38,25 +40,25 @@ Each individual field correlates to a time unit. The format is as follows:
 1. `mon` - month
 4. `dow` - day of week
     
-`*` means every. So `* * * * *` means every minute of every hour of every day of
-every month on all days of the week. 
+`*` means every. So `* * * * *` means every minute of every hour of every day
+of every month on all days of the week. 
 
 Let's say `m` is 5. What it means is that it's going to execute at **00:05**,
-**01:05**, **02:05** and so on, so at every time when a minute field equals 5.
+**01:05**, **02:05** and so on, so every time when a minute field equals 5.
 
 What if you wanted your command to run every day at **9:05**?
 
     5 9 * * * command
 
-Every month at the 15th at **9:05**?
+Every month every 15th day of the month at **9:05**?
 
     5 9 15 * * command
 
-Every August at the 15th at **9:05**?
+Every August on the 15th day at **9:05**?
 
     5 9 15 8 * command
 
-Every August at the 15th *if it's a Friday* at **9:05**?
+Every August on the 15th, *only if that day is a Friday*, at **9:05**?
 
     5 9 15 8 5 command
 
@@ -79,7 +81,7 @@ crontab for a specific user:
 
     sudo crontab -u <username> -e 
 
-Let's run an `apt` command for instance:
+Let's run an `apt` command for example:
 
     sudo crontab -ue root
     * * * * * apt install -y tmux
@@ -116,7 +118,7 @@ fix the issue:
 
     sudo crontab -u www-data -e
 
-Add the following line to it:
+Imagine you have a website backup script. Add the following line to it:
  
     0 3 * * * /usr/local/bin/website_backup.sh
 
