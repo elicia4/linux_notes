@@ -54,8 +54,3 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [file archiving](misc/archiving.md) | [load averages](misc/load_avg.md) | [$PATH](misc/path.md) |
 | [server naming](misc/srv_naming.md) | | |
 
-Book notes:
-
-- [The Linux Command Line](books/book-tlcl/00-intro.md) *by William Shotts*  
-  The book is available in PDF format for **free**
-  [here](https://www.linuxcommand.org/tlcl.php).
