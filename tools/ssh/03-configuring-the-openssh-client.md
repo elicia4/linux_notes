@@ -53,4 +53,5 @@ There are other things you can include in the `config` file, check out the
 do it with `man`:
 
     man 5 ssh_config
+
 [***Go to Next Note***](04-using-public-private-keys.md)

@@ -62,4 +62,12 @@ secure. There are bots that look for open 22 ports, when they find one they try
 to get in. Your server will be spared :) Since `PasswordAuthentication` is 
 disabled, password attacks are out of the question as well.
 
+[Note that](https://unix.stackexchange.com/a/727500):
+
+> Ubuntu/Debian distributions have the non-standard entry Include
+> /etc/ssh/sshd_config.d/*.conf at the beginning of the distribution
+> sshd_config. The purpose of this is to allow users to customize their sshd
+> configuration without modifying the core sshd_config file, which can minimize
+> conflicts or unexpected configuration changes on apt update of OpenSSH.
+
 [***Go to Next Note***](07-troubleshooting-ssh.md)
