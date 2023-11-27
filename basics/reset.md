@@ -1,4 +1,4 @@
-# The 'reset' command
+# The `reset` command
 
 [***go back to README***](/README.md)
 
