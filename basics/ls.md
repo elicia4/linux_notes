@@ -12,7 +12,7 @@ directory. To see where you are in the file system:
 
 Your home directory is the same as `~`. 
 
-To give long listing:
+To output results in the long listing format:
 
     ls -l
 
@@ -22,6 +22,10 @@ To give information about a specific directory, provide the path to it as an
 argument:
 
     ls -l /home
+
+To display information about a directory (current by default):
+
+    ls -ld
 
 To output the file sizes in human-readable format:
 
@@ -67,6 +71,10 @@ To sort files by modification time, use `-t`, to reverse the order of files,
 use `-r`:
 
     ls -lhtr
+
+To sort files by file size, use `S`:
+
+    ls -lSh
 
 The `/etc` directory is a good place to sort by time if anything breaks since
 most of your config files are located there, you can see what config files have
