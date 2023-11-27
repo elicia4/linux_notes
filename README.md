@@ -10,7 +10,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [navigation](./basics/navigation.md) | [ls](./basics/ls.md) | [cat](./basics/cat.md) |
 | [distributions](./basics/distro.md) | [DE's](./basics/de.md) | [updating](./basics/updating.md) |
 | [history](./basics/history.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
-| [reset](././basics/reset.md) | [file](././basics/file.md) | |
+| [reset](././basics/reset.md) | [file](././basics/file.md) | [wildcards](./basics/wildcards.md) |
 
 
 #### Package Management 
