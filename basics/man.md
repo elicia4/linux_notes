@@ -50,6 +50,12 @@ after the `man` command:
 
 Now you see that it's section 5, the page itself is about the `passwd` file.
 
+You can look up man pages based on search terms with the `-k` option:
+
+    man -k partition
+
+It performs the same function as `apropos`.
+
 There are 9 sections:
 
 1. Command info

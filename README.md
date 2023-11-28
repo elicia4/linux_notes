@@ -12,6 +12,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [history](./basics/history.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
 | [reset](././basics/reset.md) | [file](././basics/file.md) | [wildcards](./basics/wildcards.md) |
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
+| [command help](./basics/cmd_help.md) | | |
 
 #### Package Management 
 | | | |
