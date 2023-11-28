@@ -21,6 +21,12 @@ the output to a new file:
 
     cat file1 file2 > combined.txt
 
+If you downloaded a file that was split into multiple parts for some reason,
+for example a file called `book.epub` was split into `book.001`, `book.002`
+etc., you join it together the same way:
+
+    cat book00* > book.epub
+
 To show line numbers, add `-n`:
 
     cat -n file
