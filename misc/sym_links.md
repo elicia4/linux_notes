@@ -17,27 +17,26 @@ symbol is `d`:
 
     ls -i
 
-An inode is a data object that contains metadata about the file's  within your
+An inode is a data object that contains metadata about the files within your
 file system, they contain every piece of information regarding the files:
 - Size
 - Owner
 - Permission string
 - ...and so on
 
-Every storage medium has its own set of inodes. Every storage medium has its
-own set of inodes, an inode is a one-to-one match to a file. Every directory
-has an inode.
+Every storage medium has its own set of inodes, an inode is a one-to-one match
+to a file. Every directory has an inode.
 
-On Windows, a link is called a "shortcut". A link is a very useful thing since
-it allows to access objects that are located elsewhere from a different place,
-for example a video game shortcut on your desktop links to an ".exe" file
-located inside the game's folder. Links give you quick access to things.
+On Windows, a link is called a "shortcut". A link is useful since it allows to
+access objects that are located elsewhere from a different place, for example a
+video game shortcut on your desktop links to an ".exe" file located inside the
+game's folder. Links give you quick access to things.
 
 Create a random file inside `Documents`:
 
     touch ~/Documents/random_file.txt
 
-Let's make a link for the file on your Desktop:
+Let's create a symbolic link for the file on your Desktop:
 
     ln -s /home/user/Documents/random_file.txt /home/user/Desktop/link_itself
 
@@ -58,7 +57,7 @@ number:
 
 They are completely different objects, they both have their own inode numbers.
 Symbolic links are referred to as soft links, there is another type of link
-called hard link. To create a hard link:
+called a hard link. To create a hard link:
 
     ln /home/user/Documents/random_file.txt /home/user/Desktop/hard_link;
     ls -li ~/Desktop/ ~/Documents/
@@ -75,8 +74,8 @@ not going to do anything. Make sure to use absolute paths, you won't go wrong
 with that.
 
 The advantage of a symbolic link is that you can move it to another storage
-medium. Also, symlinks explicitly indicate that they are links, it is a useful
-thing for collaborating with others.
+medium. Also, symlinks explicitly indicate that they are links, it is useful
+for collaborating with others.
 
 Don't create symbolic links too often, it can get confusing for others. Just 
 don't go crazy with it and you'll be fine.
