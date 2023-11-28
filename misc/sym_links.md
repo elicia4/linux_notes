@@ -62,7 +62,6 @@ called a hard link. To create a hard link:
     ln /home/user/Documents/random_file.txt /home/user/Desktop/hard_link;
     ls -li ~/Desktop/ ~/Documents/
 
-
 The hard link and the original file have the same inode number. The hard link
 has `-` in its permission string, which means that it's a regular file. The
 fact that they have the same inode number means that they are the *same* file.
