@@ -1,12 +1,15 @@
 # Inodes
 
-These notes are on [this video](https://www.youtube.com/watch?v=6KjMlm8hhFA)
-and various man pages.
+These notes are on [this video](https://www.youtube.com/watch?v=6KjMlm8hhFA),
+various man pages and Internet resources.
 
 [***go back to README***](/README.md)
 
 Files are simple structures that contain no metadata, no information about
-themselves. A file is only just a filename and an inode number. 
+themselves. A file is only just a filename and an inode number. Inodes store
+metadata for every file on your system in a table-like structure usually
+located near the beginning of a partition. They store all the information
+except the file name and the data.
 
 Whenever you `ls`, you only look up filenames, but when you `ls -l` you get
 additional metadata. You can think of a directory in Linux as something that
@@ -14,7 +17,8 @@ contains a table of filename-inode pairings. To see them:
 
     ls -i
 
-What is in each inode? It contains: 
+What is in each inode? An inode contains: 
+
 - the size of a file in bytes
 - the location of the file on a disk
 - permissions
