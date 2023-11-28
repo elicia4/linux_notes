@@ -13,7 +13,6 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [reset](././basics/reset.md) | [file](././basics/file.md) | [wildcards](./basics/wildcards.md) |
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md)  |
 
-
 #### Package Management 
 | | | |
 | :-------: | :-------: | :-------: |
@@ -54,5 +53,4 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [public key auth](./misc/pub_key.md) | [symbolic links](./misc/sym_links.md) | [format & mount](./misc/volume_mgmt.md) |
 | [permissions](./misc/permissions.md) | [connect via SSH](./misc/connect_via_ssh.md) | [hostname](./misc/hostname.md) |
 | [file archiving](./misc/archiving.md) | [load averages](./misc/load_avg.md) | [$PATH](./misc/path.md) |
-| [server naming](./misc/srv_naming.md) | | |
-
+| [server naming](./misc/srv_naming.md) | [inodes](./misc/inodes.md) | |
