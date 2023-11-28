@@ -13,7 +13,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [reset](././basics/reset.md) | [file](././basics/file.md) | [wildcards](./basics/wildcards.md) |
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
 | [command help](./basics/cmd_help.md) | [sort](./basics/sort.md) | [uniq](./basics/uniq.md) |
-| [wc](./basics/wc.md) | | |
+| [wc](./basics/wc.md) | [tee](./basics/tee.md) | |
 
 #### Package Management 
 | | | |
