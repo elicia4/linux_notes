@@ -80,6 +80,12 @@ The `/etc` directory is a good place to sort by time if anything breaks since
 most of your config files are located there, you can see what config files have
 changed recently.
 
+To display the contents of a particular directory with full paths to each file
+or directory *without* printing the contents of each directory:
+
+    # ls -d /path/to/dir/*
+    ls -d /usr/bin/* 
+
 A good-looking variation of the `ls` command:
 
     ls -lhF --time-style=long-iso --color=auto --ignore=lost+found
