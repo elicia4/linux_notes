@@ -20,7 +20,9 @@ login.
 
 To execute a command as the superuser without starting a new interactive shell:
 
-    su -c 
+    su -c 'ls -l /root/*'
+
+Always use apostrophes (**\'\'**) with this command.
 
 To find out if you have `sudo` installed:
 
