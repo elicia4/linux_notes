@@ -1,6 +1,6 @@
 # `sudo`
 
-Notes taken on this video by LearnLinuxTV: https://youtu.be/07JOqKOBRnU
+Notes taken on [this video](https://youtu.be/07JOqKOBRnU) and other resources.
 
 [***go back to README***](/README.md)  
 
@@ -9,14 +9,18 @@ something you can use instead of root. If, for instance, you were logged in as a
 local user and wanted to update your system with `apt update`, you wouldn't be
 able to do it. 
 
-To change to the root account:
+To change to another account (root by default):
 
-    su -
+    su - [user]
 
 Note that not all systems have the root account enabled. But you can get by by
 not using the root account at all by using `sudo`, if you have it properly set
 up you can lock root out. You shouldn't have the root account enabled for `ssh`
 login.
+
+To execute a command as the superuser without starting a new interactive shell:
+
+    su -c 
 
 To find out if you have `sudo` installed:
 
