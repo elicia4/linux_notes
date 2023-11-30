@@ -14,7 +14,7 @@ ps
 
 There will be `PID`, `TTY`, `TIME` and `CMD` columns.  
 - `PID` is process ID. It's unique between all processes
-- `TTY` refercs to the terminal the process is running inside of
+- `TTY`, "teletype", refers to the terminal the process is running inside of
 - `TIME` refers to the CPU time, how much time a process has been utilizing the
   CPU
 - `CMD` shows us the command that is running
@@ -27,21 +27,29 @@ There are multiple styles to running the `ps` command with arguments:
 - the Unix style: `ps -aux`
 - the GNU style: `ps --quick-pid 2925`
 
-To see system-wide processes:
+To see all processes regardless of what they are controlled by (the system
+itself or the terminals):
 
 ```sh
 ps x
 ```
 
 If a process was started by the system, it will show a `?` in the `TTY` field.
-We also have a new column this time named `STAT`.
+We also have a new column this time named `STAT`, it's short for "state".
 - `s` means root process or process leader.
-- `S` means that the process is running in uninterruptible sleep, which means
-  that it's waiting for user input and can't be disturbed until it receives
-  that.
+- `S` means that the process is in interruptable sleep, which means that it's
+  waiting for an event to complete, such as user input or a network packet and
+  can't be disturbed until it receives that.
+- `D` means that it's in uninterruptible sleep, usually waiting for I/O such as
+  disk drive.
 - `R` means that it's actively running.
 - `T` means the process is stopped. That happens when you background a process
   (with CTRL+Z)
+- `Z` indicates a "zombie" process, a child process that has terminated but has
+  not been cleaned up by its parent.
+- `<` is a high-priority process, with a high niceness value. The higher the
+  value, the less nice the process is.
+- `N` is a low-priority process, with a low niceness value.
 
 Let's run another variation of the `ps` command:
 
@@ -75,8 +83,10 @@ The most popular variation is:
 ps aux
 ```
 
-`UID` column is replaces with the `USER` column. You can also see the `%CPU` and
-`%MEM` percentages of the processes. 
+`UID` column is replaced with the `USER` column. You can also see the `%CPU`
+and `%MEM` percentages of the processes. `VSZ` is virtual memory size, `RSS` is
+the amount of physical memory (RAM) the process is using in KB. `START` shows
+the time when the process was started, for values >24h, a date is used.
 
 There's also the `START` timer that tells you when a particular process was
 started. It may come in useful if, for instance, a particular process was
