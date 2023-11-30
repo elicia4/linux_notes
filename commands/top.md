@@ -1,4 +1,4 @@
-# The `top` command
+# The `top` Monitoring Tool
 
 Notes taken on the "Demystifying the Top Command in Linux | Linux Crash Course
 Series" video by LearnLinuxTV.
@@ -36,7 +36,7 @@ only utilize the CPU when they need something. A task that is stopped is in the
 process of closing down. 
 
 What is a zombie process? A child process is one that was started by another
-process, you can see them by pressing `<Shift + V>`. You can see a relationship
+process, you can see them by pressing `<Shift + V>`. You can see relationships
 between child and parent processes now. At the top on the right, you can
 probably see `systemd`, it makes sense since it's an init system, it's the
 first process that runs and it schedules the other processes. Virtually
@@ -53,19 +53,19 @@ never going to happen. Mostly, zombie processes don't take up much resources on
 the system and are not a cause for alarm. A simple solution is to reboot the
 system, that will clean all processes.
 
-The third line has to do with statistics that pertain to your CPU. `us` means
-user space, `sy` refers to kernel space (`sy` means system but it's about the
-kernel), they are directly related to each other. User space is where programs
-run, anything that is not directly tied to the kernel is running in user space.
-The percentage that you see is the percentage of time your CPU has been used to
-process tasks within that category. `ni` stands for niceness, it refers to
-priority or the nice value of a process. You can configure the niceness value
-of a process to alter its scheduling priority on the CPU. You might be running
-something on your machine that is super important and you want to make sure
-that the CPU is paying special attention to that process, in that case you
-might want to configure the niceness value of that process to increase its
-priority. In regards to `top`, the field shows the percentage of time the CPU
-has spent running processes that were configured with a custom niceness value.
+The third line has to do with CPU statistics. `us` means user space, `sy`
+refers to kernel space (`sy` means system but it's about the kernel), they are
+directly related to each other. User space is where programs run, anything that
+is not directly tied to the kernel is running in user space. The percentage
+that you see is the percentage of time your CPU has been used to process tasks
+within that category. `ni` stands for niceness, it refers to priority or the
+nice value of a process. You can configure the niceness value of a process to
+alter its scheduling priority on the CPU. You might be running something on
+your machine that is super important and you want to make sure that the CPU is
+paying special attention to that process, in that case you might want to
+configure the niceness value of that process to increase its priority. In
+regards to `top`, the field shows the percentage of time the CPU has spent
+running processes that were configured with a custom niceness value.
 
 `id` is for "idle". It shows how much time the CPU has been idle for, the
 higher the number, the less busy the system generally is.
@@ -128,6 +128,8 @@ Focus on these fields, they are important.
 
 `htop` is also a great monitoring solution, but it's not as widely available by
 default as `top`.
+
+`top` supports keyboard commands, `h` shows help, `q` allows you to quit `top`.
 
 `top` is also customizable, see the man pages:
 
