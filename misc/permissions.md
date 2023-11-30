@@ -98,4 +98,75 @@ To print user and group information for a user (current by default):
 
     id [username]...
 
+Let's take a look at the `umask` command. It controls the default permissions
+given to a file when it's created. After you set the value of umask, a binary
+reset will be performed on the default maximum permissions value of a file or a
+directory (for files it's `666`, for directories it's `777`). For example:
 
+    ```
+    umask 0002
+    touch file
+    ls -l file
+    # -rw-rw-r-- 1 user user 0 Nov 26 10:40 file
+    ```
+
+How exactly was the permissions string calculated? Binary reset was performed,
+everywhere a 1 appears in the binary value of the mask, an attribute is unset:
+
+    ```
+    ---rw-rw-rw- max file permissions value;
+    0  6  6  6   in decimal;
+    000110110110 in binary;
+    0  0  0  2   mask permissions value in decimal, without the first digit
+    000000000010 in binary;
+    So we have: 
+    000110110110
+    000000000010
+           ^ this bit gets reset, getting us:
+    000110110100
+    0  6  6  4
+    ---rw-rw-r-- and this is exactly what we got
+    ```
+
+To check the current value of `umask`:
+
+    umask
+
+Two most common default values of `umask` are 0002 and 0022.
+
+The first 3 bits of the *12-bit* permissions string are *setuid*, *setgid*, and
+*sticky* bits. When setuid is applied (4\*\*\*) to an executable file, it sets
+the effective user ID from that of the real user (the user actually running the
+program) to that of the program's owner. This allows the program to access
+files and directories that a user would normally be prohibited from accessing.
+
+The setgid bit (2\*\*\*) changes the effective group ID from the real group ID
+of the real user to that of the file owner. If the setgid bit is set on a
+directory, newly created files in the directory will be given the group
+ownership of the directory rather the group ownership of the file's creator.
+This is useful in a shared directory when members of a common group need access
+to all the files in the directory, regardless of the file owner's primary
+group.
+
+The third is called the  sticky bit (1\*\*\*). On files, Linux ignores the
+sticky bit, but if applied to a directory, it prevents users from deleting or
+renaming files unless the user is either the owner of the directory, the owner
+of the file, or the superuser. This is often used to control access to a shared
+directory, such as /tmp. 
+
+To assign setuid to a program:
+
+    chmod u+s program
+
+To assign setgid to a directory:
+
+    chmod g+s dir
+
+To assign a sticky bit to a directory:
+
+    chmod +t dir
+
+The permissions string will change as well:
+- -rw**s**r-xr-x - a program with the setuid bit set
+- drwxrw**s**r-x - a directory with the setgid bit set
+- drwxrwxrw**t** - a directory with the sticky bit set
