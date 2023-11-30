@@ -23,8 +23,9 @@ Useful `htop` tip, if your machine is running slowly, run `htop` and look for a
 little bit at the `CPU%` and `MEM%` fields. Anyway, imagine that while you do
 that somebody tells to install a package, and you don't want to close `htop`.
 
-You don't have to close `htop`, you can just put it to the background with
-`CTRL+z`. Install your package, and then go back to htop with:
+You don't have to close `htop`, you can **stop** it and put it to the
+background with `CTRL+z`. Install your package, and then go back to `htop`
+with:
 
     fg
 
@@ -52,7 +53,8 @@ To view background jobs(if you put many to the background):
 In case you have multiple jobs in the background and you call `fg`, the most
 recently backgrounded task will come up. 
 
-To bring back a specific program, run `fg` with the job ID:
+To bring back a specific program, run `fg` with the job number (called
+*jobspec*):
 
     fg 1
 
@@ -64,5 +66,14 @@ There's a simpler way (`fg` is assumed):
     
     %1
 
+You can *resume** the program's execution in the background with the `bg`
+command:
+
+    bg %1    
+
 Background jobs are the jobs you can't see, the foreground jobs are the ones
 that are right before your eyes.
+
+It is also worth noting that running GUI programs from the CLI can be very
+useful, since you might be able to see error messages that would otherwise be
+invisible.
