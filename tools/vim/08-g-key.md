@@ -11,6 +11,7 @@ The most basic commands with it are:
 
 - `G` - go to the end of the file
 - `gg` - go to the beginning of the file
+- `number + G` - to line number. For example `64G` moves to the 64th line
 
 `g` can be used in combination with other keys to do other things:
 
