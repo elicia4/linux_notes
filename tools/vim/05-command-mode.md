@@ -21,6 +21,7 @@ Commands that were already covered:
 - `:cd` = gives the current working directory
 - `:put=range(start,end)` = writes a list of numbers below the cursor, one at a
 a line. `pu` == `put`, `pu=range(1,5)`
+- `:r filename` = insert the contents of `filename` below the cursor
 
 `:pu=range(start,end,jump)` = will output `start`, `start+jump`, `start+2*jump`
 ...  as long as `start+n*jump` <= `end`. So, to output odd numbers that are
