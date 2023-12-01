@@ -23,7 +23,20 @@ How do you find and replace text?
 `:%s/find/replace/options` (`g` replaces globally, `gi` replaces globally
 ignoring the case, `gc` replaces globally but prompts before each replacement)
 
-Whenever you're prompted, `Y` will apply to all and not a single instance.
+  The possible choices are:
+- `y`  
+  Perform the substitution.
+- `n`  
+  Skip this instance.
+- `a`  
+  Perform the substitution on this and all subsequent instances of the pattern.
+- `q`  
+  Quit substituting.
+- `l`  
+  Perform this substitution and then quit, this is short for "last."
+- `Ctrl-e`, `Ctrl-y`  
+  Scroll down and scroll up, respectively. This is useful for viewing the
+  context of the proposed substitution.
 
 >searching for love in all the right places  
 >its wrong to eat cookies after midnight  
