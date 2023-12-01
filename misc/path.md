@@ -5,8 +5,8 @@ Series)" video by LearnLinuxTV.
 
 [***go back to README***](/README.md)
 
-`$PATH` is a variable in your Linux shell which includes a listing of important
-directories, they include binaries, you can run them from your terminal exactly
+`$PATH` is a variable in your Linux shell which includes a listing of
+directories that include binaries, you can run them from your terminal exactly
 because they are included in the `$PATH` variable.
 
 `$PATH` allows us to shorten commands. To see the value of `$PATH`:
