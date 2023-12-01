@@ -56,6 +56,11 @@ punctuation symbols
 `B` - backward to the beginning of the next WORD  
 `e` - forward to the end of the next word  
 `E` - forward to the end of the next WORD  
+`0` - beginning of the current line
+`^` - first non-whitespace character of the current line
+`$` - the end of the current line
+`Ctrl-f` - down one page
+`Ctrl-b` - up one page
 
 You can repeat the command by entering the number of times you'd like a command
 to be repeated:
