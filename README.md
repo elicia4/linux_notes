@@ -56,4 +56,4 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [file archiving](./misc/archiving.md) | [load averages](./misc/load_avg.md) | [$PATH](./misc/path.md) |
 | [server naming](./misc/srv_naming.md) | [inodes](./misc/inodes.md) | [bash shortcuts](./misc/shortcuts.md) |
 | [wildcards](./misc/wildcards.md) | [command help](./misc/cmd_help.md) | [monitoring](./misc/monitoring.md) |
-| [environment](./misc/environment.md) | | |
+| [environment](./misc/environment.md) | [custom prompt](./misc/custom_prompt.md) | |
