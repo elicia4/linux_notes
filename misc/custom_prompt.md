@@ -1,5 +1,7 @@
 # Prompt Customization
 
+[***go back to README***](/README.md)  
+
 The format of the prompt is defined by the `PS1` environment variable:
 
     echo $PS1
