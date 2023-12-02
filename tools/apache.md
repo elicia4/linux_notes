@@ -36,12 +36,6 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
    the first one:
 
     ```
-    vim /etc/hosts
-    ```
-
-   Make it look like so:
-
-    ```
     127.0.0.1 localhost
     127.0.1.1 new-hostname # this is the line you have to add 
     ```
@@ -74,13 +68,12 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
     systemctl enable --now apache2
     ```
 
-1. Let's get to configuring it now. There are modules that can be installed to 
-   extend Apache's functionality. The modules themselves depend on what exactly
-   you want to host with Apache. If you all you want to do is host a single
-   static webpage, you don't need anything else, you already have everything
-   you need. If you want to configure "NextCloud", "WordPress", and so on,
-   refer to their documentation, you can find what modules you need there. To
-   see the modules that are available:
+1. Modules can be installed to extend Apache's functionality. The modules
+   themselves depend on what exactly you want to host with Apache. If you all
+   you want to do is host a single static webpage, you don't need anything
+   else, you already have everything you need. If you want to configure
+   "NextCloud", "WordPress", and so on, refer to their documentation, you can
+   find what modules you need there. To see the modules that are available:
 
     ```
     apt search libapache2-mod
@@ -163,7 +156,7 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
       systemctl reload apache2
     ```
 
-1. Let's create a custom site now :)
+1. Create a custom site now (:
 
     ```
     vim /etc/apache2/sites-available/example.net.conf
@@ -226,4 +219,4 @@ Notes taken on this video by LearnLinuxTV: https://youtu.be/1CDxpAzvLKY
    we have created. You could copy the default web page file into those
    directories as a test.
 
-   This only scratches the surface of how to configure Apache. 
+   These are only the basics of Apache.
