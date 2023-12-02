@@ -8,7 +8,7 @@ The prompt usually contains *backslash-escaped special characters* that define
 the elements of the prompt string:
 
 - `\a` - ASCII bell. This makes the computer beep.
-- `\d` - Current date in day, month, date format, e.g. "Tue March 15." 
+- `\d` - Date in weekday, month, date format, e.g. "Tue March 15." 
 - `\h` - Hostname without the domain name.
 - `\H` - Full hostname.
 - `\j` - Number of jobs running in the current shell session.
