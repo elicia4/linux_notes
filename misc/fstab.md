@@ -2,7 +2,7 @@
 
 Notes taken on "Linux Crash Course - The /etc/fstab file" video by LearnLinuxTV
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 How does one mount their volumes on system startup?
 

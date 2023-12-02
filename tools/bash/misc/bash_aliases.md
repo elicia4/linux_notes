@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Bash Aliases" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 To create an alias:
 

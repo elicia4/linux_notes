@@ -1,6 +1,6 @@
 ### Troubleshooting SSH
 
-[***go back to README***](README.md)  
+[***Table of Contents***](README.md)  
 
 SSH will only be able to work if there's a path between the client and the 
 server. Every single node between them has to allow traffic, and if anything 

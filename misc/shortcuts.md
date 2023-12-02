@@ -1,6 +1,6 @@
 # Bash Keyboard Shortcuts
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 ### Moving:
 - `<CTRL-a>` - move cursor to the beginning of the line

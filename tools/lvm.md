@@ -3,7 +3,7 @@
 Notes taken on the "Linux Logical Volume Manager (LVM) Deep Dive Tutorial"
 video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ### Why LVM?
 

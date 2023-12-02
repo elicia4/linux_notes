@@ -1,6 +1,6 @@
 # The `uniq` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Say you had a sorted list `list.txt` with duplicate lines, to remove the
 duplicates:

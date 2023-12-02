@@ -1,6 +1,6 @@
 # 07. Marks
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 You can set marks in specific parts of files to quickly navigate to them.
 

@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The echo Command" video by
 Learn Linux TV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The basic usage of `echo`:
 

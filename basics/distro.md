@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - What is a "Distribution" of Linux?"
 video by Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ### What is a "Distribution" of Linux?
 

@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Bash History" by Learn Linux TV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Bash history gives you a list of command that have been run on your machine.
 Note that history is per user as well as per terminal instance, so if you have

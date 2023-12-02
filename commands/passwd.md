@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `passwd` Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The command allows you to change passwords.
 

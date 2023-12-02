@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - Connecting to Linux Servers via SSH"
 video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 You need a server you can connect to first, set up a WM, look up it's IP. 
 

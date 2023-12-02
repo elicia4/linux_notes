@@ -1,6 +1,6 @@
 ### Configuring SSH Server
 
-[***go back to README***](README.md)  
+[***Table of Contents***](README.md)  
 
 So far, the notes were focused on the `ssh-client`, now we will focus on the 
 server. 

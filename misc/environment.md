@@ -1,6 +1,6 @@
 # Environment
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The environment is a body of information maintained by the shell. The body
 consists of two parts: the *environment variables* and the *shell variables*.

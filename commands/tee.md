@@ -1,6 +1,6 @@
 # The `tee` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `tee` reads from standard input and writes to standard output and files, this
 is useful for capturing a pipeline's contents at an intermediate stage of

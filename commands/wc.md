@@ -1,6 +1,6 @@
 # The `wc` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `wc` prints newline, word, and byte counts for each file:
 

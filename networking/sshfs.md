@@ -10,7 +10,7 @@ been in production use across a wide range of systems for many years. However,
 at present SSHFS does not have any active, regular contributors, and there are
 a number of known issues.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ---
 

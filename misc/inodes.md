@@ -3,7 +3,7 @@
 These notes are on [this video](https://www.youtube.com/watch?v=6KjMlm8hhFA),
 various man pages and Internet resources.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Files are simple structures that contain no metadata, no information about
 themselves. A file is only just a filename and an inode number. Inodes store

@@ -3,7 +3,7 @@
 Notes taken on the "The Linux Crash Course - What are "snap" Packages? " video
 by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `snap` packages are a universal package format. Universal packages are Linux
 packages that contain everything an application needs to run all in one

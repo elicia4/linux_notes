@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Managing Users" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 User management is one of the most important tasks you should be capable of.
 

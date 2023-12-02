@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - The ps Command" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The `ps` command allows you to see what processes are running on your server.
 

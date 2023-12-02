@@ -1,6 +1,6 @@
 # 03. Files and Tabs
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 You can open multiple files at the same time:
 

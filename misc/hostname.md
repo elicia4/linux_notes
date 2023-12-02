@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - Setting the Hostname of your Linux
 Workstation or Server" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Depending on how you have your shell configured, the hostname of your machine 
 will be displayed right in the bash prompt. In case it's not, to display it:

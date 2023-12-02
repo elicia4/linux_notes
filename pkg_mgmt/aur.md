@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The Arch User Repository (AUR)" video
 by LearnLinuxTV
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Take a look at the 2 tips of the bottom, the simplify the process quite a bit
 (thanks @SkySumisu).

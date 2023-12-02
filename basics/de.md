@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - Desktop Environments" video by
 Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ### What is a "Desktop Environment"?
 

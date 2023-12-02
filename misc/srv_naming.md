@@ -3,7 +3,7 @@
 Notes taken on the "Demystifying Hostnames and Domain Names in Linux, and How
 Server Naming Benefits You" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Hostnames and domain names will be discussed in general terms.
 

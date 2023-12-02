@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Easy Terminal Commands for Inspecting Hardware" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 There are GUI alternatives to these commands. Most distros have system
 monitors, hardware info apps, and so on.

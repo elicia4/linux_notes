@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - Installing Updates" video by
 Learn Linux TV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 You will learn how to install updates on Ubuntu, CentOS, and Arch. All (or
 most) distributions based off of them have the same process. Even though they 

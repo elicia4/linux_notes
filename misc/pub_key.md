@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - Public Key Authentication" by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Disclaimer: This has a lot of useful Windows info (hopefully you will never
 need it).

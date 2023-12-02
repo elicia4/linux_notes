@@ -1,6 +1,6 @@
 # 08. The `g` Key
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 Every single key you use in vim does a thing.  
 They are all special in their own little way.

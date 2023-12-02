@@ -3,7 +3,7 @@
 Notes taken on the "What is $PATH on a Linux Shell? (The Linux Crash Course
 Series)" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `$PATH` is a variable in your Linux shell which includes a listing of
 directories that include binaries, you can run them from your terminal exactly

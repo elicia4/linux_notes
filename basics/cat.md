@@ -3,7 +3,7 @@
 Notes taken on the "The cat Command in Linux (Featuring Real Cats) - Linux
 Crash Course Series" video by Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 It stands for "concatenate", you can use it to link files together or show the
 contents of a text file. 

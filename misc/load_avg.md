@@ -3,7 +3,7 @@
 Notes taken on the "How to Interpret Load Average in Linux (Linux Crash Course
 Series)" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Load averages help us understand how busy our server or workstation happens to
 be.

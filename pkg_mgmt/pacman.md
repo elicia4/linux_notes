@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The Pacman Command" video by
 LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Like many package managers, `pacman` fetches packages from online repositories
 (online servers that store installable packages, online source from which you

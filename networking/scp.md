@@ -2,7 +2,7 @@
 
 Notes take on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 You can transfer files between servers with the `scp` command. It stands for
 "secure copy". 

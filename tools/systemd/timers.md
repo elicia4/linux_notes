@@ -3,7 +3,7 @@
 Notes taken on the "Automate Your Tasks with systemd Timers: A Step-by-Step
 Guide" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ### Overview
 

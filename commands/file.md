@@ -1,6 +1,6 @@
 # The `file` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 To determine a file's type, use:
 

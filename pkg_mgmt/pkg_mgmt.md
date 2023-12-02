@@ -1,6 +1,6 @@
 # Package Management
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 *Package management* is a method for installing, removing, upgrading, and
 configuring software. *A package manager* (a package-management system or a

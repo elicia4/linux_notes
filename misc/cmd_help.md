@@ -1,6 +1,6 @@
 # Command help
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 This note explains various commands that help you interact with commands and
 find information about them.

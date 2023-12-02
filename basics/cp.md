@@ -1,6 +1,6 @@
 # The `cp` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `cp` command is used to copy files and directories. It can be used in two
 ways. The following copies `item1` to `item2`:

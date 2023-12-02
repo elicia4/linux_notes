@@ -1,6 +1,6 @@
 # The `rm` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `rm` is used to remove files or directories:
 

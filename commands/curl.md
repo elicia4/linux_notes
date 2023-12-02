@@ -4,7 +4,7 @@ Notes taken on the "Supercharge Your Workflow with cURL | Understanding The
 cURL Command-Line Tool" video by LearnLinuxTV, "Linux Essentials: Curl
 Fundamentals" by HackerSploit, and the `curl` man page.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `curl` is a utility that allows you to transfer data to and from a server using
 supported protocols. The protocols are: HTTP, HTTPS, FTP, FTPS, SFTP, TFTP,

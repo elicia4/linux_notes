@@ -4,7 +4,7 @@
 
 Notes taken on the "Learn tmux" playlist by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 These are notes on `tmux`, a terminal multiplexer.
 

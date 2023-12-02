@@ -1,6 +1,6 @@
 # Prompt Customization
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The format of the prompt is defined by the `PS1` environment variable:
 

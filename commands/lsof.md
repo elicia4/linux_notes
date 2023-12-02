@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `lsof` Command" video by
 Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `lsof` helps to find out which files are opened on your system and by whom or
 what. `lsof` stands for "list open files". 

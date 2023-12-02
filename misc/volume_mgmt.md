@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - Formatting & Mounting Storage Volumes"
 by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 ### Introduction
 

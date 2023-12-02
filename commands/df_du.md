@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `df` and `du` Commands" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `df` and `du` are used for monitoring storage.
 

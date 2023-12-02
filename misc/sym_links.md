@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Symbolic Links" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Symbolic linking is a way to link one object to another.
 

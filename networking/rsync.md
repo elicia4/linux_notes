@@ -2,7 +2,7 @@
 
 Notes take on this video by LearnLinuxTV: https://youtu.be/KG78O53u8rY
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 To check if `rsync` is installed:
 

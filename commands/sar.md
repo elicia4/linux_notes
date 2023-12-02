@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The sar Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 NOTICE: The instuctions might not work on your system, you might get only
 `LINUX RESTART (X CPU)`. In this case, refer to the **FIX NOTE** at the end.

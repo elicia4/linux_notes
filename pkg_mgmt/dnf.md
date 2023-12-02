@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The dnf Command" video by
 LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 `dnf` is a package manager, it can be found in Fedora, CentOS, RedHat, Rocky and
 so on.

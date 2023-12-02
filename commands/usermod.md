@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/p8QOnty6rSU
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The command is used to modify users:
 

@@ -1,6 +1,6 @@
 # 01. Introduction
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 These are notes on [the series of vim guides by Mental
 Outlaw](https://youtube.com/playlist?list=PL3cu45aM3C2DJVGfCjSBB1yD9YkC7q27-).

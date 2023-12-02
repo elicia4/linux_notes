@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 `htop` is a system utility used for system resource monitoring. It's critical to
 take care of your system's CPU and RAM usage.

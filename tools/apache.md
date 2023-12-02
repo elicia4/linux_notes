@@ -2,7 +2,7 @@
 
 These are notes on [this video.](https://youtu.be/1CDxpAzvLKY)
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 ## Basics of Apache
 

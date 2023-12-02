@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `wget` Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The command allows you to directly download something from the internet without
 a GUI. To see if it's installed:

@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The "watch" Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The `watch` command is used to execute a command repeatedly, and monitor the
 output in full-screen mode.

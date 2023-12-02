@@ -1,6 +1,6 @@
 # 09. Vim Tips
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 There is in fact a way to do this using Visual block mode. Simply pressing `$A`
 in Visual block mode appends to the end of all lines in the selection. The

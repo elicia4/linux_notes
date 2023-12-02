@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - Learn The `man` Command" video by
 Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `man` allows you to view manual pages, they contain a lot of information on
 various Linux commands and more, like command line arguments, usage examples

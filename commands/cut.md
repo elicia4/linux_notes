@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `cut` Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `cut` - remove sections from each line of files. 
 

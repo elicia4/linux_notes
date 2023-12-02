@@ -3,7 +3,7 @@
 Notes taken on the "Demystifying the Top Command in Linux | Linux Crash Course
 Series" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 It's installed by default on most Linux distributions. It's a monitoring
 utility, you can see what processes are running, how many resources (CPU and

@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `head` and `tail` Commands" video
 by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `head` commands shows the first 10 commands of a file, and the `tail`
 command shows the last 10 commands of a file:

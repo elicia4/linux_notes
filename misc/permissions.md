@@ -3,7 +3,7 @@
 These are notes on [this video](https://www.youtube.com/watch?v=4e669hSjaX8)
 and more...
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 ---
 

@@ -3,7 +3,7 @@
 Notes taken on the "How to Use The ls Command on the Linux Command Line" video
 by Learn Linux TV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `ls` stands for "list storage". It shows the files in your current working
 directory. To see where you are in the file system:

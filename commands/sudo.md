@@ -2,7 +2,7 @@
 
 Notes taken on [this video](https://youtu.be/07JOqKOBRnU) and other resources.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 There are many commands that you can only use with root priveleges. `sudo` is
 something you can use instead of root. If, for instance, you were logged in as a

@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `zypper` Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `zypper` is a package manager, it's specific to SUSE. 
 

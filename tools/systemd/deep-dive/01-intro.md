@@ -2,7 +2,7 @@
 
 Notes taken on this video by LearnLinuxTV: https://youtu.be/Kzpm-rGAXos
 
-[***go back to README***](../README.md)
+[***Table of Contents***](../README.md)
 
 - Intro
 - [Basic Commands](02-basic-commands.md)

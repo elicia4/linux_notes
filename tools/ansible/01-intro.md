@@ -4,7 +4,7 @@
 
 Notes taken on the "Getting started with Ansible" playlist by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 1. Introduction(you are here).
 1. [SSH Overview & Setup](02-ssh.md)

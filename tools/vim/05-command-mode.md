@@ -1,6 +1,6 @@
 # 05. Command Mode
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 There are commands in `vim`!  
 You can enter them with the colon `:` symbol.

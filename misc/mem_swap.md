@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - Understanding Memory and Swap Usage"
 by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 A great utility for resource monitoring is `htop`. In case it's not available
 and you can't install it, you need to use the widely available programs,

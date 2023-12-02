@@ -2,7 +2,7 @@
 
 Notes on the video "Linux Crash Course - Managing Groups" by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Every file is owned by a user and group:
     

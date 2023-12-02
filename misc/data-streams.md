@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - Data Streams (stdin, stdout & stderr)"
 by LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Data streams is how Linux handles input, output, and errors.
 

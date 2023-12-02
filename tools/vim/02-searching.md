@@ -1,6 +1,6 @@
 # 02. Searching
 
-[***go back to README***](README.md)
+[***Table of Contents***](README.md)
 
 There are a lot of different ways to search for text in vim.
 

@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - systemd: Using the systemctl command"
 video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `systemd` is used in many Linux distributions.
 

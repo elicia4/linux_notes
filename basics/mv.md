@@ -1,6 +1,6 @@
 # The `mv` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `mv` is used to move or rename files. After it's used, the original filename no
 longer exists after the operation. It's used like so:

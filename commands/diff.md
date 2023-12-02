@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The `diff` Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 It's the command you can use to find the difference between files. For
 practice, create two slightly different text files:

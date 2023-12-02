@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course - User Account & Password Expiration" by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 You can make a user account expire and/or their password expire. We're going to
 focus on the `chage` command. 

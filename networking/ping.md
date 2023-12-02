@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The ping Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 The `ping` command helps you to determine whether a server is online, if it's
 online it will reply to your ping. 

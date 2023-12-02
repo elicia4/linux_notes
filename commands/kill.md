@@ -1,6 +1,6 @@
 # The `kill` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 By default, the command is used to terminate processes. For example:
 

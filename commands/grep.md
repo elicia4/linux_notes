@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The grep Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 `grep` stands for "global / regular expression search / and print", g/re/p.
 

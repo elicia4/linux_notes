@@ -1,6 +1,6 @@
 # The `sort` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 Say you wanted to see the binaries of two directories in a sorted order. To do
 that you can use `sort`:

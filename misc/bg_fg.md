@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course: Background (bg) and Foreground (fg)" by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 You can put programs to the background and foreground on Linux. This is
 especially useful while managing a remote server.

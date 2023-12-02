@@ -1,6 +1,6 @@
 # Wildcards / Globbing
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 Wildcards are special characters that help us specify groups of filenames.
 Using wildcards (which is also known as globbing) allows us to select filenames

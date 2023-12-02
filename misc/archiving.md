@@ -3,7 +3,7 @@
 Notes taken on the "How to Archive Folders in Linux (tar and gzip tutorial) -
 Linux Crash Course Series" video by LearnLinuxTV.
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 We will focus on `gzip` and `tar` commands, together they provide you with a
 full archiving solution.

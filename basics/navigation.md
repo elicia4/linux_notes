@@ -3,7 +3,7 @@
 Notes on the video "Linux Crash Course: Navigating the Linux Filesystem" by
 Learn Linux TV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 This video is extremely introductory, you probably know all this by now.
 

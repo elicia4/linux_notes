@@ -3,7 +3,7 @@
 Notes taken on the "Linux Crash Course - The apt Command" video by
 LearnLinuxTV.
 
-[***go back to README***](/README.md)  
+[***Table of Contents***](/README.md)  
 
 `apt` is a package manager on many popular distros (Debian, Ubuntu, Mint and so
 on). Debian is where it all started.
