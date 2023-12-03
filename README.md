@@ -31,7 +31,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | :-------: | :-------: | :-------: |
 | [df & du](./hardware/df_du.md) | [LVM](./hardware/lvm.md) | [memory & swap](./hardware/mem_swap.md) |
 | [inspect hw](./hardware/inspect_hw.md) | [fstab](./hardware/fstab.md) | [format & mount](./hardware/volume_mgmt.md) |
-| [storage](./hardware/storage.md) | | |
+| [storage](./hardware/storage.md) | [CD images](./hardware/cd_iso.md) | |
 
 #### Tools 
 | | | |
