@@ -13,9 +13,7 @@ log file for about every use case.
 
 Different distros name logs differently. To show your OS info:
 
-    ```
     cat /etc/os-release
-    ```
 
 It's quite common that log files are located in the `/var/log` directory. A lot
 of the files in that directory end with `.log`, but not all of them do. There
@@ -39,18 +37,14 @@ contents with the `cat wtmp` command, it will just show you funny characters.
 means that there is some other command that allows you to view it. In this
 case, the command is:
 
-    ``` 
     last 
-    ``` 
 
 This file gives you details of all the login/logout events, so if you wanted to
 audit the users that are logging into your server you're in the right place.
 
 The same thing is true of the `btmp` file as well. To view it, use:
 
-    ``` 
     sudo lastb 
-    ```
 
 The *b* in `lastb` stands for "bad", so if you only wanted to view bad login
 attempts, use `lastb`. If somebody is trying to break into your server, you
@@ -59,9 +53,7 @@ file is useful.
 
 Let's try using `lastb` with some options now:
 
-    ``` 
     sudo lastb -adF 
-    ```
 
 - `-a` shows the hostname in the last column;
 - `-d` attempts to match DNS names to IP addresses (which is something that may
@@ -83,9 +75,7 @@ help of this file. When you have a text file, you can follow the contents of
 that log file and see the output show up on your screen as soon as anything is
 added to that log file.
 
-    ``` 
     sudo tail -f /var/log/auth.log 
-    ```
 
 The tail command gives you the last portion of a text file. If an on another
 computer an attempt is made to connect to your computer, you will see new
@@ -110,9 +100,7 @@ different information there, especially hardware-related information, since this
 is a kernel log file. There's actually a separate command to view the contents
 of `dmesg`:
 
-    ```
     sudo dmesg 
-    ```
 
 ### journalctl
 
@@ -120,18 +108,31 @@ Now let's take a look at the `journalctl` command. It's specific to `systemd`.
 It allows us to inspect units on the system and view the log files that pertain
 to those services. To use it:
 
-    ```
     journalctl -u <service>
-    ```
-    ```
-    # for example
+
+For example:
+
     journalctl -u ssh
-    ```
 
 There's also a follow mode of `journalctl`:
 
-    ```
     journalctl -fu ssh
-    ```
 
-These are the basics of logging. :)
+Display system messages:
+
+    journalctl -b # current boot
+    journalctl -b 0 # the same
+    journalctl -b -1 # previouse boot
+
+Search the current boot messages for regular expression:
+
+    journalctl -b -g 'pattern'
+
+Display messages by priority:
+
+    journalctl -b  -p0..0 # emerg
+    journalctl -b  -p1..1 # alert
+    journalctl -b  -p0..2 # emerg thru critical
+    journalctl -b  -p2     # the same
+
+These are the basics of logging. (:
