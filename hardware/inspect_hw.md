@@ -1,6 +1,7 @@
-# Hardware
+# Inspecting Hardware
 
-Notes on the video "Linux Crash Course - Easy Terminal Commands for Inspecting Hardware" by LearnLinuxTV.
+Notes on the video "Linux Crash Course - Easy Terminal Commands for Inspecting
+Hardware" by LearnLinuxTV.
 
 [***Table of Contents***](/README.md)  
 
