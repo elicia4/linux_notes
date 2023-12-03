@@ -6,7 +6,7 @@ LearnLinuxTV.
 [***Table of Contents***](/README.md)
 
 The command allows you to directly download something from the internet without
-a GUI. To see if it's installed:
+a GUI. It supports both HTTP and FTP. To see if it's installed:
 
     which wget
 
