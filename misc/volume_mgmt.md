@@ -1,14 +1,13 @@
 # Formatting & Mounting Storage Volumes
 
-Notes on the video "Linux Crash Course - Formatting & Mounting Storage Volumes"
-by LearnLinuxTV.
+These are notes on [this video.](https://www.youtube.com/watch?v=2Z6ouBYfZr8)
 
 [***Table of Contents***](/README.md)  
 
 ### Introduction
 
-On desktop Linux, storage is mostly handled automatically, file managers manage
-storage quite well.
+On desktop Linux, storage is mostly handled automatically, file managers do it 
+well.
 
 To list all block devices (storage):
 
@@ -19,7 +18,7 @@ A block device is[^1]:
     >a file that refers to a device. A block special file is normally
     >distinguished from a character special file by providing access to the
     >device in a manner such that the hardware characteristics of the device
-    >are not visible
+    >are not visible.
 
 [^1]: [Source](https://unix.stackexchange.com/a/259200)
 
@@ -31,8 +30,8 @@ particular device file in the `/dev` directory:
 
 Every device you connect to your Linux machine will be provided a name by the
 kernel. But what are the `sda1`, `sda2` etc. files? They are partitions. When 
-you work with storage, if you target `sda`, you target the entire disk, but if
-target `sda1`, you target only that partition. 
+you work with storage and you target `sda`, you target the entire disk, but if
+you target `sda1`, you target only that partition. 
 
 Note that different types of storage devices have a different naming scheme. An
 alternative command to list storage:
@@ -69,10 +68,9 @@ To create a new partition table on a device:
 
 You will be presented with a command prompt, enter `p` to print the current
 partition table, or `m` for help. Enter `g` to make a GPT partition table. Then
-enter `n` to create a new partition. The next steps are pretty
-self-explanatory. Don't worry about the `Do you want to remove the signature?`
-prompt, the changes aren't final. To finalize the changes, issue the `w`
-command, for "write".
+enter `n` to create a new partition. The next steps are self-explanatory. Don't
+worry about the `Do you want to remove the signature?` prompt, the changes
+aren't final. To finalize the changes, issue the `w` (write) command.
 
 ### Format a disk with a filesystem type
 
@@ -83,13 +81,13 @@ the operating system you plan on using with that storage device.
 
 If you are using the storage device internally, format it with a Linux file
 system type. If it's an external flash drive that will be used with a Windows
-machine, use exFAT. With Linux:
+machine, use `exFAT`. With Linux:
 
-    sudo mkfs.ext4 {path-to-the-device}
+    sudo mkfs.ext4 {path-to-the-device} # format with ext4 fs
 
 For flash drive used with Mac or Windows:
 
-    sudo mkfs.exfat {path-to-the-device}
+    sudo mkfs.exfat {path-to-the-device} # format with exfat fs
 
 exFAT is a proprietary Windows technology, you might not have access to it by
 default. To install it on Debian:
@@ -106,7 +104,7 @@ To see the amount of space used up on your mounted file systems:
     
 ### Mounting
 
-Again, on servers disk DO NOT get mounted automatically.
+Again, on servers disks DO NOT get mounted automatically.
 
 Mounting is the act of attaching a storage volume to a folder on a file system.
 What folder should you choose? Any folder you want! Though there are some
@@ -126,8 +124,8 @@ Let's mount something!
     
 ### Check disk space with `ncdu`
 
-Let's take a look at a utility for checking storage space on your server. This
-scans your filesystem and check what takes up the most space:
+Let's take a look at a utility for checking and managing storage space on your
+server. To scan your filesystem and check what takes up the most space:
 
     sudo ncdu
 
@@ -151,4 +149,4 @@ It won't show anything that is mounted, only the local options.
 This is a VERY important file on your system, if you make a mistake here, you
 can break everything, it allows you to automatically mount something every time
 your machine starts. There's already going to be contents inside the `fstab`
-file. The way to edit this file will be covered [elsewhere](/misc/fstab.md). 
+file. The way to edit is covered [here.](/misc/fstab.md)
