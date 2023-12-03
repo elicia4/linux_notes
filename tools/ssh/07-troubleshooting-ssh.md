@@ -81,3 +81,12 @@ the `~/.ssh/known_hosts` file. In the example message above, we see this:
 This means that the first line of the `known_hosts` file contains the offending
 key. Delete this line from the file, `ssh` will be able to accept new
 authentication credentials from the remote system.
+
+You can also allow X Window system traffic to be transmitted, thus enabling
+you to see remote GUI applications on a local machine. Connect first:
+
+    ssh -X remote
+
+Launch any app on the remote system:
+
+    xload
