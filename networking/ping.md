@@ -6,15 +6,17 @@ LearnLinuxTV.
 [***Table of Contents***](/README.md)  
 
 The `ping` command helps you to determine whether a server is online, if it's
-online it will reply to your ping. 
+online it will reply to your ping. It works by sending "ICMP ECHO_REQUEST"
+messages to a host. Hosts will reply with "ICMP ECHO_REPLY" messages, thus
+verifying that the pinged host is active and the connection was successful.
 
 The basic usage of ping is:
 
     # ping <IP-address/domain-name>
     ping 8.8.8.8 # google DNS
 
-The ping is endless by default, cancel it with `<CTRL-c>` whenever you feel like
-it. To ping a domain:
+The ping is endless by default, sending pings every second, cancel it with
+`<CTRL-c>` whenever you feel like it. To ping a domain:
 
     ping learnlinux.tv
 
