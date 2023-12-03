@@ -25,7 +25,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [ping](./networking/ping.md) | [scp](./networking/scp.md) | [rsync](./networking/rsync.md) |
 | [wget](./networking/wget.md) | [nmap](./networking/nmap.md) | [sshfs](./networking/sshfs.md) |
 | [curl](./networking/curl.md) | [traceroute](./networking/traceroute.md) | [ip](./networking/ip.md) |
-| [netstat](./networking/netstat.md) | | |
+| [netstat](./networking/netstat.md) | [ftp](./networking/ftp.md) | |
 
 #### Hardware
 | | | |

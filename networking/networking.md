@@ -11,3 +11,6 @@ To transport files over a network:
 
 - [ftp](./ftp.md)
 - [wget](./wget.md)
+
+To securely connect to hosts:
+- [ssh](../tools/ssh/README.md)
