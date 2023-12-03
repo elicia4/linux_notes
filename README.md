@@ -29,8 +29,8 @@ A collection of notes on everything Linux 🐧🐧🐧
 #### Hardware
 | | | |
 | :-------: | :-------: | :-------: |
-| [df & du](./commands/df_du.md) | [LVM](./tools/lvm.md) | [memory & swap](./misc/mem_swap.md) |
-| [hardware](./misc/hw.md) | [fstab](./misc/fstab.md) | [format & mount](./misc/volume_mgmt.md) |
+| [df & du](./hardware/df_du.md) | [LVM](./hardware/lvm.md) | [memory & swap](./hardware/mem_swap.md) |
+| [hardware](./hardware/hw.md) | [fstab](./hardware/fstab.md) | [format & mount](./hardware/volume_mgmt.md) |
 
 #### Tools 
 | | | |
