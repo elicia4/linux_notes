@@ -39,18 +39,22 @@ part of your system too. If you make a mistake, your PC will not boot.
 Add a line break between the content that already exists and the content you
 personally want to add.
 
-1. First enter the storage volume; `<file system>`
-2. Location you want it to be mounted to, MAKE SURE IT EXISTS; `<mount point>`
-1. File system type; `<type>`
-1. Enter `defaults`, they will add the default options, they are:
+1. First enter the storage volume; it can be physical device, a USB; can be a
+   text label or a UUID (Universaly Unique Identifier); `<file system>`
+1. Location you want it to be mounted to, MAKE SURE IT EXISTS; `<mount point>`
+1. File system type; most native Linux systems use `ext4` (Fourth Extended File
+   System), many others supported (FAT16(`msdos`), FAT32(`vfat`), NTFS(`ntfs`),
+   CD-ROM(`iso9660`), etc.; `<type>`
+1. File systems can be mounted with various options, for example read-only.
+   Enter `defaults`, they will add the default options, they are:
    `rw,suid,dev,exec,auto,nouser,async`. If you don't have specific
    preferences, just use `defaults`; `<options>`
-1. The first number refers to "dump". That determines whether the entire system
-   needs to be dumped, "dumping" has to do with backup. It's almost always set
-   to `0`; `<dump>`
+1. The first number refers to "dump", it's a number if and when a file system
+   has to be backed up with the `dump` command. It's almost always set to `0`;
+   `<dump>`
 1. The last digit refers to the order of filesystem integrity checking. The
    ones with `0` won't be checked at all. The root filesystem should arguably
-   be first; <pass>
+   be first; `<pass>`
 
 For example:
 
