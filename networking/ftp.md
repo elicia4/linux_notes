@@ -27,3 +27,10 @@ These are some of the commands you can issue while in the `ftp` client:
 `lftp` is a good alternative to the default `ftp` client, it supports many
 features not present in the regular `ftp`. It supports other protocols (e.g.
 HTTP), tab completion of path names, automatic download retry and so on.
+
+There is also an encrypted version of `ftp` called `sftp` that uses `ssh`
+encrypted tunnels for transmissions. The remote server only needs to have `ssh`
+installed for this to work, `ftp` is not required. Many file managers support
+SFTP, like GNOME or KDE. You can enter a URI beginning with `sftp://` into the
+location bar and operate on files stored on a remote system running an SSH
+server.

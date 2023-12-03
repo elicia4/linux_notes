@@ -14,3 +14,7 @@ To transport files over a network:
 
 To securely connect to hosts:
 - [ssh](../tools/ssh/README.md)
+
+To securely transfer files with `ssh`:
+- [scp](./scp.md)
+- [sftp](./ftp.md)
