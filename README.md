@@ -57,7 +57,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 #### General
 | | | |
 | :-------: | :-------: | :-------: |
-| [logging](./misc/logging.md) | [data streams](./misc/data-streams.md) | [acc & pass mods](./misc/acc_pass_exp.md) |
+| [logging](./misc/logging.md) | [data streams](./misc/data-streams.md) | [acc & pass exp](./misc/acc_pass_exp.md) |
 | [bg and fg](./misc/bg_fg.md) | [manage groups](./misc/group_mgmt.md) | [manage users](./misc/user_mgmt.md)|
 | [public key auth](./misc/pub_key.md) | [symbolic links](./misc/sym_links.md) | [custom prompt](./misc/custom_prompt.md) |
 | [permissions](./misc/permissions.md) | [connect via SSH](./misc/connect_via_ssh.md) | [hostname](./misc/hostname.md) |
