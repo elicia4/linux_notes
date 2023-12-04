@@ -1,4 +1,4 @@
-# The "find" file-searching tool
+# The `find` File-Searching Tool
 
 These are notes on [this video,](https://youtu.be/skTiK_6DdqU) man pages and 
 various internet resources.
@@ -106,6 +106,8 @@ Other size units are:
 - `k` - kibibytes, KiB
 - `G` - gibibytes, GiB
 
+### Additional Test Options
+
 Some other tests `find` supports, not that `+` and `-` still work:
 - `-cmin n` - file's status (contents or attributes) was last changed exactly
   `n` minutes ago.
@@ -132,6 +134,8 @@ Some other tests `find` supports, not that `+` and `-` still work:
 - `-size n` - files of size `n`
 - `-type c` - files of type `c`
 
+### Logical Operators
+
 `find` supports logical operators as well:
 
     find ~ \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \)
@@ -147,3 +151,70 @@ directories whose permissions are not `0700`.
   if `expr1` is false, `-and` is implied
 - `-or`, `-o` - true if either one is true, second expression is not evaluated
   if the first one is true
+
+### Predefined Actions
+
+You can do things with the results of `find` with the command itself. You can
+use predefined actions for that:
+- `-delete` - delete matching files
+- `-ls` - do `ls -dils` on the matching file
+- `-print` - output full results to standard output, the default option
+- `-quit` - quit once a result was found
+
+To delete all `*.bak` files in the home directory (and its subdirectories):
+
+    find ~ -type f -name '*.bak' -delete
+
+**Be cautious when you use this command.** Always execute the command above
+with `-print` first:
+
+    find ~ -type f -name '*.bak' -print
+
+    # or just
+    find ~ -type f -name '*.bak'
+
+The order of actions is important. Predefined actions (**like `-delete`**)
+should always go last.
+
+The previously mentioned `-exec command '{}' ';'` option allows you to run
+user-defined actions. You can also execute user-defined actions interactively
+by using the `-ok` in place of `-exec`:
+
+    find ~ -type f -name 'file*' -ok ls -l '{}' ';'
+    < ls ... /home/user/bin/file > ? y 
+    -rwxr-xr-x 1 user   user 224 2007-10-29 18:44 /home/user/bin/file 
+    < ls ... /home/user/file.txt > ? y 
+    -rw-r--r-- 1 user   user   0 2016-09-19 12:53 /home/user/file.txt
+
+Note that with `{}` the `ls -l` will be executed on each found file one at a
+time, like so:
+
+    ls -l file1
+    ls -l file2
+    ...
+
+If you want to combine the files into a single argument list, use `+` instead
+of `';'`:
+
+    find ~ -type f -name 'file*' -ok ls -l '{}' +
+
+### `xargs`
+
+This command accepts input from standard input and converts into an argument
+list for a specified command:
+
+    find ~ -type f -name 'file*' -print | xargs ls -l
+
+The output of the `find` command gets piped into `xargs`, which, in turn,
+constructs an argument list for the `ls` command and executes it. Note that
+whenever the argument list exceeds the possible command size, `xargs` executes
+the command multiple times. To see the maximum size of the command line:
+    
+    xargs --show-limits
+
+To make `find` and `xargs` work with file with unusual filenames (those that
+contain spaces or other breaking characters), `find` and `xargs` can use a
+*null character* as an argument separator. To do that, use `print0` for `find`
+and `-0` options:
+
+    find ~ -iname '*.jpg' -print0 | xargs --null ls -l
