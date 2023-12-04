@@ -1,6 +1,7 @@
 # The "rsync" file-copying tool
 
-Notes take on this video by LearnLinuxTV: https://youtu.be/KG78O53u8rY
+These are notes on [this video](https://youtu.be/KG78O53u8rY) and other
+Internet resources.
 
 [***Table of Contents***](/README.md)  
 
@@ -33,6 +34,10 @@ command syncs the data from `dir1` to `dir2`. One of these directories could
 be a directory where and NFS or Samba share is mounted to, so even though it
 looks like we're copying data locally, we're effectively moving data to a
 remote server, even with this syntax.
+
+If we append a trailing `/` to the `<dir1>` directory name, `rsync` will copy
+only the contents of the `<dir1>` directory and not the directory itself. But
+if we don't, the directory itself will be copied.
 
 `rsync` doesn't do a bi-directional sync, that is, it doesn't sync your
 directrories both ways. In the example above, what `rsync` does is it takes the
@@ -145,3 +150,7 @@ rsync -rva --remove-source-files r_notes/ admin@remote-server:/home/admin/backup
 ```
 
 ^This makes it more of a transfer rather than a sync.
+
+`--rsh=ssh` instructs rsync to use the `ssh` program as its remote shell. This
+way, you can use an ssh-encrypted tunnel to securely transfer the data from the
+local system to the remote host.
