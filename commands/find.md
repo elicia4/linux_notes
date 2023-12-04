@@ -106,6 +106,9 @@ Other size units are:
 - `k` - kibibytes, KiB
 - `G` - gibibytes, GiB
 
+Unlike `ls`, `find` does not produce results in sorted order, it's determined
+by the layout of the storage device.
+
 ### Additional Test Options
 
 Some other tests `find` supports, not that `+` and `-` still work:
@@ -138,10 +141,16 @@ Some other tests `find` supports, not that `+` and `-` still work:
 
 `find` supports logical operators as well:
 
-    find ~ \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \)
+    find <dir> \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \)
 
-This finds files in the home directory whose permissions are not `0600` and
+This finds files in the directory whose permissions are not `0600` and
 directories whose permissions are not `0700`.
+
+    find playground \( -type f -not -perm 0600 -exec chmod 0600 '{}' ';' \) \
+    -or \( -type d -not -perm 0700 -exec chmod 0700 '{}' ';' \)
+
+Logical operators allow you to change permissions of all files with unsecure
+permissions in the specified directory:
 
 `find` logical operators:
 - `(` and `)` - used to force precedence. Need to be quoted since `(` `)` have
@@ -218,3 +227,17 @@ contain spaces or other breaking characters), `find` and `xargs` can use a
 and `-0` options:
 
     find ~ -iname '*.jpg' -print0 | xargs --null ls -l
+
+### Options 
+
+The options are used to control the scope of the search:
+
+- `-depth` - process files before the directory itself. This option is
+  automatically applied with `-delete`
+- `-maxdepth levels` - set the maximum number of levels to descend into a
+  directory tree when performing tests and actions
+- `-mindepth levels` - set the minimum number of levels 
+- `-mount` - traverse directories that are mounted on other file systems
+- `-noleaf` - direct find not to optimize its search based on the assumption
+  that it is searching a Unix-like file system. This is needed when scanning
+  DOS/Windows file systems and CD-ROMs
