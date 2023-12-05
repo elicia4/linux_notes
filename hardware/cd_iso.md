@@ -1,5 +1,7 @@
 # CD Image Creation
 
+[***Table of Contents***](/README.md)
+
 Optical disks support three recording types:
 - read-only (*CD or compact disc* and *CD-ROM or compact disc read-only
   memory*)

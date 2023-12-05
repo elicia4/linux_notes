@@ -1,6 +1,6 @@
 # The `stat` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `stat` command is used to display detailed information about a file and its
 attributes:

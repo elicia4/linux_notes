@@ -2,7 +2,7 @@
 
 Notes taken on [this video](https://youtu.be/7cbP7fzn0D8) by Learn Linux TV.
 
-[Navigation](/README.md)  
+[***Table of Contents***](/README.md)
 
 ---
 

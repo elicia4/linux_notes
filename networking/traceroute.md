@@ -1,6 +1,6 @@
 # The `traceroute` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The traceroute program lists all the "hops" (hosts) network traffic takes to
 get from the local system to a host:

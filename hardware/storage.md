@@ -1,5 +1,7 @@
 # Storage
 
+[***Table of Contents***](/README.md)
+
 The first step in managing a storage device is attaching it to the file system
 tree, this process is called *mounting*. It allows the device to interact with
 the OS.

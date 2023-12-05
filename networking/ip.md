@@ -1,6 +1,6 @@
 # The `ip` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `ip` command is a networking configuration tool. It's used to
 show/manipulate routing, network devices, interfaces and tunnels. It replaces

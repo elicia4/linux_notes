@@ -1,6 +1,6 @@
 # The `ftp` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `ftp` is a File Transport Protocol client, used for remote file transfer. Most
 web browsers support it, it used to be the most popular method for file

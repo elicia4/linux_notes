@@ -1,6 +1,6 @@
 # The `locate` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 `locate` find files by name, it does it by searching databases prepared by
 `updatedb` and outputs paths to the files:

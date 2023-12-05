@@ -1,5 +1,7 @@
 # Networking
 
+[***Table of Contents***](/README.md)
+
 To examine the performance of your network, use the following commands:
 
 - [ping](./ping.md)

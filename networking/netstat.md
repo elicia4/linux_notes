@@ -1,6 +1,6 @@
 # The `netstat` command
 
-[***go back to README***](/README.md)
+[***Table of Contents***](/README.md)
 
 The `netstat` is also used to examine network configurations and statistics,
 such as network connections, routing tables, interface statistics, masquerade
