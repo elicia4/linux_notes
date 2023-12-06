@@ -15,3 +15,8 @@ To fix that, run:
     updatedb
 
 That command provides databases needed for `locate`.
+
+`locate` supports both BRE (`--regexp`) and ERE (`--regex`), for example:
+
+    cd /usr
+    locate --regex 'bin/(bz|gz|zip)'
