@@ -241,3 +241,22 @@ The options are used to control the scope of the search:
 - `-noleaf` - direct find not to optimize its search based on the assumption
   that it is searching a Unix-like file system. This is needed when scanning
   DOS/Windows file systems and CD-ROMs
+
+### Regular Expressions
+
+`find` supports a test based on regular expression, note that pathnames have to
+**exactly match** the regular expression.
+
+Use `find` with a regular expression to find every pathname that contains
+any character that is not a member of the following set:
+```
+[-_./0-9a-zA-Z]
+```
+This will reveal pathnames that contain embedded spaces and other potentially
+offensive characters:
+```
+find . -regex '.*[^-_./0-9a-zA-Z].*'
+```
+Because of the requirement for an exact match of the entire pathname, we use
+`.*` at both ends of the expression to match zero or more instances of any
+character.
