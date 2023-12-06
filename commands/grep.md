@@ -11,8 +11,20 @@ This is how `grep` is usually used in tutorials:
 
     cat /etc/ssh/ssh_config | grep Port # this is redundant
 
-The grep command allows us to look for specific lines in a text file. You can 
-reverse the output by using `-v`:
+`grep` options:
+
+- `-i` - ignore case
+- `-v` - invert match, print every line that *does not* contain a match
+- `-c` - print the number of matches instead of the lines themselves
+- `-l` - print the name of each file that contains a match instead of the lines
+  themselves.
+- `-L` - print the names of files that do not contain matches
+- `-n` - prefix each line with the number of the line within the file
+- `-h` - suppress the output of filenames
+- `-r` - recursively search through files
+
+The grep command allows us to look for specific lines in a text file. To invert
+the output: 
 
     cat /etc/ssh/ssh_config | grep -v Port # this is redundant
 
@@ -62,12 +74,9 @@ Add the `-n` option:
 
 You now have line numbers.
 
-Add the `-c` option:
+To show the number of lines where your search term appears:
 
     grep -c Human characters.txt
-
-`c` is for "count", it shows the number of lines where your search term
-appears.
 
 By default, `grep` is case-sensitive. To remove case sensitivity, use `-i`:
 
@@ -81,8 +90,8 @@ directory:
     grep -n particular_term /home/user/directory/*
 
 Let's you want to search for a particular term, you don't know the file name
-it's in, you don't even know what directory that term might be in. With `grep`,
-you can recursively search through files with `-r`:
+it's in, you don't even know what directory that term might be in. You can
+recursively search through files:
 
     grep -r search_term .
 
