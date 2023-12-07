@@ -1,7 +1,7 @@
 # The `cat` command
 
-Notes taken on the "The cat Command in Linux (Featuring Real Cats) - Linux
-Crash Course Series" video by Learn Linux TV.
+These are notes on [this video](https://www.youtube.com/watch?v=z3nJlyrJYW4),
+documentation and various resources on the Internet.
 
 [***Table of Contents***](/README.md)
 
@@ -42,3 +42,27 @@ To show the port number in your SSH config:
 To see the number of lines in your SSH config:
 
     cat /etc/ssh/sshd_config | wc -l
+
+`cat` without arguments takes input from standard input and prints it to
+standard output. To properly quit, use `<CTRL-d>`. Try it out:
+
+    cat > foo.txt
+
+Display non-printing characters in the text with `-A`:
+
+    cat -A file.txt
+
+Tabs are represented as `<^I>`, the same thing as `<CTRL+i>`.
+
+A great reason to use `cat` is to see non-printing characters. There may be
+carriage returns, they come from DOS and Windows. UNIX ends lines with a
+linefeed character (ASCII 10) while MS-DOS use the sequence carriage return
+(ASCII 13) and linefeed to end each line of text. To convert from DOS to Unix
+format, use `dos2unix`, to convert back use `unix2dos`; another way to
+accomplish that is just to remove the carriage returns from text.
+
+To supress the output of blank lines, use `-s`:
+
+    cat "\n\n123" > file.txt
+    cat -n file.txt # w/o -s
+    cat -ns file.txt
