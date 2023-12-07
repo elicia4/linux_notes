@@ -30,6 +30,7 @@ It accepts standard input as well:
 - `-o` - send sorted output to file rather than standard output
 - `-t` - define the field-separator character. By default fields are separated
   by spaces or tabs
+- `-u` - ignore duplicate fields
 
 `-n`:
 
@@ -91,3 +92,5 @@ Say you wanted to sort a non-standard file for example the `/etc/passwd` file.
 Its fields are delimited with `:`, you can specify it with the `-t` option:
 
     sort -t ":" -k 7 /etc/passwd | head
+
+You can ignore 
