@@ -1,11 +1,13 @@
 # The `cut` command
 
-Notes taken on the "Linux Crash Course - The `cut` Command" video by
-LearnLinuxTV.
+These are notes on [this
+video](https://www.youtube.com/watch?v=GYP2T34v56E), documentation, and the
+Internet.
 
 [***Table of Contents***](/README.md)
 
-`cut` - remove sections from each line of files. 
+`cut` - remove sections from each line of files. `cut` can be used with
+multiple arguments.
 
 Let's create a simple files to work with:
 
@@ -18,8 +20,12 @@ Try this command:
 It printed the first character of the file. Popular `cut` command options:
 
 - `-c`: select by character
-- `-d`: select by delimiter
+- `-d delim`: select by delimiter, when `-f` is specified, use `delim` as the
+  field delimiting character. By default, fields must be separated by a single
+  tab character
 - `-f`: select by field
+- `--complement` - extract the entire line of text, except for those portions
+  specified by `-c` and/or `-f`
 
 Let's try another one:
 
@@ -62,4 +68,7 @@ An example of using the `cut` command in the real world:
 
 The file's delimiter is `:`.
 
-`cut` is best used with other commands. It's a great file manipulating utility.
+While working with `cut`, it's useful to know about the `expand` and the
+`unexpend` commands. The first one converts tabs to spaces, the second converts
+spaces to tabs.
+
