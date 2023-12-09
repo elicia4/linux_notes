@@ -55,6 +55,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [reset](./commands/reset.md) | [file](./commands/file.md) | [sort](./commands/sort.md) |
 | [uniq](./commands/uniq.md) | [locate](./commands/locate.md) | [stat](./commands/stat.md) |
 | [paste](./commands/paste.md) | [join](./commands/join.md) | [comm](./commands/comm.md) |
+| [patch](./commands/patch.md) | | |
 
 #### General
 | | | |
