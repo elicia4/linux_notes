@@ -54,6 +54,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [watch](./commands/watch.md) | [kill](./commands/kill.md) | [tee](./commands/tee.md) |
 | [reset](./commands/reset.md) | [file](./commands/file.md) | [sort](./commands/sort.md) |
 | [uniq](./commands/uniq.md) | [locate](./commands/locate.md) | [stat](./commands/stat.md) |
+| [paste](./commands/paste.md) | | |
 
 #### General
 | | | |
