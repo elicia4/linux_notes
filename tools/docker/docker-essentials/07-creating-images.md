@@ -1,8 +1,8 @@
 # Creating Images
 
-[***go back to contents***](01-contents.md)
+[***Table of Contents***](../README.md)
 
-Start with a container that is a close to what you want to achieve as possible
+Start with a container that is a close to what you want to achieve as possible:
 
 	docker run -it ubuntu
 	apt update
@@ -75,7 +75,7 @@ ENTRYPOINT apache2ctl -D FOREGROUND
 ###############################################
 ```
 
-THIS CAN FAIL because of prompts, you should make the process noninteractive.
+THIS CAN FAIL because of prompts, you should make the process non-interactive.
 Add the following after "MAINTAINER" line:
 
 ```

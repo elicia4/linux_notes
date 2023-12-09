@@ -1,16 +1,16 @@
 # Running Containers
 
-[***go back to contents***](01-contents.md)
+[***Table of Contents***](../README.md)
 
 Show docker images that have been downloaded and are locally available:
 
 	docker images
 
-Look for a docker image, for example the ubuntu image:
+Look for a docker image, for example the Ubuntu image:
 
 	docker search ubuntu
 
-Download docker image:
+Download the docker image:
 
 	docker pull ubuntu
 
@@ -20,7 +20,7 @@ Run a container created from that image:
 
 So... you are back to the prompt. Containers automatically exit if they have
 nothing to do. Some containers start running some job whenever they start, but
-it's not the case with ubuntu. Try running:
+it's not the case with Ubuntu. Try running:
 
 	docker run nginx
 
@@ -35,7 +35,7 @@ List all containers:
 
 	docker ps -a
 
-Run bash inside ubuntu container:
+Run `bash` inside Ubuntu container:
 
 	docker run -it ubuntu /bin/bash
 
@@ -57,4 +57,4 @@ You should practice settings up containers :)
 For instance, you could practice using various package managers on popular
 distributions.
 
-[go to next note](05-making-containers-persist.md)
+[***next note***](05-making-containers-persist.md)

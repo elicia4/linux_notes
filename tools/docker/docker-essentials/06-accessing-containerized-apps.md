@@ -1,6 +1,6 @@
 # Accessing Containerized Applications
 
-[***go back to contents***](01-contents.md)
+[***Table of Contents***](../README.md)
 
 Let's try running a different container:
 
@@ -33,7 +33,8 @@ Add `--restart unless-stopped` arguments to the command:
 
 Those arguments are useful for web-servers.
 
-### Beyond the video ###
+### Restart in Case of Failure
+
 Docker provides a restart policy option to let your containers restart
 automatically in case of certain events or failures.
 
@@ -42,11 +43,7 @@ host or if the service running in the container fails.
 
 `unless-stopped`: Restart the container unless the container was in stopped
 state before the Docker daemon was stopped. If you stop the containers with
-the:
+the `docker stop` command and then restart the docker daemon, the container
+with `unless-stopped` policy won't be restarted.
 
-    docker stop
-
-command and then restart the docker daemon, the container with `unless-stopped`
-policy won't be restarted.
-
-[go to next note](07-creating-images.md)
+[***next note***](07-creating-images.md)

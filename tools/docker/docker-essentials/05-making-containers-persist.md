@@ -1,6 +1,6 @@
 # Making Containers Persist
 
-[***go back to contents***](01-contents.md)
+[***Table of Contents***](../README.md)
 
 If a container has nothing to do, it deletes itself.
 
@@ -35,4 +35,4 @@ If you run `docker attach 06` it will launch the container starting with `06`.
 
 To send the container back to the background, `<CTRL+P+Q>`.
 
-[go to next note](06-accessing-containerized-apps.md)
+[***next note***](06-accessing-containerized-apps.md)

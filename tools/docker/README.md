@@ -2,8 +2,11 @@
 
 ![Docker Logo](img/docker-icon-256x256.png)
 
-These are notes on the series of videos published on the "Learn Linux TV"
-YouTube channel: https://www.youtube.com/@LearnLinuxTV
+[***Table of Contents***](/README.md)
+
+These notes are based on [the series of videos published on the "Learn Linux
+TV" YouTube channel](https://www.youtube.com/@LearnLinuxTV) and various other
+guides on the Internet.
 
 **Table of Contents**  
 
@@ -15,4 +18,4 @@ YouTube channel: https://www.youtube.com/@LearnLinuxTV
 1. [Accessing Containerized Applications](./docker-essentials/06-accessing-containerized-apps.md)
 1. [Creating Images](./docker-essentials/07-creating-images.md)
 
-[go to next note](./docker-essentials/02-what-is-docker.md)
+[next note](./docker-essentials/02-what-is-docker.md)

@@ -1,6 +1,6 @@
 # What is Docker?
 
-[***go back to contents***](01-contents.md)
+[***Table of Contents***](../README.md)
 
 1. Docker is a platfrom that runs containers.
 1. A container bundles an app's code and all its dependancies into one object.
@@ -12,7 +12,7 @@
 1. Docker containers can be run on platforms such as AWS, Linode, Digital
    Ocean, Google Cloud, and others.
 1. Not all apps are supported when run in containers.
-1. Although Docker is aweseme, it's one tool among many.
+1. Although Docker is awesome, it's one tool among many.
 1. Performance can sometimes be inconsistent.
 
-[go to next note](03-installing-docker.md)
+[***next note***](03-installing-docker.md)
