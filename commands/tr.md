@@ -1,10 +1,13 @@
-# The "tr" command
+# The `tr` command
 
-Notes taken on this video by LearnLinuxTV: https://youtu.be/4qP5xA_epXo
+These are notes on [this video](https://youtu.be/4qP5xA_epXo), documentation,
+and the Internet.
 
 [***Table of Contents***](/README.md)  
 
-`tr` - translate or delete characters.
+`tr` - translate or delete characters, *transliterate* characters.
+Transliteration is the process of changing characters from one alphabet to
+another.
 
 The `tr` command is mostly used with other commands. For example:
 
@@ -15,6 +18,19 @@ echo "Hello World" | tr [a-z] [A-Z]
 ```
 
 >HELLO WORLD
+
+Characters can be expressed in three ways. Let's take uppercase characters as
+an example:
+1. An enumerated list: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`.
+1. A character range: `A-Z`. This is subject to problems related to *the locale
+   collation order* and should be used with caution.
+1. POSIX character classes: `[:upper:]`.
+
+It's possible to convert multiple characters to one:
+
+```
+echo "Hello World 123" | tr [:alnum:] A
+```
 
 Create a simple text file and echo anything you want inside it, we will do 
 some work with it. I suggest doing it in a new folder so as to not mess
@@ -44,11 +60,23 @@ echo "Hello World" | tr -d [a-z]
 
 >H W
 
+To convert MS-DOS to Unix text, delete all carriage returns:
+
+```
+tr -d '\r' < dos_file > unix_file # \r represent the carriage return character
+```
+
+To see a complete list of sequences and characters classes `tr` supports:
+
+```
+tr --help
+```
+
 Create a file with a list of users:
 
 ```
-touch usernames.txt
 echo -e "name@localhostt\nsam@localhostt\nliz@localhostt\njay@localhostt" > usernames.txt
+cat usernames.txt
 ```
 	
 There are multiple mistakes: each localhost has an extra `t` at the end.
@@ -56,6 +84,8 @@ You can fix it with the `-s` parameter (s stands for squeeze). It is used
 to delete duplicate characters. Let's delete duplicate t's:
 
 	cat usernames.txt | tr -s 't'
+
+Note that the characters have to be adjoining for them to squeeze.
 
 You can rewrite `[a-z]` as `[:lower:]`, `[A-Z]` as `[:upper:]`:
 
