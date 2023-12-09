@@ -8,11 +8,11 @@ YouTube channel: https://www.youtube.com/@LearnLinuxTV
 **Table of Contents**  
 
 1. Contents (you are here)
-1. [What is Docker?](02-what-is-docker.md)
-1. [Installing Docker](03-installing-docker.md)
-1. [Running Containers](04-running-containers.md)
-1. [Making Containers Persist](05-making-containers-persist.md)
-1. [Accessing Containerized Applications](06-accessing-containerized-apps.md)
-1. [Creating Images](07-creating-images.md)
+1. [What is Docker?](./docker-essentials/02-what-is-docker.md)
+1. [Installing Docker](./docker-essentials/03-installing-docker.md)
+1. [Running Containers](./docker-essentials/04-running-containers.md)
+1. [Making Containers Persist](./docker-essentials/05-making-containers-persist.md)
+1. [Accessing Containerized Applications](./docker-essentials/06-accessing-containerized-apps.md)
+1. [Creating Images](./docker-essentials/07-creating-images.md)
 
-[go to next note](docker-essentials/02-what-is-docker.md)
+[go to next note](./docker-essentials/02-what-is-docker.md)
