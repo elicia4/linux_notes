@@ -1,12 +1,15 @@
 # The `diff` command
 
-Notes taken on the "Linux Crash Course - The `diff` Command" video by
-LearnLinuxTV.
+These are notes on [this video](https://www.youtube.com/watch?v=qLRQspQxvFk),
+documentation, and the Internet.
 
 [***Table of Contents***](/README.md)
 
-It's the command you can use to find the difference between files. For
-practice, create two slightly different text files:
+It's the command you can use to find the difference between files. It supports
+many output formats and can process large collections of text files at once.
+`diff` can be used to create *"diff files"* that are used to convert one
+version of a file to another. For practice, create two slightly different text
+files:
 
     echo "I like\ndogs and cats" > 1.txt;
     echo "I like\ncats and dogs" > 2.txt;
@@ -32,6 +35,12 @@ files:
     diff /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
 
 ### `diff` Output
+
+In the default output format, each group of changes is preceded by a *change
+command* in the form of *range operation range* to describe the positions and
+types of changes required to convert the first file to the second file.
+
+A range is a comma-separated list of the starting and the ending lines.
 
 An example of an output:
 
@@ -59,11 +68,27 @@ output:
 
     colordiff 1.txt 2.txt
 
-There is the `-u` option that formats the `diff` output a bit differently, in 
-my opinion, it's clearer to read:
+There is the `-u` option that formats the `diff` output in the *unified
+format*, it's clearer to read:
 
     diff -u 1.txt 2.txt
 
 Or even better:
 
     colordiff -u 1.txt 2.txt | less
+
+Another type of format is the *context format*, specified with `-c`:
+
+    diff -c 1.txt 2.txt
+
+`***` signify the first file, `---` signify the second.
+
+Within a change group, lines begin with change indicators:
+- `blank` - a line shown for context. It does not indicate a difference between
+  the two files.
+- `-` - a line deleted. This line will appear in the first file but not in the
+  second file.
+- `+` - a line added. This line will appear in the second file but not in the
+  first file.
+- `!` - a line changed. The two versions of the line will be displayed, each in
+  its respective section of the change group.
