@@ -16,7 +16,7 @@ This command refreshes your local package index. Let's install `tmux`:
 
     sudo apt install tmux
 
-It will install all dependancies as well. You can install multiple packages
+It will install all dependencies as well. You can install multiple packages
 with one command:
 
     sudo apt install tmux htop git
