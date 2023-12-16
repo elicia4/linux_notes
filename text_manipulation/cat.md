@@ -61,7 +61,7 @@ linefeed character (ASCII 10) while MS-DOS use the sequence carriage return
 format, use `dos2unix`, to convert back use `unix2dos`; another way to
 accomplish that is just to remove the carriage returns from text.
 
-To supress the output of blank lines, use `-s`:
+To suppress the output of blank lines, use `-s`:
 
     cat "\n\n123" > file.txt
     cat -n file.txt # w/o -s

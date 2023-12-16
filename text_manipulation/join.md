@@ -31,6 +31,6 @@ To join these files based on the same field:
 
     join dates-distros.txt dates-versions.txt
 
-By default, `join` uses whitespace as the input field delimeter and a single
-space as the output field delimeter. To specify a tab delimeter for both
+By default, `join` uses whitespace as the input field delimiter and a single
+space as the output field delimiter. To specify a tab delimiter for both
 input and output, use `-t $'\t'`.

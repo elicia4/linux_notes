@@ -44,7 +44,7 @@ awk '{print $1}' tmnt.txt
 
 This will output the first field only from each line. You can output the second
 column by using `$2` instead of `$1` and so on. Here we are printing individual
-fields. We added the `print` command within the brackets, techinically that's a
+fields. We added the `print` command within the brackets, technically that's a
 script inside the brackets. If you change the field number to '0' (`$0`), the
 entire file will be printed to the SO. You can output multiple fields like so:
 

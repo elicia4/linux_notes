@@ -105,7 +105,7 @@ For example:
     
     sed -n '1,5p' file.txt
 
-`p` means "print". `-n` supresses automatic printing.
+`p` means "print". `-n` suppresses automatic printing.
 
 Print all lines containing `1234`:
 
@@ -154,7 +154,7 @@ Let's deconstruct it:
    's/regexp/replacement/' file.txt`
 1. A regular expression (`regexp`) that isolates the `MM/DD/YYYY` dates:
    `[0-9]{2}/[0-9]{2}/[0-9]{4}$`
-1. For `replacement`, we have to use *back refereneces*, a regular expression
+1. For `replacement`, we have to use *back references*, a regular expression
    feature that's supported in some applications that use BRE. It works like
    so: if `\n` appears in `replacement` where `n` is a number from
    1 to 9, `\n` will refer to the corresponding *subexpression* in the

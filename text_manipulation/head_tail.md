@@ -43,7 +43,7 @@ It's also a good idea to check the authorization log file sometimes
 
     tail -f /var/log/auth.log
     
-To easily differentiate, add some linebreaks (press `Enter` a couple of times)
+To easily differentiate, add some line breaks (press `Enter` a couple of times)
 in the `tail`ing window so that you can clearly see the new output when it
 appears.
 

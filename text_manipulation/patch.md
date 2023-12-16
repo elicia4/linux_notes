@@ -22,7 +22,7 @@ To apply it:
     patch < diff_file.txt
 
 There was no need to specify target files since the unified format already
-contains the filesnames in the header.
+contains the filenames in the header.
 
 Another way to patch:
 
