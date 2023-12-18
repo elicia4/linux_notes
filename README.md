@@ -57,7 +57,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [comm](./text_manipulation/comm.md) | [diff](./text_manipulation/diff.md) | [patch](./text_manipulation/patch.md) |
 | [tr](./text_manipulation/tr.md) | [sed](./text_manipulation/sed.md) | [awk](./text_manipulation/awk.md) |
 | [head & tail](./text_manipulation/head_tail.md) | [grep](./text_manipulation/grep.md) | [tee](./text_manipulation/tee.md) |
-| [wc](./text_manipulation/wc.md) | [nl](./text_manipulation/nl.md) | |
+| [wc](./text_manipulation/wc.md) | [nl](./text_manipulation/nl.md) | [fold](./text_manipulation/fold.md) |
 
 #### Networking 
 | | | |
