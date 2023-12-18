@@ -48,10 +48,10 @@ have a password set. To specify options:
 
 ### SQL commands
 
-To show existing databases:
+To show existing databases (comments start with `--`):
 
 ```sql
-show databases; # end every statement with a semicolon ';'
+show databases; -- end every statement with a semicolon ';'
 ```
 
 To create a database:
