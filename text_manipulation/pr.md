@@ -18,5 +18,5 @@ Format the file:
 
 This defined a page that is 15 lines long and 65 characters wide.
 
-- `-l PAGE_LENGTH` sets the page length to PAGE_LENGTH
-- `-w PAGE_WIDTH` sets page width to PAGE_WIDTH
+- `-l PAGE_LENGTH` sets the page length to `PAGE_LENGTH`
+- `-w PAGE_WIDTH` sets page width to `PAGE_WIDTH`
