@@ -13,8 +13,9 @@ and other kinds of graphics and imaging.
 A PostScript interpreter is a special program that reads the incoming
 PostScript program and renders the results into the printer's internal memory,
 thus forming the pattern of bits (dots) that would be transferred to the paper.
-The generic name for this process of rendering something into a large bit
-pattern (called a *bitmap*) is *raster image processor (RIP)*.
+The generic name for a component that performs this process of rendering
+something into a large bit pattern(called a *bitmap*) is *raster image
+processor(RIP)*.
 
 Modern Linux systems employ two software suites to perform and manage printing:
 - Common Unix Printing System (CUPS) provides print drivers and print-job
@@ -26,3 +27,108 @@ are slow by nature, compared to the computers that are feeding them, printing
 systems need a way to schedule multiple print jobs and keep things organized.
 CUPS also has the ability to recognize different types of data and can convert
 files to a printable form.
+
+[`pr`](../text_manipulation/pr.md) can be used in conjunction with printing.
+
+CUPS supports two programs for printing: 
+- `lpr`, used in the Berkley Software Distribution of Unix
+- `lp`, used in the System V version of Unix
+
+To print the contents of `/usr/bin` arranged in 3 columns:
+
+```bash
+ls /usr/bin | pr -3 | lpr
+```
+
+The example above used the default printer. To specify a printer:
+
+```bash
+lpr -P printer_name
+```
+
+To see a list of all printers known to the system:
+
+```bash
+lpstat -a
+```
+
+---
+
+#### Printing to PDF
+
+You can choose to "print" your file as a PDF first instead of printing it on a
+physical printer. To add a `cups-pdf` PDF printer on Arch:
+
+    pacman -S cups cups-pdf
+
+Enable `cups.service` and `cups.socket`:
+
+    sudo systemctl enable --now cups.service cups.socket
+
+After enabling and installing, it was still now showing up with `lpstat -t` or
+`lpq -a`. I managed to activate the PDF printer with the CUPS web interface. 
+
+1. Go to `localhost:631`
+1. Go to the `Administration` tab at the top
+1. Click `Find New Printers`
+1. "Virtual PDF Printer (CUPS-PDF)" should be there, click `Add This Printer`
+1. Click `Continue`
+1. Choose `Generic` in `Make:`, `Continue`
+1. Choose `Generic CUPS-PDF Printer (no options) (en)`
+1. Finally, click `Add Printer`
+1. Check it out with `'lpstat -a`
+I am fairly certain this can be done a lot more easily with the command line,
+but I couldn't quickly figure it out, so I chose the GUI option.
+
+To print to PDF:
+
+    lp -d CUPS-PDF <filename>
+
+By default, files will be saved in `/var/spool/cups-pdf/${USER}`. To change
+the path, edit the `/etc/cups/cups-pdf.conf` file. Change the `#Out
+/var/spool/cups-pdf/${USER}` to `Out <Destination>`. For example, `Out
+${HOME}/PDF`:
+
+    sudo sed -i 's.^#Out /var/spool/cups-pdf/${USER}$.Out ${HOME}/PDF.' \
+    /etc/cups/cups-pdf.conf
+
+`sed` edits the `cups-pdf.conf` file itself (`-i`), `.` is used as the
+delimiter.
+
+---
+
+`lpr` options:
+- `-# number` - set number of copies to number.
+- `-p` - print each page with a shaded header with the date, time, job name,
+  and page number. This so-called "pretty print" option can be used when
+  printing text files.
+- `-P printer` - specify the name of the printer used for output. If no printer
+  is specified, the system’s default printer is used.
+- `-r` - delete files after printing. This would be useful for programs that
+  produce temporary printer-output files.
+
+`lp` supports a different option set:
+
+- `-d printer` - set the printer to `printer`. If not specified, the default
+  printer is used.
+- `-n number` - set the number of copies to `number`.
+- `-o landscape` - set output to landscape orientation.
+- `-o fitplot` - scale the file to fit the page. This is useful when printing
+  images, such as JPEG files.
+- `-o scaling=number` - scale file to number. The value of 100 fills the page.
+  Values less than 100 are reduced, while values greater than 100 cause the
+  file to be printed across multiple pages.
+- `-o cpi=number` - set the output characters per inch to `number`. The default
+  is 10.
+- `-o lpi=number` - set the output lines per inch to `number`. The default is
+  6.
+- `-o page-bottom=points`, `-o page-left=points`, `-o page-right=points`, `-o
+  page-top=points` - set the page margins. Values are expressed in  points, a
+  unit of typographic measurement. There are 72 points to an inch.
+- `-P pages` - specify the list of pages. `pages` may be expressed as a
+  comma-separated list and/or a range, for example, 1,3,5,7-10
+
+Print 12 CPI and 8 LPI with a left margin of one half inch. Adjust the `pr`
+options to account for the new page size:
+
+    ls /usr/bin | pr -4 -w 90 -l 88 | lp -o page-left=36 -o cpi=12 -o lpi=8
