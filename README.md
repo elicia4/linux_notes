@@ -40,7 +40,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [lsof](./commands/lsof.md) | [top](./commands/top.md) | [passwd](./commands/passwd.md) |
 | [watch](./commands/watch.md) | [kill](./commands/kill.md) | [reset](./commands/reset.md) 
 | [locate](./commands/locate.md) | [stat](./commands/stat.md) | [shutdown](./commands/shutdown.md) |
-| [file](./commands/file.md) | | |
+| [file](./commands/file.md) | [iperf](./commands/iperf.md) | |
 
 #### Tools 
 | | | |
