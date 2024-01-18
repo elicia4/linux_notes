@@ -5,7 +5,7 @@ Learn Linux TV.
 
 [***Table of Contents***](/README.md)
 
-`lsof` helps to find out which files are opened on your system and by whom or
+`lsof` helps to find out what files are opened on your system, by whom or
 what. `lsof` stands for "list open files". 
 
 There are situations when this may be useful, for example error messages that
@@ -91,3 +91,19 @@ owned by `root`:
 You can view open files pertaining to IPv4 or IPv6 addresses:
 
     sudo lsof -i 4 /mnt/wp-content # -i for IP, 4 for version
+
+You can specify a singular file too:
+
+    sudo lsof /var/log/syslog
+
+Here's the problem: some commands work with copies of a file. For example,
+`vim` does:
+
+    vim file.txt
+    # CTRL-z
+    lsof file.txt
+
+To try to deal with that issue, you can view all open files in a given
+directory:
+
+    lsof +d .
