@@ -223,3 +223,7 @@ It's possible to pipe a list of filenames to `zip` with `-@`:
 `unzip` supports sending its output to standard output:
 
     unzip -p ls-etc.zip | less
+
+To unzip a `.7z` file:
+
+    7z x file.7z
