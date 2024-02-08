@@ -59,11 +59,15 @@ lpstat -a
 You can choose to "print" your file as a PDF first instead of printing it on a
 physical printer. To add a `cups-pdf` PDF printer on Arch:
 
-    pacman -S cups cups-pdf
+```bash
+pacman -S cups cups-pdf
+```
 
 Enable `cups.service` and `cups.socket`:
 
-    sudo systemctl enable --now cups.service cups.socket
+```bash
+sudo systemctl enable --now cups.service cups.socket
+```
 
 After enabling and installing, it was still now showing up with `lpstat -t` or
 `lpq -a`. I managed to activate the PDF printer with the CUPS web interface. 
@@ -82,15 +86,19 @@ but I couldn't quickly figure it out, so I chose the GUI option.
 
 To print to PDF:
 
-    lp -d CUPS-PDF <filename>
+```bash
+lp -d CUPS-PDF <filename>
+```
 
 By default, files will be saved in `/var/spool/cups-pdf/${USER}`. To change
 the path, edit the `/etc/cups/cups-pdf.conf` file. Change the `#Out
 /var/spool/cups-pdf/${USER}` to `Out <Destination>`. For example, `Out
 ${HOME}/PDF`:
 
-    sudo sed -i 's.^#Out /var/spool/cups-pdf/${USER}$.Out ${HOME}/PDF.' \
-    /etc/cups/cups-pdf.conf
+```bash
+sudo sed -i 's.^#Out /var/spool/cups-pdf/${USER}$.Out ${HOME}/PDF.' \
+/etc/cups/cups-pdf.conf
+```
 
 `sed` edits the `cups-pdf.conf` file itself (`-i`), `.` is used as the
 delimiter.
@@ -133,7 +141,9 @@ delimiter.
 Print 12 CPI and 8 LPI with a left margin of one half inch. Adjust the `pr`
 options to account for the new page size:
 
-    ls /usr/bin | pr -4 -w 90 -l 88 | lp -o page-left=36 -o cpi=12 -o lpi=8
+```bash
+ls /usr/bin | pr -4 -w 90 -l 88 | lp -o page-left=36 -o cpi=12 -o lpi=8
+```
 
 #### `a2ps`
 
@@ -229,4 +239,4 @@ cancel <job-id>
 lpq
 ```
 
-You can all jobs created by a user with `-u`.
+You can cancel all jobs created by a user with `-u <username>`.
