@@ -229,14 +229,12 @@ To show the status of a printer queue and the print jobs it contains:
 lpq
 ```
 
-By defualt, the system default printer is shown. To specify a particular
-printer, use `-P`.
+By defualt, the system default printer is shown. To specify a printer, use
+`-P`.
 
 To terminate a print job, use `lprm` or `cancel`:
 ```bash
-lpq
 cancel <job-id>
-lpq
 ```
 
 You can cancel all jobs created by a user with `-u <username>`.
