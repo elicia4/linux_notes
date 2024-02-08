@@ -97,6 +97,8 @@ delimiter.
 
 ---
 
+#### `lpr` and `lp`
+
 `lpr` options:
 - `-# number` - set number of copies to number.
 - `-p` - print each page with a shaded header with the date, time, job name,
@@ -132,3 +134,99 @@ Print 12 CPI and 8 LPI with a left margin of one half inch. Adjust the `pr`
 options to account for the new page size:
 
     ls /usr/bin | pr -4 -w 90 -l 88 | lp -o page-left=36 -o cpi=12 -o lpi=8
+
+#### `a2ps`
+
+`a2ps` was initially designed as a format conversion program, but it's capable
+of doing printing work as well. By default, it sends its output to the system's
+printer instead of STDOUT. Create a PostScript file on your desktop:
+
+```bash
+ls /usr/bin | pr -3 -t | a2ps -o ~/Desktop/ls.ps -L 66
+```
+
+- `-L` specifies the number of lines per page;
+- `-t` in `pr` omits headers and footers;
+
+View the file with `gv`:
+
+```bash
+gv ~/Desktop/ls.ps
+```
+
+You can manipulate the size of the image with `<CTRL> - <+>` and `<CTRL> +
+<->`.
+
+`a2ps` options:
+
+- `--center-title=text` - set center page title to `text`;
+- `--columns=number` - arrange pages into `number` columns. The default is 2;
+- `--footer=text` - set page footer to `text`;
+- `--guess` - report the types of files given as arguments;
+- `--left-footer=text` - set the left-page footer to `text`;
+- `--left-title=text` - set the left-page title to `text`;
+- `--line-numbers=interval` - number lines of output every `interval` lines;
+- `--list=defaults` - display default settings;
+- `--pages=range` - print pages in `range`;
+- `--right-footer=text` - set the right-page footer to `text`;
+- `--right-title=text` - set the right-page title to `text`;
+- `--rows=number` - arrange pages into `number` rows. The default is 1;
+- `-B` - no page headers;
+- `-b text` - set the page header to `text`;
+- `-f size` - use `size` point font;
+- `-l number` - set characters per line to `number`. This and the `-L` option
+  (see next entry) can be used to make files paginated with other programs,
+  such as `pr`, fit correctly on the page;
+- `-L number` - set lines per page to `number`;
+- `-M name` - use media `name`. For example, A4;
+- `-n number` - output `number` copies of each page;
+- `-o file` - send output to `file`. If file is specified as `-`, use standard
+  output;
+- `-P printer` - use `printer`. If not specified, the default printer is used;
+- `-R` - portrait orientation;
+- `-r` - landscape orientation;
+- `-T number` - set tab stops to every `number` characters;
+- `-u text` - underlay (watermark) pages with `text`.
+
+`enscript` can do things similar to `a2ps`, but it only accepts text input.
+
+#### Managing Print Jobs
+
+To check printer queue status:
+```bash
+lpstat -a
+```
+
+You can specify one or multiple printers as well:
+```bash
+lpstat -a [printer...]
+```
+
+To get a more detailed output (a status summary):
+```bash
+lpstat -s
+```
+
+Other supported options are:
+- `-d` shows the system's default printer;
+- `-p [printer...]` shows the status of a printer. If none is specified, all
+  are shown;
+- `-r` displays the status of the print server;
+- `-t` shows a complete status report.
+
+To show the status of a printer queue and the print jobs it contains:
+```bash
+lpq
+```
+
+By defualt, the system default printer is shown. To specify a particular
+printer, use `-P`.
+
+To terminate a print job, use `lprm` or `cancel`:
+```bash
+lpq
+cancel <job-id>
+lpq
+```
+
+You can all jobs created by a user with `-u`.
