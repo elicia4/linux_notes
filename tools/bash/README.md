@@ -8,3 +8,4 @@ A collection of notes on various bash guides.
 1. [Never say "If" writing a Bash script! (Exit codes & logical
    operators)](misc/fewer-ifs.md) 
 1. [Bash Aliases](misc/bash_aliases.md)
+1. [Bash Tricks](./misc/tricks.md)
