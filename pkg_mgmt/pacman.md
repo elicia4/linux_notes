@@ -97,3 +97,7 @@ de-select `http`, this will limit your servers to secure ones, click on the
     sudo vim mirrorlist
 
 1. Make sure to uncomment the items.
+
+To find a file containing a specific file:
+
+    pacman -F <filename>

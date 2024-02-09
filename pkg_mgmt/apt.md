@@ -53,3 +53,11 @@ added.
 TIP: You can show more info about a package:
 
     apt show <package>
+
+To find a package containing a specific file, use `apt-file`:
+
+```bash
+sudo apt install apt-file # install it
+sudo apt-file update      # update its database
+sudo apt-file update      # search for the file
+```
