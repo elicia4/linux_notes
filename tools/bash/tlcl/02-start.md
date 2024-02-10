@@ -10,6 +10,7 @@ Here's the default HTML structure:
 ```bash
 vim foo.html
 ```
+
 ```bash
 <html>
     <head>
@@ -22,14 +23,17 @@ vim foo.html
 ```
 
 You can view the file in your web browser:
+
 ```
 file:///home/<username>/foo.html
 ```
 
 Output this HTML file to STDOUT with a script:
+
 ```bash
 vim ~/bin/sys_info_page
 ```
+
 ```bash
 #!/bin/bash
 
@@ -46,11 +50,13 @@ echo "</html>"
 ```
 
 Save the file, make it executable, and run it:
+
 ```bash
 chmod 755 ~/bin/sys_info_page
 ```
 
 Redirect the output to a new file and display it with your web browser:
+
 ```bash
 sys_info_page > sys_info_page.html
 firefox sys_info_page.html
@@ -58,6 +64,7 @@ firefox sys_info_page.html
 
 When writing scripts, *always strive for simplicity and clarity*. So make it
 simpler, combine all `echo`s into one:
+
 ```bash
 #!/bin/bash
 
@@ -74,6 +81,7 @@ echo "<html>"
 ```
 
 Add a little useful data to it, like a better title and a heading:
+
 ```bash
 #!/bin/bash
 
@@ -88,12 +96,12 @@ echo "<html>
     </body>
 </html>"
 ```
-
 ### Variables and Constants
 
 See how the title "System Information Report" repeats multiple times? It may be
 useful to create a variable for it, it could make future maintanence of the
 script easier in case you want to change it.
+
 ```bash
 #!/bin/bash
 
@@ -116,6 +124,7 @@ Report" to it. We then reference it with `$title`.
 
 Whenever you invoke a non-existant variable, it gets created and assigned
 nothing:
+
 ```bash
 echo $non_existent_var
 ```
@@ -131,12 +140,14 @@ example, Pi should be a constant in geometric programs.
 
 The shell does not distinguish between variables and constants. It conventional
 to use uppercase names for constants and lowercase letters for variables:
+
 ```bash
 PI=3.1415
 radius=5
 ```
 
 Modify your script to comply with the convention:
+
 ```bash
 #!/bin/bash
 
@@ -160,9 +171,11 @@ machine.
 The shell provides a way to enforce the immutability of constants, through the
 use of the `declare` builtin command with the `-r` (read-only) option. Had we
 assigned `TITLE` this way:
+
 ```bash
 declare -r TITLE="Page Title"
 ```
+
 the shell would prevent any subsequent assignment to `TITLE`. This feature is
 rarely used, but it exists for very formal scripts.
 
@@ -170,6 +183,7 @@ You can force the shell to restrict the assignment to integers by using the
 declare command with the `-i` option, but this is rarely done as well.
 
 There is a great variablity of ways you can assign strings to variables:
+
 ```bash
 a=z                  # Assign the string "z" to variable a. 
 b="a string"         # Embedded spaces must be within quotes. 
@@ -181,11 +195,13 @@ f="\t\ta string\n"   # Escape sequences such as tabs and newlines.
 ```
 
 Multiple variable assignments may be done on a single line:
+
 ```bash
 a=5 b="a string"
 ```
 
 You may encounter the following problem when working with variables:
+
 ```bash
 filename="myfile"
 touch "$filename"
@@ -196,6 +212,7 @@ mv "$filename" "$filename1"
 
 This attempt fails because the shell interprets the second argument of the `mv`
 command as a new (and empty) variable. The problem can be overcome this way:
+
 ```bash
 mv "$filename" "${filename}1"
 ```
@@ -204,6 +221,7 @@ By adding the surrounding braces, the shell no longer interprets the trailing
 `1` as part of the variable name.
 
 Add the time the report was generated to the script:
+
 ```bash
 #!/bin/bash
 
@@ -229,14 +247,17 @@ echo "<html>
 A here document is an additional form of I/O redirection in which we embed a
 body of text into our script and feed it into the standard input of a command.
 It works like this:
+
 ```bash
 command << token
 text
 token
 ```
+
 where `command` is the name of command that accepts standard input and `token`
 is a string used to indicate the end of the embedded text. Here we’ll modify
 our script to use a here document:
+
 ```bash
 #!/bin/bash 
 
@@ -265,6 +286,7 @@ the shell.
 Here documents can be used with any command that accepts standard input. In
 this example, we use a here document to pass a series of commands to the ftp
 program to retrieve a file from a remote FTP server:
+
 ```bash
 #!/bin/bash 
 
