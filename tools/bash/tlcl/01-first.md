@@ -1,5 +1,7 @@
 # Scripting Introduction
 
+[***Table of Contents***](./00-contents.md)
+
 A shell script is a file containing a series of commands. To create a script:
 1. Write it
 1. Make it executable

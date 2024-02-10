@@ -1,5 +1,7 @@
 # Project Start
 
+[***Table of Contents***](./00-contents.md)
+
 We will build an HTML report generator script. Throughout the building process,
 you will discover various shell features.
 

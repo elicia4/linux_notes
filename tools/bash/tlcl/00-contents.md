@@ -4,7 +4,7 @@
 
 1. [First Script](./01-first.md)
 1. [Project Start](./02-start.md)
-1. [Top-Down Design]()
+1. [Script Design](./03-script_design.md)
 1. [Flow Control with `if`]()
 1. [Input]()
 1. [Flow Control with `while/until`]()
