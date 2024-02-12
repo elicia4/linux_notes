@@ -256,5 +256,4 @@ script based on the priveleges of the executing user.
 
 ### Shell Functions in `.bashrc`
 
-Shell functions can be put into the `.bashrc` and get executed just like
-aliases do.
+Shell functions can be put into the `.bashrc` and be used just like aliases.
