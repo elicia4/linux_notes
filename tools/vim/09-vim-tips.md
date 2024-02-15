@@ -21,6 +21,10 @@ You can save a keystroke by using `<C-V>ip` in place of `vip<C-V>`.
 1. You can quit vim with `ZZ` (same as `:x`, save and quit), or `ZQ` (same as
    `:q!`)
 
-2. To quit all tabs:
+1. To quit all tabs: `:qa`
 
-    `:qa`
+1. To only substitue from current line to the end of the file:
+
+   ```bash
+   :.,$s/foo/bar/g
+   ```
