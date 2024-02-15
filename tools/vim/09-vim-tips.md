@@ -26,5 +26,5 @@ You can save a keystroke by using `<C-V>ip` in place of `vip<C-V>`.
 1. To only substitue from current line to the end of the file:
 
    ```bash
-   :.,$s/foo/bar/g
+   :.,$s/foo/bar/gi
    ```
