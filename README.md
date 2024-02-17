@@ -30,7 +30,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [server naming](./misc/srv_naming.md) | [inodes](./misc/inodes.md) | [bash shortcuts](./misc/shortcuts.md) |
 | [wildcards](./misc/wildcards.md) | [command help](./misc/cmd_help.md) | [monitoring](./misc/monitoring.md) |
 | [environment](./misc/environment.md) | [regular expressions](./misc/regex.md) | [SQL](./misc/sql.md) |
-| [document formatting](./misc/doc_format.md) | [printing](./misc/printing.md) | [priority](./misc/priority.md) |
+| [document formatting](./misc/doc_format.md) | [printing](./misc/printing.md) | [niceness](./misc/nice.md) |
 | [compiling](./misc/compiling.md) | [file types](./misc/file_types.md) | |
 
 #### Commands 
