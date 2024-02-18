@@ -51,3 +51,10 @@ Check it out:
 
     ls;
     cat log.txt
+
+The `-n` option suppresses the output of the newline character at the end. This
+option is useful for reading input, for instance:
+
+```bash
+echo -n "Please enter a number: "; read num; echo $num;
+```
