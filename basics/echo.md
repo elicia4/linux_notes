@@ -53,7 +53,7 @@ Check it out:
     cat log.txt
 
 The `-n` option suppresses the output of the newline character at the end. This
-option is useful for reading input, for instance:
+option is comes in handy whenever you have to create input prompts:
 
 ```bash
 echo -n "Please enter a number: "; read num; echo $num;
