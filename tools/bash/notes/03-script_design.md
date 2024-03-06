@@ -167,11 +167,11 @@ In it's current state, your script produces the following output:
 ```html
 <html>
     <head>
-        <title>System Information Report For arcb</title>
+        <title>System Information Report For hostname</title>
     </head>
     <body>
-        <h1>System Information Report For arcb</h1>
-        <p>Generated 02/10/2024 11:04:48 AM MSK, by lsand</p>
+        <h1>System Information Report For hostname</h1>
+        <p>Generated 02/10/2024 11:04:48 AM XDD, by user</p>
 
 
 
@@ -204,11 +204,11 @@ Now you get:
 ```html
 <html>
     <head>
-        <title>System Information Report For arcb</title>
+        <title>System Information Report For hostname</title>
     </head>
     <body>
-        <h1>System Information Report For arcb</h1>
-        <p>Generated 02/10/2024 11:07:14 AM MSK, by lsand</p>
+        <h1>System Information Report For hostname</h1>
+        <p>Generated 02/10/2024 11:07:14 AM XDD, by user</p>
         Function report_uptime executed.
         Function report_disk_space executed.
         Function report_home_space executed.
