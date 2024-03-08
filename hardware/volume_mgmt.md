@@ -149,4 +149,4 @@ It won't show anything that is mounted, only the local options.
 This is a VERY important file on your system, if you make a mistake here, you
 can break everything, it allows you to automatically mount something every time
 your machine starts. There's already going to be contents inside the `fstab`
-file. The way to edit is covered [here.](/misc/fstab.md)
+file. The way to edit is covered [here.](./fstab.md)
