@@ -38,11 +38,13 @@ priorities, you don't need `sudo`, if you increase them, you do.
 - `num` sets the niceness value to `num`;
 - `-p <PID>` specifies the PID.
 
-    # note the difference in values
-    ps -l
-    # lower the priority
-    renice 20 -p 6969
-    ps -l
+```bash
+# note the difference in values
+ps -l
+# lower the priority
+renice 20 -p 6969
+ps -l
+```
 
 You can specify the niceness value with `-n`:
 
