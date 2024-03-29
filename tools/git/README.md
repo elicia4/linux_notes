@@ -6,3 +6,4 @@
 1. [Git Tips](git-tips.md)
 1. [Learn Git](learn-git.md)
 1. [GitHub Pull Requests](gh-pull-requests.md)
+1. [ProGit](./progit/toc.md)
