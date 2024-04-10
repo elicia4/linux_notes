@@ -57,7 +57,7 @@ punctuation symbols
 `e` - forward to the end of the next word  
 `E` - forward to the end of the next WORD  
 `0` - beginning of the current line
-`^` - first non-whitespace character of the current line
+`^` or `_` - first non-whitespace character of the current line
 `$` - the end of the current line
 `Ctrl-f` - down one page
 `Ctrl-b` - up one page
