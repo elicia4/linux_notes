@@ -3,12 +3,11 @@
 [***Table of Contents***](README.md)
 
 These are notes on [the series of vim guides by Mental
-Outlaw](https://youtube.com/playlist?list=PL3cu45aM3C2DJVGfCjSBB1yD9YkC7q27-).
+Outlaw](https://youtube.com/playlist?list=PL3cu45aM3C2DJVGfCjSBB1yD9YkC7q27-)
+and many other sources.
 
 These notes also include my own additions, as well as those suggested in the
 comment sections of the videos.
-
-Note that not all videos are covered, 7-9 from the playlist are not.
 
 ## Why use `vim`?
 
@@ -68,5 +67,38 @@ to be repeated:
 ```
 [n]<command>
 ```
+
+### Most Important Tip
+
+...by Bram Moolenaar with some personal additions
+
+Using `vim` is a skill. Every 5 minutes think about all of the repetitive stuff
+you did and figure out how you can improve on it. It is a skill than can always
+be improved upon. *Record yourself editing files, it's just as efficient as it
+is in video games.*
+
+1. Detect inefficiency
+   - Find out what you waste time on
+1. Find a quicker way
+   - read the online help
+   - read the quick reference, books, etc.
+   - ask friends and colleagues. Formulate your questions *properly* (not
+   *perfectly*)
+   - search the internet
+   - do it yourself
+1. Make it a habit
+   - do it
+   - keep on improving
+
+How **not** to edit effectively:
+- You have to get the text ready right now. No time to read documentation or
+learn a new command. *You will keep on using primitive commands.*
+- You want to learn every feature the editor offers and use the most efficient
+command all the time. *You will waste a lot of time learning things you will
+never use.*
+
+Make everything *a habit*. Make sure that every useful little thing you learn
+you implement into your workflow. Otherwise you will just forget it. *Don't try
+to learn everything.*
 
 [***Go to Next Note***](02-searching.md)
