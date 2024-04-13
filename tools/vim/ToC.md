@@ -2,6 +2,8 @@
 
 ![Vim Logo](./img/vim.png)
 
+[***Main Table of Contents***](/README.md)
+
 1. [Introduction](./01-intro.md)
 1. [Searching](./02-searching.md)
 1. [Files and Tabs](./03-files-and-tabs.md)
@@ -14,3 +16,4 @@
 1. [NVChad Hotkeys](./10-nvchad.md)
 1. [Registers](./11-registers.md)
 1. [Instrument](./12-instrument.md)
+1. [Vim As Your Editor](./vim_prime/ToC.md)
