@@ -1,6 +1,6 @@
 # Vim Is Not An Editor, It's An Instrument!
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 These are notes on [this video by
 Beginbot](https://www.youtube.com/watch?v=EJqnWXDJZr0).
