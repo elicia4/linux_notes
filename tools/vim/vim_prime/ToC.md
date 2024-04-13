@@ -1,5 +1,7 @@
 # Vim As Your Editor
 
+[***Vim Table of Contents***](../ToC.md)
+
 Notes on the [series of videos by
 ThePrimeagen](https://www.youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R).
 
