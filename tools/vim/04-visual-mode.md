@@ -1,6 +1,6 @@
 # 04. Visual Mode
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 Visual mode is useful for editing arbitrary trunks of text inside of a file.
 There are three different subtypes to visual mode:

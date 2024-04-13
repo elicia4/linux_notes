@@ -1,6 +1,6 @@
 # 10. NVChad Setup, Hotkeys, and Configurations
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 These are notes on [this video](https://youtu.be/Mtgo-nP_r8Y).
 

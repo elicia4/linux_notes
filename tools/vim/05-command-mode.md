@@ -1,6 +1,6 @@
 # 05. Command Mode
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 There are commands in `vim`!  
 You can enter them with the colon `:` symbol.

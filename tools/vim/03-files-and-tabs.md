@@ -1,6 +1,6 @@
 # 03. Files and Tabs
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 You can open multiple files at the same time:
 

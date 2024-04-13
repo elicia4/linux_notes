@@ -1,6 +1,8 @@
 # 09. Vim Tips
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
+
+### Appending to Each Line in a Block of Text
 
 There is in fact a way to do this using Visual block mode. Simply pressing `$A`
 in Visual block mode appends to the end of all lines in the selection. The

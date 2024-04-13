@@ -1,6 +1,6 @@
 # 02. Searching
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 There are a lot of different ways to search for text in vim.
 

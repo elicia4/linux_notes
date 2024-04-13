@@ -1,6 +1,6 @@
 # 06. Macros 
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 Think of a macro as a mini script that will perform a number of actions.  
 We can record a macro to any of the 26 registers (represented by `[a-z]`).

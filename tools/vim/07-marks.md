@@ -1,6 +1,6 @@
 # 07. Marks
 
-[***Table of Contents***](README.md)
+[***Table of Contents***](./ToC.md)
 
 You can set marks in specific parts of files to quickly navigate to them.
 
