@@ -11,7 +11,11 @@ timedatectl
 ```
 
 The system time zone is configured by symlinking the `/etc/localtime` file to a
-binary time zone's identifier in the `/usr/share/zoneinfo` directory.
+binary time zone's identifier in the `/usr/share/zoneinfo` directory:
+
+```bash
+ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+```
 
 Another way to check the time zone is to view the path the symlink points to:
 
