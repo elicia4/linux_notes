@@ -7,22 +7,23 @@ There are:
 - vim the program, highly configurable
 
 To begin with, use the vim mode in whatever IDE you're already using.
+
 Vim is a modal editor, you can be in various modes:
 
-- Normal Mode, you can move in it
-- Insert Mode, you can type in it
-- Visual Mode, kind of like selecting with your cursor
-- Command Mode, accessed by pressing colon (`:`):
+- Normal, you can move in it
+- Insert, you can type in it
+- Visual, kind of like selecting with your cursor
+- Command, accessed by pressing colon (`:`):
     - `:w` - save the current file
     - `:q` - quit
 
 ### Normal Mode
 
 The most foundational movements are:
-- `j` - move up
-- `k` - move down
-- `l` - move right
-- `h` - move left 
+- `j` - up
+- `k` - down
+- `l` - right
+- `h` - left 
 
 Try it out with [`:VimBeGood`](https://github.com/ThePrimeagen/vim-be-good),
 the game is `hjkl`.
@@ -39,8 +40,11 @@ You can do various commands. The `d` command stands for delete. To delete a
 line, use `dd`. To undo the delete, use `u`. Use `Ctrl-r` to redo your previous
 action. `u` is like `Ctrl-z`, `Ctrl-r` is like `Ctrl-y`. 
 
-`d`'s can be used with motions. For example, to delete the current line and 3
-below it, use `d3j`. To delete a single word, use `dw`.
+`d`'s can be used with motions: 
+
+- to delete a single word: `dw`
+- to delete the current line and 5 lines below: `d5j`
+- to yank the current line and 3 lines below: `y3j`
 
 ### Insert Mode
 
@@ -52,7 +56,6 @@ mode:
 - `Ctrl-c`, may cause some weirdness is visual block mode, but insubstantial.
 
 To enter insert mode on the right side of your cursor, use `a`.
-
 ### Visual Mode
 
 To go into visual mode, press `v`. In visual mode, you can use any of the
@@ -70,6 +73,3 @@ You can paste over a highlighted region:
 - Paste
 - Note that if you paste now, you will get the last thing you deleted. Yanking
 and deleting go to the same buffer.
-
-- to delete the current line and 5 lines below (`d5j`);
-- to yank the current line and 3 lines below (`y3j`).
