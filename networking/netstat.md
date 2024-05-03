@@ -22,3 +22,17 @@ This shows how the network sends packets from network to network.
 
 The `default` destination indicates any traffic destined for a network that is
 not listed in the table.
+
+You can view open ports as well:
+
+```bash
+sudo netstat -tulpn
+```
+
+- `-tu` - TCP/UDP
+- `-l` - show listening sockets
+- `-p` - show the PID and name of the program to which each socket belongs.  A
+hyphen is shown if the socket belongs to the kernel. Won't be shown w/o `sudo`
+- `-n` - Unless the --numeric (-n) option is specified, the socket address  is
+resolved  to its canonical host name (FQDN), and the port number is translated
+into the corresponding service name.
