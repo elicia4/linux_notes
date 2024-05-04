@@ -70,7 +70,7 @@ simpler, combine all `echo`s into one:
 
 # Program to output a system information page
 
-echo "<html>"
+echo "<html>
     <head>
         <title>Page Title</title>
     </head>
@@ -165,7 +165,7 @@ echo "<html>
 </html>"
 ```
 
-We also added the shell variable `HOSTNAME`, it's the network name for the
+We also added the shell variable `$HOSTNAME`, it's the network name for the
 machine.
 
 The shell provides a way to enforce the immutability of constants, through the

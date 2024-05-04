@@ -3,6 +3,7 @@
 [***Table of Contents***](./00-contents.md)
 
 A shell script is a file containing a series of commands. To create a script:
+
 1. Write it
 1. Make it executable
 1. Place it somewhere the shell can find it
@@ -24,8 +25,8 @@ echo 'Hello World!'
 `# This is your first script.` is a comment, they are ignored by the
 interpreter.
 
-The `#!` is a special character sequence called a shebang. It tells the kernel
-the name of the interpreter that should be used to execute the script.
+The `#!` is a special character sequence called a *shebang*. It tells the
+kernel the name of the interpreter that should be used to execute the script.
 
 Make the script executable:
 
@@ -77,7 +78,7 @@ added to `$PATH` automatically after you relog.
 The `~/bin` folder is only good for scripts intended for personal use. If you
 want your scripts to be used by anybody, the best place to put them is
 `/usr/local/bin`. Scripts intended for use by sysadmins should be stored in
-`/usr/local/sbin` 
+`/usr/local/sbin`.
 
 Locally supplied software, whether scripts or compiled programs, should be
 placed in the `/usr/local` hierarchy and not in `/bin` or `/usr/bin`. These
@@ -88,12 +89,15 @@ only files supplied and maintained by the Linux distributor.
 
 1. Use long options with scripts. It makes them easier to maintain and
    understand:
+
    ```bash
    ls -ad
    ls --all --directory
    ```
+
 1. Split long commands over multiple lines with `\` and indentation. This is
    bad:
+
    ```bash
    find playground \( -type f -not -perm 0600 -exec chmod 0600 ‘{}’ ‘;’ \) -or
    \( -type d -not -perm 0700 -exec chmod 0700 ‘{}’ ‘;’ \) 
@@ -114,26 +118,37 @@ only files supplied and maintained by the Linux distributor.
    \)
 
    ```
+
 1. Configure `vim` for script writing. Turn on syntax highlighting: 
+
    ```
    :syntax on
    ```
+
    Or:
+
    ```
    :set syntax=sh
    ```
+
    Highlight search results:
+
    ```
    :set hlsearch
    ```
+
    Specify the number of columns occupied by the tab character:
+
    ```
    :set tabstop=4
    ```
+
    Turn on autoindent:
+
    ```
    :set autoindent
    ```
+
    To stop it, press `<CTRL-d>`.
 
    Add these settings to `.vimrc` to make them permanent.

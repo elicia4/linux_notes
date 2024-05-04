@@ -4,7 +4,7 @@
 1. [Project Start](./02-start.md)
 1. [Script Design](./03-script_design.md)
 1. [`if`](./04-if.md)
-1. [Input]()
+1. [Input](./05-input.md)
 1. [`while/until`]()
 1. [Troubleshooting]()
 1. [`case`]()
