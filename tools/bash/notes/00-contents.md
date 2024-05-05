@@ -6,7 +6,7 @@
 1. [`if`](./04-if.md)
 1. [Input](./05-input.md)
 1. [`while/until`](./06-while_until.md)
-1. [Troubleshooting]()
+1. [Troubleshooting](./07-troubleshooting.md)
 1. [`case`]()
 1. [Positional Parameters]()
 1. [`for`]()
