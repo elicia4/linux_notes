@@ -43,7 +43,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [watch](./commands/watch.md) | [kill](./commands/kill.md) | [reset](./commands/reset.md) 
 | [locate](./commands/locate.md) | [stat](./commands/stat.md) | [shutdown](./commands/shutdown.md) |
 | [file](./commands/file.md) | [iperf](./commands/iperf.md) | [fzf](./commands/fzf.md) |
-| [w](./commands/w.md) | [uname](./commands/uname.md) | |
+| [w](./commands/w.md) | [uname](./commands/uname.md) | [uptime](./commands/uptime.md) |
 
 #### Tools 
 | | | |
