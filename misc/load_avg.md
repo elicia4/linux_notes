@@ -10,11 +10,11 @@ be.
 
 To show load averages, you can use multiple commands:
 
-    uptime # on the right
-
-    cat /proc/loadavg 
-
-    htop # top right by default
+```bash
+uptime # on the right
+cat /proc/loadavg 
+htop # top right by default
+```
 
 1. The number indicates the load over the past 1 minute;
 1. The number indicates the load over the past 5 minutes;
@@ -25,11 +25,15 @@ load average of 1 means 100% busy (but it's not always the case). It depends on
 how many CPU's you have on your server. To see how many CPU's you have you can 
 run `htop`, if it's not there run:
 
-    cat /proc/cpuinfo
+```bash
+cat /proc/cpuinfo
+```
 
-A simpler way is to run:
+A simpler way:
 
-    nproc
+```bash
+nproc
+```
 
 It prints the number of processing units available.
 
