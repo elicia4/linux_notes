@@ -14,7 +14,9 @@ not, install it.
 
 To see the manual page for `ls`:
 
-    man ls
+```bash
+man ls
+```
 
 To scroll down and up, use the `Up` and `Down` arrows. `PgUp` and `PgDn`
 buttons are supported as well. The man pages are quite extensive.
@@ -25,7 +27,9 @@ use `man`. Press `q` to quit.
 
 The `rsync` utility has a lot of options:
 
-    man rsync
+```bash
+man rsync
+```
 
 It's a big man page. Press `h` for help. 
 - to search for information, use `/pattern`
@@ -37,7 +41,9 @@ specific category of information.
 
 Let's look at the `passwd` command:
 
-    man passwd
+```bash
+man passwd
+```
 
 In the top corners, there are numbers, `1`s. `1` represents section 1. Section
 1 is for executable programs or shell commands, `passwd` is a shell command, so
@@ -46,13 +52,17 @@ it has info in section 1 of the man pages.
 If you're looking for a specific section, type the number of the section right
 after the `man` command:
 
-    man 5 passwd
+```bash
+man 5 passwd
+```
 
 Now you see that it's section 5, the page itself is about the `passwd` file.
 
 You can look up man pages based on search terms with the `-k` option:
 
-    man -k partition
+```bash
+man -k partition
+```
 
 It performs the same function as `apropos`.
 
@@ -73,11 +83,15 @@ Some commands don't exist in these sections.
 There are built-in commands, they don't have their own man pages. For example,
 `cd`:
 
-    man cd
+```bash
+man cd
+```
 
 There is a workaround, though:
 
-    man builtins
+```bash
+man builtins
+```
 
 `cd` is a built-in command. In case you try to look up a command and you can't
 do it with `man`, try looking for it in the `builtins` page.
