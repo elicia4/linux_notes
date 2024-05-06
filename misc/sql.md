@@ -1,14 +1,17 @@
 # Introduction to SQL
 
-SQL stands for Structured Query Language. It's a domain-specific language
-designed for managing data in databases. It's primary use is to talk to
-databases. You create, read, update, delete (CRUD) data in databases.
+[***Table of Contents***](/README.md)  
+
+SQL (Structured Query Language) is a domain-specific language designed for
+managing data in databases. It's primary use is to talk to databases. You can
+create, read, update, delete (CRUD) data in databases.
 
 A database is an organized collection of data. A relational database has
-columns (or fields) and rows (records). Databases are designed store large
+columns (or fields) and rows (records). Databases are designed to store large
 amounts of data. A piece of software used to interact with databases is called
 a database management system (or DBMS). A DBMS based on the relational model is
 called a RDBMS. Examples of RDBMS:
+
 - Microsoft SQL Server
 - MySQL
 - PostgreSQL
@@ -19,27 +22,37 @@ They all use SQL to manage their databases.
 
 To install mySQL on Ubuntu:
 
-    sudo apt update
-    sudo apt install mysql-server
+```bash
+sudo apt update && sudo apt dist-upgrade
+sudo apt install mysql-server
+```
 
 Ubuntu should start the `mysql` service by itself:
 
-    systemctl status mysql
+```bash
+systemctl status mysql
+```
 
 If it hasn't started, to start and enable it at the same time:
 
-    sudo systemctl enable --now mysql
-    systemctl status mysql
+```bash
+sudo systemctl enable --now mysql
+systemctl status mysql
+```
 
 To launch the MySQL command-line tool:
 
-    sudo mysql # won't start w/o sudo first time
+```bash
+sudo mysql # won't start w/o sudo first time
+```
 
-^This worked because you're connecting to `localhost` and because you don't
+The command above worked because you're connecting to `localhost` and don't
 have a password set. To specify options:
 
-    # mysql -u <username> -h <host> -P <port> -p
-    mysql -u suser -h host.com -P 3306 -p
+```bash
+# mysql -u <username> -h <host> -P <port> -p
+mysql -u suser -h host.com -P 3306 -p
+```
 
 - `-u` specifies the user
 - `-h` specifies the hostname
@@ -86,7 +99,9 @@ create table vegetables (
 `int` is an integer, `varchar` is a string of length `n`. Check out your tables
 again:
 
-    show tables;
+```sql
+show tables;
+```
 
 To see the columns of your table:
 
@@ -132,11 +147,11 @@ select * from vegetables where region = "Mexico" or region = "Brazil";
 
 You can filter things in many different ways.
 
-To remove a record from a table:
+To remove a record:
 
 ```sql
 delete from vegetables where name = "cucumber";
-```   
+```
 
 To change an entry in your table:
 
