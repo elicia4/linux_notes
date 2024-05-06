@@ -4,32 +4,50 @@
 
 Let's try running a different container:
 
-	docker run nginx
+```bash
+docker run nginx
+```
 
 It's trying to run an entry point command. It's a command in the container that
 is executed automatically. The container ends up being completely useless.
-Let's run the following command instead:
+Let's create an nginx container with the following command instead:
 
-	docker run -it -d -p 8080:80 nginx
+```bash
+docker run -it -d -p 8080:80 nginx
+```
 
 `-p` stands for port, `8080` is opened locally, mapped as `80` to container.
-Run `ip -a`.
-Copy the IP address of the local system.
-Type it into your web browser with :8080 at the end, for example:
 
-	120.120.120.120:8080
+Then:
+
+```bash
+ip -a
+```
+
+Copy the IP address of the local system.
+Type it into your web browser with `:8080` at the end:
+
+```bash
+120.120.120.120:8080
+```
 
 OR just use `localhost`:
 
-	localhost:8080
+```bash
+localhost:8080
+```
 
 To stop a container, you can:
 
-	docker stop <id>
+```bash
+docker stop <id>
+```
 
 Add `--restart unless-stopped` arguments to the command:
 
-	docker run -it -d --restart unless-stopped -p 8080:80 nginx
+```bash
+docker run -it -d --restart unless-stopped -p 8080:80 nginx
+```
 
 Those arguments are useful for web-servers.
 
