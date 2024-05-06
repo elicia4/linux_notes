@@ -4,49 +4,69 @@
 
 Show docker images that have been downloaded and are locally available:
 
-	docker images
+```bash
+docker images
+```
 
 Look for a docker image, for example the Ubuntu image:
 
-	docker search ubuntu
+```bash
+docker search ubuntu
+```
 
 Download the docker image:
 
-	docker pull ubuntu
+```bash
+docker pull ubuntu
+```
 
 Run a container created from that image:
 
-	docker run ubuntu
+```bash
+docker run ubuntu
+```
 
 So... you are back to the prompt. Containers automatically exit if they have
 nothing to do. Some containers start running some job whenever they start, but
 it's not the case with Ubuntu. Try running:
 
-	docker run nginx
+```bash
+docker run nginx
+```
 
 If a docker image doesn't exist locally but is available, it will be downloaded
 automatically and launched if you run the `docker run image-name` command.
 
 List containters that are running on your system:
 
-	docker ps
+```bash
+docker ps
+```
 
 List all containers:
 
-	docker ps -a
+```bash
+docker ps -a
+```
 
 Run `bash` inside Ubuntu container:
 
-	docker run -it ubuntu /bin/bash
+```bash
+docker run -it ubuntu /bin/bash
+```
 
-You are now "inside" the container! Do whatever you want!  Containers don't
+You are now "inside" the container! Do whatever you want! Containers don't
 save changes by default. Update the system:
 
-	apt update
+```bash
+apt update
+```
 
 Install `vim`:
 
-	apt install vim
+```bash
+apt install vim
+```
 
 You can install anything you want!  
 
