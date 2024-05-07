@@ -8,7 +8,7 @@
 1. [`while/until`](./06-while_until.md)
 1. [Troubleshooting](./07-troubleshooting.md)
 1. [`case`](./08-case.md)
-1. [Positional Parameters]()
+1. [Positional Parameters](./09-positional.md)
 1. [`for`]()
 1. [Strings and Numbers]()
 1. [Arrays]()
