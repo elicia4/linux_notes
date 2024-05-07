@@ -30,3 +30,35 @@ You can save a keystroke by using `<C-V>ip` in place of `vip<C-V>`.
    ```bash
    :.,$s/foo/bar/gi
    ```
+
+### Create a Number Sequence with `g <CTRL-a>`
+
+1. Create a sequence of numbers, e.g. of 0's:
+
+```bash
+0
+0
+0
+0
+```
+
+This can be simply done: 
+- `CTRL-v`
+- select multiple empty lines
+- `I`, enter `0`
+- exit insert mode
+
+Or:
+- enter `0` on an new line
+- `yy`
+- `3p`
+
+1. Select previously selected area with `gv`.
+1. Finally, press `g CTRL-a` to create a sequence.
+
+- *Use `<n>g CTRL-a` to use a step count of `<n>`*
+- You can change the initial number (`<i>`) to any other integer, the first
+selected number will always be `<i> + <n>`
+
+So if you wanted to create a sequnce of number starting with 4 and increase
+every next occurence by 10, you know what to do :)
