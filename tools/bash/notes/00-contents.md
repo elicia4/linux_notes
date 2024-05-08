@@ -9,7 +9,7 @@
 1. [Troubleshooting](./07-troubleshooting.md)
 1. [`case`](./08-case.md)
 1. [Positional Parameters](./09-positional.md)
-1. [`for`]()
+1. [`for`](./10-for.md)
 1. [Strings and Numbers]()
 1. [Arrays]()
 1. [Exotica]()
