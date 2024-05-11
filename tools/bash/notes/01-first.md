@@ -152,3 +152,5 @@ only files supplied and maintained by the Linux distributor.
    To stop it, press `<CTRL-d>`.
 
    Add these settings to `.vimrc` to make them permanent.
+
+[***Next Note***](./02-start.md)

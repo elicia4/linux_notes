@@ -334,3 +334,5 @@ ls -l "$REMOTE_FILE"
 
 The `bash` man page includes a section entitled "HERE DOCUMENTS," which has a
 full description of this feature.
+
+[***Next Note***](./03-script_design.md)

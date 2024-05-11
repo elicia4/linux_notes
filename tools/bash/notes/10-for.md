@@ -80,3 +80,5 @@ done
 `expression1` initializes the variable `i` with the value of 0, `expression2`
 allows the loop to continue as long as the value of `i` remains less than 5,
 and `expression3` increments the value of `i` by 1 each time the loop repeats.
+
+[***Next Note***](./11-strings_nums.md)

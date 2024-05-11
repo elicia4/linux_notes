@@ -320,3 +320,5 @@ scripts:
 bc <<< "2+2"
 # 4
 ```
+
+[***Next Note***](./12-arrays.md)

@@ -110,3 +110,5 @@ read -p "Enter a single item > "
 # input is multiple items (invalid) 
 (( "$(echo "$REPLY" | wc -w)" > 1 )) && invalid_input
 ```
+
+[***Next Note***](./06-while_until.md)

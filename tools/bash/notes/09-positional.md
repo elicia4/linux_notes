@@ -193,3 +193,5 @@ $4 =
 ```
 
 `"$@"` is most useful.
+
+[***Next Note***](./10-for.md)
