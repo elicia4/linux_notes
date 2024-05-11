@@ -224,3 +224,5 @@ integer indexed arrays.
 ```bash
 echo ${colors["blue"]}
 ```
+
+[***Next Note***](./13-exotica.md)

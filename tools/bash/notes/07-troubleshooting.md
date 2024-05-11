@@ -288,3 +288,5 @@ set +x # Turn off tracing
 
 It's also useful to examine values during execution. `echo $value`'s usually do
 the job. Especially useful for tricky operations inside loops.
+
+[***Next Note***](./08-case.md)

@@ -82,3 +82,5 @@ done
 It is important to remember that since a pipe will execute the loop in a
 subshell, any variables created or assigned within the loop will be lost when
 the loop terminates.
+
+[***Next Note***](./07-troubleshooting.md)
