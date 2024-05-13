@@ -2,7 +2,7 @@
 
 ![Linux Penguin Logo](./img/penguin.png)
 
-A collection of notes on everything Linux 🐧🐧🐧
+A collection of notes on everything Linux 🐧🐧🐧. 
 
 #### Basics
 | | | |
@@ -32,7 +32,7 @@ A collection of notes on everything Linux 🐧🐧🐧
 | [environment](./misc/environment.md) | [regular expressions](./misc/regex.md) | [SQL](./misc/sql.md) |
 | [document formatting](./misc/doc_format.md) | [printing](./misc/printing.md) | [niceness](./misc/niceness.md) |
 | [compiling](./misc/compiling.md) | [file types](./misc/file_types.md) | [10 problems](./misc/10_typical_problems.md) |
-| [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | |
+| [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | [resources](./misc/resources.md) |
 
 #### Commands 
 | | | |
