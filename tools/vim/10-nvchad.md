@@ -63,7 +63,7 @@ To set up:
 
 1. To open up a cheatsheet: `space + c + h`
 
-1. If you press `space` and wait for a second, suggestions will appeear.
+1. If you press `space` and wait for a second, suggestions will appear.
 
 1. To view git commits: `space + c + m`
 

@@ -18,7 +18,7 @@ In visual mode:
 
 Anything you do to selected text on one line will be done to text on the other.
 
-Try editing the following lines, remove all hyphons from all of them and add
+Try editing the following lines, remove all hyphens from all of them and add
 `+1` to the beginning of the lines:
 
 ```

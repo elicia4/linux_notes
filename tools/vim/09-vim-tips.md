@@ -25,7 +25,7 @@ You can save a keystroke by using `<C-V>ip` in place of `vip<C-V>`.
 
 1. To quit all tabs: `:qa`
 
-1. To only substitue from current line to the end of the file:
+1. To only substitute from current line to the end of the file:
 
    ```bash
    :.,$s/foo/bar/gi
@@ -60,5 +60,5 @@ Or:
 - You can change the initial number (`<i>`) to any other integer, the first
 selected number will always be `<i> + <n>`
 
-So if you wanted to create a sequnce of number starting with 4 and increase
-every next occurence by 10, you know what to do :)
+So if you wanted to create a sequence of numbers starting with 4 and increase
+every next occurrence by 10, you know what to do :)

@@ -187,7 +187,7 @@ When writing to this register, nothing happens. This can be used to delete text
 without affecting the normal registers. When reading from this register,
 nothing is returned.
 
-You can use this register to work with sensetive information, like passwords,
+You can use this register to work with sensitive information, like passwords,
 keys etc.
 
 For example, to delete a line and not have it saved: `"_dd`.
