@@ -2,11 +2,10 @@
 
 ### General Terminology
 
-Generally, *compilation* is the process of converting source code into
-binary files (machine code). The vast majority of software binaries are openly
-available on modern Linux distrubutions. 
+*Compilation* is the process of converting source code into binary files
+(machine code). 
 
-Compilation is done by *compiler* programs, or simply compilers. *Assemblers*
+Compilation is done by *compiler* programs (compilers). *Assemblers*
 translate assembly language into machine language. Some compilers directly
 translate high-level languages into machine code, some translate source code
 into assembly code and pass it for further translation to an assembler.
@@ -14,13 +13,13 @@ into assembly code and pass it for further translation to an assembler.
 *A linker* is used to form the connections between the output of the compiler
 and the libraries that the compiled program requires.
 
-Not all programs need to be compiled and are executed directly by a program
-called an *interpreter*. Each line is translated one by one, wheres compiled
-programs are only translated once.
+There are programs that don't need to be compiled, they are executed directly
+by a program called an *interpreter*. Each line is translated one by one,
+whereas compiled programs are only translated once.
 
 ### C Program Compilation
 
-Install `gcc`. You need `make`, the compiler and the linker.
+Install `gcc`. You need `make`, the compiler and the linker:
 
 ```bash
 apt install gcc make
@@ -47,7 +46,7 @@ bye
 
 You could've just as easily done this with `wget`, but `ftp` is more fun:
 
-```bash`
+```bash
 wget https://ftp.gnu.org/gnu/diction/diction-1.11.tar.gz
 ```
 
@@ -62,9 +61,8 @@ tar xzf diction-1.11.tar.gz
 ```
 
 In general, source code is unpacked into a directory with the same name as the
-tarball file. More generally, it's a good idea to inspect the contents of a
-tarball first, since *it might not be as well organized and make a mess out of
-your directory*:
+tarball file. It's a good idea to inspect the contents of a tarball first,
+since *it might not be well organized and make a mess out of your directory*:
 
 ```bash
 tar tzvf tarfile | head
@@ -77,7 +75,7 @@ ls diction-1.11
 ```
 
 `README`, `INSTALL`, `NEWS`, and `COPYING` are documentation files. Read the
-`README` and `INSTALL` files carefully before attempting an installation.
+`README` and `INSTALL` files carefully before attempting an installation:
 
 ```bash
 ls *.c
@@ -118,7 +116,7 @@ make
 
 The `configure` command analyzes the build environment. Since different
 Unix-like systems are configured differently, this steps is necessary to
-accomodate the differences between systems. Check that there are no error
+accommodate the differences between systems. Check that there are no error
 messages, the program won't build until these errors are corrected. A
 `Makefile` should've been created as the result of `./configure`:
 
