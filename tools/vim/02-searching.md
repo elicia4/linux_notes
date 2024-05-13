@@ -9,16 +9,16 @@ Most (if not all) search functions are executed in normal mode.
 - `/` allows you to search in a forward direction from where you currently are.
   Note that while searching, you can use [regular
   expressions][../../misc/regex.md] (**only BRE**)
-- `n` will find the next occurance of that word
-- `N` will find the previous occurance
+- `n` will find the next occurrence of that word
+- `N` will find the previous occurrence
 - `//` will repeat the previous search
 
 - `?` allows you to search in a backward direction ...
-- `n` and `N` work in opposite directions respectully
+- `n` and `N` work in opposite directions respectfully
 - `??` - same idea as `//`
 
-- `*` searches for the next occurance of the word you're on
-- `#` searches for the previous occurance of the word you're on
+- `*` searches for the next occurrence of the word you're on
+- `#` searches for the previous occurrence of the word you're on
 
 How do you find and replace text?
 

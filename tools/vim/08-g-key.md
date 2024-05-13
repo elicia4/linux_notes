@@ -66,7 +66,7 @@ To go back to a previously opened file, use `CTRL+^`
 simplify their use you should probably install the "gundo.vim" plugin, it
 allows you to view your changes visually.
 
-You can subtitute words globally with:
+You can substitute words globally with:
 
 	:s/word/changeto/g -- this will change to the first instance
 
@@ -80,7 +80,7 @@ You can also substitute text with `cgn`:
 	Esc
 
 This will get stored as a movement in a period command, you can substitute a
-specific occurence with `<number-of-occurence>` + `.`.
+specific occurrence with `<number-of-occurence>` + `.`.
 
 You can jump to previous line (to the exact place as well) you were editing 
 with `gi`.
