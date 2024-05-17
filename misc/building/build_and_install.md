@@ -2,11 +2,12 @@
 
 [***Table of Contents***](./ToC.md)
 
-Based on the [***Ancient (1999) Mendel Cooper's
-Guide***](https://tldp.org/HOWTO/Software-Building-HOWTO.html#toc4).
-Information in this guide may be *significantly* out of date, I tried to get rid
-of unnecessary information, but I'm unsure if I deleted all of it due to my
-inexperience with software building.
+[***Source: Ancient (1999) Mendel Cooper's
+Guide***](https://tldp.org/HOWTO/Software-Building-HOWTO.html).
+
+Some of the information in this guide may be *significantly* out of date, I
+tried to get rid of unnecessary information, but I'm unsure if I deleted all of
+it due to my inexperience with software building.
 
 ### Intro
 
@@ -28,7 +29,7 @@ tar xzvf <filename>
 # equivalent to 
 # gzip -cd filename | tar xvf -
 # gunzip -c filename | tar xvf -
-# `-` causes tar to take input from stdin.]
+# `-` causes tar to take input from stdin.
 ```
 
 1. You may preview this process without unpacking:
