@@ -1,6 +1,6 @@
-# The "scp" command
+# The `scp` Command
 
-Notes take on this video by LearnLinuxTV: https://youtu.be/Aa7tKMmeFZI
+Notes taken on [this video](https://youtu.be/Aa7tKMmeFZI) by LearnLinuxTV.
 
 [***Table of Contents***](/README.md)  
 
@@ -11,7 +11,9 @@ The `rsync` command does essentially the same thing, if you intend to transfer
 a large number of files use `rsync`, if you only want to send one use `scp`. To
 see if `scp` is available on your system:
 
-	command -v scp
+```bash
+command -v scp
+```
 
 The first thing to know about `scp` is that it uses `ssh`, the delivery
 mechanism through which files are transferred. That means that having another
@@ -19,61 +21,84 @@ server is a prerequisite to `scp`. Make sure you can `ssh` into that server.
 
 To copy a file from a local location to a remote server:
 
-	scp file-name target-server:target-directory
+```bash
+scp file-name target-server:target-directory
+```
 
 For example:
 
-	scp sshd_config_custom dev:/home/user/
+```bash
+scp sshd_config_custom dev:/home/user/
+```
 
-To check the file on the server, ssh into it and `ls` the target directory.
+To check the file on the server, `ssh` into it and `ls` the target directory.
 
 The command works in reverse as well, so you can copy a file from a remote
 location to a local one:
 
-	scp dev:/home/user/sshd_config_custom /home/user/
+```bash
+scp dev:/home/user/sshd_config_custom /home/user/
+```
 
 To check, use `ls`. 
 
 Quick SSH tip: if you want to run a single command on a server, use this:
 
-	ssh destination <command>
+```bash
+ssh <destination> <command>
+```
 
 For example:
 
-	ssh dev ls
+```bash
+ssh dev ls
+```
 
 You can also simplify the `scp` command, imagine you have the following
 command:
 
-	scp file dev:/home/user/
+```bash
+scp file dev:/home/user/
+```
 
-If a target uses your user's home directory you don't need to explicitly define
-it:
+If a target uses *your user's* name, the home directory will be implied:
 
-	scp file dev:
+```bash
+scp file dev:
+```
 
 Notice that the username is omitted as well. By default it uses yours, but you
 can also specify:
 
-	scp file admin@dev:
+```bash
+scp file admin@dev:
+```
 
 If the path you need includes a subdirectory of your home directory:
 
-	scp file dev:Downloads
+```bash
+scp file dev:Downloads
+```
 
 To copy a directory:
 
-	scp -r dir-name dev:
+```bash
+scp -r dir-name dev:
+```
 
 The `-p` option will retain the modification date of the files you copy over:
 
-	scp -pr dir-name dev:
+```bash
+scp -pr dir-name dev:
+```
 
 `-p` stands for "preserve".
 
 You can also specify a port with the `-P` option. By default it will use 22,
 the default SSH port:
 
-	scp -P 2222 file dev:
+```bash
+scp -P 2222 file dev:
+```
 
 Do not use `2222`, it`s too widely used already. (:
