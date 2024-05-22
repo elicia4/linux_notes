@@ -23,7 +23,7 @@ Or just:
 You can store things in many registers:
 - [`""` - unnamed register](#the-unnamed-register)
 - [`"[0-9]` - numbered registers](#the-numbered-registers)
-- [`"-` - small-delete-register)
+- [`"-` - small delete register](#the-small-delete-register)
 - [`"[a-z]`, `"[A-Z]` - named registers](#the-named-registers)
 - [`":,`, `".,` `"%` - read-only registers](#read-only-registers)
 - [`"#` - alternative buffer register](#alternative-file-register)
