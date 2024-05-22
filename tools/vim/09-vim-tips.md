@@ -10,7 +10,7 @@ appended text will appear on all lines as soon as you press `Esc`.
 
 So this is a possible solution:
 
-```
+```bash
 vip<C-V>$A,<Esc>
 ```
 
@@ -62,3 +62,22 @@ selected number will always be `<i> + <n>`
 
 So if you wanted to create a sequence of numbers starting with 4 and increase
 every next occurrence by 10, you know what to do :)
+
+### Paragraphs
+
+vim understands the concept of a "paragraph". vim's definition of a paragraph
+is a block of text surrounded by blank lines. There are several motions and
+text objects to work with this.
+
+- `[count]}` – Move `[count]` paragraphs forward. You can use `<S-v>}` to
+select all lines from the current line to the next blank line. This will
+include the blank line, so you may want to use `<S-v>}k`.
+- `[count]ip` – Select `[count]` paragraphs. It's like `iw` (inner word) except
+for, well, paragraphs. Using `vip` will select all of the paragraph though,
+rather than from the current line to the end of the paragraph.
+- `[count]ap` – like `ip`, except that this will include the blank lines
+surrounding the paragraph.
+
+One caveat here is that vim *doesn't* consider a line with only whitespace as a
+"blank line". So make sure to check this (e.g. with `:set list`) if it doesn't
+appear to work.
