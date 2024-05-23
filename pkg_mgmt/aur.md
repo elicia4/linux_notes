@@ -17,7 +17,9 @@ same) for most packages.
 
 The website of AUR is:
 
-    https://aur.archlinux.org
+```bash
+https://aur.archlinux.org
+```
 
 In the top right, you can see a search bar, look for Google Chrome there. On
 the main ArchLinux site (https://archlinux.org) it's not available. On the AUR,
@@ -25,61 +27,85 @@ it is. If in the future you experience a problem with a package, check out the
 comments on the package page. Anyways, after you get on the package page on the
 AUR, copy the link location of `Download snapshot` on the right. Download it:
 
-    wget <link>
+```bash
+wget <link>
+```
 
 You should now have a `.tar.gz` file inside your current directory. To unpack
 it:
 
-    tar -xvf google-chrome.tar.gz
+```bash
+tar -xvf google-chrome.tar.gz
+```
 
 Go inside the `google-chrome` directory. Before you build the package, it's a
 good idea to look at the `PKGBUILD` file and see what it's doing:
 
-    vim PKGBUILD
+```bash
+vim PKGBUILD
+```
 
-If you see something terrible(like `rm -rf /`) inside your package build, you
+If you see something terrible (like `rm -rf /`) inside your package build, you
 should not install it. It is probably never the case, but it's a good idea to
 get into the mindset of always reading a script before executing it (or at
 least skimming through it).
 
 To build you might want to install a few dependancies first:
 
-    pacman -S base-devel
+```bash
+pacman -S base-devel
+```
 
 To build:
 
-    makepkg -s # -s installs missing dependancies
+```bash
+makepkg -s # -s installs missing dependancies
+```
 
 It's provided by `pacman` automatically, it should be available on your system.
 Once the building process is finished, there should be a `.zst` file available,
 it's a package file, you should be able to install that:
 
-    pacman -U google-chrome-117.0.5938.88-1-x86_64.pkg.tar.zst
+```bash
+pacman -U google-chrome-117.0.5938.88-1-x86_64.pkg.tar.zst
+```
 
 Now it's installed. 
 
 But this was the difficult path to get packages from AUR, a better way is to
 use `yay`. You should have `git` on your system to install `yay`:
 
-    pacman -S git
+```bash
+pacman -S git
+```
 
 To install `yay`:
 
-    git clone https://aur.archlinux.org/yay.git
+```bash
+git clone https://aur.archlinux.org/yay.git
+```
 
 Build it:
 
-    makepkg -s
+```bash
+makepkg -s
+```
 
 You can update your entire system and all the AUR packages you have:
 
-    yay -Syu
+```bash
+yay -Syu
+```
 
 TIP: To build AND install at the same time:
 
-    makepkg -si
+```bash
+makepkg -si
+```
 
-TIP: You can click on the link next to the `Git Clone URL:` to copy it and then use
-`git clone` to download it. You don't have to use `wget`:
+TIP: You can click on the link next to the `Git Clone URL:` to copy it and then
+use `git clone` to download it. You don't have to use `wget`:
 
-    git clone https://aur.archlinux.org/google-chrome.git
+```bash
+git clone https://aur.archlinux.org/google-chrome.git
+```

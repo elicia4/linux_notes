@@ -14,7 +14,9 @@ that are available on the repository servers that you've subscribed to. Every
 now and then it's a good idea to refresh that cache. That's the first thing you
 should do.
 
-    pacman -Syy 
+```bash
+pacman -Syy 
+```
 
 `-S` is the sync option, the first `y` causes `pacman` to refresh the package 
 database, the second `y` forces it to refresh the local database cache even if 
@@ -26,51 +28,71 @@ not, it means that your index is stale, you have to refresh your index.
 Which servers in particular is `pacman` trying to connect to? What is it
 synchronizing with? View the following file:
 
-    cat /etc/pacman.d/mirrorlist
+```bash
+cat /etc/pacman.d/mirrorlist
+```
 
 This is where `pacman` is grabbing things from.
 
 Let's install a package:
 
-    pacman -S htop
+```bash
+pacman -S htop
+```
 
 Try it:
 
-    htop
+```bash
+htop
+```
 
 To remove the package:
 
-    pacman -R htop
+```bash
+pacman -R htop
+```
 
 Let's assume that you want to install `pygame`, the problem that it's not named
 `pygame` in the Arch repositories. You can look for it on the ArchLinux website
 (https://archlinux.org). But there's a faster to do it from the command line:
 
-    pacman -Ss pygame
+```bash
+pacman -Ss pygame
+```
 
 It's called `python-pygame`. Install it if you want:
 
-    pacman -S pygame
+```bash
+pacman -S pygame
+```
 
 You can install multiple packages:
 
-    pacman -S htop tmux python-pygame
+```bash
+pacman -S htop tmux python-pygame
+```
 
 To find orphan packages (packages you likely don't need anymore):
 
-    pacman -Qdt # this will display them with version numbers
-    pacman -Qdtq # this will display them without version numbers
+```bash
+pacman -Qdt # this will display them with version numbers
+pacman -Qdtq # this will display them without version numbers
+```
 
 You can remove them:
 
-    pacman -R $(pacman -Qdtq)
+```bash
+pacman -R $(pacman -Qdtq)
+```
 
 The `-Q` mean query, the `-d` option skips the dependancy checks, the `-t`
 option limits the results to orphaned packages. 
 
 To update your system:
 
-    pacman -Syu
+```bash
+pacman -Syu
+```
 
 `-u` is for updates. 
 
@@ -85,19 +107,27 @@ de-select `http`, this will limit your servers to secure ones, click on the
 
 1. Make a backup of the existing list:
 
-    cd /etc/pacman.d;
-    sudo cp mirrorlist mirrorlist.bak
+```bash
+cd /etc/pacman.d;
+sudo cp mirrorlist mirrorlist.bak
+```
 
 1. Empty out the original list:
 
-    sudo truncate -s 0 mirrorlist
+```bash
+sudo truncate -s 0 mirrorlist
+```
 
 1. Copy the list from your browser and insert it into the `mirrorlist` file:
 
-    sudo vim mirrorlist
+```bash
+sudo vim mirrorlist
+```
 
 1. Make sure to uncomment the items.
 
-To find a file containing a specific file:
+To find a package containing a specific file:
 
-    pacman -F <filename>
+```bash
+pacman -F <filename>
+```
