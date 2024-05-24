@@ -11,6 +11,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
 | [history](./basics/history.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
 | [distributions](./basics/distro.md) | [DE's](./basics/de.md) | [updating](./basics/updating.md) |
+| [cd](./basics/cd.md) | | |
 
 #### Package Management 
 | | | |
