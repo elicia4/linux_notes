@@ -37,13 +37,13 @@ To set up:
 1. To change theme: `space` + `t` + `h` (`ctrl+p`/`ctrl+n` to navigate)
 1. To install syntax highlighting:
     
-   ```
+   ```bash
    :TSInstall elixir
    ```
 
    To check which ones you have installed:
 
-   ```
+   ```bash
    :TSInstallInfo
    ```
 
@@ -54,31 +54,17 @@ To set up:
    - You can copy with `c`, paste with `p`, rename using `r`, delete with `d`
 
 1. To open "find files" menu: `space + f + f`
-
 1. The space key is the leader key
-
 1. To close windows, use `space + x`
-
 1. To perform a search across files you have opened: `space + f + b`
-
 1. To open up a cheatsheet: `space + c + h`
-
 1. If you press `space` and wait for a second, suggestions will appear.
-
 1. To view git commits: `space + c + m`
-
 1. To move between windows: `CTRL + h/j/k/l`
-
-1. To create a vertical/horizontal split: `:vsp`, `:sp`
-
 1. To toggle relative line numbers: `space + r + n`
-
 1. To toggle line numbers: `space + n`
-
 1. To cycle through buffers, use `TAB` / `Shift+TAB`
-
 1. To open a command line shell: `space + h` / `space + v`
-
 1. To write current buffer: `Ctrl + s`
 
 ### Customization
@@ -92,7 +78,7 @@ You can customize NVChad in `~/.config/nvim/lua/custom` directory, there are:
 
 Let's add syntax highlighting for crystal:
 
-```
+```bash
 vim ~/.config/nvim/lua/custom/chadrc.lua
 ```
 
@@ -149,7 +135,7 @@ of the box.
 Let's add an LSP config for Rust analyzer. We have to add an override for our
 LSP config package configuration:
 
-```
+```bash
 vim ~/.config/nvim/lua/custom/plugins.lua
 ```
 
@@ -170,7 +156,7 @@ Add a new entry for `neovim/nvim-lspconfig`:
 
 Create the files:
 
-```
+```bash
 mkdir ~/.config/nvim/lua/custom/configs/
 touch ~/.config/nvim/lua/custom/configs/lspconfig.lua
 ```
@@ -197,7 +183,7 @@ lspconfig-all`.
 
 Make sure you have Rust analyzer installed on your system:
 
-```
+```bash
 rustup component add rust-analyzer
 ```
 
