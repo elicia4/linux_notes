@@ -7,11 +7,11 @@ A collection of notes on everything Linux 🐧🐧🐧.
 #### Basics
 | | | |
 | :-------: | :-------: | :-------: |
-| [navigation](./basics/navigation.md) | [ls](./basics/ls.md) | [cat](./text_manipulation/cat.md) |
+| [cd](./basics/cd.md) | [touch](./basics/touch.md) | [ls](./basics/ls.md) |
+| [cat](./text_manipulation/cat.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
-| [history](./basics/history.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
 | [distributions](./basics/distro.md) | [DE's](./basics/de.md) | [updating](./basics/updating.md) |
-| [cd](./basics/cd.md) | | |
+| [navigation](./basics/navigation.md) | [history](./basics/history.md) | |
 
 #### Package Management 
 | | | |
