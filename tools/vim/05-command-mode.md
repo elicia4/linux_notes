@@ -46,4 +46,20 @@ Different file explorer modes:
 - `:Vexplore` = opens a file explorer in a vertical window
 - `:Texplore` = opens a file explorer in a new tab
 
+You can run shell commands in command mode with `!`:
+
+```bash
+`:! ls `
+```
+
+You can create a vertical/horizontal split: 
+
+```bash
+:vsp <optional_filename>
+:sp <optional_filename>
+````
+
+If a filename isn't provided, the current file is split. `^ww` to move between
+files.
+
 [***Go to Next Note***](06-macros.md)
