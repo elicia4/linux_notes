@@ -17,7 +17,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | | | |
 | :-------: | :-------: | :-------: |
 | [pkg mgmt](./pkg_mgmt/pkg_mgmt.md) | [apt](./pkg_mgmt/apt.md) | [pacman](./pkg_mgmt/pacman.md) | 
-| [dnf](./pkg_mgmt/dnf.md) | [zypper](./pkg_mgmt/zypper.md) | [snap](./pkg_mgmt/snap.md) |
+| [dnf & yum](./pkg_mgmt/dnf_yum.md) | [zypper](./pkg_mgmt/zypper.md) | [snap](./pkg_mgmt/snap.md) |
 | [AUR](./pkg_mgmt/aur.md) | | |
 
 #### General
