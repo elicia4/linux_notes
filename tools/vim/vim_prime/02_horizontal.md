@@ -3,7 +3,6 @@
 [***Table of Contents***](./ToC.md)
 
 Couple new motions:
-
 - `_` to the beginning (first non-whitespace character)
 - `$` to the end
 - `0` to the 0-th character
@@ -58,7 +57,7 @@ NOTE: The `.vimrc` video mentioned in the video no longer exists. [There's a
 newer version though, try it out.](https://www.youtube.com/watch?v=w7i4amO_zaE)
 
 If you do `vim .`, the current directory will be opened. `netrw` allows you
-to do basic file system manipulation with vim.
+to do basic file system manipulation with `vim`.
 
 To open up a file tree, use `:Ex`.
 
@@ -71,6 +70,7 @@ Dive into navigation! Find the right plugins for you! Think about how you want
 to interact with git, find files, open files, create files etc.
 
 General rules for installing plugins:
+
 1. Have a need for somethings (in this case, `fzf`)
 1. Find that thing! If it doesn't exist, attempt to create it yourself (but
    more likely than not, a solution already exists)
