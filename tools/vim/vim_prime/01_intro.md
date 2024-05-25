@@ -9,7 +9,6 @@ There are:
 To begin with, use the vim mode in whatever IDE you're already using.
 
 Vim is a modal editor, you can be in various modes:
-
 - Normal, you can move in it
 - Insert, you can type in it
 - Visual, kind of like selecting with your cursor
@@ -56,6 +55,7 @@ mode:
 - `Ctrl-c`, may cause some weirdness is visual block mode, but insubstantial.
 
 To enter insert mode on the right side of your cursor, use `a`.
+
 ### Visual Mode
 
 To go into visual mode, press `v`. In visual mode, you can use any of the
