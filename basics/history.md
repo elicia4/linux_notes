@@ -17,27 +17,36 @@ command history and see exactly what happened.
 
 To view the command history:
 
-    history
+```bash
+history
+```
 
 You see indexes to the left of the commands in the history. You can call a
-command with `!<comm_num>`, so to run command #255:
+command with `!<comm_num>`, so to run command 255:
 
-    !255
+```bash
+!255
+```
 
 Say you ran a command that needed superuser privileges but forgot to use
 `sudo`, you can fix it like so:
 
-    sudo !! # !! will be substituted with the previous command
+```bash
+sudo !! # !! will be substituted with the previous command
+```
 
-To add date and time to history output, add the following line to your
-`.bashrc` file:
+To add date and time to history output, add the following line to `.bashrc`:
 
-    HISTTIMEFORMAT="%Y-%m-%d %T "
+```bash
+HISTTIMEFORMAT="%Y-%m-%d %T "
+```
 
 To remove duplicate lines AND remove lines beginning with a space (` `) from
 history, add another option:
 
-    HISTCONTROL=ignoreboth
+```bash
+HISTCONTROL=ignoreboth
+```
 
 The reason you'd want to remove commands beginning with a space for history is 
 that you sometimes want to hide some commands, for instance those that contain
@@ -46,15 +55,25 @@ confidential information, like passwords.
 You can also see the last X commands with `history X`, let's say last 10
 commands:
 
-    history 10
+```bash
+history 10
+```
 
 Combining `history` with `grep` is incredibly useful as well, let's say you
 want to see the packages that were installed:
 
-    history | grep apt
+```bash
+history | grep apt
+```
 
 You can press `<CTRL+r>` to search through the history, press `<CTRL+r>` again
 to move backward through matched commands, `<CTRL+s>` to move forward through
 matched results (might suspend your terminal in some cases, press `<CTRL+q>` to
 resume). You can also do `<CTRL+p>` to go backward through your command history
 and  `<CTRL+n>` to go forward through your command history.
+
+To delete an item from history:
+
+```bash
+history -d 111
+```
