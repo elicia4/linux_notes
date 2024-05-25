@@ -10,6 +10,7 @@ A collection of notes on various bash guides.
    operators)](misc/fewer-ifs.md) 
 1. [Bash Aliases](misc/bash_aliases.md)
 1. [Bash Tricks](./misc/tricks.md)
+1. [.bashrc](./misc/bashrc.md)
 
 To do:
 1. [FullBashGuide](https://mywiki.wooledge.org/FullBashGuide)
