@@ -6,31 +6,46 @@ Notes on the video "Linux Crash Course - Managing Groups" by LearnLinuxTV.
 
 Every file is owned by a user and group:
     
-    ls -l
+```bash
+ls -l
+```
 
 To find out which group a user is a member of:
 
-    groups [user]
+```bash
+groups [user]
+```
 
-Groups by itself will show current user's groups. There's a file similiar to
+`groups` by itself will show current user's groups. There's a file similiar to
 `/etc/passwd` but group-related called `/etc/group`. The columns mean:
 
 1. Name
-2. Group password (nobody uses them and nobody should)
+1. Group password (nobody uses them and nobody should)
 1. Group ID (GID)
 1. Users that are members of that group
 
+To view members of a group:
+
+```bash
+grep "group-name" /etc/group
+```
+
 To create a group:
 
-    sudo groupadd group-name
+```bash
+sudo groupadd group-name
+```
 
 To delete a group:
 
-    sudo groupdel group-name
+```bash
+sudo groupdel group-name
+```
 
 There are two types of groups:
+
 1. Primary
-2. Supplementary aka secondary
+2. Supplementary (secondary)
 
 The GID next to an username in `/etc/passwd` indicates the primary group for
 the user.
@@ -43,34 +58,46 @@ primary group and many many secondary groups.
 
 To add a user to a secondary group:
 
-    sudo usermod -aG group-name username # usermod is not specific to groups     
-    # a = append, G = secondary groups
+```bash
+sudo usermod -aG group-name username # usermod is not specific to groups     
+# a = append, G = secondary groups
+```
 
 To **change** a user's primary group:
 
-    sudo usermod -g group-name username
+```bash
+sudo usermod -g group-name username
+```
 
 After changing a user's group relog.
 
 There's an alternative command to `usermod`:
 
-    sudo gpasswd -a username group-name
+```bash
+sudo gpasswd -a username group-name
+```
 
 To allow users to use `ssh`:
 
-    vim /etc/ssh/sshd_config
+```bash
+vim /etc/ssh/sshd_config
+```
 
 Add a new option:
 
-    AllowUsers user1 user2 user3 # define users that are allowed to access ssh
+```bash
+AllowUsers user1 user2 user3 # define users that are allowed to access ssh
+```
 
 After you restart the `sshd` service, this will work. This is a bit painful to
 manage, imagine you had 200 users here instead of 3. You can change it to:
 
-    AllowGroups group1
+```bash
+AllowGroups group1
+```
 
 To remove a user from a group:
 
-    sudo gpasswd -d username group-name
-
-
+```bash
+sudo gpasswd -d username group-name
+```
