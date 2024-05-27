@@ -46,6 +46,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [file](./commands/file.md) | [iperf](./commands/iperf.md) | [fzf](./commands/fzf.md) |
 | [w](./commands/w.md) | [uname](./commands/uname.md) | [uptime](./commands/uptime.md) |
 | [last](./commands/last.md) | [ldd](./commands/ldd.md) | [pidof](./commands/pidof.md) |
+| [ps](./commands/ps.md) | | |
 
 #### Tools 
 | | | |
