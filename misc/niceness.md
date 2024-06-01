@@ -5,10 +5,12 @@ other resources on the Internet.
 
 [***Table of Contents***](/README.md)
 
-You can alter the priority of running proccesses. To determine running
-processes' priority:
+You can alter the priority of proccesses. To determine running processes'
+priority:
 
-    ps -l
+```bash
+ps -l
+```
 
 `-l` is for "long format".
 
@@ -17,45 +19,72 @@ The `PRI` column shows the priority, the `NI` shows the niceness value. By
 default, the priority of a process is 80, the niceness is 0. Running `nice` by
 itself will return the default niceness value:
 
-    nice
+```bash
+nice
+```
 
 The *higher* the niceness number, the *lower* the priority. The maximum
-niceness value is `20`, the minimum is `-20`. If a process's niceness value is
-20, all processes execute ahead of it, if it's -20, it executes ahead of all
+niceness value is `19`, the minimum is `-20`. If a process's niceness value 
+19, all processes execute ahead of it, if it's -20, it executes ahead of all
 other processes (with a higher niceness value). The lower the niceness, the
 higher the priority.
 
 The higher the priority value, the lower the priority:
 
-    ps -l
+```bash
+ps -l
+```
 
-Note the `PID`s, you need them to change priorities. If you decrease
-priorities, you don't need `sudo`, if you increase them, you do.
+Commands that allow us to alter priorities: `nice` and `renice`. The choice of
+command comes down to whether or not the process is already running. If you
+want to launch a process with a specific priority right from the beginning,
+use `nice`, if you want to change the priority of a running process, use
+`renice`.
 
-    # sudo renice num -p <PID>
-    sudo renice -10 -p 6969
+Note the `PID`s, you need them to change priorities. If you decrease priorities
+(increase the niceness and priority values), you don't need `sudo`, if you
+increase them, you do:
 
-- `num` sets the niceness value to `num`;
+```bash
+# sudo renice <num> -p <PID>
+sudo renice -10 -p 6969
+```
+
+- `<num>` sets the niceness value to `num`, works the same as `-n <num>`;
 - `-p <PID>` specifies the PID.
 
 ```bash
 # note the difference in values
 ps -l
 # lower the priority
-renice 20 -p 6969
+renice 19 -p 6969
 ps -l
 ```
 
 You can specify the niceness value with `-n`:
 
-    renice -n 6 -p 6969
+```bash
+renice -n 6 -p 6969
+```
 
-You can set a priority when you launch a process for the first time:
+To start a process with a specific niceness value:
 
-    # nice -n num command
-    nice -n 10 vim
+```bash
+# nice -n num command
+nice -n 10 vim
+```
 
 `-n num` sets the niceness value to `num`, `command` can be substituted for
-whatever command you want to run. Note that with the `nice` command, you must
-specify the `-n` option to set the niceness value, you *can't omit it* like you
-can with `renice`.
+whatever command you want to run. Note that with the `nice` command, you can
+omit `-n`, but the syntax is different. `-num` to apply a positive value,
+`--num` to apply a negative value:
+
+```bash
+# pos
+nice -10 vim
+# neg
+nice --10 vim
+```
+
+You're better off just using `-n` everywhere, the syntax is universal between
+the two commands.
