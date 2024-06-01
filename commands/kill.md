@@ -2,12 +2,14 @@
 
 [***Table of Contents***](/README.md)
 
-By default, the command is used to terminate processes. For example:
+By default, the command is used to terminate processes:
 
-    xlogo &
-    # [1] 132
-    kill 132 # kill %1 would work to
-    # [1]    132 terminated  xlogo
+```bash
+xlogo &
+# [1] 132
+kill 132 # kill %1 would work to
+# [1]    132 terminated  xlogo
+```
 
 You can specify the process you want to kill with either its PID or its
 jobspec.
@@ -18,14 +20,18 @@ stop" signal to the process, in case of `CTRL-c` it's an `INT`, or an
 "interrupt" signal. Programs actively listen for these signals, allowing them
 to act accordingly. You can specify a signal like so:
 
-    kill -signal PID|name
+```bash
+kill -signal PID|name
+```
 
 Signals may be specified either by number or by name, including the name
 prefixed with the letters "SIG". All three of these commands do the same thing:
 
-    kill -1 process
-    kill -INT process
-    kill -SIGINT process
+```bash
+kill -1 process
+kill -INT process
+kill -SIGINT process
+```
 
 Without any options, the `TERM` (terminate) signal is sent. The most commonly
 used signals are:
@@ -42,11 +48,11 @@ used signals are:
   This performs the same function as a `Ctrl-c` sent from the terminal. It will
   usually terminate a program.
 - 9, `KILL`, Kill.  
-  The `KILL` signal is never actually sent to the target program, the kernel
-  immediately terminates the process. When a process is terminated in this
-  manner, it's not given an opportunity to "clean up" after itself or save its
-  work. For this reason, the `KILL` signal should be used only as a last resort
-  when other termination signals fail.
+  `KILL` is never actually sent to the target program, the kernel immediately
+  terminates the process. When a process is terminated in this manner, it's not
+  given an opportunity to "clean up" after itself or save its work. For this
+  reason, the `KILL` signal should be used only as a last resort when other
+  termination signals fail.
 - 15, `TERM`, Terminate.  
   This is the default `kill` signal. If a program is still "alive" enough to
   receive signals, it will terminate.
@@ -55,7 +61,8 @@ used signals are:
   sent by the `bg` and `fg` commands.
 - 19, `STOP`, Stop.  
   This signal causes a process to pause without terminating. Like the `KILL`
-  signal, it is not sent to the target process, and thus it cannot be ignored.
+  signal, it is not sent to the target process, but to the kernel, and thus it 
+  cannot be ignored.
 - 20, `TSTP`, Terminal stop.  
   This is the signal sent by the terminal when `Ctrl-z` is pressed. Unlike the
   `STOP` signal, the `TSTP` signal is received by the program, but the program
@@ -74,17 +81,29 @@ There are other common signals:
 
 To view a complete list of signals:
 
-    kill -l
+```bash
+kill -l
+```
+
+Or read the man page:
+
+```bash
+man 7 signal
+```
 
 ### `killall`
 
-You can send signals to multiple processes with `killall` matching a specified
-program or username:
+You can send signals to multiple processes with `killall` *matching a specified
+program or username*:
 
-    killall [-u user] [-signal] name...
+```bash
+killall [-u user] [-signal] name...
+```
 
 Start a couple instances of `xlogo` and terminate all of them at the same time:
 
-    xterm &
-    xterm &
-    killall xlogo
+```bash
+xterm &
+xterm &
+killall xlogo
+```
