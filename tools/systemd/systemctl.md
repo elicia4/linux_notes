@@ -25,6 +25,12 @@ To check the status of `apache`:
 systemctl status httpd
 ```
 
+To see full log entries if the output is shortened:
+
+```bash
+systemctl status -l httpd
+```
+
 If it says it's disabled, it means that it does not start on computer startup.
 
 To enable:
