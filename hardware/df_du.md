@@ -68,13 +68,13 @@ To see a total summary of all available space:
 df -h --total
 ```
 
-`df` is useful for general information, it doesn't tell you what folders take
-up the most amount of space.
+`df` is useful for general information, it doesn't tell you what directories
+take up the most amount of space.
 
 ### du
 
 To get the full picture, you should use `du`. To show information about a
-particular folder:
+particular directory:
 
 ```bash
 du /home/username
@@ -86,8 +86,7 @@ The output is quite messy by default. To get human-readable numbers:
 du -h /home/username
 ```
 
-To give `du` a maximum depth, the number of directories deep the `du` command
-will go:
+To give `du` a maximum depth, the number of directories deep `du` will go:
 
 ```bash
 du -h --max-depth 1 /home/username
@@ -118,10 +117,22 @@ A great variation of the `du` command:
 du -hsc /directory/*
 ```
 
+For current working directory:
+
+```bash
+du -hsc *
+```
+
 This will you information about each file/dir in that directory and list the 
 total space.
 
 ### ncdu
 
-The `ncdu` command give you a breakdown of all the folders you have. It's easy
-to use, press `?` for help if you don't understand something.
+`ncdu` (NCurses Disk usage) gives you a breakdown of all the directories you
+have. It's easy to use, press `?` for help if you don't understand something.
+
+### The Way
+
+Start out with `df -h` and `df -i` to find out which storage volume is having
+issues. Then use `du -hsc *` to see which directory is using up the most space.
+If you need to dive even deeper, try `ncdu`.
