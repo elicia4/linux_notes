@@ -1,23 +1,40 @@
-# The "cron" scheduling tool 
+# `cron`
 
 Notes taken on [this video](https://youtu.be/7cbP7fzn0D8) by Learn Linux TV.
 
-[***Table of Contents***](/README.md)
+[**Table of Contents**](/README.md)
 
 ---
 
-`cron` allows us to schedule tasks in advance.  
+`cron` allows you to schedule tasks.
 
-A **cron job** is a job, or task scheduled with `cron`.
+A *cron job* is a task scheduled with `cron`.
 
 Every user on the system has their own set of `cron` jobs. A list of cron jobs
 for a user is considered their **crontab**. To see the current user's crontab:
 
-    crontab -l
+```bash
+crontab -l
+```
+
+To view another user's crontab:
+
+```bash
+sudo crontab -u <user> -l
+```
 
 To set up a cron job:
 
-    crontab -e
+```bash
+crontab -e
+```
+
+You may be asked what text editor to use, you can automate this by setting the
+`EDITOR` environment variable to your desired text editor: 
+
+```bash
+EDITOR=vim crontab -e
+```
 
 With this command, you're not *directly* editing the crontab, it's first going 
 to have you work on the changes in the `/tmp` directory. Assuming that
@@ -28,11 +45,15 @@ forget how to do something.
 
 A cron job consists of 6 fields:
 
-    * * * * * command
+```
+* * * * * command
+```
 
-Each individual field correlates to a time unit. The format is as follows:
+Each individual field correlates to a time unit:
 
-    m h dom mon dow command
+```
+m h dom mon dow command
+```
 
 1. `m` - minute
 2. `h` - hour 
@@ -48,28 +69,40 @@ Let's say `m` is 5. What it means is that it's going to execute at **00:05**,
 
 What if you wanted your command to run every day at **9:05**?
 
-    5 9 * * * command
+```
+5 9 * * * command
+```
 
 Every month every 15th day of the month at **9:05**?
 
-    5 9 15 * * command
+```
+5 9 15 * * command
+```
 
 Every August on the 15th day at **9:05**?
 
-    5 9 15 8 * command
+```
+5 9 15 8 * command
+```
 
 Every August on the 15th, *only if that day is a Friday*, at **9:05**?
 
-    5 9 15 8 5 command
+```
+5 9 15 8 5 command
+```
 
 You can also run it hourly/daily:
 
-    @hourly command
-    @daily command
+```
+@hourly command
+@daily command
+```
 
 Run it at reboot:
 
-    @reboot command
+```
+@reboot command
+```
 
 It's not recommended to run cron jobs as your user. If you don't specify,
 `crontab` commands will default to your user. 
@@ -79,52 +112,76 @@ matches your purpose. For instance, if you have a webserver you're going to have
 a user specific to it, so you should probably run commands from it. To edit a
 crontab for a specific user:
 
-    sudo crontab -u <username> -e 
+```bash
+sudo crontab -u <username> -e 
+```
 
 Let's run an `apt` command for example:
 
-    sudo crontab -ue root
-    * * * * * apt install -y tmux
+```bash
+sudo crontab -ue root
+```
+```
+* * * * * apt install -y tmux
+```
 
-To see the logs of your system:
+To see the system log:
 
-    sudo cat /var/log/syslog
+```bash
+sudo cat /var/log/syslog
+```
 
 To see `cron` logs:
 
-    sudo cat /var/log/syslog | grep CRON
+```bash
+sudo cat /var/log/syslog | grep CRON
+```
 
 Let's redirect current time to a file every minute:
 
-    * * * * * date >> /root/date.txt
+```
+* * * * * date >> /root/date.txt
+```
     
 Now install Apache:
 
-    apt install apache2
+```bash
+apt install apache2
+```
 
 You should now have a user called `www-data`:
 
-    cat /etc/passwd | grep www
+```bash
+cat /etc/passwd | grep www
+```
 
 Maybe you have some tasks that the web server has to run at some time
 intervals.
 
 Let's add a cron job to a `www-data` user. Switch to the account first:
 
-    sudo su - www-data
+```bash
+sudo su - www-data
+```
 
 That won't work. That's because the shell for that user is set to `nologin`. To
 fix the issue:
 
-    sudo crontab -u www-data -e
+```bash
+sudo crontab -u www-data -e
+```
 
 Imagine you have a website backup script. Add the following line to it:
  
-    0 3 * * * /usr/local/bin/website_backup.sh
+```
+0 3 * * * /usr/local/bin/website_backup.sh
+```
 
 Useful websites that can help with crontab:
 
-    https://crontab-generator.org/
-    https://crontab.guru/
+```
+https://crontab-generator.org/
+https://crontab.guru/
+```
 
-That's it :)
+That's it. :)
