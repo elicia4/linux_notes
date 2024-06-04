@@ -1,65 +1,84 @@
-# The "htop" monitoring tool
+# `htop`
 
-Notes taken on this video by LearnLinuxTV: https://youtu.be/tU9cO9FwDx0
+Notes taken on [this video](https://youtu.be/tU9cO9FwDx0) and documentation.
 
 [***Table of Contents***](/README.md)  
 
-`htop` is a system utility used for system resource monitoring. It's critical to
-take care of your system's CPU and RAM usage.
+`htop` is a system resource monitoring utility. 
 
 `top` is a predecessor of `htop`. `htop` looks a lot better, is organized
-better and is available on most Linux systems. Note that `top` is still widely
-used.
+better and is available on most Linux systems. `top` is still widely used.
 
 `htop` outputs many important metrics, such as CPU usage, Memory usage, Swap 
 usage, a list of processes running on the server and more.
 
-You can customize the layout of `htop` as well. You can install 'htop' with
-your package manager in case it's not installed, in case of Debian/Ubuntu:
+You can customize the layout of `htop` as well. See if it is installed:
 
-	which htop # to see if it's installed 
-OR
+```bash
+which htop # to see if it's installed 
+command -v htop
+```
 
-	command -v htop
+On Debian/Ubuntu, install it with:
 
-In case it's not:
+```bash
+sudo apt update # to update the repository index
+sudo apt install htop # to install
+```
 
-	sudo apt update # to update the repository index
-	sudo apt install htop # to install
+Run it:
 
-To run it:
+```bash
+htop
+```
 
-	htop
-
-You can use your MOUSE inside `htop`, try sorting something by clicking on a
+You can use your mouse inside `htop`, try sorting something by clicking on a
 column. By sorting `MEM%` or `CPU%` you can narrow down which processes are
 using most of the memory or CPU resources. 
 
-At the top you have several different meters, one for each CPU core, you can
-also add a `CPU Average` bar, which is not present by default. There is also
-`Mem`, or memory to see how much memory is being used, `Swp` for swap.
+At the top you have several different meters: 
 
-Use up and down arrows to navigate through the list of processes. You can kill
-a process with **F9** and then selecting a signal to send to the process, in
-case of a process that's misbehaving its a good idea to send **SIGTERM** first,
-which asks the process to close down by itself cleanly, but if it's not working
-you should send **SIGKILL**. You can navigate thse signals with with numbers as
-well as arrows. You should use **SIGKILL** as a last resort. On a production
-server, be especially careful with this.
+- one for each CPU core, you can also add a `CPU Average` bar, which is not
+present by default;
+- load averages;
+- uptime;
+- number of tasks;
+- `Mem`, or memory to see how much memory is being used;
+- `Swp` for swap.
 
-To sort by CPU usage, press **Shift + p**. 
-To sort by Memory usage, press **Shift + m**. 
+In the lower section a list of processes with various fields is shown:
 
-You can customize `htop` by pressing **F2** (take a look at the bottom bar, it
-shows you what all the 'F' keys do). Take a look at Categories on the left, the
-customization interface is pretty intuitive and self-explanatory. You can
-customize the top section of `htop` in the meters section. Use the arrow keys
-to navigate. Don't forget about the line at the bottom.
+- Process ID (PID)
+- the user running it 
+- CPU usage
+- memory usage 
+- the command 
 
-To look for specific processes:
+Hotkeys:
 
-Press **u** for user, a list of users will be shown on the left, you can
-navigate it by typing in the needed username or using the arrows.
+- **up**/**down**, **PgUp**/**PgDn** to navigate through the list of processes
+- **F9** to send a signal to the selected process 
+- **Shift + p** to sort by CPU usage 
+- **Shift + m** to sort by Memory usage
+- **u** to sort by user, a list of users will be shown on the left, you can
+navigate it by typing in the needed username or using the arrows
+- **F3** or **/** to find a specific process, type in the name
+- **F5** to switch between list and tree views
+- **F2** to customize (F-keys functions are shown at the bottom)
 
-You can find a specific process by pressing **F3** (or `/`) and typing in the
-name of the process. 
+In case of a process that's misbehaving its a good idea to send **SIGTERM**
+first, which asks the process to close down by itself cleanly, but if it's not
+working you can send **SIGKILL**. You should use **SIGKILL** as a last resort.
+On a production server, be especially careful with this. *You can navigate
+these signals with numbers as well as arrows.* 
+
+While customizing, take a look at **Categories** on the left, the customization
+interface is pretty intuitive and self-explanatory. You can customize the top
+section of `htop` in the meters section. Don't forget about the line at the
+bottom.
+
+You can change the speed at which it updates, measured in 1/10 of a second:
+
+```bash
+htop -d 50 # refreshes every 5 seconds
+```
