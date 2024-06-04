@@ -1,7 +1,7 @@
-# The `top` Monitoring Tool
+# `top`
 
-Notes taken on the "Demystifying the Top Command in Linux | Linux Crash Course
-Series" video by LearnLinuxTV.
+Notes taken on [this video](https://www.youtube.com/watch?v=WsR11EGF9PA) and
+documentation.
 
 [***Table of Contents***](/README.md)
 
@@ -11,29 +11,39 @@ memory) are used and so on.
 
 Basic usage:
 
-    top
+```bash
+top
+```
 
 The output is updates every 3 seconds by default. Every time it updates, it
 shows the current snapshot of the resource usage on your system. If you're
 experiencing a resource contention, the `top` command is a great place to
-start. Press `q` to quit.
+start. `q` to quit.
 
 `top` is split into 2 main sections. You have statistics at the top and the
 process table at the bottom. 
 
-### The statistics section 
+### The Statistics Section 
 
-Let's go over the top section first. The first line is filled with uptime, the
-number of logged in users and load averages. A small uptime is potentially a
-problem, it might be okay if you have something like automatic updates
-installed, but if you didn't plan for a restart of the system and it shows a
-low uptime, you should look into it. 
+The first line is filled with: 
+
+- uptime, 
+- number of logged in users 
+- load averages
+
+A small uptime is potentially a problem, it might be okay if you have something
+like automatic updates installed, but if you didn't plan for a restart of the
+system and it shows a low uptime, you should look into it. 
 
 The second line gives you statistics around tasks that your computer or server
-is running. Running tasks does not equal the number of applications you have
-opened. Running tasks are the tasks that utilize the CPU at the moment, apps
-only utilize the CPU when they need something. A task that is stopped is in the
-process of closing down. 
+is running: 
+
+- Running tasks != the number of applications you have opened. Running tasks
+are the tasks that utilize the CPU at the moment, apps only utilize the CPU
+when they need something. 
+- A process is sleeping when it is blocked, waiting for something.
+- stopped tasks are tasks that are in the process of closing down. 
+- zombie processes
 
 What is a zombie process? A child process is one that was started by another
 process, you can see them by pressing `<Shift + V>`. You can see relationships
@@ -67,19 +77,16 @@ configure the niceness value of that process to increase its priority. In
 regards to `top`, the field shows the percentage of time the CPU has spent
 running processes that were configured with a custom niceness value.
 
-`id` is for "idle". It shows how much time the CPU has been idle for, the
+- `id` is for "idle". It shows how much time the CPU has been idle for, the
 higher the number, the less busy the system generally is.
-
-`wa` stands for "waiting", how long has a task has been waiting for input or
+- `wa` stands for "waiting", how long has a task has been waiting for input or
 output. The higher the wait percentage, the worse it is, we don't really want
 your servers to be waiting on anything, the lower the better.
-
-`hi` and `si` refer to hardware and software interrupts respectfully, how much
-time the CPU is spending processing hardware and software interrupts. It's not
-a big issue these days.
-
-`st` refers to how much time the virtual CPU has been waiting for the physical
-CPU.
+- `hi` and `si` refer to hardware and software interrupts respectfully, how
+much time the CPU is spending processing hardware and software interrupts. It's
+not a big issue these days.
+- `st` refers to how much time the virtual CPU has been waiting for the
+physical CPU.
 
 The fourth line contains memory information, it's pretty straightforward. The
 final field shows how much memory the cache is using, this is information that
@@ -112,7 +119,7 @@ should always try to kill a process normally without resorting to that, but if
 you can't this is a solution. To change the update frequency of `top`, press
 `d`. You get `Change delay from 3.0 to`, enter your desired delay. 
 
-### Most important things
+### Most Important Things
 
 Focus on these fields, they are important.
 
@@ -126,11 +133,11 @@ Focus on these fields, they are important.
 
 ### Misc
 
-`htop` is also a great monitoring solution, but it's not as widely available by
-default as `top`.
+- `htop` is also a great monitoring solution, but it's not as widely available
+by default as `top`.
+- `top` supports keyboard commands, `h` for help, `q` to quit.
+- `top` is also customizable, see the man pages:
 
-`top` supports keyboard commands, `h` shows help, `q` allows you to quit `top`.
-
-`top` is also customizable, see the man pages:
-
-    man top
+  ```bash
+  man top
+  ```
