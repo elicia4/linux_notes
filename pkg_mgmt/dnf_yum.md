@@ -1,7 +1,7 @@
 # `dnf` and `yum`
 
 Notes taken on the [Linux Crash Course - The dnf
-Command"](https://youtu.be/oPEnvuj9QrI) video by LearnLinuxTV and other
+Command](https://youtu.be/oPEnvuj9QrI) video by LearnLinuxTV and other
 resources.
 
 [***Table of Contents***](/README.md)  
