@@ -68,6 +68,13 @@ To see a total summary of all available space:
 df -h --total
 ```
 
+You may also be running out of inodes (on most filesystems, they are
+preallocated):
+
+```bash
+df -i
+```
+
 `df` is useful for general information, it doesn't tell you what directories
 take up the most amount of space.
 
