@@ -1,7 +1,7 @@
 # Inodes
 
 These notes are on [this video](https://www.youtube.com/watch?v=6KjMlm8hhFA),
-various man pages and Internet resources.
+various man pages, and Internet resources.
 
 [***Table of Contents***](/README.md)
 
@@ -15,7 +15,9 @@ Whenever you `ls`, you only look up filenames, but when you `ls -l` you get
 additional metadata. You can think of a directory in Linux as something that
 contains a table of filename-inode pairings. To see them:
 
-    ls -i
+```bash
+ls -i
+```
 
 What is in each inode? An inode contains: 
 
@@ -34,7 +36,9 @@ What is in each inode? An inode contains:
 Whenever you run `ls -l`, `ls` looks up all the extra information about files
 with the help of the inode numbers. It gets the equivalent of:
 
-    stat <filename>
+```bash
+stat <filename>
+```
 
 `stat` is a syscall (system call) that looks up the metadata of a file. A
 system call is something that processes do to ask the kernel to do what *only*
@@ -46,11 +50,15 @@ need to look up the number of inodes remaining on your system. You might start
 getting various disk errors, even though you have plenty of space left on your
 system:
 
-    df -h
+```bash
+df -h
+```
 
 One thing that can cause that is *inode exhaustion*:
 
-    df -hi
+```bash
+df -hi
+```
 
 You might see that you're using 100% of inodes on your disk, and the errors
 happen because a new file requires an inode to be created.
@@ -66,7 +74,7 @@ File systems create all the space they're going to have for inodes when the
 file system is created *unless* you pass an extra flag during the file system
 creation to overwrite that. 
 
-In some filesystems, like ***zfs***, you can create inodes on demand. In those
-filesystem inodes are created when you create a file, not on file system
+In some filesystems, like *zfs*, you can create inodes on demand. In those
+filesystems inodes are created when you create a file, not on file system
 creation time. The space for inodes on those filesystems is not fixed and works
 in a different way.
