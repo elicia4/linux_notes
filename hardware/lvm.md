@@ -1,7 +1,7 @@
 # Linux Logical Volume Manager (LVM)
 
-Notes taken on the "Linux Logical Volume Manager (LVM) Deep Dive Tutorial"
-video by LearnLinuxTV.
+Notes taken on [the "Linux Logical Volume Manager (LVM) Deep Dive Tutorial"
+video](https://www.youtube.com/watch?v=MeltFN-bXrQ) by LearnLinuxTV.
 
 [***Table of Contents***](/README.md)
 
@@ -18,7 +18,9 @@ allowed to do that?
 
 What if this happened and you had LVM on your system? To show available space:
 
-    df -h
+```bash
+df -h
+```
 
 You will have a different `Filesystem` in the root field, regularly it would be
 `/dev/sda1` or something, on a system with LVM it would be something like
@@ -27,7 +29,9 @@ the root logical volume.
 
 To recover with LVM you can increase the size of the filesystem:
 
-    lvextend --resizefs -l +100%FREE /dev/mapper/vg_ubuntu-lv_root
+```bash
+lvextend --resizefs -l +100%FREE /dev/mapper/vg_ubuntu-lv_root
+```
 
 You just added some space to your filesystem, thus fixing the problem, WITHOUT
 restarting the server. You should always set up LVM on your server. Worst case
@@ -73,202 +77,288 @@ You're done.
 
 Run `lsblk` to see your partitions: 
     
-    lsblk
+```bash
+lsblk
+```
 
 Note the name and the mountpoint.
 
 To give information about the physical volume:
 
-    sudo pvdisplay
+```bash
+sudo pvdisplay
+```
 
 To display information about the volume group:
 
-    sudo vgdisplay
+```bash
+sudo vgdisplay
+```
 
 To display logical volume information:
 
-    sudo lvdisplay
+```bash
+sudo lvdisplay
+```
 
 To see where logical volumes are mounted:
 
-    df -h 
+```bash
+df -h 
+```
 
 Or:
 
-    cat /etc/fstab
+```bash
+cat /etc/fstab
+```
 
 ### Expanding a Filesystem
 
 What if you don't have any space left? Install another hard drive. To confirm:
 
-    lsblk
+```bash
+lsblk
+```
 
 Turn a second hard drive into a physical volume, **be very careful here**, if
 you attach the wrong hard drive here, you are wiping out your entire
 filesystem:
 
-    sudo pvcreate /dev/<hard-drive>
+```bash
+sudo pvcreate /dev/<hard-drive>
+```
 
 To confirm:
 
-    sudo pvdisplay
+```bash
+sudo pvdisplay
+```
 
 As you can see, it's not a part of any volume group. To add it to a VG:
 
-    sudo vgextend <volume-group> <physical-volume>
+```bash
+sudo vgextend <volume-group> <physical-volume>
+```
 
 Look at the free space:
 
-    df -h # it's not there yet
+```bash
+df -h # it's not there yet
+```
 
 See VG info:
 
-    sudo vgdisplay
+```bash
+sudo vgdisplay
+```
 
 You should have some unallocated space.
 
 To extend a logical volume:
 
-    sudo lvextend -L +2G /dev/mapper/vg--ubuntu-lv--root
+```bash
+sudo lvextend -L +2G /dev/mapper/vg--ubuntu-lv--root
+```
 
 Now see the magic:
 
-    df -h
+```bash
+df -h
+```
 
 ...and it's the same, nothing has changed. You have to resize the filesystem so
 that it can use the available space:
 
-    sudo resize2fs /dev/mapper/vg--ubuntu-lv--root
+```bash
+sudo resize2fs /dev/mapper/vg--ubuntu-lv--root
+```
 
 Check the space:
 
-    df -h
+```bash
+df -h
+```
 
 It is done!
 
 Let's give it the rest of the space:
 
-    sudo lvextend --resizefs -l +100%FREE /dev/mapper/vg--ubuntu-lv--root
+```bash
+sudo lvextend --resizefs -l +100%FREE /dev/mapper/vg--ubuntu-lv--root
+```
 
 The `--resizefs` option automatically resizes the filesystem. Run:
 
-    df -h
+```bash
+df -h
+```
 
 You have extended your volume even further. You were able to do it online,
 without the need to restart the server.
 
 Just for practice, add another volume to your server:
 
-    lsblk;
-    sudo pvcreate /dev/<hard-drive>
+```bash
+lsblk;
+sudo pvcreate /dev/<hard-drive>
+```
 
 Now create a new volume group:
 
-    sudo vgcreate <name> /dev/<hard-drive>
+```bash
+sudo vgcreate <name> /dev/<hard-drive>
+```
 
 Display volume groups:
 
-    sudo vgdisplay
+```bash
+sudo vgdisplay
+```
 
 As you can see, `Alloc PE / Size` is `0 / 0`, all of it is free. Create a new
 logical volume:
 
-    sudo lvcreate <vg_name> -L 5G -n lv_logs
+```bash
+sudo lvcreate <vg_name> -L 5G -n lv_logs
+```
 
 `-n` names the logical volume. Show logical volumes:
 
-    sudo lvdisplay
+```bash
+sudo lvdisplay
+```
 
 Format it so that you can use it:
 
-    sudo mkfs.ext4 /dev/mapper/vg_extra-lv_logs;
-    df -h
+```bash
+sudo mkfs.ext4 /dev/mapper/vg_extra-lv_logs;
+df -h
+```
 
 As you can see, it's not there yet. You have to mount the new logical volume
 first:
 
-    sudo mkdir -p /mnt/extra/logs;
-    sudo mount /dev/mapper/vg_extra-lv_logs /mnt/extra/logs;
-    df -h
+```bash
+sudo mkdir -p /mnt/extra/logs;
+sudo mount /dev/mapper/vg_extra-lv_logs /mnt/extra/logs;
+df -h
+```
 
 As you can see, it's mounted now. You also want to make sure that this logical
 volume is automatically mounted whenever you boot the system:
 
-    blkid /dev/mapper/vg_extra-lv_logs
+```bash
+blkid /dev/mapper/vg_extra-lv_logs
+```
 
 Copy the UUID (universally unique identifier). You can use the path itself, it
 shouldn't matter. Back up the `fstab` file first:
 
-    sudo cp /etc/fstab /etc/fstab.bak
+```bash
+sudo cp /etc/fstab /etc/fstab.bak
+```
 
 Now unmount the `logs`:
 
-    umount /mnt/extra/logs
+```bash
+umount /mnt/extra/logs
+```
 
 Now edit the `fstab` file:
 
-    sudo vim /etc/fstab;
+```bash
+sudo vim /etc/fstab;
+```
 
 Add the following line:
 
-    UUID=<uuid you copied> /mnt/extra/logs ext4 defaults 0 2 
+```bash
+UUID=<uuid you copied> /mnt/extra/logs ext4 defaults 0 2 
+```
 
 The last number indicates the priority during the filesystem check. Now test
 the `fstab` file, DON'T reboot the machine before you've tested it:
 
-    sudo mount -a
+```bash
+sudo mount -a
+```
 
 Check the mounted volumes:
 
-    df -h
+```bash
+df -h
+```
 
 ### LVM Snapshots
 
 Create a new logical volume:
 
-    sudo lvcreate vg_extra -L 1G -n lv_web
+```bash
+sudo lvcreate vg_extra -L 1G -n lv_web
+```
 
 Format it:
 
-    sudo mkfs.ext4 /dev/mapper/vg_extra-lv_web
+```bash
+sudo mkfs.ext4 /dev/mapper/vg_extra-lv_web
+```
 
 Do the `fstab` drill:
 
-    sudo cp /etc/fstab /etc/fstab.bk
+```bash
+sudo cp /etc/fstab /etc/fstab.bk
+```
 
 `blkid`:
 
-    sudo blkid /dev/mapper/vg_extra-lv_web # copy the UUID
+```bash
+sudo blkid /dev/mapper/vg_extra-lv_web # copy the UUID
+```
 
 Add the line to `fstab`:
 
-    UUID=<your UUID> /mnt/extra/web ext4 defaults 0 2
+```bash
+UUID=<your UUID> /mnt/extra/web ext4 defaults 0 2
+```
 
 Create the directory:
     
-    sudo mkdir -p /mnt/extra/web
+```bash
+sudo mkdir -p /mnt/extra/web
+```
 
 Mount everything:
 
-    mount -a
+```bash
+mount -a
+```
 
 Check that it's mounted:
 
-    df -h 
+```bash
+df -h 
+```
 
 To explain snapshots, create a new file on a new volume:
 
-    sudo echo "LVM IS GREAT" > /mnt/extra/web/important_file.txt
+```bash
+sudo echo "LVM IS GREAT" > /mnt/extra/web/important_file.txt
+```
 
 To create a snapshot, make sure you have unclaimed space:
 
-    sudo lvcreate /dev/mapper/vg_extra-lv_web -L 1G -s -n web_snapshot_20230101
+```bash
+sudo lvcreate /dev/mapper/vg_extra-lv_web -L 1G -s -n web_snapshot_20230101
+```
 
 `-s` indicates that it's a snapshot.
 
 View your logical volumes:
 
-    sudo lvs
+```bash
+sudo lvs
+```
 
 You should have a snapshot on the list, it has `lv_web` `Origin`, the
 percentage of data used (`Data%`). It should not get to 100%, don't use
@@ -278,30 +368,38 @@ back to a previously created snapshot.
 Delete `important_file.txt`. To restore to a snapshot, there are multiple
 options. Create a temporary directory to mount the snapshot to:
     
-    sudo mkdir /mnt/extra/snapshot
-    sudo mount /dev/mapper/vg_extra-web_snapshot_20230101 /mnt/extra/snapshot
+```bash
+sudo mkdir /mnt/extra/snapshot
+sudo mount /dev/mapper/vg_extra-web_snapshot_20230101 /mnt/extra/snapshot
+```
 
 Now you should have the snapshot mounted. You can simply copy the file from the
 snapshot to its location on the filesystem.
 
 You can also fully recover a logical volume from a snapshot, restore it:
 
-    sudo umount /mnt/extra/web;
-    df -h; # it's not mounted anymore
-    sudo lvconvert --merge /dev/mapper/vg_extra-web_snapshot_20230101 
+```bash
+sudo umount /mnt/extra/web;
+df -h; # it's not mounted anymore
+sudo lvconvert --merge /dev/mapper/vg_extra-web_snapshot_20230101 
+```
 
 The origin is set to the original logical volume, this should overwrite the
 original. Re-activate the logical volume:
 
-    sudo lvchange -an /dev/mapper/vg_extra-lv_web # it's deactivated
-    sudo lvchange -ay /dev/mapper/vg_extra-lv_web # it's reactivated
+```bash
+sudo lvchange -an /dev/mapper/vg_extra-lv_web # it's deactivated
+sudo lvchange -ay /dev/mapper/vg_extra-lv_web # it's reactivated
+```
 
 Now everything should be flushed. Re-mount it:
 
-    mount -a;
-    df -h;
-    ls -l /mnt/extra/web
+```bash
+mount -a;
+df -h;
+ls -l /mnt/extra/web
+```
 
-The `important_file.txt` should be there.
+`important_file.txt` should be there.
 
-Play around with LVM on a test system before you put it in production.
+*Play around with LVM on a test system before you put it in production.*
