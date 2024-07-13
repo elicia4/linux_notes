@@ -2,21 +2,30 @@
 
 [***Table of Contents***](/README.md)
 
-`locate` find files by name, it does it by searching databases prepared by
-`updatedb` and outputs paths to the files:
+`locate` allows you to find files by name, it does it by searching databases
+prepared by `updatedb`. It outputs paths to the files:
 
-    locate zip
-    locate bin/zip
+```bash
+locate zip
+locate bin/zip
+```
 
-There are several variants of the `locate` command, the most common ones are
-`slocate` and `mlocate`. Recently created files might not be shown by `locate`.
-To fix that, run:
+There are several variants of the `locate` command, the most common ones are:
 
-    updatedb
+- `slocate` 
+- `mlocate` 
+
+Recently created files might not be shown by `locate`. To fix that:
+
+```bash
+updatedb
+```
 
 That command provides databases needed for `locate`.
 
-`locate` supports both BRE (`--regexp`) and ERE (`--regex`), for example:
+`locate` supports both BRE (`--regexp`) and ERE (`--regex`), e.g.:
 
-    cd /usr
-    locate --regex 'bin/(bz|gz|zip)'
+```bash
+cd /usr
+locate --regex 'bin/(bz|gz|zip)'
+```
