@@ -4,11 +4,15 @@
 
 `aspell` is an interactive spell checker. See if it's installed:
 
-    command -v aspell
+```bash
+command -v aspell
+```
 
 To install `aspell` and the English dictionary for it with `pacman`:
 
-    pacman -S aspell aspell-en
+```bash
+pacman -S aspell aspell-en
+```
 
 There are other `aspell` dictionaries available for `aspell`:
 1. [Main repositories](https://archlinux.org/packages/?q=aspell-)
@@ -19,26 +23,36 @@ also used by other programs to check for spelling errors.
 
 Create a file containing mistakes:
 
-    echo "Creete a faile contaenieng mestakes:" > filename.txt
+```bash
+echo "Creete a faile contaenieng mestakes:" > filename.txt
+```
 
 To spellcheck a file:
 
-    aspell check filename.txt
+```bash
+aspell check filename.txt
+```
 
 The interface is incredibly intuitive. 
 
 By default, `aspell` create a backup of the original file (with the `.bak`
 extension). To instruct it not to do it:
 
-    aspell check --dont-backup filename.txt 
+```bash
+aspell check --dont-backup filename.txt 
+```
 
 Or:
 
-    aspell check -x filename.txt 
+```bash
+aspell check -x filename.txt 
+```
 
 To edit HTML files, use the `-H` option:
 
-    aspell check -H filename.html
+```bash
+aspell check -H filename.html
+```
 
 The option ignores the tags and only the non-markup parts of the file are
 checked. ALT tags are not ignored.
