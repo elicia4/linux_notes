@@ -1,4 +1,4 @@
-# The `sed` stream editor
+# `sed`
 
 These are notes on [this video](https://youtu.be/nXLnx8ncZyE), documentation,
 and the Internet.
@@ -12,7 +12,7 @@ commands.
 
 Create a new `toppings.txt` text file:
 
-```
+```bash
 echo "Pizza topping combos:
 1. Spinach, Pepperoni, Pineapple
 2. Pepperoni, Pineapple, Mushrooms
@@ -20,9 +20,9 @@ echo "Pizza topping combos:
 4. Cheese, Pineapple" > toppings.txt
 ```
 
-Let's see what the `sed` command can do for us:
+Let's see what `sed` can do for us:
 
-```
+```bash
 sed 's/Pineapple/Feta/' toppings.txt
 ```
 
@@ -32,9 +32,9 @@ was printed to the standard output, the file itself **did not** get modified.
 find-and-replace command (`'s/Pineapple/Feta/'`) against the contents of the
 file. Commands in `sed` begin with a single letter, `s` indicates substitution.
 
-To change the file itself, use `-i`:
+`-i` to change the file itself:
 
-```
+```bash
 sed -i 's/Pineapple/Feta/' toppings.txt
 ```
 
@@ -42,7 +42,7 @@ There's no output. The output was sent to the file itself.
 
 You can change the delimiter (`/`) to any other character:
 
-```
+```bash
 sed 's Feta Olives ' toppings.txt
 sed 's|Feta|Olives|' toppings.txt
 sed 's.Feta.Olives.' toppings.txt
@@ -55,7 +55,7 @@ Conventionally almost everywhere a `/` is used, but in cases where there are
 of escaping `/`s. For example, output the contents of your `/etc` directory
 to a file:
 
-```
+```bash
 find /etc -type f > paths.txt
 cat paths.txt
 ```
@@ -64,26 +64,30 @@ Every line starts with `/etc/`, let's say you want to get rid of that. It's
 easy to do by using a delimiter other than `/`, since the `/` symbol is part of
 the name itself. Let's use a `.` as a delimiter:
 
-```
+```bash
 sed 's./etc/..' paths.txt
 ```
 
 The default way (which does not work without escaping the characters) would be:
 
-```
+```bash
 sed 's//etc///' paths.txt
 ```
 
 You can replace anything with nothing by putting literally nothing between the
 last two delimiters:
 
-    echo "something" | sed 's/something//'
+```bash
+echo "something" | sed 's/something//'
+```
 
 An address to be edited can be specified. Let's say you only want specify a
 line to be edited:
 
-    echo "front" | sed '1s/front/back/' # substitution will happen
-    echo "front" | sed '2s/front/back/' # substitution won't happen
+```bash
+echo "front" | sed '1s/front/back/' # substitution will happen
+echo "front" | sed '2s/front/back/' # substitution won't happen
+```
 
 `sed` Address Notation:
 - `n` - a line number;
@@ -101,19 +105,25 @@ line to be edited:
 - `addr!` - match all lines except `addr`, which may be any of the forms listed
   earlier.
 
-For example:
+E.g.:
     
-    sed -n '1,5p' file.txt
+```bash
+sed -n '1,5p' file.txt
+```
 
 `p` means "print". `-n` suppresses automatic printing.
 
 Print all lines containing `1234`:
 
-    sed -n '/1234/p' file.txt
+```bash
+sed -n '/1234/p' file.txt
+```
 
 Print all lines that don't contain `1234`:
 
-    sed -n '/1234/!p' file.txt
+```bash
+sed -n '/1234/!p' file.txt
+```
 
 Basic `sed` editing commands:
 - `=` - output the current line number;
@@ -138,18 +148,23 @@ Basic `sed` editing commands:
 
 Let's say you had a file with dates in the `MM/DD/YYYY` format:
 
-    echo "01/13/2001
-    05/05/1999
-    08/05/2005
-    08/05/1984
-    08/05/1325" > file.txt
+```bash
+echo "01/13/2001
+05/05/1999
+08/05/2005
+08/05/1984
+08/05/1325" > file.txt
+```
 
 To sort them easily, it would be better if they were in the `YYYY-MM-DD`
 format:
-```
+
+```bash
 sed 's \([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$ \3-\1-\2 ' file.txt 
 ```
+
 Let's deconstruct it:
+
 1. A `sed` replace command has the following structure: `sed
    's/regexp/replacement/' file.txt`
 1. A regular expression (`regexp`) that isolates the `MM/DD/YYYY` dates:
@@ -161,53 +176,67 @@ Let's deconstruct it:
    preceding regular expression. To create subexpressions, enclose relevant
    parts of text in parentheses: `([0-9]{2})/([0-9]{2})/([0-9]{4})$`. You now
    have three subexpressions. You can now construct a *replacement* as follows:
-   ```
+
+   ```bash
    \3-\1-\2
    ```
 
    Now the command looks like so:
-   ```
+
+   ```bash
    sed 's/([0-9]{2})/([0-9]{2})/([0-9]{4})$/\3-\1-\2/' file.txt
    ```
+
 1. The extra slashes confuse `sed`. `sed` uses BRE, several of the characters
    in your regular expression are taken as literals, rather than
    metacharacters. Use backslashes (`\`) to solve both of these problems:
-   ```
+
+   ```bash
    sed 's/\([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\)$/\3-\1-\2/' file.txt
    ```
+
    Use a different delimiter to make a bit easier to understand:
-   ```
+
+   ```bash
    sed 's \([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\)$ \3-\1-\2 ' file.txt
    ```
 
 You can use flags with `s`. The `g` flag allows you to perform a replacement on
 the entire line, rather than just the first instance:
 
-    echo "aaabbbccc" | sed 's/b/B/' 
+```bash
+echo "aaabbbccc" | sed 's/b/B/' 
     echo "aaabbbccc" | sed 's/b/B/g'
+```
 
 ### `sed` script
 
 Create a basic `sed` script:
 
-    echo "# sed script to convert dates from one format to another
+```bash
+echo "# sed script to convert dates from one format to another
 
-    1 i\\
-    \\
-    Formatted Dates\\
+1 i\\
+\\
+Formatted Dates\\
 
-    s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/ 
-    y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/" > script.sed
+s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/ 
+y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/" > script.sed
+```
 
 The script contains a title and the modified dates. It also performs
 transliteration of lowercase characters to uppercase characters. To run the
 script, use the `-f` option:
 
-    sed -f script.sed file.txt
+```bash
+sed -f script.sed file.txt
+```
 
 How did it work? Run:
 
-    cat -n script.sed
+```bash
+cat -n script.sed
+```
 
 Line 1 is a commend, starts with a `#`. Lines 2 and 6 are blanks and can be
 used to improve readability. 
