@@ -121,3 +121,14 @@ might not have appropriate support for drivers, it can't possibly understand
 new hardware. Some distros ship with an older kernel, try to understand how old
 your kernel is and how new your hardware is. Consider using PopOS or Ubuntu,
 they have incredible hardware support.
+
+### Run a Command As It Is By Default (No Aliases) (`\`)
+
+You can bypass any aliases and run the program with its default by using `\`
+before the command. E.g.:
+
+```bash
+\ls
+```
+
+*The backslash escape character before a command disables aliases.*
