@@ -1,10 +1,13 @@
-# The `nl` command
+# `nl` 
 
 [***Table of Contents***](/README.md)
 
-`nl` is used to number lines of files. Resembles `cat -n`:
+`nl` is used to number lines of files (output file contents with a line number
+in front of each line). Resembles `cat -n`:
 
-    nl file.txt
+```bash
+nl file.txt
+```
 
 It accepts multiple files as well as STDIN (just like `cat`). It supports
 markup as well.
@@ -47,7 +50,7 @@ following:
 
 Try creating a file with the following contents:
 
-```
+```bash
 echo "\:\:\:
 title
 \:\:
@@ -63,4 +66,6 @@ footer" > file.txt
 
 Now pass its contents to `nl`:
 
-    cat text.txt | nl -s ' ' -w 2 -n rz
+```bash
+cat text.txt | nl -s ' ' -w 2 -n rz
+```
