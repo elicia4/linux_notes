@@ -1,4 +1,4 @@
-# 10 Typical Linux Problems
+# Tips & Tricks
 
 There are notes on [this video,](https://www.youtube.com/watch?v=xsdFNpThetE)
 man pages, and other resources on the Internet.
