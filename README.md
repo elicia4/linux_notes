@@ -5,6 +5,7 @@
 A collection of notes on everything Linux 🐧🐧🐧. 
 
 #### Basics
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [cd](./basics/cd.md) | [touch](./basics/touch.md) | [ls](./basics/ls.md) |
@@ -14,6 +15,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [navigation](./basics/navigation.md) | [history](./basics/history.md) | |
 
 #### Package Management 
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [pkg mgmt](./pkg_mgmt/pkg_mgmt.md) | [apt](./pkg_mgmt/apt.md) | [pacman](./pkg_mgmt/pacman.md) | 
@@ -21,6 +23,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [AUR](./pkg_mgmt/aur.md) | | |
 
 #### General
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [logging](./misc/logging.md) | [data streams](./misc/data-streams.md) | [acc & pass exp](./misc/acc_pass_exp.md) |
@@ -36,6 +39,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | [resources](./misc/resources.md) |
 
 #### Commands 
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [cron](./commands/cron.md) | [find](./commands/find.md) | [htop](./commands/htop.md) |
@@ -50,6 +54,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [type](./commands/type.md) | | |
 
 #### Tools 
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [git](./tools/git/README.md) | [SSH](./tools/ssh/README.md) | [Apache](./tools/apache.md) |
@@ -58,6 +63,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [Ansible](./tools/ansible/01-intro.md) | [Proxmox](./tools/proxmox/ToC.md) | |
 
 #### Text Manipulation
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [cat](./text_manipulation/cat.md) | [sort](./text_manipulation/sort.md) | [uniq](./text_manipulation/uniq.md) |
@@ -70,6 +76,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [aspell](./text_manipulation/aspell.md) | | |
 
 #### Networking 
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [networking](./networking/networking.md) | [ftp](./networking/ftp.md) | [netstat](./networking/netstat.md) |
@@ -79,6 +86,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [iptables](./networking/iptables/iptables.md) | | |
 
 #### Hardware
+
 | | | |
 | :-------: | :-------: | :-------: |
 | [df & du](./hardware/df_du.md) | [LVM](./hardware/lvm.md) | [memory & swap](./hardware/mem_swap.md) |
