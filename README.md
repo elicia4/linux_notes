@@ -52,6 +52,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [last](./commands/last.md) | [ldd](./commands/ldd.md) | [pidof](./commands/pidof.md) |
 | [ps](./commands/ps.md) | [smartctl](./commands/smartctl.md) | [dir & vdir](./commands/dir.md) |
 | [type](./commands/type.md) | [command](./commands/command.md) | [id](./commands/id.md) |
+| [cal](./commands/cal.md) | | |
 
 #### Tools 
 
