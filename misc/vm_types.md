@@ -1,5 +1,10 @@
 # Types of Virtualization
 
+Notes on [this video by Mental
+Outlaw](https://www.youtube.com/watch?v=pUb8vVL5wo0).
+
+[***Table of Contents***](/README.md)  
+
 ### Type 1 Hypervisors and Qubes
 
 Type 1 hypervisors (T1HV) are usually installed on servers in racks you remote
