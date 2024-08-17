@@ -12,14 +12,14 @@ id
 id $USER random_name
 ```
 
-To get the user ID (UID) of the current user:
+To get the user ID (UID) of the (current by default) user:
 
 ```bash
-id -u
+id -u <user>
 ```
 
-To get the username of the current user:
+To get the username of the (current by default) user:
 
 ```bash
-id -un
+id -un <user>
 ```
