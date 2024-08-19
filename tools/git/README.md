@@ -7,3 +7,4 @@
 1. [Learn Git](learn-git.md)
 1. [GitHub Pull Requests](gh-pull-requests.md)
 1. [ProGit](./progit/toc.md)
+1. [Tags](./git_tag.md)
