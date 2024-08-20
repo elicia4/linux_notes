@@ -69,4 +69,10 @@ Accepted password for <username> from <IP> port <port-number>
 and that the `session opened for user <username> ...`.  If a user can't connect
 with `ssh`, you will know the exact reason why they can't.
 
+You can connect with a non-default shell with the `-t` option:
+
+```bash
+ssh <user>@<host> -p <port> -t /bin/sh
+```
+
 [***Next Note***](./03-configuring-the-openssh-client.md)
