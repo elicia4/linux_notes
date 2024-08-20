@@ -29,7 +29,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [logging](./misc/logging.md) | [data streams](./misc/data-streams.md) | [acc & pass exp](./misc/acc_pass_exp.md) |
 | [bg and fg](./misc/bg_fg.md) | [manage groups](./misc/group_mgmt.md) | [manage users](./misc/user_mgmt.md)|
 | [public key auth](./misc/pub_key.md) | [symbolic links](./misc/sym_links.md) | [custom prompt](./misc/custom_prompt.md) |
-| [permissions](./misc/permissions.md) | [connect via SSH](./misc/connect_via_ssh.md) | [hostname](./misc/hostname.md) |
+| [permissions](./misc/permissions.md) | [virtualization types](./misc/vm_types.md) | [hostname](./misc/hostname.md) |
 | [file archiving](./misc/archiving.md) | [load averages](./misc/load_avg.md) | [$PATH](./misc/path.md) |
 | [server naming](./misc/srv_naming.md) | [inodes](./misc/inodes.md) | [bash shortcuts](./misc/shortcuts.md) |
 | [wildcards](./misc/wildcards.md) | [command help](./misc/cmd_help.md) | [monitoring](./misc/monitoring.md) |
@@ -37,7 +37,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [document formatting](./misc/doc_format.md) | [printing](./misc/printing.md) | [niceness](./misc/niceness.md) |
 | [building from source](./misc/building/ToC.md) | [file types](./misc/file_types.md) | [tips & tricks](./misc/tips_and_tricks.md) |
 | [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | [resources](./misc/resources.md) |
-| [RSS with `newsfeed`](./misc/rss.md) | [virtualization types](./misc/vm_types.md) | |
+| [RSS with `newsfeed`](./misc/rss.md) | | |
 
 #### Commands 
 
