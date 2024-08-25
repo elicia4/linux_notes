@@ -237,3 +237,11 @@ To correct a search:
 - in execute mode: `/ Ctrl-r /`
 
 Always use `Ctrl-r /`! Really useful!
+
+### A Quick Way to Update a Register
+
+You can put the contents of a register to the current line with `:put
+<register>`, e.g., `:put a`.
+
+You can then the edit the line to whatever you need and save the new string to
+the register like so: `"ayy`. `"a` selects the register, `yy` copies it.
