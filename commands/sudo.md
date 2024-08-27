@@ -11,7 +11,9 @@ able to do it.
 
 To change to another account (root by default):
 
-    su - [user]
+```bash
+su - [user]
+```
 
 Note that not all systems have the root account enabled. But you can get by by
 not using the root account at all by using `sudo`, if you have it properly set
@@ -20,49 +22,65 @@ login.
 
 To execute a command as the superuser without starting a new interactive shell:
 
-    su -c 'ls -l /root/*'
+```bash
+su -c 'ls -l /root/*'
+```
 
 Always use apostrophes (**\'\'**) with this command.
 
 To find out if you have `sudo` installed:
 
-    which sudo
+```bash
+which sudo
+```
 
 Find out what your `sudo` group is on your distribution. Usually it's named
 `sudo` or `wheel`. The `sudoers` file contains that information:
 
-    # if you don't have sudo set up, you will have to switch to root
-    su -
-    cat /etc/passwd
+```bash
+# if you don't have sudo set up, you will have to switch to root
+su -
+cat /etc/passwd
 
-    # if sudo already exists on your system
-    sudo cat /etc/passwd
+# if sudo already exists on your system
+sudo cat /etc/passwd
+```
 
 Find the following lines in the config:
 
-    # Allow members of group sudo to execute any commands
-    %sudo  ALL=(ALL:ALL) ALL
+```bash
+# Allow members of group sudo to execute any commands
+%sudo  ALL=(ALL:ALL) ALL
+```
 
 It can be `wheel` instead of `sudo`.
 
 To add a user to the `sudo` group:
 
-    usermod -aG sudo user
+```bash
+usermod -aG sudo user
+```
 
 To view groups of a local user account:
 
-    groups
+```bash
+groups
+```
 
 To see which permissions you have access to:
 
-    sudo -l
+```bash
+sudo -l
+```
 
 If you have 3 `ALL`'s, you have permission to do anything.
 
 What do you do when you forget to use `sudo` all he time? Start using:
 
-    # !! represents your last command
-    sudo !!
+```bash
+# !! represents your last command
+sudo !!
+```
 
 Now let's take a look at the `/etc/sudoers` file. There are configurations for
 the root user and various `sudo` groups. You can create a new group that has
@@ -80,46 +98,64 @@ Note that you shouldn't edit the file with a "normal" editor, you can break the
 strict formatting and lock yourself out of using the server. There's a special
 command that allows you to edit the file:
 
-    sudo visudo 
+```bash
+sudo visudo 
+```
 
 Add a new line to the `User privilege specification`:
 
-    user   ALL=(ALL:ALL) ALL
+```bash
+user   ALL=(ALL:ALL) ALL
+```
 
 Now save and exit the file, it you made any mistakes, `visudo` will tell you :)
 
 You can create a `user` account if you don't have it already:
 
-    sudo adduser user
+```bash
+sudo adduser user
+```
 
 To switch to `user`:
 
-    sudo su - user
+```bash
+sudo su - user
+```
 
 Again, to see what it can do:
 
-    sudo -l
+```bash
+sudo -l
+```
 
 ...but you want to be more restrictive with `sudo`. Let's restrict `user` to be
 able to do one specific thing:
 
-    user   ALL=(ALL:ALL) /usr/bin/apt
+```bash
+user   ALL=(ALL:ALL) /usr/bin/apt
+```
 
 If you run `apt` now from the `user` account, it will work, but other commands,
 like `reboot`, won't. You can add other commands like so:
 
-    user   ALL=(ALL:ALL) /usr/bin/apt,/usr/bin/rm
+```bash
+user   ALL=(ALL:ALL) /usr/bin/apt,/usr/bin/rm
+```
 
 You can set up `sudo` to not need a password:
 
-    user   ALL=(ALL:ALL) NOPASSWD: /usr/bin/apt,/usr/bin/rm
+```bash
+user   ALL=(ALL:ALL) NOPASSWD: /usr/bin/apt,/usr/bin/rm
+```
 
 Note that this lowers your security. 
 
 If you make a mistake, you will be prompted with:
 
-    >>> /etc/sudoers: syntax error near line 21 <<<
-    What now?
+```bash
+>>> /etc/sudoers: syntax error near line 21 <<<
+What now?
+```
 
 It doesn't tell you what exactly to do. 
 
