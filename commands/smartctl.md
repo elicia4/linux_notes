@@ -43,7 +43,8 @@ There are three types of self-tests that a device can execute:
 limit and with complete disk surface examination;
 - Conveyance: identifies if damage incurred during transportation of the
 device;
-- Selective: tests a range of LBA.
+- Selective: tests a range of LBA (logical block addressing, a scheme for
+specifying the location of data blocks on disks)
 
 `-c` prints which tests a device supports and the approximate execution time of
 each test:
