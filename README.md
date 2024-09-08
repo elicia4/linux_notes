@@ -54,6 +54,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [ps](./commands/ps.md) | [smartctl](./commands/smartctl.md) | [dir & vdir](./commands/dir.md) |
 | [type](./commands/type.md) | [command](./commands/command.md) | [id](./commands/id.md) |
 | [cal](./commands/cal.md) | [lf](./commands/lf.md) | [date](./commands/date.md) |
+| [time](./commands/time.md) | | |
 
 #### Tools 
 
