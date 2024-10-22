@@ -85,8 +85,10 @@ input/output buffering. - B/S tier
 1. `sha1sum` - calculate the SHA1 checksum of a file/stream. Cryptographically
 insecure, avoid using it. Still it can come in handy when you need to verify
 older checksums. A must learn if you're into cryptography. - C/S tier 
+1. `chcon` - change the security context  in the context of SELinux. Used in
+   hardcore computer security. - D/S tier
 1. `runcon` - run a command in a specific security context. Only relevant on
-SELinux. Good for security. - D/S tier.
+SELinux. Good for security. - D/S tier
 1. `sleep` - wait for a specified amount of time without wasting CPU cycles.
 1. `mknod` - create file system nodes like block devices, e.g., `/dev/sda`.
    Great for security. It's one of the ways you can escape a `chroot`
