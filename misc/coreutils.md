@@ -1,8 +1,30 @@
 # The GNU Core Utilities (coreutils)
 
-The GNU Core Utilities or coreutils is a package of GNU software with many
+The GNU Core Utilities (coreutils) is a package of GNU software with many
 basic tools, such as `cat`, `ls`, and `rm`, which are used on Unix-like
 operating systems.
+
+Most of these utilities are required to perform basic tasks on your system.
+Many of them are part of the POSIX (Portable Operating System Interface)
+specification. This means that many of the utilities present in coreutils are
+present on other OS's, such as MacOS and sometimes Windows. Knowledge about
+these commands is transferable to other platforms as well. 
+
+Some of the commands are *not* included in the POSIX specification, such as
+`factor` and `ptx`. Some of the commands are included not because they're
+well-designed or efficient, but because they're extremely backward compatible /
+have some historic significance.
+
+GNU coreutils is one of the most widely used implementations of `coreutils`.
+However, there are other implementations, such as:
+- busybox, a single executable minimalist implementation designed for embedded
+systems.
+- bsdutils, a collection of coreutils-like utilities from the BSD source code
+tree.
+- uutils coreutils, a rust-based re-implementation of GNU coreutils.
+
+Many of the commands in coreutils can be traced back to the first version of
+Unix, like `cat`, `chmod`, `chown` and others.
 
 This documents is my own written version of a [video by
 RobertElderSoftware](https://www.youtube.com/watch?v=2oGLlG3Whfk), it describes
