@@ -231,5 +231,6 @@ time.
    from the mainframe era that could be described as the first social network.
    Useless.
 1. `nl` - number lines in a file. DOES NOT NUMBER BLANK LINES BY DEFAULT.
-   Usually, this is undesired. There's a flag that allows such functionality.
-   Supports a number of unusual flags and options. `cat -n` is preferred.
+   Usually, this is undesired. There's a flag that allows such functionality:
+   `nl -b a filename`. Supports a number of unusual flags and options. `cat -n`
+   is preferred.
