@@ -12,7 +12,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [cat](./text_manipulation/cat.md) | [echo](./basics/echo.md) | [man](./basics/man.md) |
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
 | [distributions](./basics/distro.md) | [DE's](./basics/de.md) | [updating](./basics/updating.md) |
-| [navigation](./basics/navigation.md) | [history](./basics/history.md) | |
+| [navigation](./basics/navigation.md) | [history](./basics/history.md) | [pwd](./basics/pwd.md) |
 
 #### Package Management 
 
