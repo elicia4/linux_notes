@@ -20,10 +20,10 @@ To output results in the long listing format:
 ls -l
 ```
 
-This gives you a lot more information.
+This gives you a lot more information (ownership, permissions, etc.)
 
-To give information about a specific directory, provide the path to it as an
-argument:
+To get information about a specific directory, provide the path to it (either
+absolute or relative) as an argument:
 
 ```bash
 ls -l /home
@@ -94,6 +94,12 @@ use `-r`:
 
 ```bash
 ls -lhtr
+```
+
+To list ALL files ordered by their modification date (latest file last):
+
+```bash
+ls -latr
 ```
 
 To sort files by file size, use `-S`:
