@@ -1,15 +1,37 @@
-# The `cp` command
+# `cp`
 
 [***Table of Contents***](/README.md)
 
 The `cp` command is used to copy files and directories. It can be used in two
 ways. The following copies `item1` to `item2`:
 
-    cp item1 item2
+```bash
+cp item1 item2
+```
 
 The following copies multiple items into a directory:
 
-    cp item ... directory
+```bash
+cp item ... directory
+```
+
+`-r` to copy directories:
+
+```bash
+cp -r dir1 dir2
+```
+
+`-p` to preserve permission and ownership information:
+
+```bash
+cp -p fayle1.txt fayle2.txt
+```
+
+`-n` to NOT overwrite existing files while copying:
+
+```bash
+cp -n new_file.txt existing_file.txt
+```
 
 The `cp` command has the following options:
 
