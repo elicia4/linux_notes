@@ -1,17 +1,33 @@
-# The `rm` command
+# `rm`
 
 [***Table of Contents***](/README.md)
 
-The `rm` is used to remove files or directories:
+`rm` is used to remove files or directories:
 
-    rm item ...
+```bash
+rm item ...
+```
 
 ***WARNING***: Incorrect use of `rm` can be devastating. Whenever you use
 wildcards with `rm`, test the wildcard first with `ls`. This will let you see
 the files that will be deleted.
 
-The options of `rm` are similar to those of `cp` and `mv`:
+`-r` to delete a directory:
 
+```bash
+rm -r directory
+```
+
+`-f` to ignore prompts about write-protected files (and others):
+
+```bash
+rm -f protected.txt
+```
+
+You can only delete a file if you have write & execute permissions on the
+directory that contains the file.
+
+`rm` options are similar `cp` and `mv` ones:
 - `-i` prompts the user for confirmation before deleting an existing file. If
   this option is not specified, `rm` will **silently** delete files. When
   working with sensetive data, remember to use this option.
