@@ -57,6 +57,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [cal](./commands/cal.md) | [lf](./commands/lf.md) | [date](./commands/date.md) |
 | [time](./commands/time.md) | [dd](./commands/dd.md) | [pass](./commands/pass.md) |
 | [dmesg](./commands/dmesg.md) | [mc](./commands/mc.md) | [ln](./commands/ln.md) |
+| [mktemp](./commands/mktemp.md) | | |
 
 #### Tools 
 
