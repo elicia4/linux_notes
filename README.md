@@ -58,7 +58,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [time](./commands/time.md) | [dd](./commands/dd.md) | [pass](./commands/pass.md) |
 | [dmesg](./commands/dmesg.md) | [mc](./commands/mc.md) | [ln](./commands/ln.md) |
 | [mktemp](./commands/mktemp.md) | [realpath](./commands/realpath.md) | [dirname](./commands/dirname.md) |
-| [basename](./commands/basename.md) | | |
+| [basename](./commands/basename.md) | [md5sum](./commands/md5sum.md) | |
 
 #### Tools 
 
