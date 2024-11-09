@@ -1,14 +1,12 @@
-# The `time` command
+# `time`
 
 [***Table of Contents***](/README.md)
 
 You can measure how much a command/script/program takes with this command.
 
-For example you can time your Ansible provision runs with it. 
-
 `time` runs the specified program command with the given arguments. When it
-finishes, `time` writes a message to STDOUT giving timing statistics about this
-program run.
+finishes, `time` writes a message to STDOUT giving timing statistics about the
+run.
 
 ```bash
 time ls
@@ -24,7 +22,7 @@ time sudo apt dist-upgrade
 # time sudo dnf update etc.
 ```
 
-You can time a download of something:
+You can time a download:
 
 ```bash
 time wget \ 
@@ -57,4 +55,4 @@ Why are there two `time` commands?
 - one is a shell built-in
 - the external command
 
-Any time you want time something `time` is a great way to do it! :)
+Any time you want time something, `time` is a great way to do it! :)
