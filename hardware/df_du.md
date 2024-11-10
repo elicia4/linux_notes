@@ -1,4 +1,4 @@
-# The `df` and `du` commands
+# `df` and `du`
 
 Notes taken on the "Linux Crash Course - The `df` and `du` Commands" video by
 LearnLinuxTV.
@@ -9,20 +9,36 @@ LearnLinuxTV.
 
 ### df
 
-`df` stands for "disk free". It shows you how much disk space you have free. To
-show `df` disk sizes in human-readable format:
+`df` stands for "disk free". It shows you how much disk space your filesystems
+are using:
+
+```bash
+df
+```
+
+It shows you a listing of all of your filesystems. Many of these filesystems
+such as `loop` and `tmpfs` are used for system purposes.
+
+To show `df` disk sizes in human-readable format:
 
 ```bash
 df -h
 ```
 
+A list of partitions can be provided to see usage information for only those
+FS's:
+
+```bash
+df -h /dev/sda1 /dev/sda5 /dev/sdc1
+```
+
 The output is broken down into columns, the are self-explanatory:
-- Filesystem - the filesystem path
-- Size - total size of the disk
-- Used - total used size
-- Avail - the amount of storage that is available for use
-- Use% - the percentage of the disk that is full
-- Mounted on - the location where the filesystem is mounted
+- `Filesystem` - the filesystem path
+- `Size` - total size of the disk
+- `Used` - total used size
+- `Avail` - the amount of storage that is available for use
+- `Use%`- the percentage of the disk that is full
+- `Mounted on` - the location where the filesystem is mounted
 
 Whatever storage you have attached to your system will be shown in the output 
 of `df`. 
@@ -69,7 +85,7 @@ df -h --total
 ```
 
 You may also be running out of inodes (on most filesystems, they are
-preallocated):
+preallocated). Use `-i` to see inode usage:
 
 ```bash
 df -i
@@ -80,17 +96,26 @@ take up the most amount of space.
 
 ### du
 
-To get the full picture, you should use `du`. To show information about a
-particular directory:
+This command is used to show the amount of disk space taken up by parts of your
+filesystem.
+
+To show information about a particular file/directory:
 
 ```bash
 du /home/username
 ```
 
-The output is quite messy by default. To get human-readable numbers:
+By default, the amount of disk space used is printed in KB. To print sizes in
+human readable format (Megabytes, Gigabytes etc.):
 
 ```bash
 du -h /home/username
+```
+
+You can specify multiple arguments:
+
+```bash
+du -h file1 dir/file2
 ```
 
 To give `du` a maximum depth, the number of directories deep `du` will go:
@@ -99,7 +124,7 @@ To give `du` a maximum depth, the number of directories deep `du` will go:
 du -h --max-depth 1 /home/username
 ```
 
-Try using the summary option (`-s`):
+Try using the summary option (`-s`) to omit the printing of subdirectories:
 
 ```bash
 du -hs /home/username
@@ -132,6 +157,18 @@ du -hsc *
 
 This will you information about each file/dir in that directory and list the 
 total space.
+
+To find the 5 largest files in the current working directory:
+
+```bash
+find . -type f -exec du {} \; | sort -n | tail -n 5
+```
+
+To list the 5 largest files/directories:
+
+```bash
+du -a | sort -n | tail -n 5
+```
 
 ### ncdu
 
