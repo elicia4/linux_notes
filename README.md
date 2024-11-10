@@ -59,7 +59,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [dmesg](./commands/dmesg.md) | [mc](./commands/mc.md) | [ln](./commands/ln.md) |
 | [mktemp](./commands/mktemp.md) | [realpath](./commands/realpath.md) | [dirname](./commands/dirname.md) |
 | [basename](./commands/basename.md) | [md5sum](./commands/md5sum.md) | [timeout](./commands/timeout.md) |
-| [chroot](./commands/chroot.md) | | |
+| [chroot](./commands/chroot.md) | [whoami](./commands/whoami.md) | |
 
 #### Tools 
 
