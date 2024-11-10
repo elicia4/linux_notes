@@ -41,7 +41,12 @@ uname -n
 ```
 
 `hostname` is more standard for that, `hostnamectl` give you even more
-information.
+information:
+
+```bash
+hostname
+hostnamectl
+```
 
 To find out your CPU architecture (machine hardware name):
 
