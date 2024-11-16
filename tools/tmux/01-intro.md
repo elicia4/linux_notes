@@ -16,38 +16,48 @@ These are notes on `tmux`, a terminal multiplexer.
 
 ### What is `tmux`?
 
-`tmux` is a terminal multiplexer, it allows you to have terminals inside of
-terminals (oversimplification).
+`tmux` is a terminal multiplexer, it enables a number of terminals to be
+created, accessed, and controlled from a single screen.
 
 To see if `tmux` is installed:
 
-    command -v tmux
+```bash
+command -v tmux
+```
 
 On Debian/Ubuntu:
 
-    sudo apt update; sudo apt install tmux
+```bash
+sudo apt update; sudo apt install tmux
+```
 
 To launch `tmux`:
     
-    tmux
+```bash
+tmux
+```
 
-A bar(a footer) should've appeared at the bottom of your screen, it means that
-`tmux` is running. You can enter in all the same commands you normally would,
-there is no difference. If you internet connection drops, your session stays
-persistant, any task you had running will stay running. In addition, you get 
-access to session management, tabs, splits and so on. `tmux` will keep your
-session running even if your `ssh` connection drops, it protects you from
-accidents :).
+A bar (a footer) should've appeared at the bottom of your screen, it means that
+`tmux` is running. You can enter in all the same commands in the shell you
+normally would, there is no difference. If you internet connection to the
+machine drops, your session stays persistent, any task you had running will
+stay running. In addition, you get access to session management, tabs, splits
+and so on. `tmux` will keep your session running even if your `ssh` connection
+drops, it protects you from accidents. :)
 
-Run any command, for example:
+Run any command, e.g.:
 
-    htop
+```bash
+htop
+```
 
 Now you should send the "prefix key". Press `<CTRL+B>`. After that, click `d`.
 You should get a `[detached ...]` message. You are back to your normal session,
 but your `tmux` session didn't disappear. To view running sessions:
 
-    tmux list-sessions
+```bash
+tmux list-sessions
+```
 
 It should show you that you have a session running:
 
@@ -56,14 +66,16 @@ It should show you that you have a session running:
 It is still running in the background. As long as you don't close the session 
 or reboot the server, the `tmux` session will run. To reattach to the session:
 
-    tmux attach
+```bash
+tmux attach
+```
 
 As you can see, `htop` is still running as if nothing happened. 
 
 To do anything in `tmux`, you have to first send the prefix key, by default
 that's `<CTRL+B>`. Then you give `tmux` a command, by sending the prefix key
 you tell `tmux` that what you're about to do should be at the attention of
-`tmux` itself and not the underlying shell. `d` for example, means "detach".
+`tmux` itself and not the underlying shell. For example `d` means "detach".
 
 Practice sending the prefix key.
 

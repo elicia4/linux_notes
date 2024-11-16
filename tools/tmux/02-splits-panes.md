@@ -9,7 +9,9 @@ Those vertical/horizontal splits are called panes.
 
 Start up `tmux`:
 
-    tmux
+```bash
+tmux
+```
 
 To interact with `tmux`, use the prefix key `<CTRL-B>`. To create a vertical
 pane, press `%`. These hotkeys are terrible, you can learn how to customize
@@ -24,11 +26,15 @@ instruction as usual).
 Let's try a hands-on example. Close all of the panes, run `exit` in each one of
 them (or press `<CTRL-D>`):
 
-    exit
+```bash
+exit
+```
 
 See if you have a session:
 
-    tmux list-sessions
+```bash
+tmux list-sessions
+```
 
 1. Run `tmux`
 1. Create a vertical split
