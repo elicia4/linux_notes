@@ -4,20 +4,40 @@ Notes on the video "Linux Crash Course - Managing Groups" by LearnLinuxTV.
 
 [***Table of Contents***](/README.md)  
 
-Every file is owned by a user and group:
+`groups` lists all of the groups that a user belongs to:
+
+```bash
+groups
+```
+
+By default, they are for the current user.
+
+Every file is owned by a user and a group:
     
 ```bash
 ls -l
 ```
 
-To find out which group a user is a member of:
+To output the groups a particular user belongs to:
 
 ```bash
 groups [user]
+# groups postgres
 ```
 
-`groups` by itself will show current user's groups. There's a file similiar to
-`/etc/passwd` but group-related called `/etc/group`. The columns mean:
+The set of groups that a user belongs to will determine if that user has the
+ability to access certain files or system resources. The permission settings
+related to groups can be seen with `ls -l` (5-7 symbols in the permission
+string):
+
+```bash
+ls -l /dev/{input/event0,tty} /etc/shadow some-file.txt
+```
+
+The group a file belongs to is displayed in the 4th column.
+
+There's a file similar to `/etc/passwd`, but group-related called `/etc/group`.
+The columns mean:
 
 1. Name
 1. Group password (nobody uses them and nobody should)
