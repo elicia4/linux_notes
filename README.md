@@ -60,7 +60,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [mktemp](./commands/mktemp.md) | [realpath](./commands/realpath.md) | [dirname](./commands/dirname.md) |
 | [basename](./commands/basename.md) | [md5sum](./commands/md5sum.md) | [timeout](./commands/timeout.md) |
 | [chroot](./commands/chroot.md) | [whoami](./commands/whoami.md) | [hostname](./commands/hostname.md) |
-| [su](./commands/su.md) | | |
+| [su](./commands/su.md) | [env](./commands/env.md) | |
 
 #### Tools 
 
