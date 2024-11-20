@@ -61,7 +61,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [basename](./commands/basename.md) | [md5sum](./commands/md5sum.md) | [timeout](./commands/timeout.md) |
 | [chroot](./commands/chroot.md) | [whoami](./commands/whoami.md) | [hostname](./commands/hostname.md) |
 | [su](./commands/su.md) | [env](./commands/env.md) | [base32](./commands/base32.md) |
-| [base64](./commands/base64.md) | [chmod](./commands/chmod.md) | |
+| [base64](./commands/base64.md) | [chmod](./commands/chmod.md) | [nohup](./commands/nohup.md) |
 
 #### Tools 
 
