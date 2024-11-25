@@ -62,7 +62,8 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [chroot](./commands/chroot.md) | [whoami](./commands/whoami.md) | [hostname](./commands/hostname.md) |
 | [su](./commands/su.md) | [env](./commands/env.md) | [base32](./commands/base32.md) |
 | [base64](./commands/base64.md) | [chmod](./commands/chmod.md) | [nohup](./commands/nohup.md) |
-| [b2sum](./commands/b2sum.md) | [chown](./commands/chown.md) | |
+| [b2sum](./commands/b2sum.md) | [chown](./commands/chown.md) | [sha512sum](./commands/sha512sum.md) |
+| [sha256sum](./commands/sha256sum.md) | | |
 
 #### Tools 
 
