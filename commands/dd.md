@@ -1,8 +1,48 @@
-# The `dd` command
+# `dd`
 
 [***Table of Contents***](/README.md)
 
-According to `man dd`, the command is used to "convert and copy a file".
+**!!! WARNING !!!**
+**!!! THIS COMMAND IS DESTRUCTIVE !!!**
+
+It's used to copy large blocks of data.
+
+It can be used to copy ordinary files:
+
+```bash
+dd if=example.txt of=my_copy.txt
+```
+
+But it's mostly used to create back up images of hard drives:
+
+```bash
+sudo dd if=/dev/sdX of=my-image.img status=progress
+# this will create a disk image 'my-image.img' of the '/dev/sdc' block device
+# 'status=progress' shows transfer statistics
+```
+
+The image file can be copied back to the hard disk to exactly restore the
+previous state by swapping the order of the input and output files:
+
+```bash
+# BE CAREFUL
+sudo dd if=my-image.img of=/dev/sdX status=progress
+```
+
+It can also be used to create large files for testing purposes:
+
+```bash
+dd if=/dev/zero of=file-with-zeros bs=1M count=1
+# this will create a 1M file filled with zeros
+```
+
+To create a 10G file filled with random data:
+
+```bash
+dd if=/dev/urandom of=random-data.dat bs=1M count=10240 status=progress
+ls -l random-data.dat
+head -c 256 random-data.dat | xxd
+```
 
 There's a lot you can do with it:
 - securely wipe a drive
