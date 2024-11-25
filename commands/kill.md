@@ -2,7 +2,7 @@
 
 [***Table of Contents***](/README.md)
 
-By default, the command is used to terminate processes:
+By default, the command is used to terminate ('kill') running processes:
 
 ```bash
 xlogo &
@@ -11,8 +11,7 @@ kill 132 # kill %1 would work too
 # [1]    132 terminated  xlogo
 ```
 
-You can specify the process you want to kill with either its PID or its
-jobspec.
+You can specify the process you want to kill with either its PID/jobspec.
 
 What the command does is send processes signals, it's one of the ways the OS
 interacts with programs. When you use `CTRL-z`, you send a `TSTP`, or "terminal
