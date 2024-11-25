@@ -1,19 +1,35 @@
-# The `wc` command
+# `wc`
 
 [***Table of Contents***](/README.md)
 
-`wc` prints newline, word, and byte counts for each file:
+`wc` prints newline, word, and byte counts for each file. By default, it prints
+out all three:
 
-    wc file
+```bash
+wc file
+```
 
 By default, it will output all three numbers. To limit output only to lines:
 
-    wc -l file
+```bash
+wc -l file
+```
 
-Only words:
+To count words:
 
-    wc -w file
+```bash
+wc -w file
+```
 
-Only bytes:
+To count bytes:
 
-    wc -c file
+```bash
+wc -c file
+```
+
+You can run the command on multiple files at once to see individual and
+aggregate counts:
+
+```bash
+wc -l story.txt main.c
+```
