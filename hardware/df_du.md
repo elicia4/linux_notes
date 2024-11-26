@@ -26,7 +26,7 @@ df -h
 ```
 
 A list of partitions can be provided to see usage information for only those
-FS's:
+filesystems:
 
 ```bash
 df -h /dev/sda1 /dev/sda5 /dev/sdc1
@@ -106,7 +106,7 @@ du /home/username
 ```
 
 By default, the amount of disk space used is printed in KB. To print sizes in
-human readable format (Megabytes, Gigabytes etc.):
+human readable format (mebibytes, gibibytes, etc.):
 
 ```bash
 du -h /home/username
@@ -164,7 +164,7 @@ To find the 5 largest files in the current working directory:
 find . -type f -exec du {} \; | sort -n | tail -n 5
 ```
 
-To list the 5 largest files/directories:
+It can also be done like so:
 
 ```bash
 du -a | sort -n | tail -n 5
