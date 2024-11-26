@@ -1,23 +1,46 @@
-# The `uniq` command
+# `uniq`
 
 [***Table of Contents***](/README.md)
 
-Say you had a sorted list `list.txt` with duplicate lines, to remove the
+It can be used to find a unique set of lines in a file. `uniq` will only give
+correct results when the input lines have been presorted, use `sort` to achieve
+that.
+
+Say you had a file `list.txt` with duplicate lines, to remove the
 duplicates:
 
-    cat list.txt | sort | uniq    
+```bash
+sort list.txt | uniq    
+```
 
 To only see the duplicates, use `-d`:
 
-    cat list.txt | sort | uniq -d
+```bash
+sort list.txt | uniq -d
+```
+
+`-u` to output only unique lines:
+
+```bash
+sort list.txt | uniq -u
+```
+
+`-c` to show a count for the number of occurrences of each line:
+
+```bash
+sort list.txt | uniq -c
+```
+
+Because of capitalization differences, the command might not work as a user
+intends it to. Use `-i` to ignore case:
+
+```bash
+sort list.txt list2.txt list_capitalized.txt | uniq -i
+```
 
 `uniq` options:
-- `-c` - output a list of duplicate lines preceded by the number of times the
-  line occurs.
 - `-d` - output only repeated lines
 - `-f n` - ignore `n` leading fields in each line. Fields are separated by
   whitespace as they are in `sort`; however, unlike `sort`, `uniq` has no
   option for setting an alternate field separator
-- `-i` - ignore case
 - `-s n` - skip the leading `n` characters of each line
-- `-u` - output only unique lines
