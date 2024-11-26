@@ -13,6 +13,9 @@ ls /usr/bin | tee ls-contents.txt | grep -i .sh
 `tee` will redirect the output of `ls /usr/bin` to `ls-contents.txt` and pass
 standard output along to `grep`.
 
+The program is also useful whenever you want to monitor the output of a command
+as well as redirect it to a file.
+
 Another example on Debian/Ubuntu:
 
 ```bash
@@ -58,3 +61,10 @@ ls | tee -a file.txt
 ```
 
 This way, you can keep appending to a log file.
+
+`tee` also supports flags that influence its behavior while handling signals:
+
+```bash
+./program | tee -a activity.log | head -n 3
+./program | tee --output-error=warn -a activity.log | head -n 3
+```
