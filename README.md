@@ -65,7 +65,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [b2sum](./commands/b2sum.md) | [chown](./commands/chown.md) | [sha512sum](./commands/sha512sum.md) |
 | [sha256sum](./commands/sha256sum.md) | [sync](./commands/sync.md) | [mkfifo](./commands/mkfifo.md) |
 | [test](./commands/test.md) | [stdbuf](./commands/stdbuf.md) | [sha1sum](./commands/sha1sum.md) |
-| [sleep](./commands/sleep.md) | [mknod](./commands/mknod.md) | |
+| [sleep](./commands/sleep.md) | [mknod](./commands/mknod.md) | [chcon](./commands/chcon.md) |
 
 #### Tools 
 
