@@ -1,8 +1,9 @@
-# The `uptime` command
+# `uptime`
 
 [***Table of Contents***](/README.md)
 
-To see how long the system has been running (and other things):
+To see how long the system has been running since it booted up (and other
+things):
 
 ```bash
 uptime
@@ -18,7 +19,7 @@ To see only the time the system has been up in a better format:
 uptime -p
 ```
 
-To see since when the system has been up:
+To see when the system was started:
 
 ```bash
 uptime -s
