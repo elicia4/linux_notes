@@ -13,7 +13,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [cp](./basics/cp.md) | [mv](./basics/mv.md) | [rm](./basics/rm.md) |
 | [distributions](./basics/distro.md) | [DE's](./basics/de.md) | [updating](./basics/updating.md) |
 | [navigation](./basics/navigation.md) | [history](./basics/history.md) | [pwd](./basics/pwd.md) |
-| [mkdir](./basics/mkdir.md) | | |
+| [mkdir](./basics/mkdir.md) | [rmdir](./basics/rmdir.md) | |
 
 #### Package Management 
 
