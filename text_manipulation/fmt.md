@@ -1,28 +1,60 @@
-# The `fmt` command
+# `fmt`
 
 [***Table of Contents***](/README.md)
 
-`fmt` is a simple text formatter. It accepts files and STDIN. 
+It can be used to format the spaces and lines in text files:
 
-Create a simple text file:
+```bash
+echo "The     quick       brown        fox." | fmt -u
+# The quick brown fox.
+```
 
-    info fmt > fmt_info.txt
-    cat fmt_info.txt
+It accepts files and STDIN. 
 
-To reformat this text to fit into a 50-character-wide column:
-    
-    fmt -w 50 fmt_info.txt
+Say you have a file that has lines that are way too long, `fmt` can format the
+file so that its lines have a maximum width of 75:
 
-From the `info` page:
+```bash
+cat file.txt | fmt
+# or just simply 'fmt file.txt'
+```
 
-> By default, blank lines, spaces between words, and indentation are
-> preserved in the output; successive input lines with different
-> indentation are not joined; tabs are expanded on input and introduced on
-> output.
+You can also specify the column width with `-w`:
 
-To fix the weird alignment, use the `-c` option:
+```bash
+fmt -w 60 file.txt
+```
 
-    fmt -cw 50 fmt_info.txt
+`-u` enforces uniform spacing:
+
+```bash
+fmt -u file.txt
+```
+
+You can get a slightly more compact result by specifying the goal width instead
+of a fixed width with `-g`:
+
+```bash
+fmt -g 60 -u file.txt
+```
+
+With `-g GOAL` `fmt` initially tries to make lines 'GOAL' characters wide. By
+default, this is 7% shorter than WIDTH.
+
+`-w WIDTH` makes `fmt` fill output lines up to 'WIDTH' characters (default 75
+or 'GOAL' plus 10, if 'GOAL' is provided).
+
+From `info`:
+
+> By default, blank lines, spaces between words, and indentation are preserved
+> in the output; successive input lines with different indentation are not
+> joined; tabs are expanded on input and introduced on output.
+
+To fix the weird alignment, use `-c`:
+
+```bash
+fmt -cw 50 fmt_info.txt
+```
 
 `fmt` options:
 - `-c` - preserve the indentation of the first two lines of a paragraph.
@@ -32,8 +64,9 @@ To fix the weird alignment, use the `-c` option:
   This option can be used to format text in source code comments. For example,
   any programming language or configuration file that uses a `#` character to
   delineate a comment could be formatted by specifying `-p '# '` so that only
-  the comments will be formatted. For example:
-  ```
+  the comments will be formatted. E.g.:
+
+  ```bash
   echo "# This file contains code with comments.
   # This line is a comment. 
   # Followed by another comment line. 
@@ -44,6 +77,7 @@ To fix the weird alignment, use the `-c` option:
   cat fmt_code # cat the origin version out
   fmt -w 50 -p '# ' fmt-code.txt # format the comments, leave code untouched
   ```
+
 - `-s` - split-only mode. In this mode, lines will only be split to fit the
   specified column width. Short lines will not be joined to fill lines. This
   mode is useful when formatting text such as code where joining is not
