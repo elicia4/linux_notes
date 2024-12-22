@@ -70,6 +70,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [false](./commands/false.md) | [logname](./commands/logname.md) | [fold](./commands/fold.md) |
 | [expr](./commands/expr.md) | [comm](./commands/comm.md) | [split](./commands/split.md) |
 | [install](./commands/install.md) | [shuf](./commands/shuf.md) | [tty](./commands/tty.md) |
+| [users](./commands/users.md) | | |
 
 #### Tools 
 
