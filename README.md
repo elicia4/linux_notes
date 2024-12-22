@@ -69,6 +69,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [runcon](./commands/runcon.md) | [od](./commands/od.md) | [true](./commands/true.md) |
 | [false](./commands/false.md) | [logname](./commands/logname.md) | [fold](./commands/fold.md) |
 | [expr](./commands/expr.md) | [comm](./commands/comm.md) | [split](./commands/split.md) |
+| [install](./commands/install.md) | | |
 
 #### Tools 
 
