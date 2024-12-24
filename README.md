@@ -73,7 +73,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [users](./commands/users.md) | [stty](./commands/stty.md) | [readlink](./commands/readlink.md) |
 | [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | [seq](./commands/seq.md) |
 | [\[](./commands/[.md]) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
-| [tac](./commands/tac.md) | | |
+| [tac](./commands/tac.md) | [chgrp](./commands/chgrp.md) | |
 
 #### Tools 
 
