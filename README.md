@@ -71,7 +71,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [expr](./commands/expr.md) | [comm](./commands/comm.md) | [split](./commands/split.md) |
 | [install](./commands/install.md) | [shuf](./commands/shuf.md) | [tty](./commands/tty.md) |
 | [users](./commands/users.md) | [stty](./commands/stty.md) | [readlink](./commands/readlink.md) |
-| [yes](./commands/yes.md) | | |
+| [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | |
 
 #### Tools 
 

@@ -5,7 +5,7 @@
 It's used to compute the SHA-256 checksum of a file or stream:
 
 ```bash
-sha512sum file.txt
+sha256sum file.txt
 ```
 
 As of 2023, SHA-256 is the most commonly used member of the SHA-2 family of
@@ -28,6 +28,6 @@ All of the SHA family checksum commands support the same flags and features,
 such as reading from STDIN or verifying checksums in a file:
 
 ```bash
-echo "Hello World!" | sha512sum
-sha512sum -c sha512-checksums.txt
+echo "Hello World!" | sha256sum
+sha256sum -c sha256-checksums.txt
 ```
