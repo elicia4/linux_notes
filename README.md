@@ -72,7 +72,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [install](./commands/install.md) | [shuf](./commands/shuf.md) | [tty](./commands/tty.md) |
 | [users](./commands/users.md) | [stty](./commands/stty.md) | [readlink](./commands/readlink.md) |
 | [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | [seq](./commands/seq.md) |
-| [\[](./commands/[.md]) | | |
+| [\[](./commands/[.md]) | [numfmt](./commands/numfmt.md) | |
 
 #### Tools 
 
