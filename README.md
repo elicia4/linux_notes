@@ -74,7 +74,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | [seq](./commands/seq.md) |
 | [\[](./commands/[.md]) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
 | [tac](./commands/tac.md) | [chgrp](./commands/chgrp.md) | [truncate](./commands/truncate.md) |
-| [factor](./commands/factor.md) | | |
+| [factor](./commands/factor.md) | [set](./commands/set.md) | |
 
 #### Tools 
 
