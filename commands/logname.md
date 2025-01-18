@@ -41,7 +41,7 @@ cannot be determined.
 
 So:
 - `logname` returns the user that's logged in on the terminal
-- `whoam` returns the current effective user
+- `whoami` returns the current effective user
 
 `logname` provides the user of the currently attached terminal, `whoami`
 provides the user associated with the current process. The distinction is
