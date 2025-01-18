@@ -21,12 +21,12 @@ There are `PID`, `TTY`, `TIME`, and `CMD` fields:
 Most processes run on a `TTY`, a terminal that gets input and manages the
 output. A terminal is the method of interacting with the server. `pts` is a
 virtual (pseudo) terminal device. A server can run multiple TTY sessions (1-7).
-You can switch to them with `Ctrl-Alt-F1`-`Ctrl-Alt-F7`. 
+You can switch to them with `Ctrl-Alt-F1`-`Ctrl-Alt-F7`. Each function key
+represents a specific TTY. 
 
-Each function key represents a specific TTY. Processes you start on TTYs show
-up in the output as `tty`, e.g. `tty2` or `tty4`. Processes you start in a
-terminal emulator will show as `pts`, because they're not running in an actual
-TTY, but rather a pseudo-TTY.
+Processes you start on TTYs show up in the output as `tty`, e.g. `tty2` or
+`tty4`. Processes you start in a terminal emulator will show as `pts`, because
+they're not running in an actual TTY, but rather a pseudo-TTY.
 
 Without options, `ps` only shows the commands that are running by the user who
 called it as part of the particular terminal session you run it in.
@@ -46,7 +46,8 @@ to list all processes when used together with the `a` option:
 ps x
 ```
 
-If a process was started by the system, it will show a `?` in the `TTY` field.
+If a process was started by the system, that will be indicated by a `?` in the
+`TTY` field.
 
 We also have a new column this time named `STAT`, it's short for "state".
 Process state codes:
@@ -62,9 +63,9 @@ Process state codes:
 - `Z` - (defunct), a "zombie" process, a child process that has terminated but
   has not (yet) been cleaned up by its parent. If it remains in list for a long
   time, it can be manually terminated;
-- `<` - high-priority process, with a high niceness value. The higher the
-  value, the less nice the process is;
-- `N` - low-priority process, with a low niceness value;
+- `<` - high-priority process, with a low niceness value. The lower the
+  niceness, the less nice the process is, the higher its priority;
+- `N` - low-priority process, with a high niceness value;
 - `W` - paging, not used anymore.
 
 To list all processes with a terminal (`tty`) (or all processes with `x`):
