@@ -83,7 +83,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [git](./tools/git/README.md) | [SSH](./tools/ssh/README.md) | [Apache](./tools/apache.md) |
 | [Bash](./tools/bash/README.md) | [systemd](./tools/systemd/README.md) | [Docker](./tools/docker/README.md) |
 | [vim](./tools/vim/ToC.md) | [nano](./tools/nano.md) | [tmux](./tools/tmux/01-intro.md) |
-| [Ansible](./tools/ansible/01-intro.md) | [Proxmox](./tools/proxmox/ToC.md) | |
+| [Ansible](./tools/ansible/01-intro.md) | [Proxmox](./tools/proxmox/ToC.md) | [lazygit](./tools/lazygit.md) |
 
 #### Text Manipulation
 
