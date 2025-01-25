@@ -52,6 +52,29 @@ To commit:
 1. go to `[4] Commits`
 1. select the commit you would like to reword
 1. press `r`
+1. create a new commit message
+
+### Creating a Branch
+
+1. go to `[3] Local branches`
+1. create a new branch with `n`
+1. enter its name
+1. `lazygit` will automatically checkout the branch
+
+### Switching to a Branch
+
+1. go to `[3] Local branches`
+1. select the needed branch
+1. `space` to switch to it
+
+### Merging a Branch
+
+1. go to `[3] Local branches`
+1. switch to the `main/master` branch
+1. move to the (don't checkout) needed branch
+1. `M` to merge
+1. `m` to do a regular merge
+
 ### Useful Links 
 
 - [Documentation](https://github.com/jesseduffield/lazygit/tree/master/docs)
