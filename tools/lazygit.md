@@ -32,6 +32,11 @@ To commit:
 - `c`
 - enter the commit message
 
+### Pushing & Pulling
+
+- `P` to push
+- `p` to pull
+
 ### Amending the Last Commit
 
 1. do whatever changes you want, e.g., to add more files:
