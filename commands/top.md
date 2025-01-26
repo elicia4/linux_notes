@@ -7,7 +7,7 @@ documentation.
 
 It's installed by default on most Linux distributions. It's a monitoring
 utility, you can see what processes are running, how many resources (CPU and
-memory) are used and so on.
+memory) are used etc.
 
 Basic usage:
 
@@ -17,13 +17,13 @@ top
 
 The output is updates every 3 seconds by default. Every time it updates, it
 shows the current snapshot of the resource usage on your system. If you're
-experiencing a resource contention, the `top` command is a great place to
-start. `q` to quit.
+experiencing a resource contention, `top` is a great place to start. `q` to
+quit.
 
 `top` is split into 2 main sections. You have statistics at the top and the
 process table at the bottom. 
 
-### The Statistics Section 
+## The Statistics Section 
 
 The first line is filled with: 
 
@@ -45,37 +45,50 @@ when they need something.
 - stopped tasks are tasks that are in the process of closing down. 
 - zombie processes
 
+### Zombie Process
+
 What is a zombie process? A child process is one that was started by another
 process, you can see them by pressing `<Shift + V>`. You can see relationships
-between child and parent processes now. At the top on the right, you can
-probably see `systemd`, it makes sense since it's an init system, it's the
-first process that runs and it schedules the other processes. Virtually
-everything is the child process of `systemd`. But it's not the only process
-that can spawn other processes. But what does it have to do with zombie
-processes? When a child process is closed, it waits for final instructions from
-its parent in order to free up resources, so what happens is when a child
-process gets finished it becomes a zombie, it waits for its parent to release
-it and remove it from the system. However, if a parent process is closed and
-the child process is still running and it is waiting for instructions from a
-process that no longer exists, then it can become an orphan. It will stay
-running forever because there's nothing to give it final instructions, it's
-never going to happen. Mostly, zombie processes don't take up much resources on
-the system and are not a cause for alarm. A simple solution is to reboot the
-system, that will clean all processes.
+between child and parent processes now. 
 
-The third line has to do with CPU statistics. `us` means user space, `sy`
-refers to kernel space (`sy` means system but it's about the kernel), they are
-directly related to each other. User space is where programs run, anything that
-is not directly tied to the kernel is running in user space. The percentage
-that you see is the percentage of time your CPU has been used to process tasks
-within that category. `ni` stands for niceness, it refers to priority or the
-nice value of a process. You can configure the niceness value of a process to
-alter its scheduling priority on the CPU. You might be running something on
-your machine that is super important and you want to make sure that the CPU is
-paying special attention to that process, in that case you might want to
-configure the niceness value of that process to increase its priority. In
-regards to `top`, the field shows the percentage of time the CPU has spent
-running processes that were configured with a custom niceness value.
+At the top on the right, you can probably see `systemd`, it makes sense since
+it's an init system, it's the first process that runs and it schedules the
+other processes. Virtually everything is the child process of `systemd`. It's
+not the only process that can spawn other processes. 
+
+But what does it have to do with zombie processes? When a child process is
+closed, it waits for final instructions from its parent in order to free up
+resources, so what happens is when a child process gets finished it becomes a
+zombie, it waits for its parent to release it and remove it from the system.
+
+However, if a parent process is closed and the child process is still running
+and is waiting for instructions from a process that no longer exists, then
+it can become an orphan. It will stay running forever because there's nothing
+to give it final instructions, it's never going to happen. 
+
+Mostly, zombie processes don't take up much resources on the system and are not
+a cause for alarm. A simple solution is to reboot the system, that will clean
+all processes.
+
+### CPU Statistics
+
+The third line has to do with CPU statistics:
+- `us` means user space, 
+- `sy` refers to kernel space (`sy` means system but it's about the kernel), 
+they are directly related to each other. 
+
+User space is where programs run, anything that is not directly tied to the
+kernel is running in user space. The percentage that you see is the percentage
+of time your CPU has been used to process tasks within that category. 
+
+`ni` stands for niceness, it refers to the priority or the nice value of a
+process. You can configure the niceness value of a process to alter its
+scheduling priority on the CPU. You might be running something on your machine
+that is super important and you want to make sure that the CPU is paying
+special attention to that process, in that case you might want to configure the
+niceness value of that process to increase its priority. In regards to `top`,
+the field shows the percentage of time the CPU has spent running processes that
+were configured with a custom niceness value.
 
 - `id` is for "idle". It shows how much time the CPU has been idle for, the
 higher the number, the less busy the system generally is.
@@ -100,7 +113,7 @@ locked. Unused memory is wasted memory.
 The last line is all about swap. It's memory that is located on your hard
 drive, it's a lot slower when compared to RAM. The less swap used, the better.
 
-### The Process Table
+## The Process Table
 
 You can see the process ID (`PID`), the user that's running the process
 (`USER`), the niceness value or the priorty of the task (`NI`), the total
@@ -119,10 +132,9 @@ should always try to kill a process normally without resorting to that, but if
 you can't this is a solution. To change the update frequency of `top`, press
 `d`. You get `Change delay from 3.0 to`, enter your desired delay. 
 
-### Most Important Things
+## Most Important Things
 
-Focus on these fields, they are important.
-
+Focus on these fields, they are important:
 - Uptime
 - Load average
 - The idle field `id`, and underused/overused server can be a problem, the
@@ -131,7 +143,7 @@ Focus on these fields, they are important.
   memory
 - Memory
 
-### Misc
+## Misc
 
 - `htop` is also a great monitoring solution, but it's not as widely available
 by default as `top`.
