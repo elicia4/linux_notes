@@ -6,7 +6,7 @@ man pages.
 [***Table of Contents***](/README.md)
 
 Load averages help us understand how busy our servers or workstations are. They
-represent the number of processes that need the CPU at the given time interval.
+represent the number of processes that need the CPU at a given time interval.
 
 To show load averages, you can use multiple commands:
 
@@ -16,13 +16,13 @@ cat /proc/loadavg
 htop # top right by default
 ```
 
-1. load over the past 1 minute
+1. load over the past minute
 1. load over the past 5 minutes
 1. load over the past 15 minutes
 
 In `/proc/loadavg` there are two more fields: 
 
-4. two numbers separated by a slash (/): the number of currently runnable
+1. two numbers separated by a slash (`/`): the number of currently runnable
    kernel scheduling entities (?) (processes, threads) and the number of kernel
    scheduling entities (?) that currently exist on the system
 1. PID of the process that was most recently created
