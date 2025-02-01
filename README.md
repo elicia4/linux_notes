@@ -72,7 +72,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [install](./commands/install.md) | [shuf](./commands/shuf.md) | [tty](./commands/tty.md) |
 | [users](./commands/users.md) | [stty](./commands/stty.md) | [readlink](./commands/readlink.md) |
 | [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | [seq](./commands/seq.md) |
-| [\[](./commands/[.md]) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
+| [\[](./commands/[.md) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
 | [tac](./commands/tac.md) | [chgrp](./commands/chgrp.md) | [truncate](./commands/truncate.md) |
 | [factor](./commands/factor.md) | [set](./commands/set.md) | [stat](./commands/stat.md) |
 | [nproc](./commands/nproc.md) | | |
