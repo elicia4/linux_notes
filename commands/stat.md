@@ -1,25 +1,46 @@
-# The `stat` command
+# `stat`
 
 [***Table of Contents***](/README.md)
 
-The `stat` command is used to display detailed information about a file and its
+Show file system attributes of files on your system:
+
+```bash
+stat file
+```
+
+Various pieces of information displayed by `stat` are also shown by `ls`:
+
+```bash
+ls -li file
+```
+
+The output of `stat` focuses primarily on file system details, like inodes,
+block sizes, and verbose descriptions of the file's permissions and timestamp
 attributes:
 
-    touch most-random-filename
-    stat most-random-filename
 
-You get the following result:
+```
+  File: file.txt
+  Size: 4086            Blocks: 8          IO Block: 4096   regular file
+Device: 8,2     Inode: 30000       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   user)   Gid: ( 1000/   user)
+Access: 2025-01-18 11:20:01.780238733 +0900
+Modify: 2025-01-18 11:20:01.780238733 +0900
+Change: 2025-01-18 11:20:01.783572128 +0900
+ Birth: 2025-01-18 11:20:01.780238733 +0900
+```
 
-      File: most-random-filename
-      Size: 0               Blocks: 0          IO Block: 4096   regular empty file
-    Device: 0,0     Inode: 1234123     Links: 1
-    Access: (0644/-rw-r--r--)  Uid: ( 1001/   user)   Gid: ( 1001/   user)
-    Access: 2003-11-15 13:00:12.454545451 +0100
-    Modify: 2003-11-15 13:00:12.454545451 +0100
-    Change: 2003-11-15 13:00:12.454545451 +0100
-     Birth: 2003-11-15 13:00:12.454545451 +0100
+You can use `-f` to show information about a file's host file system:
 
-If you use `touch` on it, the file's times will be updated:
+```bash
+stat -f file
+```
 
-    touch most-random-filename
-    stat most-random-filename
+It also allows you to specify a format string to selectively output only the
+information you need:
+
+```bash
+stat -c "'%n' is a %F." file /dev/null /usr /run/initctl # print the file type
+stat -c "'%n' has size %s and uses %b blocks." # print size and block number
+stat -c "'%n' has access rights: %A (%a in octal)." # print access rights
+```
