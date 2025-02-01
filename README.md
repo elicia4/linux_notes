@@ -75,7 +75,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [\[](./commands/[.md) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
 | [tac](./commands/tac.md) | [chgrp](./commands/chgrp.md) | [truncate](./commands/truncate.md) |
 | [factor](./commands/factor.md) | [set](./commands/set.md) | [stat](./commands/stat.md) |
-| [nproc](./commands/nproc.md) | | |
+| [nproc](./commands/nproc.md) | [dircolors](./commands/dircolors.md) | |
 
 #### Tools 
 
