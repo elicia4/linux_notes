@@ -4,7 +4,9 @@
 
 `pr` is used to convert text files for printing. Create a file:
 
-    info pr > pr.txt
+```bash
+info pr > pr.txt
+```
 
 `pr` is used to *paginate* text, *pagination* or *paging* is the process of
 dividing a document into pages. When printing text, it is often desirable to
@@ -14,7 +16,9 @@ used to insert a header and footer on each page.
 
 Format the file:
 
-    pr -l 15 -w 65 pr.txt
+```bash
+pr -l 15 -w 65 pr.txt
+```
 
 This defined a page that is 15 lines long and 65 characters wide.
 
@@ -47,3 +51,23 @@ List the contents of `/usr/bin` in 3 columns 65 characters wide:
 ```bash
 ls /usr/bin | pr -3 -w 65 | head
 ```
+
+`pr` can format your file in the style of an original UNIX v1 document from
+1971 (lol):
+
+```bash
+pr -h "THIS IS THE HEADER" --columns 2 -n -s"     " -w 60
+```
+
+- `-h HEADER` sets the header
+- `--columns 2` formats the page for 2 columns
+- `-n` turns on line numbers
+- `-s"      "` specifies the separator between columns
+- `-w 60` sets the page width to 60 characters
+
+The resulting output can be piped directly into your printer:
+
+```bash
+pr -h "THIS IS THE HEADER" --columns 2 -n -s"     " -w 60 | lpr -P PRINTER_NAME
+```
+
