@@ -2,11 +2,35 @@
 
 [***Table of Contents***](/README.md)
 
-`nl` is used to number lines of files (output file contents with a line number
-in front of each line). Resembles `cat -n`:
+`nl` is used to number the lines in a file (output file contents with a line
+number in front of each line). Resembles `cat -n`:
 
 ```bash
 nl file.txt
+```
+
+By default, `nl` doesn't count empty lines. You can add `-b a` to cause all of
+the lines to be numbered. `nl` supports a surprisingly complex and unusual
+model for numbering lines in a file, e.g.:
+
+```bash
+nl -b a -h n -f n -s ' ---> ' -n rz -w 12 -v 9373
+```
+
+- `-b a` = all lines numbered
+- `-h n`, `-f n` = header and footer should have no lines numbered. Header,
+body, and footer are delimited using special separators: `\:\:\:`, `\:\:`, and
+`\:`.
+- `-s ' ---> '` provides a separator to add after the line number
+- `-n rz` causes right justified line numbers with leading zeros
+- `-w 12` indicates how many characters the line numbers should be
+- `-v 9373` provides an explicit starting line number
+
+You can also use `-b` to only number lines that match a given basic regular
+expression:
+
+```bash
+nl -b pGNU -s ' ===> ' -n rz
 ```
 
 It accepts multiple files as well as STDIN (just like `cat`). It supports
