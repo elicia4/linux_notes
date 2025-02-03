@@ -78,7 +78,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [nproc](./commands/nproc.md) | [dircolors](./commands/dircolors.md) | [who](./commands/who.md) |
 | [expand](./commands/expand.md) | [hostid](./commands/hostid.md) | [cksum](./commands/cksum.md) |
 | [shred](./commands/shred.md) | [tsort](./commands/tsort.md) | [unexpand](./commands/unexpand.md) |
-| [printenv](./commands/printenv.md) | | |
+| [printenv](./commands/printenv.md) | [sha224sum](./commands/sha224sum.md) | |
 
 #### Tools 
 
