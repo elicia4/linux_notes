@@ -77,6 +77,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [factor](./commands/factor.md) | [set](./commands/set.md) | [stat](./commands/stat.md) |
 | [nproc](./commands/nproc.md) | [dircolors](./commands/dircolors.md) | [who](./commands/who.md) |
 | [expand](./commands/expand.md) | [hostid](./commands/hostid.md) | [cksum](./commands/cksum.md) |
+| [shred](./commands/shred.md) | | |
 
 #### Tools 
 
