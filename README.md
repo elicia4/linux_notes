@@ -80,7 +80,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [shred](./commands/shred.md) | [tsort](./commands/tsort.md) | [unexpand](./commands/unexpand.md) |
 | [printenv](./commands/printenv.md) | [sha224sum](./commands/sha224sum.md) | [pinky](./commands/pinky.md) |
 | [unlink](./commands/unlink.md) | [arch](./commands/arch.md) | [link](./commands/link.md) |
-| [sum](./commands/sum.md) | [ptx](./commands/ptx.md) | |
+| [sum](./commands/sum.md) | [ptx](./commands/ptx.md) | [csplit](./commands/csplit.md) |
 
 #### Tools 
 
