@@ -122,6 +122,28 @@ You can specify other protocols as well, such as:
 > DEV, EDEV, FC, ICMP, EICMP, ICMP6, EICMP6, IP, EIP, IP6, EIP6, NFS, NFSD,
 > SOCK, SOCK6, SOFT,  TCP, ETCP, UDP and UDP6.
 
+### Storage Usage Statistics
+
+`-b` - reports I/O and transfer rate statistics.
+
+The following values are displayed:
+- `tps` - total number of transfers per second that were issued to physical
+devices.  A transfer is an I/O request to a physical device. Multiple
+logical  requests can be combined into a single I/O request to the device.
+A transfer is of indeterminate size
+- `rtps` - total number of read requests per second issued to physical
+devices
+- `wtps` - total number of write requests per second issued to physical
+devices
+- `dtps` - total number of discard requests per second issued to physical
+devices
+- `bread/s` - total amount of data read from the devices in blocks per
+second. Blocks are equivalent to sectors and therefore have a size of 512
+bytes
+- `bwrtn/s` - total amount of data written to devices in blocks per second
+- `bdscd/s` - total amount of data discarded for devices in blocks per
+second
+
 ### FIX NOTE
 
 Check this out (thanks, Yvan):
