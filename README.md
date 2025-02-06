@@ -39,6 +39,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [building from source](./misc/building/ToC.md) | [file types](./misc/file_types.md) | [tips & tricks](./misc/tips_and_tricks.md) |
 | [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | [resources](./misc/resources.md) |
 | [RSS with `newsfeed`](./misc/rss.md) | [Yubikey](./misc/yubikey.md) | [coreutils](./misc/coreutils.md) |
+| [simple terminal](./misc/luke_st.md) | | |
 
 #### Commands 
 
