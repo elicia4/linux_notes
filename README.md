@@ -83,6 +83,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [unlink](./commands/unlink.md) | [arch](./commands/arch.md) | [link](./commands/link.md) |
 | [sum](./commands/sum.md) | [ptx](./commands/ptx.md) | [csplit](./commands/csplit.md) |
 | [wal](./commands/wal.md) | [iostat](./commands/iostat.md) | [iotop](./commands/iotop.md) |
+| [xclip & xsel](./commands/xclip_xsel.md) | | |
 
 #### Tools 
 
