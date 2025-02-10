@@ -82,8 +82,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [printenv](./commands/printenv.md) | [sha224sum](./commands/sha224sum.md) | [pinky](./commands/pinky.md) |
 | [unlink](./commands/unlink.md) | [arch](./commands/arch.md) | [link](./commands/link.md) |
 | [sum](./commands/sum.md) | [ptx](./commands/ptx.md) | [csplit](./commands/csplit.md) |
-| [wal](./commands/wal.md) | [iostat](./commands/iostat.md) | [iotop](./commands/iotop.md) |
-| [xclip & xsel](./commands/xclip_xsel.md) | | |
+| [wal](./commands/wal.md) | [xclip & xsel](./commands/xclip_xsel.md) | |
 
 #### Tools 
 
@@ -124,3 +123,4 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [df & du](./hardware/df_du.md) | [LVM](./hardware/lvm.md) | [memory & swap](./hardware/mem_swap.md) |
 | [inspect hw](./hardware/inspect_hw.md) | [fstab](./hardware/fstab.md) | [format & mount](./hardware/volume_mgmt.md) |
 | [storage](./hardware/storage.md) | [CD images](./hardware/cd_iso.md) | [storage health](./commands/smartctl.md) |
+| [iostat](./hardware/iostat.md) | [iotop](./hardware/iotop.md) | |
