@@ -2,7 +2,8 @@
 
 [***Table of Contents***](/README.md)
 
-It can be used to compute the BLAKE2 message digest of a file or stream:
+It can be used to compute the BLAKE2 message digest (checksum) of a file or
+stream:
 
 ```bash
 b2sum data.txt

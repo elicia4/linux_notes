@@ -59,30 +59,35 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [time](./commands/time.md) | [dd](./commands/dd.md) | [pass](./commands/pass.md) |
 | [dmesg](./commands/dmesg.md) | [mc](./commands/mc.md) | [ln](./commands/ln.md) |
 | [mktemp](./commands/mktemp.md) | [realpath](./commands/realpath.md) | [dirname](./commands/dirname.md) |
-| [basename](./commands/basename.md) | [md5sum](./commands/md5sum.md) | [timeout](./commands/timeout.md) |
+| [basename](./commands/basename.md) | [timeout](./commands/timeout.md) | [chown](./commands/chown.md) |
 | [chroot](./commands/chroot.md) | [whoami](./commands/whoami.md) | [hostname](./commands/hostname.md) |
 | [su](./commands/su.md) | [env](./commands/env.md) | [base32](./commands/base32.md) |
 | [base64](./commands/base64.md) | [chmod](./commands/chmod.md) | [nohup](./commands/nohup.md) |
-| [b2sum](./commands/b2sum.md) | [chown](./commands/chown.md) | [sha512sum](./commands/sha512sum.md) |
-| [sha256sum](./commands/sha256sum.md) | [sync](./commands/sync.md) | [mkfifo](./commands/mkfifo.md) |
-| [test](./commands/test.md) | [stdbuf](./commands/stdbuf.md) | [sha1sum](./commands/sha1sum.md) |
+| [sync](./commands/sync.md) | [mkfifo](./commands/mkfifo.md) | [test](./commands/test.md) | 
+| [stdbuf](./commands/stdbuf.md) | [yes](./commands/yes.md) | [seq](./commands/seq.md) |
 | [sleep](./commands/sleep.md) | [mknod](./commands/mknod.md) | [chcon](./commands/chcon.md) |
 | [runcon](./commands/runcon.md) | [od](./commands/od.md) | [true](./commands/true.md) |
 | [false](./commands/false.md) | [logname](./commands/logname.md) | [fold](./commands/fold.md) |
 | [expr](./commands/expr.md) | [comm](./commands/comm.md) | [split](./commands/split.md) |
 | [install](./commands/install.md) | [shuf](./commands/shuf.md) | [tty](./commands/tty.md) |
 | [users](./commands/users.md) | [stty](./commands/stty.md) | [readlink](./commands/readlink.md) |
-| [yes](./commands/yes.md) | [sha384sum](./commands/sha384sum.md) | [seq](./commands/seq.md) |
 | [\[](./commands/[.md) | [numfmt](./commands/numfmt.md) | [pathchk](./commands/pathchk.md) |
 | [tac](./commands/tac.md) | [chgrp](./commands/chgrp.md) | [truncate](./commands/truncate.md) |
 | [factor](./commands/factor.md) | [set](./commands/set.md) | [stat](./commands/stat.md) |
 | [nproc](./commands/nproc.md) | [dircolors](./commands/dircolors.md) | [who](./commands/who.md) |
-| [expand](./commands/expand.md) | [hostid](./commands/hostid.md) | [cksum](./commands/cksum.md) |
+| [expand](./commands/expand.md) | [hostid](./commands/hostid.md) | [csplit](./commands/csplit.md) |
 | [shred](./commands/shred.md) | [tsort](./commands/tsort.md) | [unexpand](./commands/unexpand.md) |
-| [printenv](./commands/printenv.md) | [sha224sum](./commands/sha224sum.md) | [pinky](./commands/pinky.md) |
-| [unlink](./commands/unlink.md) | [arch](./commands/arch.md) | [link](./commands/link.md) |
-| [sum](./commands/sum.md) | [ptx](./commands/ptx.md) | [csplit](./commands/csplit.md) |
+| [printenv](./commands/printenv.md) | [pinky](./commands/pinky.md) | [unlink](./commands/unlink.md) | 
+| [arch](./commands/arch.md) | [link](./commands/link.md) | [ptx](./commands/ptx.md) | 
 | [wal](./commands/wal.md) | [xclip & xsel](./commands/xclip_xsel.md) | |
+
+#### Checksum Functions
+
+| | | |
+| :-------: | :-------: | :-------: |
+| [sha1sum](./checksum/sha1sum.md) | [sha224sum](./checksum/sha224sum.md) | [sha256sum](./checksum/sha256sum.md) |
+| [sha384sum](./checksum/sha384sum.md) | [sha512sum](./checksum/sha512sum.md) | [b2sum](./checksum/b2sum.md) |
+| [md5sum](./checksum/md5sum.md) | [cksum](./checksum/cksum.md) | [sum](./checksum/sum.md) |
 
 #### Tools 
 
