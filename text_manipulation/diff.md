@@ -1,4 +1,4 @@
-# The `diff` command
+# `diff`
 
 These are notes on [this video](https://www.youtube.com/watch?v=qLRQspQxvFk),
 documentation, and the Internet.
@@ -11,28 +11,38 @@ many output formats and can process large collections of text files at once.
 version of a file to another. For practice, create two slightly different text
 files:
 
-    echo "I like\ndogs and cats" > 1.txt;
-    echo "I like\ncats and dogs" > 2.txt;
-    cp 1.txt 3.txt;
-    cat 1.txt 2.txt 3.txt;
+```bash
+echo "I like\ndogs and cats" > 1.txt;
+echo "I like\ncats and dogs" > 2.txt;
+cp 1.txt 3.txt;
+cat 1.txt 2.txt 3.txt;
+```
 
 To show the difference:
 
-    diff 1.txt 3.txt
+```bash
+diff 1.txt 3.txt
+```
 
 If there's no output at all, there's no difference, in this case, the exit code
 should be 0. To show the exit code:
 
-    echo $? # if the command was successful, the code should be 0
+```bash
+echo $? # if the command was successful, the code should be 0
+```
 
 To make the output a bit more verbose:
 
-    diff -s 1.txt 3.txt
+```bash
+diff -s 1.txt 3.txt
+```
 
 You can look at the changes between the backup config files and current config
 files:
 
-    diff /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+```bash
+diff /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+```
 
 ### `diff` Output
 
@@ -66,22 +76,30 @@ if you don't have it, it makes the output more clear. It's a wrapper around the
 `diff` command, it doesn't change the command itself, it just colorizes the 
 output:
 
-    colordiff 1.txt 2.txt
+```bash
+colordiff 1.txt 2.txt
+```
 
 There is the `-u` option that formats the `diff` output in the *unified
 format*, it's clearer to read:
 
-    diff -u 1.txt 2.txt
+```bash
+diff -u 1.txt 2.txt
+```
 
 Or even better:
 
-    colordiff -u 1.txt 2.txt | less
+```bash
+colordiff -u 1.txt 2.txt | less
+```
 
 Another type of format is the *context format*, specified with `-c`:
 
-    diff -c 1.txt 2.txt
+```bash
+diff -c 1.txt 2.txt
+```
 
-`***` signify the first file, `---` signify the second.
+`***` signifies the first file, `---` signifies the second.
 
 Within a change group, lines begin with change indicators:
 - `blank` - a line shown for context. It does not indicate a difference between
