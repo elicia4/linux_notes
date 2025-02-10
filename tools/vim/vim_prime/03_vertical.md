@@ -23,7 +23,7 @@ nnoremap("<C-u>", "<C-u>zz")
 
 You can jump to a particular line number with `:<line_number>`, e.g., `:50`.
 
-You can search for the next occurance of "search" with `/search`. `n` to go to
+You can search for the next occurrence of "search" with `/search`. `n` to go to
 the next result, `N` to the previous. You can do a reverse search with `?`.
 Remap these with centering as well:
 
@@ -41,7 +41,7 @@ next 1234 1234 1234
 ```
 
 `#` to invert it. Unused because you can do the same thing with `*` and `N`.
-You can't master everything, please comrpomise.
+You can't master everything, please compromise.
 
 Vertical motions are hard to master, you gotta get good at using half page
 moving and searching.

@@ -18,7 +18,7 @@ Vim is a modal editor, you can be in various modes:
 
 ### Normal Mode
 
-The most foundational movements are:
+The most fundamental movements are:
 - `j` - up
 - `k` - down
 - `l` - right
@@ -64,7 +64,7 @@ selected text:
 - `y` yanks (copies) the text, 
 - `p` pastes it.
 
-To into visual line mode, press `Shift-v` (`V`). With this mode, you can copy
+To go into visual line mode, press `Shift-v` (`V`). In this mode, you can copy
 and paste entire lines.
 
 You can paste over a highlighted region: 
