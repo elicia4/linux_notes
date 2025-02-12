@@ -110,3 +110,5 @@ Within a change group, lines begin with change indicators:
   first file.
 - `!` - a line changed. The two versions of the line will be displayed, each in
   its respective section of the change group.
+
+To see how to create `diff` files and apply patches, see [`patch`](./patch.md).
