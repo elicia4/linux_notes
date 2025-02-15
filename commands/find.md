@@ -1,15 +1,14 @@
-# The `find` File-Searching Tool
+# `find` File-Searching Tool
 
 These are notes on [this video,](https://youtu.be/skTiK_6DdqU) man pages and 
 various internet resources.
 
 [***Table of Contents***](/README.md)  
 
-The `find` command has many options you can use that are not included in these
-notes. A simple example of the `find` command:
+It helps you find files, e.g.:
 
 ```bash
-find /home/admin -name *.txt 
+find /home/admin -name *.txt # finds all .txt files in /home/admin
 ```
 
 You might want to avoid viewing hidden files. You can do it by piping commands
@@ -19,9 +18,10 @@ together, use `grep`:
 find /home/admin -name *.txt | grep -v .cache
 ```
     
-Now the results that contain `.cache` will be ignored. Let's say you are only
-interested in files or only in directories. Create a file named "Documents"
-inside the "Documents" folder. 
+Now the results that contain `.cache` will be ignored. 
+
+Let's say you are only interested in files or only in directories. Create a
+file named "Documents" inside the "Documents" directory.
 
 `-type f` to return files only:
 
@@ -29,14 +29,13 @@ inside the "Documents" folder.
 find . -name Documents -type f
 ```
 
-`-type f` to return directories only:
+`-type d` to return directories only:
 
 ```bash
 find . -name Documents -type d 
 ```
 
 Other file types supported by `find`:
-
 - `b` - block devices
 - `c` - character special device files
 - `l` - symbolic links
@@ -51,13 +50,12 @@ Now check if the "Documents" file exists. It doesn't, it's been removed!
 `-exec` means that you want to execute a command against every item in the
 result. In this context, `rm` is the command you want to execute. The `{}` is
 the placeholder for the actual item itself. The `+` is the terminator, it's the
-end of the command, it's closing each iteration off. Another variation of the 
-terminator is `\;`. The `\` is used to escape the `;` character, that's an issue
-with the shell.
+end of the command, it's closing each iteration off. Another variation of the
+terminator is `\;`. The `\` is used to escape the `;` character, that's an
+issue with the shell.
 
 Let's say you have a gigantic list of pictures and you want to add some
-permissions to them in one shot. Of course, you can do it with the `chmod`
-command itself:
+permissions to them in one shot. Of course, you can do it with `chmod` itself:
 
 ```bash
 chmod -R 600 Pictures
@@ -73,8 +71,7 @@ chmod u+x Pictures
 ```
 
 But what if you had more directories inside the "Pictures" directory? Things
-get annoying pretty fast, and these annoyances can be avoided by using the
-`find` command:
+get annoying pretty fast, and these annoyances can be avoided by using `find`:
 
 ```bash
 find Pictures/ -type f -exec chmod 600 {} +
@@ -88,7 +85,7 @@ If you want to do something similiar to your directories:
 find Pictures/ -type d -exec chmod 700 {} +
 ```
 
-It is actually a lot easier to use the `find` command to add file permissions.
+It is actually a lot easier to use `find` to add file permissions.
 Doing so is a good habit, especially when you're managing a file server. 
 
 Let's say your server is full and you want to clear up some space by deleting
@@ -260,10 +257,10 @@ list for a specified command:
 find ~ -type f -name 'file*' -print | xargs ls -l
 ```
 
-The output of the `find` command gets piped into `xargs`, which, in turn,
-constructs an argument list for the `ls` command and executes it. Note that
-whenever the argument list exceeds the possible command size, `xargs` executes
-the command multiple times. To see the maximum size of the command line:
+The output of `find` gets piped into `xargs`, which, in turn, constructs an
+argument list for `ls` and executes it. Note that whenever the argument list
+exceeds the possible command size, `xargs` executes the command multiple times.
+To see the maximum size of the command line:
     
 ```bash
 xargs --show-limits
