@@ -88,6 +88,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [sha1sum](./checksum/sha1sum.md) | [sha224sum](./checksum/sha224sum.md) | [sha256sum](./checksum/sha256sum.md) |
 | [sha384sum](./checksum/sha384sum.md) | [sha512sum](./checksum/sha512sum.md) | [b2sum](./checksum/b2sum.md) |
 | [md5sum](./checksum/md5sum.md) | [cksum](./checksum/cksum.md) | [sum](./checksum/sum.md) |
+| [hashing algorithms](./checksum/hashsum.md) | | |
 
 #### Tools 
 
