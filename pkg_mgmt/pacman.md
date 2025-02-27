@@ -1,4 +1,4 @@
-# The `pacman` command
+# `pacman`
 
 Notes taken on the "Linux Crash Course - The Pacman Command" video by
 LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
@@ -6,13 +6,12 @@ LearnLinuxTV: https://youtu.be/oPEnvuj9QrI
 [***Table of Contents***](/README.md)  
 
 Like many package managers, `pacman` fetches packages from online repositories
-(online servers that store installable packages, online source from which you
-can obtain software).
+(online servers that store installable packages, online sources where you can
+get software).
 
 On your local system, you have an index that stores info about all the packages
-that are available on the repository servers that you've subscribed to. Every
-now and then it's a good idea to refresh that cache. That's the first thing you
-should do.
+that are available on the repository servers you've subscribed to. Every now
+and then it's a good idea to refresh that cache:
 
 ```bash
 pacman -Syy 
@@ -34,7 +33,7 @@ cat /etc/pacman.d/mirrorlist
 
 This is where `pacman` is grabbing things from.
 
-Let's install a package:
+To install a package:
 
 ```bash
 pacman -S htop
@@ -46,7 +45,7 @@ Try it:
 htop
 ```
 
-To remove the package:
+To remove a package:
 
 ```bash
 pacman -R htop
@@ -85,8 +84,8 @@ You can remove them:
 pacman -R $(pacman -Qdtq)
 ```
 
-The `-Q` mean query, the `-d` option skips the dependancy checks, the `-t`
-option limits the results to orphaned packages. 
+`-Q` means query, `-d` skips the dependency checks, `-t` limits the results to
+orphaned packages. 
 
 To update your system:
 
@@ -96,38 +95,40 @@ pacman -Syu
 
 `-u` is for updates. 
 
-You might sometimes need to upgrade the mirrorlist, in case your updates do not
-work. To generate a brand new mirrorlist, go to:
-
-    https://archlinux.org/mirrorlist/
-
-Select your country, you can select multiple with `Ctrl`. You should probably
-de-select `http`, this will limit your servers to secure ones, click on the
-`Use mirror status` box, then `Generate List`. 
-
-1. Make a backup of the existing list:
-
-```bash
-cd /etc/pacman.d;
-sudo cp mirrorlist mirrorlist.bak
-```
-
-1. Empty out the original list:
-
-```bash
-sudo truncate -s 0 mirrorlist
-```
-
-1. Copy the list from your browser and insert it into the `mirrorlist` file:
-
-```bash
-sudo vim mirrorlist
-```
-
-1. Make sure to uncomment the items.
-
 To find a package containing a specific file:
 
 ```bash
 pacman -F <filename>
 ```
+
+### Mirrorlist Upgrade
+
+You might sometimes need to upgrade the mirrorlist (e.g, if your updates stop
+working):
+
+To generate a new mirrorlist, go to: https://archlinux.org/mirrorlist/
+
+Select your country, you can select multiple with `Ctrl`. You should probably
+deselect `http`, this will limit your servers to secure ones, click on the `Use
+mirror status` box, then `Generate List`. 
+
+1. Make a backup of the existing list:
+
+   ```bash
+   cd /etc/pacman.d;
+   sudo cp mirrorlist mirrorlist.bak
+   ```
+
+1. Empty out the original list:
+
+   ```bash
+   sudo truncate -s 0 mirrorlist
+   ```
+
+1. Copy the list from your browser and insert it into the `mirrorlist` file:
+
+   ```bash
+   sudo vim mirrorlist
+   ```
+
+1. Make sure to uncomment the items.
