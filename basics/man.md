@@ -91,3 +91,9 @@ man builtins
 `cd` is a built-in command. In case you try to look up a command and you can't
 do it with `man`, try looking for it in the `builtins` page. Alternatively, you
 can just go to `man bash` and navigate to the "SHELL BUILTIN COMMANDS" section.
+
+To view a brief summary of a built-in command:
+
+```bash
+help read
+```
