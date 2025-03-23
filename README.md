@@ -80,6 +80,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [printenv](./commands/printenv.md) | [pinky](./commands/pinky.md) | [unlink](./commands/unlink.md) | 
 | [arch](./commands/arch.md) | [link](./commands/link.md) | [ptx](./commands/ptx.md) | 
 | [wal](./commands/wal.md) | [xclip & xsel](./commands/xclip_xsel.md) | [xargs](./commands/xargs.md) |
+| [screen](./commands/screen.md) | | |
 
 #### Checksum Functions
 
