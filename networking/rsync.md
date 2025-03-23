@@ -1,4 +1,4 @@
-# The "rsync" file-copying tool
+# The `rsync` file-copying tool
 
 These are notes on [this video](https://youtu.be/KG78O53u8rY) and other
 Internet resources.
@@ -7,13 +7,17 @@ Internet resources.
 
 To check if `rsync` is installed:
 
-    command -v rsync
+```bash
+command -v rsync
+```
 
 If you see output with the path to a binary named `rsync`, you have it
 installed. If you have no output, use your package manager to install it. With
 `apt`:
 
-    sudo apt install rsync
+```bash
+sudo apt install rsync
+```
 
 The basic idea behind `rsync` is simple: you use it to transfer files from one
 place to another. You can transfer anything to anywhere, as long as you have
@@ -25,7 +29,7 @@ being a much more customizable and detailed option.
 
 The basic syntax looks like this:
 
-```
+```bash
 rsync <dir1> <dir2>
 ```
 
@@ -48,15 +52,17 @@ of a one-way utility.
 
 Prepare an example folder you will play around with:
 
-    mkdir r_notes # create a dir called r_notes
-    touch r_notes/{1..9}_note.md # create 9 notes inside of it 
-    echo "I am a note" > r_notes/{1..9}_note.md # add "I am a note" to them
+```bash
+mkdir r_notes # create a dir called r_notes
+touch r_notes/{1..9}_note.md # create 9 notes inside of it 
+echo "I am a note" > r_notes/{1..9}_note.md # add "I am a note" to them
+```
 
 When using `rsync`, make sure you have access to everything you need before you
 start the sync. Test both the destination and the source directories. Let's try
 it out with the `--dry-run` and `-r` options:
 
-```
+```bash
 rsync -r --dry-run <dir-to-back-up> <username>@<IP/NAME>:<destination>
 # FOR EXAMPLE
 rsync -r --dry-run r_notes admin@remote-server:/home/admin/backup
@@ -72,14 +78,14 @@ over.
 ...and nothing happened. Activate verbose mode with the `-v` option to get more
 details:
 
-```
+```bash
 rsync -rv --dry-run r_notes admin@remote-server:/home/admin/backup
 ```
 
 The output should be a lot more detailed now. Now do it without the `--dry-run`
 option:
 
-```
+```bash
 rsync -rv r_notes admin@remote-server:/home/admin/backup
 ```
 
@@ -96,14 +102,14 @@ directory, doing the reverse of what you've just done.
 
 First, remove all files from the local testing directory:
 
-```
+```bash
 cd r_notes
 rm *
 ```
 
 Copy the files locally:
 
-```
+```bash
 rsync -rv admin@remote-server:/home/admin/backup/r_notes/ r_notes/
 ```
 
@@ -122,7 +128,7 @@ rename a file the same thing will happen.
 To fix this problem, use the `--delete` option, what is does it deletes all
 files in the target directory that don't exist in the local directory:
 
-```
+```bash
 rsync -rv --delete r_notes/ admin@remote-server:/home/admin/backup/r_notes/ 
 ```
 
@@ -130,7 +136,7 @@ Another thing to notice is that with these options, the modification dates
 will not match. To check modification dates, run `ls -l`. To preserve metadata
 (including the modification times), use the `-a` option, or the archive mode:
 
-```
+```bash
 rsync -rva --delete r_notes/ admin@remote-server:/home/admin/backup/r_notes/ 
 ```
 
@@ -138,14 +144,14 @@ You can also use the `-z` option, which is going to compress the files as they
 transfer. In a situation when you're contending with a slower connection, this
 might help you get the transfer done quicker. Only do it when it benefits you:
 
-```
+```bash
 rsync -rvaz --delete r_notes/ admin@remote-server:/home/admin/backup/r_notes/ 
 ```
 
 To remove files locally after they have transferred (that is, remove source
 files), use the `--remove-source-files` option:
 
-```
+```bash
 rsync -rva --remove-source-files r_notes/ admin@remote-server:/home/admin/backup/r_notes/ 
 ```
 
