@@ -8,7 +8,9 @@ the obsolete `ifconfig` command.
 
 To show a system's network interfaces and routing table:
 
-    ip a
+```bash
+ip a
+```
 
 You can (probably) see multiple interfaces there with detailed information on
 them. The `lo` device is the loopback interfaces, it's a virtual interface the
