@@ -42,15 +42,41 @@ vim sshd_config
 
 To change the default port, change the `Port` value, to `2222` for example.
 
-You should disable root login, change `PermitRootLogin` to `no`, you ONLY want
-to set it to `no` if you have another user you can log in with via `ssh`
+You should disable root login, change `PermitRootLogin` to `no`. (!!!) You ONLY
+want to set it to `no` if you have another user you can log in with via `ssh`
 outside of root. Root is going to be tried by anyone.
 
-`PasswordAuthentication` is the most important security configuration change 
+`PasswordAuthentication` is the most important security configuration change
 that you can possibly make with the ssh-server and EVERYBODY should set this to
-`no`. You should only set this to `no` if you have an ssh key relationship
-already set up, you wanna make sure that you log in with your ssh key BEFORE
-you set this to `no`.
+`no`. (!!!) You should only set this to `no` if you have an ssh key
+relationship already set up, you wanna make sure that you log in with your ssh
+key BEFORE you set this to `no`. 
+
+It's also recommended to disable some more settings to completely disable
+password authentication. The final config should contain the following
+settings:
+
+```bash
+# `KbdInteractiveAuthentication` disables keyboard-interactive authentication.
+# `ChallengeResponseAuthentication` is a deprecated alias for this.
+# I would use `ChallengeResponseAuthentication no` anyway.
+# KbdInteractiveAuthentication no # modern version
+ChallengeResponseAuthentication no 
+
+# disable password authentication
+PasswordAuthentication no
+
+# disable PAM. If set to yes this will enable PAM authentication using
+# ChallengeResponseAuthentication and PasswordAuthentication in addition to PAM
+# account and session module processing for all authentication types. 
+# 
+# If you want PAM, keep it enabled, `PasswordAuthentication no` should disable 
+# password authentication for it. See `man sshd_config` for details.
+UsePAM no
+
+# disable root login
+PermitRootLogin no
+```
 
 After configuration, restart the service and make sure the restart didn't
 fail:
