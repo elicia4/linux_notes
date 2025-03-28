@@ -69,14 +69,16 @@ ssh -v <server>
 On Ubuntu Desktop, you can check the box to always use the passphrase to unlock
 the key every time you log in.
 
-The easy way to add a key to the remote server:
+`ssh-copy-id` is an easy way to add a key to the remote server:
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub <server>
 ```
 
-The `-i` parameter is for input file. The command will create both the `.ssh`
-directory and the `authorized_keys` file, as well as populate the file with the
-key.
+It enables login with a key on a remote server. It adds the keys by appending
+them to the remote user's `~/.ssh/authorized_keys` file (creating the file &
+directory if necessary).
+
+The `-i` parameter is for input file. 
 
 [***Next Note***](./05-managing-ssh-keys.md)
