@@ -109,6 +109,7 @@ Yubikey at all.
 1. You need a PAM module for U2F. If you use a Debian-based system, you're
    already good.
 1. On Debian:
+
 ```bash
 sudo apt update
 sudo apt install libpam-u2f
@@ -195,6 +196,7 @@ vim /etc/ssh/authorized_yubikeys
 1. Enter your credentials
 1. Get the API key (copy the "Secret key"). MAKE SURE THIS NEVER LEAKS OUT.
 1. Now finish the configuration:
+
 ```bash
 vim /etc/pam.d/sshd
 # add new lines to the file, first non-comment line should be:
@@ -204,7 +206,8 @@ vim /etc/ssh/sshd_config
 # UsePAM yes <- make sure this is set
 ```
 1. Restart `ssh`
-```
+
+```bash
 # now restart ssh
 systemctl restart ssh
 # in a new window
