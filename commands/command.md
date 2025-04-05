@@ -14,3 +14,9 @@ ls
 ```
 
 Alternatively, you can `\ls`.
+
+You can also view a command's path:
+
+```bash
+command -v ls
+```
