@@ -1,4 +1,4 @@
-# The `apt` command
+# `apt`
 
 Notes taken on the "Linux Crash Course - The apt Command" video by
 LearnLinuxTV.
@@ -10,28 +10,46 @@ on). Debian is where it all started.
 
 Any time you use `apt`, you should refresh it and make sure it's up-to-date:
 
-    sudo apt update
+```bash
+sudo apt update
+```
 
 This command refreshes your local package index. Let's install `tmux`:
 
-    sudo apt install tmux
+```bash
+sudo apt install tmux
+```
 
 It will install all dependencies as well. You can install multiple packages
 with one command:
 
-    sudo apt install tmux htop git
-    
+```bash
+sudo apt install tmux htop git
+```
+
 To remove an application:
     
-    sudo apt remove htop
+```bash
+sudo apt remove htop
+```
+
+To remove an application AND its configuration files:
+
+```bash
+sudo apt purge htop
+```
 
 What if you don't know the name of the package you want to install?
 
-    sudo apt search vim
+```bash
+sudo apt search vim
+```
 
 To update your system:
 
-    sudo apt update && sudo apt dist-upgrade
+```bash
+sudo apt update && sudo apt dist-upgrade
+```
 
 There's a difference between `dist-upgrade` and `upgrade`, `dist-upgrade` will
 install upgrades that require the installation of additional packages or the
@@ -41,7 +59,9 @@ How do distros know where to get their upgrades from? It has a list of sources
 it pulls its updates from. The sources are stored inside the
 `/etc/apt/sources.list`:
 
-    vim /etc/apt/sources.list
+```bash
+vim /etc/apt/sources.list
+```
 
 Be careful, if you make a mistake in this file you won't be able to install
 packages. To include non-free packages (which are hidden by default), add
@@ -52,7 +72,9 @@ added.
 
 TIP: You can show more info about a package:
 
-    apt show <package>
+```bash
+apt show <package>
+```
 
 To find a package containing a specific file, use `apt-file`:
 
