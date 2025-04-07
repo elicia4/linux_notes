@@ -122,7 +122,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [wget](./networking/wget.md) | [nmap](./networking/nmap.md) | [sshfs](./networking/sshfs.md) |
 | [curl](./networking/curl.md) | [traceroute](./networking/traceroute.md) | [ip](./networking/ip.md) |
 | [iptables](./networking/iptables/iptables.md) | [ss](./networking/ss.md) | [dig](./networking/dig.md) |
-| [nslookup](./networking/nslookup.md) | | |
+| [nslookup](./networking/nslookup.md) | [ufw](./networking/ufw.md) | |
 
 #### Hardware
 
