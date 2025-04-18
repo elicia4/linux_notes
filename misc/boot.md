@@ -6,13 +6,12 @@ documentation.
 ### BIOS/UEFI
 
 The process starts when you power on your computer. First, a BIOS/UEFI program
-boots up, this software gets your hardware ready
+boots up, this software gets your hardware ready.
 
 UEFI is the newer version of BIOS offering features like secure boot, faster
-boot times etc.
+boot times, etc.
 
 One key difference is their approach to disk storage:
-
 - BIOS
     - is tied to Master Boot Record (MBR), which limits disk size to 2TB
     - slower boot time
@@ -24,7 +23,6 @@ One key difference is their approach to disk storage:
 
 BIOS/UEFI runs POST (power-on self-test), it checks hardware before proceeding
 to the next step:
-
 - processors
 - memory
 - storage
@@ -41,7 +39,6 @@ BIOS/UEFI will try to find the boot loader software.
 
 BIOS/UEFI looks for the boot loader according to the boot order. The boot order
 is usually:
-
 1. HDD/SSD
 1. USB/CD
 
@@ -56,14 +53,12 @@ For UEFI, there's a separate partition that stores files like the `.efi` boot
 loader file.
 
 Default UEFI disk partitions:
-
 - Disk 0
     - EFI system partition (100M, System) - `.efi` boot loader is here
     - MSR (128M, MSR)
     - Primary partition (Linux)
 
 The key jobs for the boot loader are:
-
 1. Locate the OS kernel
 1. Load the kernel into memory
 1. Start running the kernel code
@@ -80,12 +75,11 @@ again and loads drivers and other kernel modules.
 
 ### The `systemd` Init Process 
 
-Next, the init process, the init system is launched, usually Systemd. Systemd
-replaced older init systems, such as SysVinit and Upstart. It's the parent
-process of all other processes on Linux.
+Next, the init process, the init system is launched, usually `systemd`.
+`systemd` replaced older init systems, such as `sysvinit` and `upstart`. It's
+the parent process of all other processes on Linux.
 
-Systemd utilities:
-
+`systemd` utilities:
 - systemctl
 - journalctl
 - notify
@@ -95,16 +89,14 @@ Systemd utilities:
 - loginctl
 - nspawn
 
-Systemd daemons:
-
+`systemd` daemons:
 - systemd
 - journalctl
 - networkd
 - loginduser
 - session
 
-Systemd targets:
-
+`systemd` targets:
 - bootmode
 - basic
 - shutdown
@@ -119,16 +111,16 @@ Systemd targets:
         - display service
         - tizen service
 
-Systemd has a ton of responsibilities to get the system booted and ready to
+`systemd` has a ton of responsibilities to get the system booted and ready to
 use. It checks for any remaining hardware that needs its drivers loaded, it
 mounts up all your different file systems, it launches all the background
 services like networking, sound, power management, handles user logins, loads
 up your desktop environment.
 
-Systemd uses target config files to decide which mode it should be booting into
-\- something basic like multi-user text-only target, or the graphical target
-mostly used daily. There's also a `sysinit` target. These target correspond to
-older run levels.
+`systemd` uses target config files to decide which mode it should be booting
+into - something basic like multi-user text-only target, or the graphical
+target mostly used daily. There's also a `sysinit` target. These target
+correspond to older run levels.
 
-Systemd handles initializing everything that needs to launch when starting up
+`systemd` handles initializing everything that needs to launch when starting up
 Linux.
