@@ -76,3 +76,9 @@ To see the TTL time in human readable format:
 ```bash
 dig +ttlunits google.com
 ```
+
+To trace the lookup (useful for troubleshooting):
+
+```bash
+dig +trace google.com
+```
