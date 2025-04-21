@@ -39,7 +39,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [building from source](./misc/building/ToC.md) | [file types](./misc/file_types.md) | [tips & tricks](./misc/tips_and_tricks.md) |
 | [write images to USB](./misc/usbimager.md) | [timezones](./misc/timezone.md) | [resources](./misc/resources.md) |
 | [RSS with `newsfeed`](./misc/rss.md) | [Yubikey](./misc/yubikey.md) | [coreutils](./misc/coreutils.md) |
-| [simple terminal](./misc/luke_st.md) | | |
+| [simple terminal](./misc/luke_st.md) | [certbot](./misc/certbot.md) | [basic website setup](./misc/website_setup.md) |
 
 #### Commands 
 
@@ -80,7 +80,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [printenv](./commands/printenv.md) | [pinky](./commands/pinky.md) | [unlink](./commands/unlink.md) | 
 | [arch](./commands/arch.md) | [link](./commands/link.md) | [ptx](./commands/ptx.md) | 
 | [wal](./commands/wal.md) | [xclip & xsel](./commands/xclip_xsel.md) | [xargs](./commands/xargs.md) |
-| [screen](./commands/screen.md) | | |
+| [screen](./commands/screen.md) | [host](./commands/host.md) | [whereis](./commands/whereis.md) |
 
 #### Checksum Functions
 
@@ -122,7 +122,8 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [wget](./networking/wget.md) | [nmap](./networking/nmap.md) | [sshfs](./networking/sshfs.md) |
 | [curl](./networking/curl.md) | [traceroute](./networking/traceroute.md) | [ip](./networking/ip.md) |
 | [iptables](./networking/iptables/iptables.md) | [ss](./networking/ss.md) | [dig](./networking/dig.md) |
-| [nslookup](./networking/nslookup.md) | [ufw](./networking/ufw.md) | |
+| [nslookup](./networking/nslookup.md) | [ufw](./networking/ufw.md) | [host](./networking/host.md) |
+| [nftables](./networking/nftables.md) | | |
 
 #### Hardware
 
