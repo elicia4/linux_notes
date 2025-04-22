@@ -58,8 +58,8 @@ m h dom mon dow command
 1. `m` - minute
 2. `h` - hour 
 3. `dom` - day of month
-1. `mon` - month
-4. `dow` - day of week
+4. `mon` - month
+5. `dow` - day of week
     
 `*` means every. So `* * * * *` means every minute of every hour of every day
 of every month on all days of the week. 
@@ -135,6 +135,8 @@ To see `cron` logs:
 
 ```bash
 sudo cat /var/log/syslog | grep CRON
+# or simply:
+# sudo grep -i 'cron' /var/log/syslog
 ```
 
 Let's redirect current time to a file every minute:
