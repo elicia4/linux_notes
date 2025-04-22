@@ -64,37 +64,45 @@ A systemd unit is any entity that is managed by systemd. It can manage a:
 
 Create and edit it:
 
-    vim /etc/systemd/system/yourservice.service
+```bash
+vim /etc/systemd/system/yourservice.service
+```
 
 Fill it in like so:
 
-    ```
-    [Unit]
-    Description=A very simple service created by Me
-    # After the network service is up
-    After=network-up.target
+```
+[Unit]
+Description=A very simple service created by Me
+# After the network service is up
+After=network-up.target
 
-    [Service]
-    ExecStart=/usr/local/bin/yourprogram
+[Service]
+ExecStart=/usr/local/bin/yourprogram
 
-    [Install]
-    # This service is used by multiple users
-    WantedBy=multi-user.target
-    ```
+[Install]
+# This service is used by multiple users
+WantedBy=multi-user.target
+```
 
 Check if the service exists:
 
-    systemctl status yourservice
+```bash
+systemctl status yourservice
+```
 
 If it doesn't, do `daemon-reload`:
 
-    systemctl daemon-reload
+```bash
+systemctl daemon-reload
+```
 
 It makes systemd reread all init files.
 
 Let's inspect a more advanced unit file:
 
-    systemctl status nginx
+```bash
+systemctl status nginx
+```
 
 Take a look at the `Loaded:` line, there is a path to the unit file. This is the
 easiest way to find it.
