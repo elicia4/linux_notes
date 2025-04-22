@@ -49,6 +49,13 @@ A cron job consists of 6 fields:
 * * * * * command
 ```
 
+The  jobs  in  `cron.d`  and  `/etc/crontab` are system jobs, which are used
+usually for more than one user, thus, additionally the username is needed:
+
+```bash
+* * * * * user command 
+```
+
 Each individual field correlates to a time unit:
 
 ```
@@ -173,7 +180,7 @@ fix the issue:
 sudo crontab -u www-data -e
 ```
 
-Imagine you have a website backup script. Add the following line to it:
+Imagine you have a website backup script. To make it run every day at 3 AM:
  
 ```
 0 3 * * * /usr/local/bin/website_backup.sh
