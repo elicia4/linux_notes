@@ -8,3 +8,5 @@
 Misc:
 - [systemctl](systemctl.md)
 - [timers](timers.md)
+- [journalctl](./journalctl.md)
+- [hostnamectl](./hostnamectl.md)
