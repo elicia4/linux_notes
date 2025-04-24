@@ -12,11 +12,11 @@ amounts of data. A piece of software used to interact with databases is called
 a database management system (or DBMS). A DBMS based on the relational model is
 called a RDBMS. Examples of RDBMS:
 
-- Microsoft SQL Server
 - MySQL
+- MariaDB, a FOSS fork of MySQL
 - PostgreSQL
 - Oracle
-- MariaDB, a FOSS fork of MySQL
+- Microsoft SQL Server
 
 They all use SQL to manage their databases.
 
@@ -46,8 +46,8 @@ To launch the MySQL command-line tool:
 sudo mysql # won't start w/o sudo first time
 ```
 
-The command above worked because you're connecting to `localhost` and don't
-have a password set. To specify options:
+The command worked because you're connecting to `localhost` and don't have a
+password set. To specify options:
 
 ```bash
 # mysql -u <username> -h <host> -P <port> -p
@@ -89,11 +89,11 @@ To create a table:
 
 ```sql
 create table vegetables ( 
-          -> id int,
-          -> name varchar(255),
-          -> region varchar(255),
-          -> freshness int
-          -> );
+          id int,
+          name varchar(255),
+          region varchar(255),
+          freshness int
+          );
 ```
 
 `int` is an integer, `varchar` is a string of length `n`. Check out your tables
@@ -115,7 +115,9 @@ databases are arranged or organized.
 To insert a row into your table:
 
 ```sql
-insert into vegetables values (1, "cucumber", "Mexico", "5" );
+insert into vegetables values (1, "cucumber", "Mexico", "5");
+insert into vegetables values (1, "avocado", "Mexico", "2");
+insert into vegetables values (1, "banana", "Ecuador", "4");
 ```
 
 To show the data inside a table:
@@ -181,4 +183,11 @@ To set a boolean value to true:
 
 ```sql
 update vegetables set expensive = True where first_name = "avocado";
+```
+
+To delete a table:
+
+```sql
+# drop table table_name;
+drop table vegetables;
 ```
