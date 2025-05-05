@@ -81,6 +81,7 @@ A collection of notes on everything Linux 🐧🐧🐧.
 | [arch](./commands/arch.md) | [link](./commands/link.md) | [ptx](./commands/ptx.md) | 
 | [wal](./commands/wal.md) | [xclip & xsel](./commands/xclip_xsel.md) | [xargs](./commands/xargs.md) |
 | [screen](./commands/screen.md) | [host](./commands/host.md) | [whereis](./commands/whereis.md) |
+| [mkpasswd](./commands/mkpasswd.md) |  |  |
 
 #### Checksum Functions
 
