@@ -40,3 +40,30 @@ mkpasswd -m sha512crypt PASSWORD SALT
 ```bash
 mkpasswd -m sha512crypt -R 10000 PASSWORD SALT 
 ```
+
+If you run it with no arguments, it will prompt for a password:
+
+```bash
+mkpasswd
+```
+
+It's also possible to generate a password with `openssl`:
+
+```bash
+openssl passwd -6 # SHA512 
+```
+
+### Setting a Hash for a User
+
+You can pass a password hash to `usermod` to set a new password:
+
+```bash
+# usermod -p 'HASH' USER
+usermod -p '$y$j9T$Jv/IKJguqNawd6zBuXdp10$xfFT7jl3ayQYz11st..nw.K.0dHISXDcmN.Fu/QUa.A' username
+```
+
+Check if it's set:
+
+```bash
+grep username /etc/shadow
+```
