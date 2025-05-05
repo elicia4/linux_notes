@@ -89,11 +89,11 @@ To create a table:
 
 ```sql
 create table vegetables ( 
-          id int,
-          name varchar(255),
-          region varchar(255),
-          freshness int
-          );
+  id int,
+  name varchar(255),
+  region varchar(255),
+  freshness int
+);
 ```
 
 `int` is an integer, `varchar` is a string of length `n`. Check out your tables
@@ -116,8 +116,8 @@ To insert a row into your table:
 
 ```sql
 insert into vegetables values (1, "cucumber", "Mexico", "5");
-insert into vegetables values (1, "avocado", "Mexico", "2");
-insert into vegetables values (1, "banana", "Ecuador", "4");
+insert into vegetables values (2, "avocado", "Mexico", "2");
+insert into vegetables values (3, "banana", "Ecuador", "4");
 ```
 
 To show the data inside a table:
