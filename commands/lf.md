@@ -38,9 +38,9 @@ a look at the beginning of `lfrc` to set everything up right.
 With Luke's config, you can delete files with `D`. You can take a look at all
 the other custom commands in `lfrc`, their bindings are at the end of the file.
 
-Make sure to install all of the dependancies, mainly `ueberzug` for file
+Make sure to install all of the dependencies, mainly `ueberzug` for file
 previews, fonts for emoji support etc. The `icons` file contains all of the
-cute emojis.
+cute emojis. You also need `ffmpegthumbnailer` for video previews.
 
 You can bind certain commands in the `zsh` configs, e.g., you can bind the `lf`
 wrapper `lfub` to a key:
